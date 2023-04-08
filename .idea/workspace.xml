@@ -2,14 +2,21 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="9aaf3d54-50ad-4257-b5f7-5feb550bfd38" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/doc/agenda.md" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/README.md" beforeDir="false" afterPath="$PROJECT_DIR$/README.md" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/doc/Images/EmbedImages.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/doc/Images/change_theme.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/doc/Images/copy_button/copy_button_01.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/doc/Images/copy_button/copy_button_02.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/doc/Images/copy_button/copy_button_03.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/doc/Images/copy_button/copy_button_04.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/doc/Images/copy_button/copy_button_05.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/doc/Images/indent_equals.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/doc/Images/workflow-yaml.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/doc/agenda.md" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/doc/conf.py" beforeDir="false" afterPath="$PROJECT_DIR$/doc/conf.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/doc/index.rst" beforeDir="false" afterPath="$PROJECT_DIR$/doc/index.rst" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/doc/installation.rst" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/doc/learn_myst.md" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/doc/learning.rst" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/doc/resources.md" beforeDir="false" afterPath="$PROJECT_DIR$/doc/resources.md" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/doc/specifications.md" beforeDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -24,28 +31,11 @@
           <provider selected="true" editor-type-id="restructured-text-editor" />
         </entry>
       </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/doc/agenda.md">
-          <provider selected="true" editor-type-id="split-provider[text-editor;markdown-preview-editor]">
-            <state split_layout="SPLIT">
-              <first_editor relative-caret-position="66">
-                <caret line="3" column="15" selection-start-line="3" selection-start-column="15" selection-end-line="3" selection-end-column="15" />
-              </first_editor>
-              <second_editor />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/_build/learn_myst.html">
-          <provider selected="true" editor-type-id="text-editor" />
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
+      <file pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/doc/conf.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="506">
-              <caret line="24" selection-start-line="24" selection-end-line="24" selection-end-column="75" />
+            <state relative-caret-position="509">
+              <caret line="28" column="22" lean-forward="true" selection-start-line="28" selection-start-column="22" selection-end-line="28" selection-end-column="22" />
             </state>
           </provider>
         </entry>
@@ -60,28 +50,11 @@
         </entry>
       </file>
       <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/doc/Images/workflow-yaml.png">
-          <provider selected="true" editor-type-id="images" />
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/doc/resources.md">
           <provider selected="true" editor-type-id="split-provider[text-editor;markdown-preview-editor]">
             <state split_layout="SPLIT">
-              <first_editor relative-caret-position="528">
-                <caret line="24" column="4" selection-start-line="24" selection-start-column="4" selection-end-line="24" selection-end-column="4" />
-              </first_editor>
-              <second_editor />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/doc/specifications.md">
-          <provider selected="true" editor-type-id="split-provider[text-editor;markdown-preview-editor]">
-            <state split_layout="SPLIT">
-              <first_editor relative-caret-position="374">
-                <caret line="17" selection-start-line="17" selection-end-line="17" />
+              <first_editor relative-caret-position="418">
+                <caret line="19" selection-start-line="19" selection-end-line="19" />
               </first_editor>
               <second_editor />
             </state>
@@ -91,11 +64,6 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/doc/credit.rst">
           <provider selected="true" editor-type-id="restructured-text-editor" />
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/doc/Images/copy_button/copy_button_02.png">
-          <provider selected="true" editor-type-id="images" />
         </entry>
       </file>
     </leaf>
@@ -124,17 +92,18 @@
         <option value="$PROJECT_DIR$/.github/workflows/documentation.yaml" />
         <option value="$PROJECT_DIR$/doc/myfile.md" />
         <option value="$PROJECT_DIR$/doc/learn_myst.md" />
-        <option value="$PROJECT_DIR$/doc/conf.py" />
         <option value="$PROJECT_DIR$/doc/installation.rst" />
-        <option value="$PROJECT_DIR$/doc/index.rst" />
         <option value="$PROJECT_DIR$/doc/agenda.md" />
+        <option value="$PROJECT_DIR$/doc/blankpage.md" />
         <option value="$PROJECT_DIR$/doc/resources.md" />
+        <option value="$PROJECT_DIR$/doc/index.rst" />
+        <option value="$PROJECT_DIR$/doc/conf.py" />
       </list>
     </option>
   </component>
   <component name="ProjectFrameBounds">
     <option name="x" value="15" />
-    <option name="y" value="123" />
+    <option name="y" value="122" />
     <option name="width" value="1894" />
     <option name="height" value="1241" />
   </component>
@@ -148,17 +117,12 @@
         <subPane>
           <expand>
             <path>
-              <item name="STUDY_USD-GROUP" type="b2602c69:ProjectViewProjectNode" />
-              <item name="STUDY_USD-GROUP" type="462c0819:PsiDirectoryNode" />
+              <item name="TEMPLATE" type="b2602c69:ProjectViewProjectNode" />
+              <item name="TEMPLATE" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
-              <item name="STUDY_USD-GROUP" type="b2602c69:ProjectViewProjectNode" />
-              <item name="STUDY_USD-GROUP" type="462c0819:PsiDirectoryNode" />
-              <item name="_build" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="STUDY_USD-GROUP" type="b2602c69:ProjectViewProjectNode" />
-              <item name="STUDY_USD-GROUP" type="462c0819:PsiDirectoryNode" />
+              <item name="TEMPLATE" type="b2602c69:ProjectViewProjectNode" />
+              <item name="TEMPLATE" type="462c0819:PsiDirectoryNode" />
               <item name="doc" type="462c0819:PsiDirectoryNode" />
             </path>
           </expand>
@@ -172,12 +136,12 @@
     <property name="settings.editor.selected.configurable" value="preferences.sourceCode.Python" />
   </component>
   <component name="RecentsManager">
-    <key name="MoveFile.RECENT_KEYS">
-      <recent name="$PROJECT_DIR$/doc/Images" />
-    </key>
     <key name="CopyFile.RECENT_KEYS">
       <recent name="$PROJECT_DIR$/doc" />
       <recent name="$PROJECT_DIR$/_build/_static" />
+    </key>
+    <key name="MoveFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$/doc/Images" />
     </key>
   </component>
   <component name="RunDashboard">
@@ -206,7 +170,7 @@
     <servers />
   </component>
   <component name="ToolWindowManager">
-    <frame x="15" y="123" width="1894" height="1241" extended-state="0" />
+    <frame x="15" y="122" width="1894" height="1241" extended-state="0" />
     <editor active="true" />
     <layout>
       <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.14095035" />
@@ -236,18 +200,10 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/doc/exercises.rst" />
     <entry file="file://$PROJECT_DIR$/_build/steps-needed.html" />
-    <entry file="file://$PROJECT_DIR$/doc/Images/copy_button/copy_button_01.png">
-      <provider selected="true" editor-type-id="images" />
-    </entry>
-    <entry file="file://$PROJECT_DIR$/doc/Images/copy_button/copy_button_03.png">
-      <provider selected="true" editor-type-id="images" />
-    </entry>
-    <entry file="file://$PROJECT_DIR$/doc/Images/copy_button/copy_button_04.png">
-      <provider selected="true" editor-type-id="images" />
-    </entry>
-    <entry file="file://$PROJECT_DIR$/doc/Images/copy_button/copy_button_05.png">
-      <provider selected="true" editor-type-id="images" />
-    </entry>
+    <entry file="file://$PROJECT_DIR$/doc/Images/copy_button/copy_button_01.png" />
+    <entry file="file://$PROJECT_DIR$/doc/Images/copy_button/copy_button_03.png" />
+    <entry file="file://$PROJECT_DIR$/doc/Images/copy_button/copy_button_04.png" />
+    <entry file="file://$PROJECT_DIR$/doc/Images/copy_button/copy_button_05.png" />
     <entry file="file://$PROJECT_DIR$/_build/_static/css/theme.css">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="2244">
@@ -270,28 +226,18 @@
       <provider selected="true" editor-type-id="text-editor" />
     </entry>
     <entry file="file://$PROJECT_DIR$/doc/myfile.md" />
-    <entry file="file://$PROJECT_DIR$/doc/learn_myst.md">
-      <provider selected="true" editor-type-id="split-provider[text-editor;markdown-preview-editor]">
-        <state split_layout="SPLIT">
-          <first_editor relative-caret-position="1562">
-            <caret line="71" column="38" selection-start-line="71" selection-start-column="38" selection-end-line="71" selection-end-column="38" />
-          </first_editor>
-          <second_editor />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/_build/installation.html">
-      <provider selected="true" editor-type-id="text-editor" />
-    </entry>
-    <entry file="file://$PROJECT_DIR$/_build/learn_myst.html">
-      <provider selected="true" editor-type-id="text-editor" />
-    </entry>
-    <entry file="file://$PROJECT_DIR$/doc/conf.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="506">
-          <caret line="24" selection-start-line="24" selection-end-line="24" selection-end-column="75" />
-        </state>
-      </provider>
+    <entry file="file://$PROJECT_DIR$/doc/learn_myst.md" />
+    <entry file="file://$PROJECT_DIR$/_build/installation.html" />
+    <entry file="file://$PROJECT_DIR$/doc/installation.rst" />
+    <entry file="file://$PROJECT_DIR$/doc/learning.rst" />
+    <entry file="file://$PROJECT_DIR$/doc/agenda.md" />
+    <entry file="file://$PROJECT_DIR$/doc/specifications.md" />
+    <entry file="file://$PROJECT_DIR$/doc/blankpage.md" />
+    <entry file="file://$PROJECT_DIR$/_build/learn_myst.html" />
+    <entry file="file://$PROJECT_DIR$/doc/Images/workflow-yaml.png" />
+    <entry file="file://$PROJECT_DIR$/doc/Images/copy_button/copy_button_02.png" />
+    <entry file="file://$PROJECT_DIR$/doc/index.rst">
+      <provider selected="true" editor-type-id="restructured-text-editor" />
     </entry>
     <entry file="file://$PROJECT_DIR$/.github/workflows/documentation.yaml">
       <provider selected="true" editor-type-id="text-editor">
@@ -300,23 +246,11 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/doc/Images/workflow-yaml.png">
-      <provider selected="true" editor-type-id="images" />
-    </entry>
-    <entry file="file://$PROJECT_DIR$/doc/Images/copy_button/copy_button_02.png">
-      <provider selected="true" editor-type-id="images" />
-    </entry>
-    <entry file="file://$PROJECT_DIR$/doc/installation.rst">
-      <provider selected="true" editor-type-id="restructured-text-editor" />
-    </entry>
-    <entry file="file://$PROJECT_DIR$/doc/learning.rst">
-      <provider selected="true" editor-type-id="restructured-text-editor" />
-    </entry>
-    <entry file="file://$PROJECT_DIR$/doc/specifications.md">
+    <entry file="file://$PROJECT_DIR$/doc/resources.md">
       <provider selected="true" editor-type-id="split-provider[text-editor;markdown-preview-editor]">
         <state split_layout="SPLIT">
-          <first_editor relative-caret-position="374">
-            <caret line="17" selection-start-line="17" selection-end-line="17" />
+          <first_editor relative-caret-position="418">
+            <caret line="19" selection-start-line="19" selection-end-line="19" />
           </first_editor>
           <second_editor />
         </state>
@@ -325,26 +259,10 @@
     <entry file="file://$PROJECT_DIR$/doc/credit.rst">
       <provider selected="true" editor-type-id="restructured-text-editor" />
     </entry>
-    <entry file="file://$PROJECT_DIR$/doc/index.rst">
-      <provider selected="true" editor-type-id="restructured-text-editor" />
-    </entry>
-    <entry file="file://$PROJECT_DIR$/doc/agenda.md">
-      <provider selected="true" editor-type-id="split-provider[text-editor;markdown-preview-editor]">
-        <state split_layout="SPLIT">
-          <first_editor relative-caret-position="66">
-            <caret line="3" column="15" selection-start-line="3" selection-start-column="15" selection-end-line="3" selection-end-column="15" />
-          </first_editor>
-          <second_editor />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/doc/resources.md">
-      <provider selected="true" editor-type-id="split-provider[text-editor;markdown-preview-editor]">
-        <state split_layout="SPLIT">
-          <first_editor relative-caret-position="528">
-            <caret line="24" column="4" selection-start-line="24" selection-start-column="4" selection-end-line="24" selection-end-column="4" />
-          </first_editor>
-          <second_editor />
+    <entry file="file://$PROJECT_DIR$/doc/conf.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="509">
+          <caret line="28" column="22" lean-forward="true" selection-start-line="28" selection-start-column="22" selection-end-line="28" selection-end-column="22" />
         </state>
       </provider>
     </entry>

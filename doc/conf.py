@@ -36,17 +36,18 @@ sys.path.insert(0, os.path.abspath('../source'))
 # which can be referenced by: [](#my-heading)
 myst_heading_anchors = 4
 
-extensions = ['sphinx.ext.autodoc',
+extensions = [
+              'sphinx.ext.autodoc',
               'sphinx_copybutton',
               'sphinx.ext.autosectionlabel',
               'myst_parser',
               'sphinx_design'
-
-                            ]
+              ]
 
 myst_enable_extensions = [
-  "colon_fence",
-  "html_image"
+   "colon_fence",
+   "html_image",
+   "tasklist"
 ]
 
 # Add any paths that contain templates here, relative to this directory.

@@ -4,14 +4,11 @@
    table of contents
 
 
-Omniverse USD Study Group
-=========================
-
-The USD Study Group is born of an interest of a variety of individuals to learn USD on an individual level in order to ... ... ...
+Template
+========
 
 .. toctree::
    :maxdepth: 2
 
-   agenda.md
    resources.md
    credit.rst
