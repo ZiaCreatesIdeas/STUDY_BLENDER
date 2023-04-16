@@ -63,7 +63,7 @@ source_suffix = '.rst'
 master_doc = 'index'
 
 # General information about the project.
-project = 'Sphinx Template'
+project = 'STUDY_BLENDER'
 copyright = 'None'
 author = 'Zia'
 
