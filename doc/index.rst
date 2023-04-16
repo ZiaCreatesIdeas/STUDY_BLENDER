@@ -4,11 +4,12 @@
    table of contents
 
 
-Template
+Study Blender
 ========
 
 .. toctree::
    :maxdepth: 2
 
+   BlenderGuru.md
    resources.md
    credit.rst
