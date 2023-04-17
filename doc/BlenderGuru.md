@@ -50,4 +50,16 @@ This is text pre-embed.
 <iframe src="https://player.vimeo.com/video/818452477" width="640" height="360" frameborder="0" allow="autoplay; fullscreen; picture-in-picture" allowfullscreen></iframe>
 
 ---
+Streamable
+<div style="width:100%;height:0px;position:relative;padding-bottom:56.250%;"><iframe src="https://streamable.com/e/iqvbob?autoplay=1" frameborder="0" width="100%" height="100%" allowfullscreen allow="autoplay" style="width:100%;height:100%;position:absolute;left:0px;top:0px;overflow:hidden;"></iframe></div>
+Streamable offers zero folders, and no bulk upload.
+
+---
+
+Dropbox embed
+
+<iframe src="https://www.dropbox.com/s/hlqkh4vmtp70rea/02a_TutorialPart2-Editing-Create-Donut.mp4?raw=1" width="100%" height="400px" frameborder="0" allowfullscreen></iframe>
+
+
+---
 This has been a test of embeding videos and documents.
