@@ -60,6 +60,41 @@ Dropbox embed
 
 <iframe src="https://www.dropbox.com/s/hlqkh4vmtp70rea/02a_TutorialPart2-Editing-Create-Donut.mp4?raw=1" width="100%" height="400px" frameborder="0" allowfullscreen></iframe>
 
+Dropbox allows for a folder upload.  
+Allow for full frame.   
+They do not have a dedicated embed code, but GPT knows it.  
+They allow for 2 gig free.  
+Presumably we can push to Dropbox or sync a local folder.  
+Enlarge comes up quickly.  
+Viewable on FF Mac, PC.  
+Viewable on Edge, PC.  
+
+---
+
+Obs mkv or muxxed files are almost double ShareX (mp4). So ShareX will be the primary capture tool.  
+With Dropbox being the video solution host.
+
+---
+
+<iframe src="https://www.dropbox.com/s/w951v386fg7hxv6/redo.mp4?raw=1" width="100%" height="400px" frameborder="0" allowfullscreen></iframe>
+
+https://www.dropbox.com/s/w951v386fg7hxv6/redo.mp4?raw=1
+
+<iframe src="https://www.dropbox.com/s/w951v386fg7hxv6/redo.mp4?raw=1" width="640" height="480" frameborder="0" allowfullscreen></iframe>
+
+
+
+---
+
+| Service   | Lowest Tier Price (Monthly) | Storage Limitations | Bandwidth Limitations |
+| --------- | --------------------------- | ------------------- | --------------------- |
+| [Dropbox](https://www.dropbox.com/plans)   | $9.99                       | 2 TB                | 200 GB/month          |
+| [Vimeo](https://vimeo.com/upgrade)     | $7                          | 5 GB                | 250 GB/month          |
+| [Streamable](https://streamable.com/pricing) | $10                         | 10 GB               | 1 TB/month            |
+
+---
+
+![OBS vs ShareX](\Images\ShareX vs OBS file sizes.jpg "title")
 
 ---
 This has been a test of embeding videos and documents.
