@@ -12,6 +12,7 @@ Study Blender
 
    BlenderGuru.md
    Hotkeys.md
-   BeginnerTutorialPart_1.md
+   BeginnerTutorialPart_01.md
+   BeginnerTutorialPart_02.md
    Resources.md
    Credit.rst
