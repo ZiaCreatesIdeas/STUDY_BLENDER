@@ -11,5 +11,7 @@ Study Blender
    :maxdepth: 2
 
    BlenderGuru.md
-   resources.md
-   credit.rst
+   Hotkeys.md
+   BeginnerTutorialPart_1.md
+   Resources.md
+   Credit.rst

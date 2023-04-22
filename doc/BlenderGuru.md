@@ -94,7 +94,7 @@ https://www.dropbox.com/s/w951v386fg7hxv6/redo.mp4?raw=1
 
 ---
 
-![OBS vs ShareX](\Images\ShareX vs OBS file sizes.jpg "title")
+[OBS vs ShareX](.\Images\ShareX vs OBS file sizes.jpg "title")
 
 ---
 This has been a test of embeding videos and documents.

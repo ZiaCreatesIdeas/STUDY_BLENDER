@@ -64,7 +64,7 @@ master_doc = 'index'
 
 # General information about the project.
 project = 'STUDY_BLENDER'
-copyright = 'None'
+copyright = '2023'
 author = 'Zia'
 
 # The version info for the project you're documenting, acts as replacement for
