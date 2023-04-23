@@ -11,12 +11,12 @@ MMB =  Middle Mouse Button.
 
 | Command |  Blender      | Omniverse |          |
 | ------- | -----------   | ------- | -----------|
-|**Object**|||
+|**Object**| _Key_ | |
 | Move    | G             | W       |            |
 | "       | G + MMB + Axis|         |            |
 | "       | G + [X, Y, Z] |         |            |
 | notes:  | Cursor can be anywhere| |            |
-|         | LMB = Confirm, RMB = cancel |  |     | 
+|         | LMB = Confirm, RMB = cancel |   |    | 
 | Move + Axis Snap  | Click + Hold + MMB |  |    |
 |Rotate   | R       |                    |       |
 |         | R + [X, Y, Z]| E             |       |
@@ -24,8 +24,9 @@ MMB =  Middle Mouse Button.
 |         | S + [X, Y, Z]|               |       |
 | Clear Location | Alt + G| | |
 | Duplicate | Shift + D | Ctrl + D | |
+| Recover Operator Presets| F9 |||
 ||||
-|**Viewport**| **Blender** | **Omniverse** |
+|**Viewport**| **Blender** | **Omniverse**       |
 | Orbit  | Hold MMB + Drag | Alt + LMB |         |
 | Pan    | Shift + MMB + Drag | Alt + MMB + Drag |  |
 | Zoom   | MMB + Scroll       | MMB + Scroll |   |
@@ -58,23 +59,27 @@ MMB =  Middle Mouse Button.
 
 #### Pop Up Menus
 
-
 |Hot Key| Pop Up Menu|
 |-------|------------|
-|**Shift + A**|![Pop Up Menus](Images/02-A_Menu-PopUp-Shift-A.jpg)
+|       | Add Object |
+|**Shift + A**|![Pop Up Menus](Images/Donut_Tutorial_Part_02/02-A_Menu-PopUp-Shift-A.jpg)|
+|       | Apply Scale|
+|**Ctrl + A**|![Apply Scale](Images/Donut_Tutorial_Part_02/02-C_Menu-Apply-Scale.jpg)    |
+|       | Change Shading |
+|**RMB over background**|![Flat Shade](Images/Donut_Tutorial_Part_02/02-D_RMB-Object-Context-Menu.jpg)|
 
 #### Pie Menus
 
 | Hot Key | Pie Menu |
 | ------ | -------- |
+|<td style="text-align: center">Select View </td> |
 | ~ (tilde)     |  ![Pie Tilde View](Images/Pie_Tilde-View.jpg)         |
 |        |                                                |
 
-<button onclick="alert('Hello, world!')">Click me</button>
-
-
-
-
+#### Camera Hot Keys
+| Command | Hotkey     | note |
+| ------- | ---------- |----  |
+| Move Camera to Perspective View  | Ctrl + Alt + Numpad - 0 | **Vital Hot Key** |
 
 Edit > Preferences > Input > Emulate Numpad  
 Allows the number keys on the top to switch views.  

@@ -1,4 +1,43 @@
-# Donut Tutorial - Part 02
+# Donut Tutorial
+
+## Part 01
+
+[Navigation and Hotkeys](Hotkeys.md)
+
+#### Change Resolution Scale of Interface.
+* Edit > Preferences > Interface > Resolution Scale.
+
+![Scale Resolution](Images/Donut_Tutorial_Part_01/Edit-Preferences-Interface-ScaleResolution.jpg)
+
+---
+
+#### Change Material Colors
+
+Material color changes are not interactive and only show when rendered (F12).
+
+% https://www.dropbox.com/s/d0tgmotsvrxbr4y/01_B-ChangeMaterialColors.mp4?raw=1
+
+<style>
+  video {
+    width: 100%;
+  }
+</style>
+
+<video controls>
+  <source src="https://www.dropbox.com/s/d0tgmotsvrxbr4y/01_B-ChangeMaterialColors.mp4?raw=1" type="video/mp4">
+</video>
+
+---
+
+```{note} **Collections** are the equivalent to Folders.
+:class: warning
+
+```  
+
+% PART TWO--------------------------------------
+
+## Part 02
+
 **Object Editing**
 
 | Command |  Hotkey      | 
@@ -98,7 +137,9 @@ The camera snaps to the donut's position.
 | Command | Hot Key   |note|
 | ------- |-----      |---|
 | **Move Camera Back** |    |
-|6. Select Camera Frame |    | Notice in right hand view, camera turns orange |
+| 6. Select Camera Frame |    | Notice in right hand view, camera turns orange |
+| 7. Activate Grab Tool | G |
+| 8. Enter Smooth Zoom Mode  | Depress MMB | In perspective view, we hold Ctrl + MMB to smooth Zoom |
 
 <style>
   video {
@@ -110,3 +151,14 @@ The camera snaps to the donut's position.
 <source src='https://www.dropbox.com/s/kach3hb5jypsj2i/02-Eb-ii_Camera-G-MMB-Drag-to-Zoom.mp4?raw=1'>
 </video>
 
+---
+
+<style>
+  video {
+    width: 100%;
+  }
+</style>
+ 
+<video controls>
+<source src='https://www.dropbox.com/s/gzk0t3d25l4f7d1/02-Ec_Camera-G-Drag-to-Move.mp4?raw=1'>
+</video>

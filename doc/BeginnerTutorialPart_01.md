@@ -5,7 +5,7 @@
 #### Change Resolution Scale of Interface.
 * Edit > Preferences > Interface > Resolution Scale.
 
-![Scale Resolution](Images/Edit-Preferences-Interface-ScaleResolution.jpg)
+![Scale Resolution](Images/Donut_Tutorial_Part_01/Edit-Preferences-Interface-ScaleResolution.jpg)
 
 ---
 
@@ -29,7 +29,5 @@ Material color changes are not interactive and only show when rendered (F12).
 
 ```{note} **Collections** are the equivalent to Folders.
 :class: warning
-
-
 
 ```  
