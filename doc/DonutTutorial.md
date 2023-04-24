@@ -4,6 +4,12 @@
 
 [Navigation and Hotkeys](Hotkeys.md)
 
+**Object Mode, Edit Mode**  
+Blender has two different modes to work in.  
+Each mode has restrictions on what commands can be delivered.   
+ie. 'X' to delete, works different in Object Mode vs. Edit Mode. 
+Edit mode is only available when an object is selected.  
+
 #### Change Resolution Scale of Interface.
 * Edit > Preferences > Interface > Resolution Scale.
 
@@ -153,6 +159,12 @@ The camera snaps to the donut's position.
 
 ---
 
+| Command | Hot Key     | note |
+| ------- | ---------- |----|
+| 9. Activate Grab Tool | G | With frame selected |
+|10. Move Camera | LMB |    |
+|11. Engage Smooth Zoom | G + MMB | We add a smooth zoom at the end |
+
 <style>
   video {
     width: 100%;
@@ -162,3 +174,146 @@ The camera snaps to the donut's position.
 <video controls>
 <source src='https://www.dropbox.com/s/gzk0t3d25l4f7d1/02-Ec_Camera-G-Drag-to-Move.mp4?raw=1'>
 </video>
+
+---
+
+| Command | Hot Key     | note |
+| ------- | ------------|-----|
+| 12. Render Camera View | F12 |
+
+<style>
+  video {
+    width: 100%;
+  }
+</style>
+ 
+<video controls>
+<source src='https://www.dropbox.com/s/9t42wevpkevzqt7/02-Ed_Render-Camera-View.mp4?raw=1'>
+</video>
+
+---
+
+### Subdivision
+
+- Subdivisions are a way to smooth our models while still maintaining control over their base wire frame / cage.  
+- Subdivisions are typically added in object mode, but we can select the option to view the results in Edit mode.  
+- We can toggle the visibility of the Subd's for the viewport and the render.
+
+<style>
+  video {
+    width: 100%;
+  }
+</style>
+ 
+<video controls>
+<source src='https://www.dropbox.com/s/57d6ugx6nsab8pj/02-F_Subdivision-Catmull.mp4?raw=1'>
+</video>
+
+---
+| Hot Key | Pie Menu |
+| ------ | -------- |
+| <td style="text-align: center">Select **Mode** </td> | | 
+|  Ctrl + Tab |  ![Select Mode](Images/Donut_Tutorial_Part_02/02-G_Pie-Menu_Select-Mode.jpg)   |   
+
+---
+
+### Proportional Editing
+
+| Command | Hot Key     | note |
+| ------- | ------------|-----|
+| Proportional Grab | Select ( Vertice, Edge, Face ) + O + G + Scroll MMB Up | Activate 'O' Before 'G' |
+
+<style>
+  video {
+    width: 100%;
+  }
+</style>
+ 
+<video controls>
+<source src='https://www.dropbox.com/s/o9hojjowi7o20hx/Hot_Key_O-Proportional-Edit.mp4?raw=1'>
+</video> 
+
+---
+
+### Scale Along Normals
+
+| Command | Hot Key     | note |
+| ------- | ------------|-----|
+| Move Along Normals | Alt + S |
+
+<style>
+  video {
+    width: 100%;
+  }
+</style>
+ 
+<video controls>
+<source src='https://www.dropbox.com/s/7s8pohvu2id511u/Hot-Key_Alt-S-Scale-Along-Normals.mp4?raw=1'>
+</video>
+
+---
+
+% PART 03 ---------------------
+## Part 03
+
+### Separate by Selection
+
+| Command |  Hot Key    | note |
+| ------- | -----|--|
+| Wireframe | Alt + Z | | Select backfacing vertices |
+| Duplicate | Shift + D| 'esc' to drop selection back in place |
+| Separate | P [Selection] | A Separate Layer Occurs |
+
+<style>
+  video {
+    width: 100%;
+  }
+</style>
+ 
+<video controls>
+<source src='https://www.dropbox.com/s/62n03gmfmbmhio2/03-A_Duplicate-Separate-P.mp4?raw=1'>
+</video>
+
+---
+
+### Modifier: Solidify
+
+<style>
+  video {
+    width: 100%;
+  }
+</style>
+ 
+<video controls>
+<source src='https://www.dropbox.com/s/8xm1k24nw41gxhf/03-B_Modfier-Soldify.mp4?raw=1'>
+</video>
+
+Smooth Offset with Shift + Drag
+
+---
+
+The order of modifiers matters.
+
+<style>
+  video {
+    width: 100%;
+  }
+</style>
+ 
+<video controls>
+<source src='https://www.dropbox.com/s/5jugt3ondosrxto/03-C_Modifier-Order-Matters.mp4?raw=1'>
+</video>
+
+---
+
+## Part 04
+
+### Snapping
+
+|**Snapping**| | |
+|------------|---|---|
+| Incremental (temporary) | Ctrl | | 
+| Toggle Snapping | Shift + Tab | ![Snapping Menu](Images/Hot_Keys/04-Pop-Menu-Snap-Incremental.jpg)|
+
+
+

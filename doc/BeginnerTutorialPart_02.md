@@ -110,3 +110,19 @@ The camera snaps to the donut's position.
 <source src='https://www.dropbox.com/s/kach3hb5jypsj2i/02-Eb-ii_Camera-G-MMB-Drag-to-Zoom.mp4?raw=1'>
 </video>
 
+---
+
+| Hot Key | Pie Menu |
+| ------ | -------- |
+| <td style="text-align: center">Select **View** </td> | | 
+| ~ (tilde) |  ![Pie Tilde ](Images/Pie_Tilde-View.jpg) |
+| <td style="text-align: center">Select **Mode** </td> | | 
+|  Ctrl + Tab |  ![Select Mode](Images/Hot_Keys/02-G_Pie-Menu_Select-Mode.jpg)   |   
+
+---
+
+| Command | Hot Key     | note |
+| ------- | ------------|-----|
+| Proportional Grab | G + Click [Vertice, Edge, Face ] + MMB - Scroll Up | BLANK ![alt](https://)|
+
+
