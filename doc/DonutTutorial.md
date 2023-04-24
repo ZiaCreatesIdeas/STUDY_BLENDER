@@ -313,7 +313,20 @@ The order of modifiers matters.
 |**Snapping**| | |
 |------------|---|---|
 | Incremental (temporary) | Ctrl | | 
-| Toggle Snapping | Shift + Tab | ![Snapping Menu](Images/Hot_Keys/04-Pop-Menu-Snap-Incremental.jpg)|
+| Toggle Snapping | Shift + Tab | ![Snapping Menu](Images/Donut_Tutorial_Part_04/04-B_Snap-Menu.jpg) |
+
+<style>
+  video {
+    width: 100%;
+  }
+</style>
+ 
+<video controls>
+<source src='https://www.dropbox.com/s/kmc9unpb7nh8r50/04_A-Snap-Projected.mp4?raw=1'>
+</video>
+
+Snapping allows us to move a vertex along the face of the surface below.  
+
 
 
 
