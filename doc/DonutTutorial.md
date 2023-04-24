@@ -193,8 +193,10 @@ The camera snaps to the donut's position.
 
 ---
 
-### Subdivision
+<div class="subd">
 
+### Subdivision
+Also known as "subd's, subds, subsurf, subsurfaces". 
 - Subdivisions are a way to smooth our models while still maintaining control over their base wire frame / cage.  
 - Subdivisions are typically added in object mode, but we can select the option to view the results in Edit mode.  
 - We can toggle the visibility of the Subd's for the viewport and the render.
@@ -310,10 +312,41 @@ The order of modifiers matters.
 
 ### Snapping
 
-|**Snapping**| | |
+Snapping allows us to move a vertex along the face of the surface below. 
+
+|**Snapping**| Hot Keys | |
 |------------|---|---|
 | Incremental (temporary) | Ctrl | | 
-| Toggle Snapping | Shift + Tab | ![Snapping Menu](Images/Donut_Tutorial_Part_04/04-B_Snap-Menu.jpg) |
+| Toggle Snapping |  Shift + Tab | |
+| | | Button to the Right of 'Snap'  |
+|  | | ![Snapping Menu](Images/Donut_Tutorial_Part_04/04-B_Snap-Menu.jpg) |
+
+
+- [ Project Individual Elements ] allows nearby vertices to also conform to the surface below.
+
+|**Snapping**| Hot Keys | |
+|------------|---|---|
+| Over Background | RMB |![RMB Snapping Menue](Images/Donut_Tutorial_Part_04/04-B2_Snap_Menu_RMB.jpg)|
+
+<p></p>
+
+**Deformation with Snapping Activated**  
+Deform the Icing to adhere to the faces of the donut.
+<style>
+  video {
+    width: 100%;
+  }
+</style>
+ 
+<video controls>
+<source src='https://www.dropbox.com/s/kmc9unpb7nh8r50/04-A_Snap-Projected.mp4?raw=1'>
+</video>
+
+---
+
+### Camera Repositioning
+
+Here we re-position the camera for a render. 
 
 <style>
   video {
@@ -322,11 +355,77 @@ The order of modifiers matters.
 </style>
  
 <video controls>
-<source src='https://www.dropbox.com/s/kmc9unpb7nh8r50/04_A-Snap-Projected.mp4?raw=1'>
+<source src='https://www.dropbox.com/s/oqb2ef4v49aio4j/04-C_Camera-Movement-Practice.mp4?raw=1'>
 </video>
 
-Snapping allows us to move a vertex along the face of the surface below.  
+<style>
+  video {
+    width: 100%;
+  }
+</style>
+ <p> </p>
+
+### Render Visibility
+
+<div class="admonition note" name="html-admonition" style="background: lightyellow; padding: 10px">
+<p class="title"> </p>
+We observe that we are accidently rendering the original cube placed our scene and not our current view. 
+</div>
+
+<video controls>
+<source src='https://www.dropbox.com/s/0p6gxxu5n28abil/04-D_Render-Not-Visibility-Dependent.mp4?raw=1'>
+</video>
+<p></p>
+
+```{note} 
+:class: warning
+A layer can be invisible in the viewport but will still appear in the render.
+```    
+---
+
+### References
+
+:::{card}
+
+"_I want to get a T-Shirt that says, 'Reference, Reference, References'.. It is my biggest piece of advice for artists whenever they ask for feedback._" 
+\- Blender Guru
+:::
+
+<style>
+  video {
+    width: 100%;
+  }
+</style>
+ 
+ It is critical to switch to **Object** mode to enable the Add > Image > Reference option.
+
+| Swtich to Object Mode |  Add Image    | 
+| ------- | ------------|
+| Tab | Shift + A |
+|  ![Add Image](Images/Donut_Tutorial_Part_04/04-E2_Object-Mode.jpg)  |  ![Add Image](Images/Donut_Tutorial_Part_04/04-D2_Add-Image.jpg)
+ |
 
 
+<video controls>
+<source src='https://www.dropbox.com/s/tk4186vkm96qg85/04-E_Switch-to-Object-Mode-for-References.mp4?raw=1'>
+</video>
+<p></p>
 
+Here we show three different ways of adding references.
 
+<style>
+  video {
+    width: 100%;
+  }
+</style>
+ 
+<video controls>
+<source src='https://www.dropbox.com/s/hi75ve7i1l9g6dm/04-F_Add-References-3-Ways.mp4?raw=1'>
+</video>
+ 
+<p></p>
+
+- | **Add > Image > Background** | is best used when in Front, Top, or Right viewports.  
+- The background image is only visible from the chosen viewport. 
+- | **Add > Image > Reference** | projects an image onto a plane (card) from the current view. 
+- Add [ Reference, Background ] are identical if performed from the perspective or camera views. 
