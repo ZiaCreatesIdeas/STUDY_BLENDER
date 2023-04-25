@@ -50,7 +50,9 @@ Edit mode is only available when an object is selected.
 | Zoom Smooth | Ctrl + MMB + Drag | |            |
 | Focus Selected (Object) | Numpad period . | F |         |
 |Look Thru Camera | Numpad - 0 |||
-| Wireframe | Alt + Z| ??? |
+| Wireframe | Shift + Z| ???? |
+| X Ray | Alt + Z | BLANK |
+|||||
 |||||
 |**Align To View**||||
 | Front View | NumPad - 1| | |
@@ -60,7 +62,7 @@ Edit mode is only available when an object is selected.
 |||||
 | **Selection** ||||
 | Separate | P [ Selection, Material, Loose Parts ] || |
-| Select Linked |  L, Ctrl + L ] | ![Select Linked ](Images/Hot_Keys/03_Hot-Key_Ctrl-L-Select-Linked.gif)||
+| Select Linked |  L, Ctrl + L  | ![Select Linked ](Images/Hot_Keys/03_Hot-Key_Ctrl-L-Select-Linked.gif)||
 |||||
 
 

@@ -294,6 +294,8 @@ Smooth Offset with Shift + Drag
 
 ---
 
+![Solidify Offset]()
+
 The order of modifiers matters.
 
 <style>
@@ -409,7 +411,8 @@ A layer can be invisible in the viewport but will still appear in the render.
 <video controls>
 <source src='https://www.dropbox.com/s/tk4186vkm96qg85/04-E_Switch-to-Object-Mode-for-References.mp4?raw=1'>
 </video>
-<p></p>
+
+<p>  </p>
 
 Here we show three different ways of adding references.
 
@@ -429,3 +432,25 @@ Here we show three different ways of adding references.
 - The background image is only visible from the chosen viewport. 
 - | **Add > Image > Reference** | projects an image onto a plane (card) from the current view. 
 - Add [ Reference, Background ] are identical if performed from the perspective or camera views. 
+
+---
+
+### Apply Subdivisions
+
+Here we add additional detail by applying the Subdivision surface.
+
+```{admonition} Apply Subdivison Surface
+:class: warning 
+
+<style>
+  video {
+    width: 100%;
+  }
+</style>
+ 
+<video controls>
+<source src='https://www.dropbox.com/s/f4gpunxxhwhtdcc/04-G_Apply-Subdivision.mp4?raw=1'>
+</video>
+<center> Place Subdivision Modifier at top of Stack and Apply 
+ 
+```
