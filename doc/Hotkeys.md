@@ -42,6 +42,21 @@ Edit mode is only available when an object is selected.
 | Duplicate | Shift + D | Ctrl + D | |
 | Recover Operator Presets| F9 |||
 | Rename File | F2 |||
+| Hide / Unhide | H, Alt + H | ![alt](Images/Hot_Keys/03_Hot-Key_Ctrl-L-Select-Linked.gif)|
+
+![alt](video_Study_Blender/02a_TutorialPart2-Editing-Create-Donut.mp4)
+<style>
+  video {
+    width: 100%;
+  }
+</style>
+ 
+<video controls>
+<source src='C:/Users/james/Documents/DOCUMENTATION/STUDY_BLENDER/video_Study_Blender/test.mp4'>
+</video>
+<p></p>
+
+
 ||||
 |**Viewport**| **Blender** | **Omniverse**       |
 | Orbit  | Hold MMB + Drag | Alt + LMB |         |
@@ -58,7 +73,7 @@ Edit mode is only available when an object is selected.
 | Front View | NumPad - 1| | |
 | Side View | Numpad - 3| |  |
 | Top View| Numpad - 7 |  |  |
-| Orthographic   | Numpad - 5 (on/off) |||
+| Orthographic   | Numpad - 5 (on | off) |||
 |||||
 | **Selection** ||||
 | Separate | P [ Selection, Material, Loose Parts ] || |
@@ -86,7 +101,7 @@ Edit mode is only available when an object is selected.
 
 |**Edit**| Hot Key | notes |
 |---|---|---|
-| Delete | X |![BLANK](https://)|
+| Delete | X | blank |
 | Proportional Grab | G + Click [Vertice, Edge, Face ] + MMB - Scroll Up |[Video (Tutorial 2)](DonutTutorial.md#proportional-editing) |
 |Scale Along Normals | Alt + S | [Video (Tutorial 2)](DonutTutorial.md#scale-along-normals) |  
 
