@@ -326,6 +326,14 @@ The order of modifiers matters.
 
 ### Apply Subdivision
 
+```{admonition} Warning
+:class: warning
+
+Applying subdivision's is destruction and cannot be undone.  
+Duplicate Objects before applying Subdivisions.
+
+```
+
 We apply our Subdivision with a level of 1. 
 
 | Command | Hot Key     | note |
@@ -344,6 +352,34 @@ We apply our Subdivision with a level of 1.
 </video>
 
 - What is applied is what was in the viewport, not the render level.
+<p></p>
+
+---
+
+The mesh for the icing will be occluded by the base.  
+So we pull the mesh forward by activating Snap, Proportional Editing and pressing 'G'   
+then drop the selection.
+<p></p>
+
+| Command | Hot Key     | note |
+| ------- | ------------|-----|
+| Activate Snapping | Ctrl + TAB |
+| Activate Proportional Falloff | O | |
+| Move | G |
+| Drop Selection | [Esc, LMB ] | Drop Selection without moving vertexes. |
+| Repeat Where Needed |||
+
+<p></p>
+
+<style>
+  video {
+    width: 100%;
+  }
+</style>
+ 
+<video controls>
+<source src='https://www.dropbox.com/s/u7jtarq084wuysd/03-F_Bring-Mesh-Through.mp4?raw=1'>
+</video>
 <p></p>
 
 ---
