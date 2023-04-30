@@ -139,13 +139,27 @@ We can change the shading of our object by **Selecting** the object and right cl
 The camera snaps to the donut's position. 
 
 ---
+**Simple Way to Frame a Shot**
 
+| Command | Hot Key     | note |
+| ------- | ------------|-----|
+| Side Menu  | N |
+| View | Select |
+| Activate 'Camera to View'  | Blue Checkbox |
+| Set Desired Camera Frame | Pan, Rotate, Zoom |
+| Deselect 'Camera to View' | | Or we can leave on and press Numpad '0' to exit |
+
+![Camera to View](./Images/Donut_Tutorial_Part_04/04-C3_Camera_to_View_ShortVersion.gif)
+
+---
+
+**Complex Way to Frame a Shot**
 | Command | Hot Key   |note|
 | ------- |-----      |---|
-| **Move Camera Back** |    |
-| 6. Select Camera Frame |    | Notice in right hand view, camera turns orange |
-| 7. Activate Grab Tool | G |
-| 8. Enter Smooth Zoom Mode  | Depress MMB | In perspective view, we hold Ctrl + MMB to smooth Zoom |
+| **Move Camera Frame** |    |
+| 1. Select Camera Frame |    | Notice in right hand view, camera turns orange |
+| 2. Activate Grab Tool | G |
+| 3. Enter Smooth Zoom Mode  | Depress MMB | In perspective view, we hold Ctrl + MMB to smooth Zoom |
 
 <style>
   video {
@@ -161,9 +175,9 @@ The camera snaps to the donut's position.
 
 | Command | Hot Key     | note |
 | ------- | ---------- |----|
-| 9. Activate Grab Tool | G | With frame selected |
-|10. Move Camera | LMB |    |
-|11. Engage Smooth Zoom | G + MMB | We add a smooth zoom at the end |
+| 4. Activate Grab Tool | G | With frame selected |
+|5. Move Camera | LMB |    |
+|6. Engage Smooth Zoom | G + MMB | We add a smooth zoom at the end |
 
 <style>
   video {
@@ -175,11 +189,9 @@ The camera snaps to the donut's position.
 <source src='https://www.dropbox.com/s/gzk0t3d25l4f7d1/02-Ec_Camera-G-Drag-to-Move.mp4?raw=1'>
 </video>
 
----
-
 | Command | Hot Key     | note |
 | ------- | ------------|-----|
-| 12. Render Camera View | F12 |
+| 7. Render Camera View | F12 | Check view by rendering |
 
 <style>
   video {
@@ -256,7 +268,10 @@ Also known as "subd's, subds, subsurf, subsurfaces".
 ---
 
 % PART 03 ---------------------
+
 ## Part 03
+
+Create a Layer for Icing.
 
 ### Separate by Selection
 
@@ -280,6 +295,7 @@ Also known as "subd's, subds, subsurf, subsurfaces".
 
 ### Modifier: Solidify
 
+Apply a the Solidify modifier from Object Mode.
 <style>
   video {
     width: 100%;
@@ -294,8 +310,6 @@ Smooth Offset with Shift + Drag
 
 ---
 
-![Solidify Offset]()
-
 The order of modifiers matters.
 
 <style>
@@ -307,6 +321,30 @@ The order of modifiers matters.
 <video controls>
 <source src='https://www.dropbox.com/s/5jugt3ondosrxto/03-C_Modifier-Order-Matters.mp4?raw=1'>
 </video>
+
+---
+
+### Apply Subdivision
+
+We apply our Subdivision with a level of 1. 
+
+| Command | Hot Key     | note |
+| ------- | ------------|-----|
+| Move Subdivision Modifier to Top |  |
+| Apply Modifier | Ctrl + A while hovering over Modifier | Only Object Mode |
+|       | Select Drop Down Arrow | Only Object Mode |
+<style>
+  video {
+    width: 100%;
+  }
+</style>
+ 
+<video controls>
+<source src='https://www.dropbox.com/s/rxyur403uv45u6j/03-D_Apply-Subdivision.mp4?raw=1'>
+</video>
+
+- What is applied is what was in the viewport, not the render level.
+<p></p>
 
 ---
 
@@ -324,7 +362,8 @@ Snapping allows us to move a vertex along the face of the surface below.
 |  | | ![Snapping Menu](Images/Donut_Tutorial_Part_04/04-B_Snap-Menu.jpg) |
 
 
-- [ Project Individual Elements ] allows nearby vertices to also conform to the surface below.
+- ( Project Individual Elements ) allows nearby vertices to also conform to the surface below.  
+This acts like a radius falloff. Very important to activate.
 
 |**Snapping**| Hot Keys | |
 |------------|---|---|
@@ -343,6 +382,31 @@ Deform the Icing to adhere to the faces of the donut.
 <video controls>
 <source src='https://www.dropbox.com/s/kmc9unpb7nh8r50/04-A_Snap-Projected.mp4?raw=1'>
 </video>
+
+<p></p>
+
+When wire frames do not appear as expected, when can go to Edit mode, toggle keys [ 1, 2, 3 ]  
+We can also toggle the ( Display Modifier in Edit Mode ) button.
+
+<style>
+  video {
+    width: 100%;
+  }
+</style>
+ 
+<video controls>
+<source src='https://www.dropbox.com/s/5bxq8bdhhvza3rl/04-E2_Wireframe-Toggle.mp4?raw=1'>
+</video>
+<p></p>
+
+---
+
+```{admonition} Select through MESH error
+:class: warning
+
+When selecting a vertex, it is possible to select points on the backside.  
+Shift + Z for X-Ray, or Z + Swipe Left to see that no other points are selected.
+```  
 
 ---
 
@@ -365,7 +429,24 @@ Here we re-position the camera for a render.
     width: 100%;
   }
 </style>
- <p> </p>
+The method above involves using 'G' to manipulate the camera.  
+<p></p>
+Instead, we can easily manipulate the camera from the viewport.
+<p></p> 
+
+ **Simple Way to Frame a Shot**
+
+| Command | Hot Key     | note |
+| ------- | ------------|-----|
+| Side Menu  | N |
+| View | Select |
+| Activate 'Camera to View'  | Checkbox |
+| Set Desired Camera Frame | Pan, Rotate, Zoom | As normal |
+| Deselect 'Camera to View' | | Or we can leave on and press Numpad '0' to exit |
+
+![Camera to View](./Images/Donut_Tutorial_Part_04/04-C3_Camera_to_View_ShortVersion.gif)
+
+**Cons**: Typically we can leave the camera view by pressing the MMB to escape, now we need to press 'Num pad 0' or uncheck 'Camera to View'.
 
 ### Render Visibility
 

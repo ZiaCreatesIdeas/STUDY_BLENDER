@@ -24,7 +24,6 @@ Edit mode is only available when an object is selected.
 
 ``` 
 
-
 | Command |  Blender      | Omniverse |  note        |
 | ------- | -----------   | ------- | -----------|
 |**Object**| _Key_ | |
@@ -42,23 +41,13 @@ Edit mode is only available when an object is selected.
 | Duplicate | Shift + D | Ctrl + D | |
 | Recover Operator Presets| F9 |||
 | Rename File | F2 |||
-| Hide / Unhide | H, Alt + H | ![alt](Images/Hot_Keys/03_Hot-Key_Ctrl-L-Select-Linked.gif)|
-
-![alt](video_Study_Blender/02a_TutorialPart2-Editing-Create-Donut.mp4)
-<style>
-  video {
-    width: 100%;
-  }
-</style>
- 
-<video controls>
-<source src='C:/Users/james/Documents/DOCUMENTATION/STUDY_BLENDER/video_Study_Blender/test.mp4'>
-</video>
-<p></p>
-
-
+| Hide / Unhide | H, Alt H - unhides all | ![alt](./Images/Hot_Keys/Hot-Key_Hide_H_Alt-H.gif) ||
 ||||
-|**Viewport**| **Blender** | **Omniverse**       |
+
+
+| Command |  Blender      | Note |        |
+| ------- | -----------   | ------- | -----------|
+|**Viewport**| **Blender** |      |  |
 | Orbit  | Hold MMB + Drag | Alt + LMB |         |
 | Pan    | Shift + MMB + Drag | Alt + MMB + Drag |  |
 | Zoom   | MMB + Scroll       | MMB + Scroll |   |
@@ -90,8 +79,6 @@ Edit mode is only available when an object is selected.
 ---
 
 
----
-
 | Blender |     Hot Key     |  notes    |
 | ------- | -----------     | -------   |
 |  | Object Mode | Edit Mode |          | 
@@ -102,7 +89,7 @@ Edit mode is only available when an object is selected.
 |**Edit**| Hot Key | notes |
 |---|---|---|
 | Delete | X | blank |
-| Proportional Grab | G + Click [Vertice, Edge, Face ] + MMB - Scroll Up |[Video (Tutorial 2)](DonutTutorial.md#proportional-editing) |
+| Proportional Grab | O + G + Click [Vertice, Edge, Face ] + MMB - Scroll Up |[Video (Tutorial 2)](DonutTutorial.md#proportional-editing) |
 |Scale Along Normals | Alt + S | [Video (Tutorial 2)](DonutTutorial.md#scale-along-normals) |  
 
 ---
@@ -130,7 +117,7 @@ Edit mode is only available when an object is selected.
 | ------ | -------- |
 | <td style="text-align: center">Select **View** </td> | | 
 | ~ (tilde) |  ![Pie Tilde ](Images/Pie_Tilde-View.jpg) |
-| <td style="text-align: center">Select **Mode** </td> | | 
+| <td style="text-align: center">Select **Mode** with **Object Selected**</td> | | 
 |  Ctrl + Tab |  ![Select Mode](Images/Hot_Keys/02-G_Pie-Menu_Select-Mode.jpg)   |      
 
 ---
