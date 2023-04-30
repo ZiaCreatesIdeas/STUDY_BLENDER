@@ -330,9 +330,30 @@ The order of modifiers matters.
 :class: warning
 
 Applying subdivision's is destruction and cannot be undone.  
-Duplicate Objects before applying Subdivisions.
+- Save Unmodified Blender Project.
+- Duplicate Objects into Separate Layer before applying Subdivisions.
 
 ```
+**Perpare by Duplicating Object and Saving File > As Copy**
+
+| Command | Hot Key     | note |
+| ------- | ------------|-----|
+| Select Object | | Object Mode |
+| Duplicate Object | Shift + D | The object (prim) will appear temporarily large. |
+| Drop Selection | RMB | 
+| Save Project | File > Save As Copy |  |
+
+<style>
+  video {
+    width: 100%;
+  }
+</style>
+ 
+<video controls>
+<source src='https://www.dropbox.com/s/jjh84minlo5h1uy/04-F2_Save-Project-Duplicate-Prim.mp4?raw=1'>
+</video>
+<p></p>
+
 
 We apply our Subdivision with a level of 1. 
 
@@ -356,33 +377,6 @@ We apply our Subdivision with a level of 1.
 
 ---
 
-The mesh for the icing will be occluded by the base.  
-So we pull the mesh forward by activating Snap, Proportional Editing and pressing 'G'   
-then drop the selection.
-<p></p>
-
-| Command | Hot Key     | note |
-| ------- | ------------|-----|
-| Activate Snapping | Ctrl + TAB |
-| Activate Proportional Falloff | O | |
-| Move | G |
-| Drop Selection | [Esc, LMB ] | Drop Selection without moving vertexes. |
-| Repeat Where Needed |||
-
-<p></p>
-
-<style>
-  video {
-    width: 100%;
-  }
-</style>
- 
-<video controls>
-<source src='https://www.dropbox.com/s/u7jtarq084wuysd/03-F_Bring-Mesh-Through.mp4?raw=1'>
-</video>
-<p></p>
-
----
 
 ## Part 04
 
@@ -444,6 +438,40 @@ When selecting a vertex, it is possible to select points on the backside.
 Shift + Z for X-Ray, or Z + Swipe Left to see that no other points are selected.
 ```  
 
+[ Select Through Bug in Blender ](https://youtu.be/R1isb0x4zYw?list=PLjEaoINr3zgFX8ZsChQVQsuDSjEqdWMAD&t=557)
+
+---
+
+### Fixing Mesh Occlusion
+
+The mesh for the icing will be occluded by the base.  
+So we pull the mesh forward by activating Snap, Proportional Editing and pressing 'G'   
+then drop the selection.
+<p></p>
+
+| Command | Hot Key     | note |
+| ------- | ------------|-----|
+| Activate Snapping | Ctrl + TAB |
+| Activate Proportional Falloff | O | |
+| Move | G |
+| Drop Selection | [Esc, LMB ] | Drop Selection without moving vertexes. |
+| Repeat Where Needed |||
+
+<p></p>
+
+<style>
+  video {
+    width: 100%;
+  }
+</style>
+ 
+<video controls>
+<source src='https://www.dropbox.com/s/u7jtarq084wuysd/04-E3_Bring-Mesh-Through.mp4?raw=1'>
+</video>
+<p></p>
+
+[Donut Tutorial: Pull Mesh Forward ](https://youtu.be/R1isb0x4zYw?list=PLjEaoINr3zgFX8ZsChQVQsuDSjEqdWMAD&t=512)
+
 ---
 
 ### Camera Repositioning
@@ -475,10 +503,10 @@ Instead, we can easily manipulate the camera from the viewport.
 | Command | Hot Key     | note |
 | ------- | ------------|-----|
 | Side Menu  | N |
-| View | Select |
-| Activate 'Camera to View'  | Checkbox |
-| Set Desired Camera Frame | Pan, Rotate, Zoom | As normal |
-| Deselect 'Camera to View' | | Or we can leave on and press Numpad '0' to exit |
+| Select | View |
+| Checkbox   | Activate 'Camera to View' |
+| Choose the Camera Frame | Pan, Rotate, Zoom | Normal navigation |
+| Deselect 'Camera to View' | | Or leave on and press Numpad '0' to exit |
 
 ![Camera to View](./Images/Donut_Tutorial_Part_04/04-C3_Camera_to_View_ShortVersion.gif)
 
@@ -518,11 +546,11 @@ A layer can be invisible in the viewport but will still appear in the render.
  
  It is critical to switch to **Object** mode to enable the Add > Image > Reference option.
 
-| Swtich to Object Mode |  Add Image    | 
+| Actions |  Hot Key    | 
 | ------- | ------------|
-| Tab | Shift + A |
-|  ![Add Image](Images/Donut_Tutorial_Part_04/04-E2_Object-Mode.jpg)  |  ![Add Image](Images/Donut_Tutorial_Part_04/04-D2_Add-Image.jpg)
- |
+| Switch to Object | [ Tab, Pie: Ctrl + Tab ] |
+| Add Image to Current Viewport | Shift + A |
+|  ![Add Image](Images/Donut_Tutorial_Part_04/04-E2_Object-Mode.jpg)  |  ![Add Image](Images/Donut_Tutorial_Part_04/04-D2_Add-Image.jpg) |
 
 
 <video controls>
@@ -571,3 +599,70 @@ Here we add additional detail by applying the Subdivision surface.
 <center> Place Subdivision Modifier at top of Stack and Apply 
  
 ```
+
+ - Moves Edges and Apply Second Sub Division Modifier.
+
+![Apply Second Subdivision](./Images/Donut_Tutorial_Part_04/04-G2_Apply-Second-Subdivision.gif)
+
+---
+
+### Extrude Edges
+
+Make drips by extruding.
+
+  | Command | Hot Key     | note |
+  | ------- | ------------|-----|
+  |  Extrude |  E | Edit Mode |
+<style>
+  video {
+    width: 100%;
+  }
+</style>
+ 
+<video controls>
+<source src='https://www.dropbox.com/s/3e3xf8llqrwfj6z/04-H_Extrude.mp4?raw=1'>
+</video>
+<p></p>
+
+### Select Edges
+
+Shrink the middle of the donut.
+
+| Command | Hot Key     | note |
+| ------- | ------------|-----|
+| Select Edges | Alt + LMB | Edit Mode [ Vertices, Edges, Faces ] |
+| Contract Edge | Alt + S | Scale Along Normals |
+
+<style>
+  video {
+    width: 100%;
+  }
+</style>
+ 
+<video controls>
+<source src='https://www.dropbox.com/s/1jw0zka24uhvjvm/04-I_Select-Edges.mp4?raw=1'>
+</video>
+<p></p>
+
+### Shrink Wrap Modifier
+
+This is a second way to match the icing to the Donut.
+
+| Command | Hot Key     | note |
+| ------- | ------------|-----|
+| Shrink Wrap  | Modifier | Use Eye Dropper to Pick Target |
+| Move Modifier to top of Stack | |
+
+<style>
+  video {
+    width: 100%;
+  }
+</style>
+ 
+<video controls>
+<source src='https://www.dropbox.com/s/g331i8pdh7j2h2b/04-J_Shrink-Wrap.mp4?raw=1'>
+</video>
+<p></p>
+
+[Blender Tutorial Part 4: Shrinkwrap Modifier.](https://youtu.be/R1isb0x4zYw?t=920)
+

@@ -88,9 +88,11 @@ Edit mode is only available when an object is selected.
 
 |**Edit**| Hot Key | notes |
 |---|---|---|
-| Delete | X | blank |
+| Delete | X |  |
 | Proportional Grab | O + G + Click [Vertice, Edge, Face ] + MMB - Scroll Up |[Video (Tutorial 2)](DonutTutorial.md#proportional-editing) |
 |Scale Along Normals | Alt + S | [Video (Tutorial 2)](DonutTutorial.md#scale-along-normals) |  
+| Extrude | E | ![Extrude](./Images/Hot_Keys/Hot-Key_E-Extrude.gif)|
+| Select Edges | Alt + LMB | [Part 04: Select Edges](DonutTutorial.md#select-edges)|
 
 ---
 
