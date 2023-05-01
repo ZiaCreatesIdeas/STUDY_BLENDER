@@ -834,11 +834,32 @@ Reduce the size of the camera in the viewport.
 
 ---
 
+### Render Engines (EeVee, Cycles)
+
 :::{card} Render Engines
 EeVee is the render engine that ships with Blender. Suitable for games. Cycles is Ray Tracer.
 :::
 
+::::{card} Choose Render Engine
 ![Render Engine](./Images/Donut_Tutorial_Part_06/06-D_Render-Engine.gif)
+::::
+
+:::{card} Increase Shadows
+![EeVee Shadows](./Images/Donut_Tutorial_Part_06/06-G_EeVee-Shadows.gif)
+:::
+
+:::{card} Select Light, Reduce Shadow Bias
+![EeVee Shadows Reduce Bias](./Images/Donut_Tutorial_Part_06/06-G2_EeVee-Shadow-Reduce-Bias.gif)
+:::
+
+:::{card} Add Contact Shadows if it helps
+![EeVee Contact Shadows](./Images/Donut_Tutorial_Part_06/06-G3_EeVee-Shadows-Contact.gif)
+:::
+
+:::{card} Add Ambient Occlusion
+![EeVee Ambient Occlusion](./Images/Donut_Tutorial_Part_06/06-G4_EeVee-Ambient-Occlusion.gif)
+:::
+
 
 ---
 
