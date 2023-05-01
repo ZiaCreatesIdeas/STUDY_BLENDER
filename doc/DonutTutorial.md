@@ -1,6 +1,6 @@
 # Donut Tutorial
 
-## Part 01
+## Part 01: The Basics
 
 [Navigation and Hotkeys](Hotkeys.md)
 
@@ -42,7 +42,7 @@ Material color changes are not interactive and only show when rendered (F12).
 
 % PART TWO--------------------------------------
 
-## Part 02
+## Part 02: Object Editing
 
 **Object Editing**
 
@@ -269,7 +269,7 @@ Also known as "subd's, subds, subsurf, subsurfaces".
 
 % PART 03 ---------------------
 
-## Part 03
+## Part 03: Modifiers
 
 Create a Layer for Icing.
 
@@ -378,7 +378,7 @@ We apply our Subdivision with a level of 1.
 ---
 
 
-## Part 04
+## Part 04: Modeling
 
 ### Snapping
 
@@ -510,7 +510,9 @@ Instead, we can easily manipulate the camera from the viewport.
 
 ![Camera to View](./Images/Donut_Tutorial_Part_04/04-C3_Camera_to_View_ShortVersion.gif)
 
-**Cons**: Typically we can leave the camera view by pressing the MMB to escape, now we need to press 'Num pad 0' or uncheck 'Camera to View'.
+**Cons**: Typically we can leave the camera view by pressing the MMB to escape, now we need to press 'Num pad 0' or uncheck 'Camera to View'.  
+MMB Scroll to Zoom in and out does not allow for using 'Shift' for smooth increments. 
+
 
 ### Render Visibility
 
@@ -666,3 +668,223 @@ This is a second way to match the icing to the Donut.
 
 [Blender Tutorial Part 4: Shrinkwrap Modifier.](https://youtu.be/R1isb0x4zYw?t=920)
 
+---
+
+%% Part 05 -----------------------------------------------------------------------
+
+## Part 05: Sculpting
+
+Adding greater details to our icing.
+
+```{admonition} Warning
+:class: warning
+
+Save scene before applying modifiers.
+
+```
+
+- Apply Modifiers from top down before we begin sculpting.  
+<p></p>
+
+![Apply Modifiers Top Down](./Images/Donut_Tutorial_Part_05/05-A_Apply-Modifiers.gif)
+
+---
+
+### Draw 
+
+Select the Layout Sculpting Mode Tab.
+
+![Layout Sculpt](./Images/Donut_Tutorial_Part_05/05-B_Layout-Sculpt.jpg)
+
+| Command | Hot Key     | note |
+| ------- | ------------|-----|
+| Sculpting | Pie Menu: Ctrl + Tab [ Sculpting ] |
+| Draw, Pull [ Push ] |  X, [ Ctrl + Drag ] ||
+| Grab | G | |
+| Change Radius | F | |
+| Strength of Radius | Shift + F | |
+| Smooth | Shift + S | Hold Shift to activate Smooth anytime |
+| Inflate | I | Ctrl to Deflate |
+| Show All Brushes | Pop Up: Shift + Space Bar | |
+
+<style>
+  video {
+    width: 100%;
+  }
+</style>
+ 
+<video controls>
+<source src='https://www.dropbox.com/s/ist7xjekdq7o8u1/05-C_Draw.mp4?raw=1'>
+</video>
+<p></p>
+
+---
+
+### Inflate > Stroke > Airbrush
+
+:::{card} Inflate > Stroke > Option 'Space'
+- With Airbrush activated, we do not need to move the mouse to inflate the mesh.
+- Observe that the 'Active Tool' option is identical to our 'N' Slide panel.
+- 'Space' is the default setting which applies inflation upon cursor movement.
+:::
+
+<style>
+  video {
+    width: 100%;
+  }
+</style>
+ 
+<video controls>
+<source src='https://www.dropbox.com/s/ewjs12nxw0wl5lr/05-D_Inflate-Air-Brush.mp4?raw=1'>
+</video>
+<p></p>
+
+<p></p>
+
+### Inflate > Stroke > Space
+
+:::{card}
+Inflate using Tool > Inflate > Stroke > Space
+:::
+
+
+<style>
+  video {
+    width: 100%;
+  }
+</style>
+ 
+<video controls>
+<source src='https://www.dropbox.com/s/s6j2py75exflas8/05-E_Inflate-Space.mp4?raw=1'>
+</video>
+<p></p>
+
+---
+
+%% PART 06 -----------------------------------------------------------------
+
+## Part 06: Rendering
+
+| Command | Hot Key     | note |
+| ------- | ------------|-----|
+| Snap Light to Center  |  Alt + G | With light selected. |
+
+
+![Snap to Origin](./Images/Donut_Tutorial_Part_06/06-A_Snap-Light-Origin.gif)
+- "Clear Location"
+
+:::{card} 
+Move light up to 3/4 Position.
+:::
+
+<style>
+  video {
+    width: 100%;
+  }
+</style>
+ 
+<video controls>
+<source src='https://www.dropbox.com/s/x9j5l8n7kthrn12/06-A2_Position-Light.mp4?raw=1'>
+</video>
+<p></p>
+
+:::{card} 
+Reduce Lighting Power to 20.2W
+:::
+
+<style>
+  video {
+    width: 100%;
+  }
+</style>
+ 
+<video controls>
+<source src='https://www.dropbox.com/s/bos43k2pwchy70q/06-B_Reduce-Lighting.mp4?raw=1'>
+</video>
+<p></p>
+
+| Command | Hot Key     | note |
+| ------- | ------------|-----|
+| Switch Rendered Mode |Z | ![Render Mode](./Images/Hot_Keys/Pie-Menu_Z-Render-Mode.gif) |
+
+
+| Rendered | Materials | Solid | Wireframe |
+| ------- | ------------|-----| --- |
+
+![Render Modes](./Images/Donut_Tutorial_Part_06/06-C2_Render-Modes.gif)
+
+---
+
+### Change Viewport Display
+
+::::{Tip}
+Reduce the size of the camera in the viewport.
+:::: 
+
+<style>
+  video {
+    width: 100%;
+  }
+</style>
+ 
+<video controls>
+<source src='https://www.dropbox.com/s/vb9gheq274raihz/06-C_Change-Camera-Display.mp4?raw=1'>
+</video>
+<p></p>
+
+---
+
+:::{card} Render Engines
+EeVee is the render engine that ships with Blender. Suitable for games. Cycles is Ray Tracer.
+:::
+
+![Render Engine](./Images/Donut_Tutorial_Part_06/06-D_Render-Engine.gif)
+
+---
+
+### Add Hardware Acceleration (GPU)
+
+:::{card} Add GPU's
+{root menu }  
+Edit > Preferences > System > Optix.  
+Use CUDA if Optix is n/a.
+:::
+
+<style>
+  video {
+    width: 100%;
+  }
+</style>
+ 
+<video controls>
+<source src='https://www.dropbox.com/s/28bmtnwvc4pv7zf/06-E_Add-GPU.mp4?raw=1'>
+</video>
+<p></p>
+
+---
+
+We will skip directions on EeVee as we aim for high quality renders with Cycles.
+
+[Blender Guru: Part 06, Rendering - Eevee](https://youtu.be/_WRUW_fs1g8?t=616)
+
+----
+
+### Render to Slots
+
+Slots act as Snapshots so we can flip through our renders.
+
+| Command | Hot Key     | note |
+| ------- | ------------|-----|
+| View Slots  |  [ 1, 2, 3, 4, 5.. ] |
+
+
+<style>
+  video {
+    width: 100%;
+  }
+</style>
+ 
+<video controls>
+<source src='https://www.dropbox.com/s/q5tzl3nifxljt5t/06-F_Render-Slots.mp4?raw=1'>
+</video>
+<p></p>

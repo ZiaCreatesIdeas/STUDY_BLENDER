@@ -110,6 +110,8 @@ Edit mode is only available when an object is selected.
 | Edit Mode| |
 | Delete, X  | ![Flat Shade](Images/Donut_Tutorial_Part_02/02-D_RMB-Object-Context-Menu.jpg)  |
 |||
+| Sculpt Mode | |
+| **Shift + Space**| Pop Up Menu of all brushes |
 
 ---
 
@@ -120,7 +122,9 @@ Edit mode is only available when an object is selected.
 | <td style="text-align: center">Select **View** </td> | | 
 | ~ (tilde) |  ![Pie Tilde ](Images/Pie_Tilde-View.jpg) |
 | <td style="text-align: center">Select **Mode** with **Object Selected**</td> | | 
-|  Ctrl + Tab |  ![Select Mode](Images/Hot_Keys/02-G_Pie-Menu_Select-Mode.jpg)   |      
+|  Ctrl + Tab |  ![Select Mode](Images/Hot_Keys/02-G_Pie-Menu_Select-Mode.jpg)   |    
+| <td style="text-align: center">Select Render Mode </td> |
+  
 
 ---
 
