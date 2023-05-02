@@ -1069,17 +1069,21 @@ More samples reduces noise but increases render times.
  | ------- | ------------|-----|
  | Add Node | Shift + A | Equivalent to 'Add Mesh' |
  | Cut Noodle | Ctrl + RMB | ![Noodle Slice](./Images/Hot_Keys/Hot-Key_Ctrl-RMB-Noodle-Slice.gif) |
+ | Pop Remove Node | Ctrl + X | ![Pop Node](./Images/Hot_Keys/04-Pop-Menu-Snap-Incremental.jpg)|
 
+---
+
+```{note} 
+:class: warning
+Noise is one of the most commonly used Material nodes.
+
+```
 
 | Actions | Adjustments     | note |
 | ------- | ------------|-----|
 | Add Noise Node | Connect 'Fac' to Base Color |
 | Adjust Parameters |Set Scale ~ 15.0  | Detail ~ 3.5 |
 
-
-![Add Noise ](./Images/Donut_Tutorial_Part_07/07-C2_Add-Noise.gif)
-
-![Adjust Noise ](./Images/Donut_Tutorial_Part_07/07-D_Adjust-Noise-Texture.gif)
 
 <p></p>
  
@@ -1094,18 +1098,46 @@ More samples reduces noise but increases render times.
 </video>
 <p></p>
 
-```{note} 
-:class: warning
-Noise is one of the most commonly used Material nodes.
+![Add Noise ](./Images/Donut_Tutorial_Part_07/07-C2_Add-Noise.gif)
 
-```
+![Adjust Noise ](./Images/Donut_Tutorial_Part_07/07-D_Adjust-Noise-Texture.gif)
+
 --- 
 
 | Command | Hot Key     | note |
 | ------- | ------------|-----|
 | Add Color Ramp | Adjust Scale of Ramp ||
-| Cut Noodles | Ctrl + RMB |  |
-| Add Node |Shift + A | |
+ 
+<p></p>
+ 
+<style>
+  video {
+    width: 100%;
+  }
+</style>
+ 
+<video controls>
+<source src='https://www.dropbox.com/s/hploisedsrq0mtx/07-D2_Add_Color-Ramp.mp4?raw=1'>
+</video>
+<p></p>
+
+ 
+<p></p>
+ 
+<style>
+  video {
+    width: 100%;
+  }
+</style>
+ 
+<video controls>
+<source src='https://www.dropbox.com/s/q6bt27psyt2dn8v/07-D3_Add_Color_Ramp_Vertical.mp4?raw=1'>
+</video>
+<p></p>
+
+%%![Add Color Ramp](./Images/Donut_Tutorial_Part_07/07-D2_Add-Color-Ramp.gif)
+
+---
 
 ::::{Important} Add Node Wrangler 
 This allow us to isolate nodes and preview them.
@@ -1129,16 +1161,17 @@ This allow us to isolate nodes and preview them.
 | Command | Hot Key     | note |
 | ------- | ------------|-----|
 | Preview Node | Ctrl + Shift + Select | Node Wrangler |
-| Add Node | Shift + A | Identical to Add Mesh in Modeling |
 
  --- 
 
-Add Texture Coordinate.  
-This avoids distortion along the center.
-- From Texture Coordinate Node, Connect 'Object'.
+| Command | Purpose   | note |
+| ------- | ------------|-----|
+| Add Texture Coordinate Node | Avoids Distortion in Center | Use Object Connector |
 
 <p></p>
  
+ Overview (with checker node added )
+
 <style>
   video {
     width: 100%;
@@ -1150,11 +1183,28 @@ This avoids distortion along the center.
 </video>
 <p></p>
 
+Close Up
+ 
+<p></p>
+ 
+<style>
+  video {
+    width: 100%;
+  }
+</style>
+ 
+<video controls>
+<source src='https://www.dropbox.com/s/83flxa5hqf80hu9/07-E_Texture-Coordinate_Vertical.mp4?raw=1'>
+</video>
+<p></p>
+
 ::::{important} 
 
-With our noodles, we typically connect like color to like color, except for gray and yellow, which are interchangable.
+With our noodles, we typically connect like color connectors to other like colors, except for gray and yellow, which can be mixed
 
 ::::
+
+
 
 | Command |      | 
 | ------- | ----------|
