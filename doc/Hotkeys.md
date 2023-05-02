@@ -65,9 +65,11 @@ Edit mode is only available when an object is selected.
 | Orthographic   | Numpad - 5 (on | off) |||
 |||||
 | **Selection** ||||
-| Separate | P [ Selection, Material, Loose Parts ] || |
+| Separate | P [ Selection ] || |
 | Select Linked |  L, Ctrl + L  | ![Select Linked ](Images/Hot_Keys/03_Hot-Key_Ctrl-L-Select-Linked.gif)||
+| Smart Copy | Shift + Drag | ![Smart Copy](./Images/Hot_Keys/Hot-Key_Drag-Select-Materials.gif) |
 |||||
+
 
 
 % If combined with the graph above, the image shrinks by almost half.
@@ -93,6 +95,11 @@ Edit mode is only available when an object is selected.
 |Scale Along Normals | Alt + S | [Video (Tutorial 2)](DonutTutorial.md#scale-along-normals) |  
 | Extrude | E | ![Extrude](./Images/Hot_Keys/Hot-Key_E-Extrude.gif)|
 | Select Edges | Alt + LMB | [Part 04: Select Edges](DonutTutorial.md#select-edges)|
+
+**Sculpting**
+ | Command | Hot Key     | note |
+ | ------- | ------------|-----|
+ | Cut Noodle | Ctrl + RMB | ![Noodle Slice](./Images/Hot_Keys/Hot-Key_Ctrl-RMB-Noodle-Slice.gif) |
 
 ---
 
@@ -167,7 +174,7 @@ Allows the number keys on the top to switch views.
 
 | Modifier | note |
 | -------  | -----|
-| Solidify | Thicken, Offset should be positive |
+| Apply | Ctrl + A while hovering over modifier |
 
 
 

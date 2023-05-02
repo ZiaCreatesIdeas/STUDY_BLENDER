@@ -818,7 +818,8 @@ Reduce Lighting Power to 20.2W
 ### Change Viewport Display
 
 ::::{Tip}
-Reduce the size of the camera in the viewport.
+Reduce the size of the camera in the viewport.  
+Does not work for lights.
 :::: 
 
 <style>
@@ -852,7 +853,7 @@ EeVee is the render engine that ships with Blender. Suitable for games. Cycles i
 ![EeVee Shadows Reduce Bias](./Images/Donut_Tutorial_Part_06/06-G2_EeVee-Shadow-Reduce-Bias.gif)
 :::
 
-:::{card} Add Contact Shadows if it helps
+:::{card} (Optional) Add Contact Shadows, depending on the scene
 ![EeVee Contact Shadows](./Images/Donut_Tutorial_Part_06/06-G3_EeVee-Shadows-Contact.gif)
 :::
 
@@ -860,13 +861,23 @@ EeVee is the render engine that ships with Blender. Suitable for games. Cycles i
 ![EeVee Ambient Occlusion](./Images/Donut_Tutorial_Part_06/06-G4_EeVee-Ambient-Occlusion.gif)
 :::
 
+:::{card} Activate Screen Space Reflections
+![EeVee Ambient Occlusion](./Images/Donut_Tutorial_Part_06/06-G5_EeVee-Screen-Space-Reflections.gif)
+:::
+
+- One can also add 'Bloom' for a bit of glare.
+
+<p></p>
+
+[Blender Guru: Part 06, Rendering - Eevee](https://youtu.be/_WRUW_fs1g8?t=616)
+
 
 ---
 
 ### Add Hardware Acceleration (GPU)
 
 :::{card} Add GPU's
-{root menu }  
+{root file menu }  
 Edit > Preferences > System > Optix.  
 Use CUDA if Optix is n/a.
 :::
@@ -881,12 +892,6 @@ Use CUDA if Optix is n/a.
 <source src='https://www.dropbox.com/s/28bmtnwvc4pv7zf/06-E_Add-GPU.mp4?raw=1'>
 </video>
 <p></p>
-
----
-
-We will skip directions on EeVee as we aim for high quality renders with Cycles.
-
-[Blender Guru: Part 06, Rendering - Eevee](https://youtu.be/_WRUW_fs1g8?t=616)
 
 ----
 
@@ -909,3 +914,242 @@ Slots act as Snapshots so we can flip through our renders.
 <source src='https://www.dropbox.com/s/q5tzl3nifxljt5t/06-F_Render-Slots.mp4?raw=1'>
 </video>
 <p></p>
+
+---
+
+### Materials
+
+| Command | Hot Key     | note |
+| ------- | ------------|-----|
+| Select Object | LMB | Object Mode |
+| Choose Material | Select Icon| |
+| Choose New | Select | Principled BSDF |
+
+<style>
+  video {
+    width: 100%;
+  }
+</style>
+ 
+<video controls>
+<source src='https://www.dropbox.com/s/o391tmlv75unb3m/06-H_Materials.mp4?raw=1'>
+</video>
+<p></p>
+
+:::{card} Add Colors 
+- Add Colors to the Icing.  
+- Adjust the Roughness to 0.150  
+- Add Color to Donut.  
+- Add Color to Plane. 
+:::
+
+<style>
+  video {
+    width: 100%;
+  }
+</style>
+ 
+<video controls>
+<source src='https://www.dropbox.com/s/x5ztwgy335q5r6d/06-H4_Base-Color.mp4?raw=1'>
+</video>
+<p></p>
+
+---
+
+### Subsurface Scattering
+
+:::{card} Subsurface Scattering.
+Subsurface scattering allow objects to have a transluceny or an apparent internal glow to themselves.
+:::
+
+| Command | Value     | note |
+| ------- | ------------|-----|
+|  Subsurface  | 0.100 | |
+| Subsurface Radius | 0.002 | Select all three by dragging down |
+| Subsurface Color | Base Color + 0.8 Saturation  | Drag Base Color to slot |
+
+<style>
+  video {
+    width: 100%;
+  }
+</style>
+ 
+<video controls>
+<source src='https://www.dropbox.com/s/w542hlhlk91ml1x/06-H5_Subsurface.mp4?raw=1'>
+</video>
+<p></p>
+
+| Command | Hot Key     | note: Drag Color Swatch to Target |
+| ------- | ------------|-----|
+| **Smart Copy** | Shift Select | ![Smart Copy](./Images/Hot_Keys/Hot-Key_Drag-Select-Materials.gif) |
+
+---
+
+### Material Preview to EeVee
+
+:::{card} Make Material Setting Equivalent to EeVee.
+By Selecting Scene Lights and Scene World we can access EeVee through 'Z' Pie Menu.
+:::
+
+<p></p>
+
+<style>
+  video {
+    width: 100%;
+  }
+</style>
+ 
+<video controls>
+<source src='https://www.dropbox.com/s/v24kilj1s3949nv/06-H6_EeVee-As-Hotkey.mp4?raw=1'>
+</video>
+<p></p>
+
+---
+
+### Samples and Noise
+
+::::{important} 
+More samples reduces noise but increases render times.
+::::
+
+| Label | Value     | note |
+| ------- | ------------|-----|
+| Samples | Set [ 100, 200 ] | These are recommended samples for this size scene. |
+
+:::{card} Exploring Samples.
+- Sampling is available under render engine 'Cycles' but not 'EeVee'.
+- Viewport and Render have separate Samples and Noise attributes.
+:::
+
+<p></p>
+
+<style>
+  video {
+    width: 100%;
+  }
+</style>
+ 
+<video controls>
+<source src='https://www.dropbox.com/s/fq78e5fpb832uqx/06-I_Samples-Noise.mp4?raw=1'>
+</video>
+<p></p>
+
+```{note} 
+:class: warning
+- Denoise for Render Defaults to CPU, not GPU.
+- We leave the noise threshold at it default value.
+```
+---
+
+## Part 07: Texturing & Shading
+
+[Blender Guru - Texture](https://youtu.be/CmrAv8TSAao)
+
+```{note} Recommendation: 
+:class: warning
+[PureRef](https://www.pureref.com/) is the standard tool for collecting reference photos.
+```
+
+<div class="admonition note" name="html-admonition" style="background: lightgreen; padding: 10px">
+<p class="title"> </p>
+</div>
+
+:::{card} Textures.
+"_Real Donuts are not one solid color._"  
+"_Base color, roughness value and normal map (bump mapping) - 90% of the materials you make will just use those three things." -Blender Guru_
+:::
+
+<div class="admonition note" name="html-admonition" style="background: lightgreen; padding: 10px">
+<p class="title"> </p>
+</div>
+
+### Node Editor 
+
+ | Command | Hot Key     | note |
+ | ------- | ------------|-----|
+ | Cut Noodle | Ctrl + RMB | ![Noodle Slice](./Images/Hot_Keys/Hot-Key_Ctrl-RMB-Noodle-Slice.gif) |
+
+<p></p>
+ 
+<style>
+  video {
+    width: 100%;
+  }
+</style>
+ 
+<video controls>
+<source src='https://www.dropbox.com/s/vmgffzrnc3da1pe/07-A_Node-Editor.mp4?raw=1'>
+</video>
+<p></p>
+
+::::{Important} Add Node Wrangler 
+This allow us to isolate nodes and preview them.
+
+<p></p>
+ 
+<style>
+  video {
+    width: 100%;
+  }
+</style>
+ 
+<video controls>
+<source src='https://www.dropbox.com/s/uffgn5n1yednulv/07-B_Add-On-Node-Wrangler.mp4?raw=1'>
+</video>
+<p></p>
+
+::::
+
+
+| Command | Hot Key     | note |
+| ------- | ------------|-----|
+| Preview Node | Ctrl + Shift + Select | Node Wrangler |
+| Add Node | Shift + A | Identical to Add Mesh in Modeling |
+
+ --- 
+
+Add Texture Coordinate.  
+This avoids distortion along the center.
+- Choose 'Object' connector on the Texture Coordinate Node.
+
+<p></p>
+ 
+<style>
+  video {
+    width: 100%;
+  }
+</style>
+ 
+<video controls>
+<source src='https://www.dropbox.com/s/ca09zdytb8pgxe9/07-C_Texture-Coordinate.mp4?raw=1'>
+</video>
+<p></p>
+
+::::{important} 
+
+With our noodles, we typically connect like color to like color, except for gray and yellow, which are interchangable.
+
+::::
+
+| Command |      | 
+| ------- | ----------|
+| Adjust Scale, Detail  | ![Noise texture](./Images/Donut_Tutorial_Part_07/07-D_Adjust-Noise-Texture.gif)|
+
+<div class="admonition note" name="html-admonition" style="background: lightgreen; padding: 10px">
+<p class="title"> </p>
+
+</div>
+
+---
+
+### Bump Map
+
+```{note}  Normal
+:class: warning
+is what drives the Bump Map.
+```
+::::{important} Bump Strength Should Always be 1.0
+
+
+
+::::
