@@ -1067,7 +1067,19 @@ More samples reduces noise but increases render times.
 
  | Command | Hot Key     | note |
  | ------- | ------------|-----|
+ | Add Node | Shift + A | Equivalent to 'Add Mesh' |
  | Cut Noodle | Ctrl + RMB | ![Noodle Slice](./Images/Hot_Keys/Hot-Key_Ctrl-RMB-Noodle-Slice.gif) |
+
+
+| Actions | Adjustments     | note |
+| ------- | ------------|-----|
+| Add Noise Node | Connect 'Fac' to Base Color |
+| Adjust Parameters |Set Scale ~ 15.0  | Detail ~ 3.5 |
+
+
+![Add Noise ](./Images/Donut_Tutorial_Part_07/07-C2_Add-Noise.gif)
+
+![Adjust Noise ](./Images/Donut_Tutorial_Part_07/07-D_Adjust-Noise-Texture.gif)
 
 <p></p>
  
@@ -1081,6 +1093,19 @@ More samples reduces noise but increases render times.
 <source src='https://www.dropbox.com/s/vmgffzrnc3da1pe/07-A_Node-Editor.mp4?raw=1'>
 </video>
 <p></p>
+
+```{note} 
+:class: warning
+Noise is one of the most commonly used Material nodes.
+
+```
+--- 
+
+| Command | Hot Key     | note |
+| ------- | ------------|-----|
+| Add Color Ramp | Adjust Scale of Ramp ||
+| Cut Noodles | Ctrl + RMB |  |
+| Add Node |Shift + A | |
 
 ::::{Important} Add Node Wrangler 
 This allow us to isolate nodes and preview them.
@@ -1110,7 +1135,7 @@ This allow us to isolate nodes and preview them.
 
 Add Texture Coordinate.  
 This avoids distortion along the center.
-- Choose 'Object' connector on the Texture Coordinate Node.
+- From Texture Coordinate Node, Connect 'Object'.
 
 <p></p>
  
