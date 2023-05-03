@@ -68,6 +68,8 @@ Edit mode is only available when an object is selected.
 | Separate | P [ Selection ] || |
 | Select Linked |  L, Ctrl + L  | ![Select Linked ](Images/Hot_Keys/03_Hot-Key_Ctrl-L-Select-Linked.gif)||
 | Smart Copy | Shift + Drag | ![Smart Copy](./Images/Hot_Keys/Hot-Key_Drag-Select-Materials.gif) |
+| Edge Select Between Cursor and Selection | Ctrl + Select |||
+| Edge Select Loop | Alt + Select  |||
 |||||
 
 

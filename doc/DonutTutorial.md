@@ -1205,10 +1205,11 @@ With our noodles, we typically connect like color connectors to other like color
 ::::
 
 
+| Command |  
+| ------- | 
+| Adjust: Scale, Detail  | 
 
-| Command |      | 
-| ------- | ----------|
-| Adjust Scale, Detail  | ![Noise texture](./Images/Donut_Tutorial_Part_07/07-D_Adjust-Noise-Texture.gif)|
+![Noise texture](./Images/Donut_Tutorial_Part_07/07-D_Adjust-Noise-Texture.gif)
 
 <div class="admonition note" name="html-admonition" style="background: lightgreen; padding: 10px">
 <p class="title"> </p>
@@ -1219,12 +1220,77 @@ With our noodles, we typically connect like color connectors to other like color
 
 ### Bump Map
 
-```{note}  Normal
-:class: warning
-is what drives the Bump Map.
-```
+| Command |  
+| ------- | 
+| Add Vector > Normal Map  | 
+
+ 
+<p></p>
+ 
+<style>
+  video {
+    width: 100%;
+  }
+</style>
+ 
+<video controls>
+<source src='https://www.dropbox.com/s/5ttm3f5xh6a8g3l/07-F_Add-Normal.mp4?raw=1'>
+</video>
+<p> </p
+<p></p>
+
+---
+
+Steps: 
+
+| Command |  |
+| ------- | ---- |
+|Shift + A | Add Vector > Normal Map  | 
+ 
+<p></p>
+ 
+<style>
+  video {
+    width: 100%;
+  }
+</style>
+ 
+<video controls>
+<source src='https://www.dropbox.com/s/wuu2devi5wroe9l/07-F_Add-Normal_Vertical.mp4?raw=1'>
+</video>
+<p></p>
+
+
+| Action | Value |
+| ------- |------ |
+| Adjust Distance | 1.00 -> 0.002 |
+
+![Adjust Distance](./Images/Donut_Tutorial_Part_07/07-F2_Adjust-Distance.gif)
+
 ::::{important} Bump Strength Should Always be 1.0
-
-
-
+- Distance is given in Blender units, or 1 meter.
+- Be sure to connect Fac -> Height.
 ::::
+
+---
+
+## Part 08: Texture Painting
+
+| Action |  |
+| ------- |------ |
+| Shift + A  | Texture > Image Texture |
+
+ 
+<p></p>
+ 
+<style>
+  video {
+    width: 150%;
+  }
+</style>
+ 
+<video controls>
+<source src='https://www.dropbox.com/s/um3jqvt2hkj1bpd/08-A_Add-Image-Texture.mp4?raw=1'>
+</video>
+<p></p>
+<p></p>
