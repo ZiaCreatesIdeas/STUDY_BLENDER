@@ -1069,7 +1069,7 @@ More samples reduces noise but increases render times.
  | ------- | ------------|-----|
  | Add Node | Shift + A | Equivalent to 'Add Mesh' |
  | Cut Noodle | Ctrl + RMB | ![Noodle Slice](./Images/Hot_Keys/Hot-Key_Ctrl-RMB-Noodle-Slice.gif) |
- | Pop Remove Node | Ctrl + X | ![Pop Node](./Images/Hot_Keys/04-Pop-Menu-Snap-Incremental.jpg)|
+ | Lift Node | Ctrl + X | ![Pop Node](./Images/Hot_Keys/Hot-Key_Node-Pop-Ctrl-X.gif)|
 
 ---
 
