@@ -1281,16 +1281,33 @@ Steps:
 | Shift + A  | Texture > Image Texture |
 
  
+ 
 <p></p>
  
 <style>
   video {
-    width: 150%;
+    width: 100%;
   }
 </style>
  
 <video controls>
-<source src='https://www.dropbox.com/s/um3jqvt2hkj1bpd/08-A_Add-Image-Texture.mp4?raw=1'>
+<source src='https://www.dropbox.com/s/20e6niiksc3r8ag/08-A_Add-Image-Texture.mp4?raw=1'>
+</video>
+<p></p>
+<p></p>
+
+Add Nodes using Search.
+ 
+<p></p>
+ 
+<style>
+  video {
+    width: 100%;
+  }
+</style>
+ 
+<video controls>
+<source src='https://www.dropbox.com/s/jcb7vxisex6b401/08-A2_Add-Node-Search.mp4?raw=1'>
 </video>
 <p></p>
 <p></p>
