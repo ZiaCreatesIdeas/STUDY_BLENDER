@@ -167,7 +167,7 @@ Allows the number keys on the top to switch views.
 </style>
  
 <video controls>
-<source src='https://www.dropbox.com/s/w5e5fbbkqu7v63d/Hot-Key_Split-Screen.mp4?raw=1'>
+<source src='https://www.dropbox.com/s/jnqp9p7uxdn99hs/08-E_Add-Mix-Node_Vertical.mp4?raw=1'>
 </video>
 
 ---
@@ -178,6 +178,10 @@ Allows the number keys on the top to switch views.
 | -------  | -----|
 | Apply | Ctrl + A while hovering over modifier |
 
+### Texture Paint
 
+| Command | Combination     | note |
+| ------- | ------------|-----|
+| Mute or Disable a Node without Deleting It | M | ![Mute](./Images/Hot_Keys/Hot-Key_M-Mute-Node.gif) |
 
 ---

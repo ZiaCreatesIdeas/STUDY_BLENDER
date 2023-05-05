@@ -1454,6 +1454,10 @@ Optional: Rearrange screen for vertical friendly viewing.
 
 ---
 
+::::{important} Draw Icon
+Be sure to click on the Draw / Paint icon (top left) in order to bring up the paint swatches.
+::::
+
 ```{warning} 
 :class: warning
 
@@ -1499,7 +1503,64 @@ Save *Image of Texture file.
 
 ```{note} 
 :class: warning
-Overlay brightens and darkens the texture underneath it (increased contrast)
+- Overlay brightens and darkens the texture underneath it (increased contrast)
+- Multiply uses the dark in the layer below.
+- Add is the opposite of multiply.
 ```
 
+| Action | note |
+| ------- |------ |
+| Delete Color Ramp | We will no longer need this node. |
+
+ 
+<p></p>
+ 
+<style>
+  video {
+    width: 100%;
+  }
+</style>
+ 
+<video controls>
+<source src='https://www.dropbox.com/s/wiaoas2lvad30wu/08-D3_Delete-Color-Ramp.mp4?raw=1'>
+</video>
+<p></p>
+<p></p>
+
+| Action | Value |
+| ------- |------ |
+| Add Mix Color Node | User Defined Blue and Red  |
+
+ 
+<p></p>
+ 
+<style>
+  video {
+    width: 100%;
+  }
+</style>
+ 
+<video controls>
+<source src='https://www.dropbox.com/s/vgvjg4uzsdp35fg/08-E_Add-Mix-Node.mp4?raw=1'>
+</video>
+<p></p>
+<p></p>
+
+
+:::{card} 
+ Vertical Mode:
+<p></p>
+ 
+<style>
+  video {
+    width: 100%;
+  }
+</style>
+ 
+<video controls>
+<source src='https://www.dropbox.com/s/jnqp9p7uxdn99hs/08-E_Add-Mix-Node_Vertical.mp4?dl=0'>
+</video>
+<p></p>
+<p></p>
+:::
 
