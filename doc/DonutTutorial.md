@@ -1418,7 +1418,7 @@ Optional: Rearrange screen for vertical friendly viewing.
 
 | Action | 
 | ------- |
-| Paint on Texture in 2d and 3d |
+| Paint on Texture Image in 2d and 3d views. |
 
  
 <p></p>
@@ -1452,11 +1452,13 @@ Optional: Rearrange screen for vertical friendly viewing.
 <p></p>
 :::
 
+---
+
 ```{warning} 
 :class: warning
 
-The newly created texture file will disappear if it is not saved.
-
+- Save the *image Texture File or it will be **Erased**.
+- On exit, Blender will offer a chance to save the file.
 ```
 | Action | 
 | ------- |
@@ -1478,6 +1480,7 @@ The newly created texture file will disappear if it is not saved.
 
 
 :::{card} 
+Save *Image of Texture file.
 <p></p>
  
 <style>
@@ -1493,3 +1496,10 @@ The newly created texture file will disappear if it is not saved.
 <p></p>
 
 :::
+
+```{note} 
+:class: warning
+Overlay brightens and darkens the texture underneath it (increased contrast)
+```
+
+
