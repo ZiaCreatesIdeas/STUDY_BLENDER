@@ -1296,8 +1296,14 @@ Steps:
 <p></p>
 <p></p>
 
-Add Nodes using Search.
+```{note} 
+:class: warning
+The Donut will turn purple or black to indicate that no texture has been assigned yet.
+```
  
+:::{card} Use Node Search:
+We can add Image Texture quickly by using the Search function.
+
 <p></p>
  
 <style>
@@ -1311,3 +1317,179 @@ Add Nodes using Search.
 </video>
 <p></p>
 <p></p>
+
+:::
+
+| Action | 
+| ------- |
+| Add Texture | 
+
+<p></p>
+ 
+<style>
+  video {
+    width: 100%;
+  }
+</style>
+ 
+<video controls>
+<source src='https://www.dropbox.com/s/qajh89dkigfybnk/08-B_Add_Texture.mp4?dl=0'>
+</video>
+<p></p>
+<p></p>
+
+:::{card} Add Texture to Paint On:
+  
+<p></p>
+ 
+<style>
+  video {
+    width: 100%;
+  }
+</style>
+ 
+<video controls>
+<source src='https://www.dropbox.com/s/9y9azpumbw9ibpu/08-B_Add_Texture_Vertical.mp4?dl=0'>
+</video>
+<p></p>
+<p></p>
+:::
+
+| Action |  | 
+| ------- |------ |
+| Switch Tabs > Texture Paint |
+![Texture Paint](./Images/Donut_Tutorial_Part_08/08-B_Switch-Texture-Paint.gif)
+
+
+| Action | Value |
+| ------- |------ |
+| Change Object > Edit Mode | Allows Selections to be Made  |
+| Select Paint Mode | Selections are displayed in Image Editor Window |
+
+ 
+<p></p>
+ 
+<style>
+  video {
+    width: 100%;
+  }
+</style>
+ 
+<video controls>
+<source src='https://www.dropbox.com/s/y70u0w5sh6n99g1/08-C_Texture-Selections.mp4?raw=1'>
+</video>
+<p></p>
+<p></p>
+
+Optional: Rearrange screen for vertical friendly viewing.
+
+ 
+<p></p>
+ 
+<style>
+  video {
+    width: 100%;
+  }
+</style>
+ 
+<video controls>
+<source src='https://www.dropbox.com/s/iqctqdh9rgq9q0x/08-B2_Screen-Swap.mp4?raw=1'>
+</video>
+<p></p>
+<p></p>
+
+
+:::{card} 2D Mapping of 3D Surface:
+ 
+<p></p>
+ 
+<style>
+  video {
+    width: 100%;
+  }
+</style>
+ 
+<video controls>
+<source src='https://www.dropbox.com/s/d5trge08abnbme0/08-C_Texture-Selections_Vertical.mp4?raw=1'>
+</video>
+<p></p>
+<p></p>
+:::
+
+| Action | 
+| ------- |
+| Paint on Texture in 2d and 3d |
+
+ 
+<p></p>
+ 
+<style>
+  video {
+    width: 100%;
+  }
+</style>
+ 
+<video controls>
+<source src='https://www.dropbox.com/s/c276ipoxiatja6z/08-D_Paint-On-Texture.mp4?raw=1'>
+</video>
+<p></p>
+<p></p>
+
+:::{card} Paint on Texture
+ Breakdown:
+<p></p>
+ 
+<style>
+  video {
+    width: 100%;
+  }
+</style>
+ 
+<video controls>
+<source src='https://www.dropbox.com/s/ade7mgr1by1xcsq/08-D_Paint-On-Texture_Vertical.mp4?raw=1'>
+</video>
+<p></p>
+<p></p>
+:::
+
+```{warning} 
+:class: warning
+
+The newly created texture file will disappear if it is not saved.
+
+```
+| Action | 
+| ------- |
+| Save Texture (*image) file: |  
+  
+ <p></p>
+  
+ <style>
+   video {
+     width: 100%;
+   }
+ </style>
+  
+ <video controls>
+ <source src='https://www.dropbox.com/s/q7w7kwuzb0mqxlc/08-D2_Save-Texure.mp4?raw=1'>
+ </video>
+ <p></p>
+ <p></p>
+
+
+:::{card} 
+<p></p>
+ 
+<style>
+  video {
+    width: 100%;
+  }
+</style>
+ 
+<video controls>
+<source src='https://www.dropbox.com/s/ds0tsc50aahy177/08-D2_Save-Texure_Vertical.mp4?raw=1'>
+</video>
+<p></p>
+<p></p>
+
+:::
