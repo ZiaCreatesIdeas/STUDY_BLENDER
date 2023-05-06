@@ -1333,7 +1333,7 @@ We can add Image Texture quickly by using the Search function.
 </style>
  
 <video controls>
-<source src='https://www.dropbox.com/s/qajh89dkigfybnk/08-B_Add_Texture.mp4?dl=0'>
+<source src='https://www.dropbox.com/s/qajh89dkigfybnk/08-B_Add_Texture.mp4?raw=0'>
 </video>
 <p></p>
 <p></p>
@@ -1349,7 +1349,7 @@ We can add Image Texture quickly by using the Search function.
 </style>
  
 <video controls>
-<source src='https://www.dropbox.com/s/9y9azpumbw9ibpu/08-B_Add_Texture_Vertical.mp4?dl=0'>
+<source src='https://www.dropbox.com/s/9y9azpumbw9ibpu/08-B_Add_Texture_Vertical.mp4?raw=0'>
 </video>
 <p></p>
 <p></p>
@@ -1527,11 +1527,15 @@ Save *Image of Texture file.
 <p></p>
 <p></p>
 
+```{warning} 
+:class: warning
+Search will not find 'Mix Color' Node.
+```
+
 | Action | Value |
 | ------- |------ |
 | Add Mix Color Node | User Defined Blue and Red  |
 
- 
 <p></p>
  
 <style>
@@ -1558,9 +1562,58 @@ Save *Image of Texture file.
 </style>
  
 <video controls>
-<source src='https://www.dropbox.com/s/jnqp9p7uxdn99hs/08-E_Add-Mix-Node_Vertical.mp4?dl=0'>
+<source src='https://www.dropbox.com/s/jnqp9p7uxdn99hs/08-E_Add-Mix-Node_Vertical.mp4?raw=1'>
 </video>
 <p></p>
 <p></p>
 :::
 
+:::{card} Connect and Adjust **Mix Color** Node
+
+| Action | Value |
+| ------- |------ |
+| Connect A | From Donut Base Color |
+| Connect B | From Fac (Factor) of Noise |
+| Switch **Mix** | **Overlay**|
+| Adjust Noise Texture | Scale: ~7.0 or to one's liking |
+| Adjust Mix Color | Fac: ~ 0.67 or to one's liking |
+
+:::
+
+ 
+<p></p>
+ 
+<style>
+  video {
+    width: 100%;
+  }
+</style>
+ 
+<video controls>
+<source src='https://www.dropbox.com/s/x5h43wvj5n7a6rs/08-F_Connect-Mix-Node.mp4?raw=1'>
+</video>
+<p></p>
+<p></p>
+
+:::{card} Vertical - Breakdown
+ 
+<p></p>
+ 
+<style>
+  video {
+    width: 100%;
+  }
+</style>
+ 
+<video controls>
+<source src='https://www.dropbox.com/s/1s8v2v8p8hy4u6w/08-F_Connect-Mix-Node_Vertical.mp4?raw=1'>
+</video>
+<p></p>
+<p></p>
+:::
+
+---
+
+## Part 09: Geometry Nodes
+
+[Blender Guru: Part 09](https://youtu.be/4WAxMI1QJMQ)
