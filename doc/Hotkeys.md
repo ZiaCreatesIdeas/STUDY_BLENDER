@@ -172,6 +172,27 @@ Allows the number keys on the top to switch views.
 
 ---
 
+| Command | Combination     | note |
+| ------- | ------------|-----|
+| Split Screens with Cross Hairs | From a Corner, Drag a Window onto itself to split | 
+| Join Screens with Cross Hairs  | Drag a Corner onto Adjacent window to merge |
+ 
+<p></p>
+ 
+<style>
+  video {
+    width: 100%;
+  }
+</style>
+ 
+<video controls>
+<source src='https://www.dropbox.com/s/6ixwfo6h1n10l6k/Window-Splitting.mp4?raw=1'>
+</video>
+<p></p>
+<p></p>
+
+---
+
 ### Modifiers
 
 | Modifier | note |

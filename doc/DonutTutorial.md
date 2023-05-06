@@ -1617,3 +1617,244 @@ Search will not find 'Mix Color' Node.
 ## Part 09: Geometry Nodes
 
 [Blender Guru: Part 09](https://youtu.be/4WAxMI1QJMQ)
+
+| Command | Action |
+| ------- |------ |
+| Review our Changes from Part 08 | M (mute node) |
+| Turn on Plane, Lights, Icing | Click on Eyeball in Outliner, Select Icing |
+| Create a New Tab Geometry Node Tab | + Menu > Geometry Node |
+| Close Spreadsheet Window | RMB Over Panel > Join / Cross Hair from Left Corner |
+| Create First Geometry Node | Click '+ New' |
+| Toggle Visibility | Select and Deselect Geometry Node in Modifier Stack |
+| Make Visibility Independant of Selection in Stack | Select Pin |
+
+ <p></p>
+ 
+<style>
+  video {
+    width: 100%;
+  }
+</style>
+ 
+<video controls>
+<source src='https://www.dropbox.com/s/zf286s3uvamhx15/09-A_Add-Geometry-Node.mp4?raw=1'>
+</video>
+<p></p>
+<p></p>
+
+:::{card} Vertical View
+ 
+<p></p>
+ 
+<style>
+  video {
+    width: 100%;
+  }
+</style>
+ 
+<video controls>
+<source src='https://www.dropbox.com/s/skwun3dsf61jemd/09-A_Add-Geometry-Node_Vertical.mp4?raw=1'>
+</video>
+<p></p>
+<p></p>
+:::
+
+---
+
+| Command | Combination     | note |
+| ------- | ------------|-----|
+| Split Screens with Cross Hairs | From a Corner, Drag a Window onto itself to split | 
+| Join Screens with Cross Hairs  | Drag a Corner onto Adjacent window to merge |
+ 
+<p></p>
+ 
+<style>
+  video {
+    width: 100%;
+  }
+</style>
+ 
+<video controls>
+<source src='https://www.dropbox.com/s/6ixwfo6h1n10l6k/Window-Splitting.mp4?raw=1'>
+</video>
+<p></p>
+<p></p>
+
+---
+
+| Command | Action | Value |
+| ------- |------ |----|
+| Set Position | Shift + A, Search > Set Position | Shif + Drag on Z |
+
+<p></p>
+ 
+<style>
+  video {
+    width: 100%;
+  }
+</style>
+ 
+<video controls>
+<source src='https://www.dropbox.com/s/exxob67q6t28021/09-B_Add-Set-Position.mp4?raw=1'>
+</video>
+<p></p>
+<p></p>
+
+
+:::{card} Vertical View:
+ 
+<p></p>
+ 
+<style>
+  video {
+    width: 100%;
+  }
+</style>
+ 
+<video controls>
+<source src='https://www.dropbox.com/s/60yawi1s4y4p3e3/09-B_Add-Set-Position_Vertical.mp4?raw=1'>
+</video>
+<p></p>
+<p></p>
+
+:::
+
+| Command | Action |Value |
+| ------- |------ |-----|
+| Add Point to Faces | Shift + A > Point > Point on Faces  | Set to 500 |
+||| Set to Zero |
+
+ 
+<p></p>
+ 
+<style>
+  video {
+    width: 100%;
+  }
+</style>
+ 
+<video controls>
+<source src='https://www.dropbox.com/s/rzkwiaegq3uqp6n/09-C_Add-Point-On-Faces.mp4?raw=1'>
+</video>
+<p></p>
+<p></p>
+
+:::{card} Vertical View:
+ 
+<p></p>
+ 
+<style>
+  video {
+    width: 100%;
+  }
+</style>
+ 
+<video controls>
+<source src='https://www.dropbox.com/s/bgvtmqgm7latu67/09-C_Add-Point-On-Faces_Vertical.mp4?raw=1'>
+</video>
+<p></p>
+<p></p>
+
+:::
+```{note} Observe:
+:class: warning
+- The icing layer has been turned into points. 
+- To preserve the layer and also have points we need a 'Join Geometry Node.'
+```
+
+| Command | Action |Value |
+| ------- |------ |-----|
+| Preserve Icing Layer | Add (Shift + A) > Geometry > | Join Geometry  |
+
+ 
+<p></p>
+ 
+<style>
+  video {
+    width: 100%;
+  }
+</style>
+ 
+<video controls>
+<source src='https://www.dropbox.com/s/dzrht1b6f7s4wrn/09-D_Join-Geometry.mp4?raw=1'>
+</video>
+<p></p>
+<p></p>
+
+:::{card} Vertical Breakdown of Set Position:
+ 
+<p></p>
+ 
+<style>
+  video {
+    width: 100%;
+  }
+</style>
+ 
+<video controls>
+<source src='https://www.dropbox.com/s/6zbbq5olkg7k4l9/09-D_Join-Geometry_Vertical.mp4?raw=1'>
+</video>
+<p></p>
+
+<p></p>
+
+:::
+
+---
+
+- **Create a Single Sprinkle to Reference.**
+
+| Command | Action |Value |
+| ------- |------ |-----|
+| Add Cylinder | Add > Mesh > Cylinder  | 
+| Reduce Vertices | Vertices | 32 to 8 |
+| Scale Down | Properties or f9 | Radius: 0.001 m |
+| Move to Side | G (Grab tool) | Numpad Keys 7, 1 for Top and Front |
+| Scale Z | S + Z ||
+| Scale Overall | S ||
+
+<p></p>
+
+ 
+<p></p>
+ 
+<style>
+  video {
+    width: 100%;
+  }
+</style>
+ 
+<video controls>
+<source src='https://www.dropbox.com/s/ukqkssmbtj0y0w8/09-F_Add-Sprinkle.mp4?raw=1'>
+</video>
+<p></p>
+<p></p>
+
+:::{card} 
+ 
+<p></p>
+ 
+<style>
+  video {
+    width: 100%;
+  }
+</style>
+ 
+<video controls>
+<source src='https://www.dropbox.com/s/0eagletskat3qyi/09-F_Add-Sprinkle_Vertical.mp4?raw=1'>
+</video>
+<p></p>
+<p></p>
+:::
+
+---
+
+| Command |   
+| ------- |  
+| Shift + A > Instances >  Instances on Points  |
+| Drag Cylinder from Outliner to Graph |
+| Connect Object Info: Geometry -> Instance |
+| Apply Scale of Cylinder,  Ctrl + A Scale |
+| Increase Density |
+
+
