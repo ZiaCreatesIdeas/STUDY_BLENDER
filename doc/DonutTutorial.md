@@ -1670,10 +1670,14 @@ Search will not find 'Mix Color' Node.
 
 ---
 
+:::{card} Practice Splitting Screens
+
 | Command | Combination     | note |
 | ------- | ------------|-----|
 | Split Screens with Cross Hairs | From a Corner, Drag a Window onto itself to split | 
 | Join Screens with Cross Hairs  | Drag a Corner onto Adjacent window to merge |
+
+:::
  
 <p></p>
  
@@ -1691,9 +1695,12 @@ Search will not find 'Mix Color' Node.
 
 ---
 
+:::{card} Create First Geometry Node and Adjust Height of Icing.
 | Command | Action | Value |
 | ------- |------ |----|
-| Set Position | Shift + A, Search > Set Position | Shif + Drag on Z |
+| Set Position Node| Shift + A, Search > 'Set Position' | 
+| Manipulate Z Position |Shift + Drag on Z |
+:::
 
 <p></p>
  
@@ -1817,7 +1824,7 @@ Search will not find 'Mix Color' Node.
 | ------- |------ |-----|
 | Add Cylinder | Add > Mesh > Cylinder  | 
 | Reduce Vertices | Vertices | 32 to 8 |
-| Scale Down | Properties or f9 | Radius: 0.001 m |
+| Scale Down | Properties or F9 | Radius: 0.001 m \| Depth: 0.001 |
 | Move to Side | G (Grab tool) | Numpad Keys 7, 1 for Top and Front |
 | Scale Z | S + Z ||
 | Scale Overall | S ||
@@ -1857,6 +1864,9 @@ Search will not find 'Mix Color' Node.
 
 ---
 
+:::{card} Attach a Single Sparkle to Instances.
+- From one, create many.
+
 | Command |   
 | ------- |  
 | Shift + A > Instances >  Instances on Points  |
@@ -1864,12 +1874,101 @@ Search will not find 'Mix Color' Node.
 | Connect Object Info: Geometry -> Instance |
 | Apply Scale of Cylinder,  Ctrl + A Scale |
 | Increase Density |
+:::
 
+ 
+<p></p>
+ Wide Screen:
+<style>
+  video {
+    width: 100%;
+  }
+</style>
+ 
+<video controls>
+<source src='https://www.dropbox.com/s/py8ds3pjrq0pr9o/09-G_Instance-Points.mp4?raw=1'>
+</video>
+<p></p>
+<p></p>
+
+<p></p>
+
+<style>
+  video {
+    width: 100%;
+  }
+</style>
+ 
+<video controls>
+<source src='https://www.dropbox.com/s/i44t6oqquocpiq2/09-G_Instance-Points_Vertical.mp4?raw=1'>
+</video>
+<p></p>
+<p></p>
+
+---
+
+:::{card} Rotate Cylinder 90 Degrees.
 
 | Command | Action |  |
 | ------- |------ |-----|
 | Rotate Cylinder, 90  | R + X + Numpad (45)  |  |
-| Apply Rotation | Ctrl + A |  |
+| Apply Rotation | Ctrl + A | Select 'Rotation' |
+
+:::
+
+<p></p>
+ Widescreen
+<style>
+  video {
+    width: 100%;
+  }
+</style>
+ 
+<video controls>
+<source src='https://www.dropbox.com/s/krt2vtevqrhvl5r/09-H_Rotate-Apply.mp4?raw=1'>
+</video>
+<p></p>
+<p></p>
+ 
+ 
+<p></p>
+ 
+<style>
+  video {
+    width: 100%;
+  }
+</style>
+ 
+<video controls>
+<source src='https://www.dropbox.com/s/zp05mdvwcm5gi71/09-I_Add-Euler_Vertical.mp4?raw=1'>
+</video>
+<p></p>
+<p></p>
+
+---
+
+:::{card} Add Euler Node.
+
+| Command | Action |  |
+| ------- |------ |-----|
+| Connect Rotation -> Rotation  | Drag Noodles | |
+| Add Rotation Node | Add > Utility > Rotate Euler  | Set to Local  |
+
+:::
+ 
+<p></p>
+ Widescreen
+<style>
+  video {
+    width: 100%;
+  }
+</style>
+ 
+<video controls>
+<source src='https://www.dropbox.com/s/whfitl6weom1oeb/09-I_Add-Euler.mp4?raw=1'>
+</video>
+<p></p>
+<p></p>
 
  
 <p></p>
@@ -1881,41 +1980,85 @@ Search will not find 'Mix Color' Node.
 </style>
  
 <video controls>
-<source src='https://1drv.ms/v/s!ArHyfaiGO0FjwTNTNy5CQSAE0ipb?e=UsBLn1'>
+<source src='https://www.dropbox.com/s/zp05mdvwcm5gi71/09-I_Add-Euler_Vertical.mp4?raw=1'>
 </video>
 <p></p>
 <p></p>
 
-:::{card} 
-
-:::
-
-| Command | Action |  |
-| ------- |------ |-----|
-| Connect Rotation -> Rotation  | Drag Noodles | |
-| Add Rotation Node | Add > Utility > Rotate Euler  | Set to Local  |
+:::{card} Random Value Node
 
 | Command | Action | |
 | ------- |------ |-----|
 | Add Random Values to Rotation | Search 'Random Values' | Vector: Z > 6.4 radians |
 | Not X, Not Y | Set X, Y | 0.0 |
 
+:::
+
+ 
+<p></p>
+ 
+<style>
+  video {
+    width: 100%;
+  }
+</style>
+ 
+<video controls>
+<source src='https://www.dropbox.com/s/d756kf0spg5bjrp/09-I2__Add-Random.mp4?raw=1'>
+</video>
+<p></p>
+<p></p>
+
+ 
+<p></p>
+ 
+<style>
+  video {
+    width: 100%;
+  }
+</style>
+ 
+<video controls>
+<source src='https://www.dropbox.com/s/pscd3k4b7fxhzex/09-I2__Add-Random_Vertical.mp4?raw=1'>
+</video>
+<p></p>
+<p></p>
+
+
 :::{card} Notes:
+
 - Random Value are given in radians (pi = 3.14 = 180 degrees)
 - Tau is equal to 2 pi. Both pi and tau can be entered as values.
 - To effect only values in the the Z, we use Random > Vectors.
+
 :::
 
- :::{card} 
+<div class="admonition note" name="html-admonition" style="background: lightgreen; padding: 10px">
+<p class="title"> </p>
+
+</div>
  
- :::
+ 
+
 
 ---
 
-## Weight Paint
+### Weight Paint
 
-- We don't want sprinkles on the small portions of the icing.
-- We don't want sprinkles on the bottom of the icing.
+[Blender Guru: Donut - Weight Paint](https://www.youtube.com/watch?v=4WAxMI1QJMQ&list=PLjEaoINr3zgFX8ZsChQVQsuDSjEqdWMAD&index=9&t=1188s)
 
+:::{card} Control where Sparkles can Appear.
+
+- Limit sprinkles on some portions of the icing.
+- Remove sprinkles on the bottom of the icing.
+
+:::
+
+---
+
+
+# Part 10
+
+Rest assured
 
 
