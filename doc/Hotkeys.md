@@ -35,6 +35,8 @@ Edit mode is only available when an object is selected.
 | Move + Axis Snap  | Click + Hold + MMB |  |    |
 |Rotate   | R       |                    |       |
 |         | R + [X, Y, Z]| E             |       |
+|         | R + Keypad_Num (Degrees)     | ![Degress](./Images/Hot_Keys/Hot-Key_R-Numpad-Degrees.gif ) |
+| Rotate + Snap | R+ Ctrl + Drag |   |
 | Scale   | S       | R                  |       |
 |         | S + [X, Y, Z]|               |       |
 | Clear Location | Alt + G| | |

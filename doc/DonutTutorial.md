@@ -1,5 +1,14 @@
 # Donut Tutorial
 
+Videos for this tutorial are currently hosted on Dropbox which  
+limits their data and may result in a video not available error.
+
+:::{card} 
+![Dropbox Error](./Images/Dropbox-Error/LinkOverload.jpg)
+:::
+
+
+
 ## Part 01: The Basics
 
 [Navigation and Hotkeys](Hotkeys.md)
@@ -1815,7 +1824,6 @@ Search will not find 'Mix Color' Node.
 
 <p></p>
 
- 
 <p></p>
  
 <style>
@@ -1856,5 +1864,58 @@ Search will not find 'Mix Color' Node.
 | Connect Object Info: Geometry -> Instance |
 | Apply Scale of Cylinder,  Ctrl + A Scale |
 | Increase Density |
+
+
+| Command | Action |  |
+| ------- |------ |-----|
+| Rotate Cylinder, 90  | R + X + Numpad (45)  |  |
+| Apply Rotation | Ctrl + A |  |
+
+ 
+<p></p>
+ 
+<style>
+  video {
+    width: 100%;
+  }
+</style>
+ 
+<video controls>
+<source src=''>
+</video>
+<p></p>
+<p></p>
+
+:::{card} 
+
+:::
+
+| Command | Action |  |
+| ------- |------ |-----|
+| Connect Rotation -> Rotation  | Drag Noodles | |
+| Add Rotation Node | Add > Utility > Rotate Euler  | Set to Local  |
+
+| Command | Action | |
+| ------- |------ |-----|
+| Add Random Values to Rotation | Search 'Random Values' | Vector: Z > 6.4 radians |
+| Not X, Not Y | Set X, Y | 0.0 |
+
+:::{card} Notes:
+- Random Value are given in radians (pi = 3.14 = 180 degrees)
+- Tau is equal to 2 pi. Both pi and tau can be entered as values.
+- To effect only values in the the Z, we use Random > Vectors.
+:::
+
+ :::{card} 
+ 
+ :::
+
+---
+
+## Weight Paint
+
+- We don't want sprinkles on the small portions of the icing.
+- We don't want sprinkles on the bottom of the icing.
+
 
 
