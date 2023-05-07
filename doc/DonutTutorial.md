@@ -2056,6 +2056,103 @@ Search will not find 'Mix Color' Node.
 
 ---
 
+#### Prepare for Weight Painting
+
+:::{card} Steps:
+
+| Command | Action |Value |
+| ------- |------ |-----|
+| Look at Underneath of Icing | H - Hide Donut Base and Plane  |  |
+| Select Icing | Click on Icing | |
+| Switch to Weight Paint Mode | Ctrl + Tab | **Weight Paint** |
+| Make Tool Bar Visible | View > Toolbar | |
+| Make Tool Settings Visible | View > Tool Settings | |
+
+:::
+ 
+<p></p>
+ Widescreen
+<style>
+  video {
+    width: 100%;
+  }
+</style>
+ 
+<video controls>
+<source src='https://www.dropbox.com/s/8zyplyd9qo73333/09-J_Prep-Weight-Paint.mp4?raw=1'>
+</video>
+<p></p>
+<p></p>
+
+ 
+<p></p>
+ 
+<style>
+  video {
+    width: 100%;
+  }
+</style>
+ 
+<video controls>
+<source src='https://www.dropbox.com/s/07rrirml93jhmlu/09-J_Prep-Weight-Paint_Vertical.mp4?raw=1'>
+</video>
+<p></p>
+<p></p>
+
+---
+
+#### Paint Weights
+
+```{note} 
+:class: warning
+The value of weights range between 0 - 1.
+
+```
+![Weights Range](./Images/Donut_Tutorial_Part_09/09-K2_Weights-Range.gif)
+
+:::{card} Steps
+
+| Command | Action |Value |
+| ------- |------ |-----|
+| Turn Off 'Display Modifier in Viewport' |  |  |
+| Paint on Surface | Red is where we want sprinkles. Green for less sprinkles ||
+| Return to 'Object Mode' | Ctrl + Tab: 'Object Mode' ||
+| Turn On 'Display Modifier in Viewport' |||
+
+:::
+
+ 
+<p></p>
+ 
+<style>
+  video {
+    width: 100%;
+  }
+</style>
+ 
+<video controls>
+<source src='https://www.dropbox.com/s/07rrirml93jhmlu/09-J_Prep-Weight-Paint_Vertical.mp4?raw=1'>
+</video>
+<p></p>
+<p></p>
+
+ 
+<p></p>
+ 
+<style>
+  video {
+    width: 100%;
+  }
+</style>
+ 
+<video controls>
+<source src='09-K_Paint-Weights_Vertical.'>
+</video>
+<p></p>
+<p></p>
+
+
+---
 
 # Part 10
 
