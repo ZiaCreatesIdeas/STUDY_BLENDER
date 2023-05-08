@@ -2114,8 +2114,9 @@ The value of weights range between 0 - 1.
 
 | Command | Action |Value |
 | ------- |------ |-----|
-| Turn Off 'Display Modifier in Viewport' |  |  |
-| Paint on Surface | Red is where we want sprinkles. Green for less sprinkles ||
+| Turn Off 'Display Modifier in Viewport' | Toggle Icon |  |
+| Paint on Surface | Red where we want sprinkles. | 1.00 |
+| | Green for less sprinkles | Strength < 1.00|
 | Return to 'Object Mode' | Ctrl + Tab: 'Object Mode' ||
 | Turn On 'Display Modifier in Viewport' |||
 
@@ -2151,6 +2152,53 @@ The value of weights range between 0 - 1.
 <p></p>
 <p></p>
 
+---
+
+#### Apply Vertex Weight Map to Sprinkles
+
+:::{card} Steps:
+
+| Command | Action |Value |
+| ------- |------ |-----|
+| Rename Vertex Groups | Object Data Properties Icon ![ODP](./Images/Donut_Tutorial_Part_09/Object_Data_Properties_Icon.jpg) | 'Sprinkles Density' |
+| Expose Density Value | Connect Density Backwards to 'Group Input' ||
+| View Density in Modifier Stack | Select Modifiers | |
+
+:::
+
+C:\Users\james\Documents\ShareX\Screenshots\2023-05\09-K2_Expose-Density.mp4
+C:\Users\james\Documents\ShareX\Screenshots\2023-05\09-K2_Expose-Density_Vertical.mp4
+
+:::{card} 
+
+| Command | Action |Value |
+| ------- |------ |-----|
+| Select 'Input Attribute Icon' | ![Input Attribute](./Images/Donut_Tutorial_Part_09/Icon_Input_Attributes.gif) | 'Sprinkles Density' |
+| Add Math Node | Utility > Math | 'Multiply'|
+| Adjust Value | Set Value | ~700 |
+
+| Command | Action |Value |
+| ------- |------ |-----|
+| Expose 'Value' Parameter | Drag Back to 'Group Input'||
+
+09-K3_Add-Multiply
+
+
+| Command | Action |Value |
+| ------- |------ |-----|
+| Raise Max Input in Group | N + Group > Value > Max | ~700 |
+
+![Node](./Images/Donut_Tutorial_Part_09/09-K4_Max-Limit.gif)
+
+
+```{note}
+:class: warning
+
+Weight Value ranges from 0 - 1 but we want 'Sprinkle Density' to go up to 50,000.
+
+```
+
+:::
 
 ---
 
