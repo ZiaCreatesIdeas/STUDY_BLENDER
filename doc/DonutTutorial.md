@@ -2062,13 +2062,16 @@ Search will not find 'Mix Color' Node.
 
 | Command | Action |Value |
 | ------- |------ |-----|
-| Look at Underneath of Icing | H - Hide Donut Base and Plane  |  |
-| Select Icing | Click on Icing | |
+| View Underneath of Icing | H - Hide Donut Base and Plane  |  |
+| Select Icing | Select Icing | **Important Step**|
 | Switch to Weight Paint Mode | Ctrl + Tab | **Weight Paint** |
-| Make Tool Bar Visible | View > Toolbar | |
-| Make Tool Settings Visible | View > Tool Settings | |
+| Make 'Tool Bar' Visible | View > Toolbar | |
+| Make 'Tool Settings' Visible | View > Tool Settings | |
 
 :::
+
+09-J_Prep-Weight-Paint
+
  
 <p></p>
  Widescreen
@@ -2114,15 +2117,17 @@ The value of weights range between 0 - 1.
 
 | Command | Action |Value |
 | ------- |------ |-----|
-| Turn Off 'Display Modifier in Viewport' | Toggle Icon |  |
+| Select 'Object Data Properties' Icon | Object Data Properties: ![ODP](./Images/Donut_Tutorial_Part_09/Object_Data_Properties_Icon.jpg) |  
 | Paint on Surface | Red where we want sprinkles. | 1.00 |
-| | Green for less sprinkles | Strength < 1.00|
-| Return to 'Object Mode' | Ctrl + Tab: 'Object Mode' ||
-| Turn On 'Display Modifier in Viewport' |||
+| | Green for less | Strength < 1.00|
+| Rename Vertex Groups | 'Sprinkles Density' | |
+
+09-K_Weight-Paint
 
 :::
 
- 
+
+
 <p></p>
  
 <style>
@@ -2154,28 +2159,52 @@ The value of weights range between 0 - 1.
 
 ---
 
+#### Add Multiply Node
+
+| Command | Action |Value |
+| ------- |------ |-----|
+| Expose Density Input to Modifiers | Noodle 'Density' Back to Object Info |  |
+| Add Math Node | Shift + A: Utility > Math_ |
+| Switch to 'Multiply' | Change 'Add' > 'Multiply' |  |
+
+09-L_Add-Multiply
+
+
 #### Apply Vertex Weight Map to Sprinkles
 
 :::{card} Steps:
 
 | Command | Action |Value |
 | ------- |------ |-----|
-| Rename Vertex Groups | Object Data Properties Icon ![ODP](./Images/Donut_Tutorial_Part_09/Object_Data_Properties_Icon.jpg) | 'Sprinkles Density' |
-| Expose Density Value | Connect Density Backwards to 'Group Input' ||
-| View Density in Modifier Stack | Select Modifiers | |
+| Expose Density Value | Noodle 'Value' Back to 'Group Input' ||
+| View Density in Modifier Stack | Change Values | |
+| File > Save |  |  |
+| Toggle Input Attribute | ![Input Icon](./Images/Donut_Tutorial_Part_09/Icon_Input_Attributes.gif) | Num / Text Input |
+| Select 'Sprinkles Density' | ![Input Attributes](./Images/Donut_Tutorial_Part_09/09-M_Sprinkles-Density.gif) | Reboot if N/A |
+| View Max Limits | 'N': Group > Value | 10,000 |
+
+
+09-M_Apply-Weight-Map_Vertical
+[Blender Guru, Apply Vertex Weight Map](https://youtu.be/4WAxMI1QJMQ?list=PLjEaoINr3zgFX8ZsChQVQsuDSjEqdWMAD&t=1452)
 
 :::
 
-C:\Users\james\Documents\ShareX\Screenshots\2023-05\09-K2_Expose-Density.mp4
-C:\Users\james\Documents\ShareX\Screenshots\2023-05\09-K2_Expose-Density_Vertical.mp4
+
 
 :::{card} 
 
 | Command | Action |Value |
 | ------- |------ |-----|
-| Select 'Input Attribute Icon' | ![Input Attribute](./Images/Donut_Tutorial_Part_09/Icon_Input_Attributes.gif) | 'Sprinkles Density' |
+| Select 'Input Attribute' Box | ![Input Attribute](./Images/Donut_Tutorial_Part_09/Icon_Input_Attributes.gif) | 'Sprinkles Density' |
 | Add Math Node | Utility > Math | 'Multiply'|
 | Adjust Value | Set Value | ~700 |
+
+
+```{admonition} Blender Bug
+:class: warning
+You may need to reboot Blender if you see a black box instead of 'Sprinkles Density'. 
+
+```
 
 | Command | Action |Value |
 | ------- |------ |-----|
