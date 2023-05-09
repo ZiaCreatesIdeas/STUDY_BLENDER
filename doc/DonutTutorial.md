@@ -2189,7 +2189,48 @@ The value of weights range between 0 - 1.
 
 :::
 
+```{admonition} Blender Bug
+:class: warning
+You may need to restart Blender if you see a black box instead of 'Sprinkles Density'. 
 
+```
+
+---
+
+#### Avoid Clipping using Poisson
+
+ | Command | Action |Value |
+ | ------- |------ |-----|
+ | Select Distribute Points on Faces Node |  |  |
+ | Select 'Poisson' | Random > Poisson Disk |  |
+ | Noodle Connect  | Density Factor -> Group Input |  |
+ | Noodle Connect  | Density Max -> Value|  |
+ | In Modifier Stack | Increase Value | 10,000 |
+ | Adjust Radius of Clipping | Distance Min  | 0.0056 m  |
+ | Increase Max Limit | 'N': Group > Value | Max: 50,000 |
+ | Rename Input Attributes | Density -> Weight Paint  |  |
+ |  | Value -> Sprinkles Density |  |
+
+09-O_Poisson.mp4
+
+---
+
+#### Clean Up Using Multiply Node
+:::{card} 
+Adjusting a slider with a value of 50,000 is very slow. So we add a multiplier of 10,000 and hide it in the Geometry nodes.
+
+| Command | Action |Value |
+| ------- |------ |-----|
+| Add Math Node | Shift + A: Utilities > Math |  |
+| Switch to 'Multiply' | 'Add' > 'Multiply'  |  |
+| Adjust Modifier 'Value' | Set to 100 |||
+| Set Multiplier 'Value' | Set to 10,000 |
+| Adjust 'Value' in Modifiers | Around 800 - 1000 |
+
+:::
+
+
+09-P_Multiply-Density-Factor
 
 :::{card} 
 
@@ -2200,30 +2241,18 @@ The value of weights range between 0 - 1.
 | Adjust Value | Set Value | ~700 |
 
 
-```{admonition} Blender Bug
-:class: warning
-You may need to reboot Blender if you see a black box instead of 'Sprinkles Density'. 
 
-```
+%% | Command | Action |Value |
+%%| ------- |------ |-----|
+%%| Raise Max Input in Group | N + Group > Value > Max | ~700 |
 
-| Command | Action |Value |
-| ------- |------ |-----|
-| Expose 'Value' Parameter | Drag Back to 'Group Input'||
-
-09-K3_Add-Multiply
-
-
-| Command | Action |Value |
-| ------- |------ |-----|
-| Raise Max Input in Group | N + Group > Value > Max | ~700 |
-
-![Node](./Images/Donut_Tutorial_Part_09/09-K4_Max-Limit.gif)
+%%![Node](./Images/Donut_Tutorial_Part_09/09-K4_Max-Limit.gif)
 
 
 ```{note}
 :class: warning
 
-Weight Value ranges from 0 - 1 but we want 'Sprinkle Density' to go up to 50,000.
+Paint Weight Value ranges from 0 - 1 but we want 'Sprinkle Density' to go up to 50,000.
 
 ```
 
@@ -2231,7 +2260,11 @@ Weight Value ranges from 0 - 1 but we want 'Sprinkle Density' to go up to 50,000
 
 ---
 
-# Part 10
+##  Part 10: Random Colored Sprinkles
+
+[Blender Guru: Part 10: Random Colored Sprinkles](https://youtu.be/bLw0HwphXO0)
+
+
 
 Rest assured
 

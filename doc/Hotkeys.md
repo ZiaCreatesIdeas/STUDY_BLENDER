@@ -119,7 +119,7 @@ Edit mode is only available when an object is selected.
 |**RMB over background**|![Flat Shade](Images/Donut_Tutorial_Part_02/02-D_RMB-Object-Context-Menu.jpg)|
 |||
 | Edit Mode| |
-| Delete, X  | ![Flat Shade](Images/Donut_Tutorial_Part_02/02-D_RMB-Object-Context-Menu.jpg)  |
+| Delete, X  |
 |||
 | Sculpt Mode | |
 | **Shift + Space**| Pop Up Menu of all brushes |
