@@ -2264,6 +2264,30 @@ Paint Weight Value ranges from 0 - 1 but we want 'Sprinkle Density' to go up to 
 
 [Blender Guru: Part 10: Random Colored Sprinkles](https://youtu.be/bLw0HwphXO0)
 
+### Edge Loops
+
+:::{card} 
+
+| Command | Action |Value |
+| ------- |------ |-----|
+| Object Mode | Ctrl + Tab  | 'Object Mode' |
+| Select Primary Sprinkle  |  |  |
+| Add Subsurf Modifier | Ctrl + 1 | Level 1 Sub D |
+|                      | Render [ 1 ]  | Level 1 |
+| Edit Mode | Ctrl + Tab | 'Edit Mode' |
+| Select Edge Mode | Keyboard '2'  | Recommended but not required |
+| Add Edge Loop  | Hover, (Ctrl + R)  | Use Scroll Wheel to add Loops |
+| Add Two Loops | Scroll Mouse Forward Once + Click|  |
+| Slide 2 Loops to Edge | 'S' + 'Y' | Creates a Bevelled Edge |
+| View Results | Oject Mode |  |
+|              | RMB > Shade Smooth | Over Selection |
+
+:::
+
+::::{important} Toggle Smooth Shade
+Be sure to select an object, then RMB > Smooth Shade
+::::
+10-A_Edge-Loops.mp4
 
 
 Rest assured

@@ -33,7 +33,7 @@ Edit mode is only available when an object is selected.
 | notes:  | Cursor can be anywhere| |            |
 |         | LMB = Confirm, RMB = cancel |   |    | 
 | Move + Axis Snap  | Click + Hold + MMB |  |    |
-|Rotate   | R       |                    |       |
+| Rotate  | R       |                    |       |
 |         | R + [X, Y, Z]| E             |       |
 |         | R + Keypad_Num (Degrees)     | ![Degress](./Images/Hot_Keys/Hot-Key_R-Numpad-Degrees.gif ) |
 | Rotate + Snap | R+ Ctrl + Drag |   |
@@ -44,6 +44,7 @@ Edit mode is only available when an object is selected.
 | Recover Operator Presets| F9 |||
 | Rename File | F2 |||
 | Hide / Unhide | H, Alt H - unhides all | ![alt](./Images/Hot_Keys/Hot-Key_Hide_H_Alt-H.gif) ||
+| Subsurf, Subsurface, Sub D| Ctrl [1, 2, 3]| Levels 1-3 |
 ||||
 
 
@@ -55,7 +56,7 @@ Edit mode is only available when an object is selected.
 | Zoom   | MMB + Scroll       | MMB + Scroll |   |
 | Zoom Smooth | Ctrl + MMB + Drag | |            |
 | Focus Selected (Object) | Numpad period . | F |         |
-|Look Thru Camera | Numpad - 0 |||
+| Look Thru Camera | Numpad - 0 |||
 | Wireframe | Shift + Z| ???? |
 | X Ray | Alt + Z | BLANK |
 |||||
