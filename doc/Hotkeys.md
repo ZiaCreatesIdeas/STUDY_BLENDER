@@ -16,6 +16,13 @@ MMB =  Middle Mouse Button.
 |  |  | ![Toggle Object Edit Mode](Images/Hot_Keys/Toggle_Object-Edit.gif) |
 
 
+::::{important} 
+| Hot Key |      | 
+| ------- | ------------|
+| **Ctrl + Space** <td style="text-align: center">**Maximize Window**</td> | |
+| Essential | ![Maximize Window](./Images/Hot_Keys/Hot-Key_Ctrl-Space-Maximize-Screen.gif) |
+::::
+
 ```{admonition} Warning
 :class: warning
 
@@ -45,6 +52,7 @@ Edit mode is only available when an object is selected.
 | Rename File | F2 |||
 | Hide / Unhide | H, Alt H - unhides all | ![alt](./Images/Hot_Keys/Hot-Key_Hide_H_Alt-H.gif) ||
 | Subsurf, Subsurface, Sub D| Ctrl [1, 2, 3]| Levels 1-3 |
+| Duplicate | Shift + D |  |
 ||||
 
 
@@ -77,6 +85,7 @@ Edit mode is only available when an object is selected.
 
 
 
+
 % If combined with the graph above, the image shrinks by almost half.
 |**Snapping**||| |
 |------------|---|---|---|
@@ -99,7 +108,14 @@ Edit mode is only available when an object is selected.
 | Proportional Grab | O + G + Click [Vertice, Edge, Face ] + MMB - Scroll Up |[Video (Tutorial 2)](DonutTutorial.md#proportional-editing) |
 |Scale Along Normals | Alt + S | [Video (Tutorial 2)](DonutTutorial.md#scale-along-normals) |  
 | Extrude | E | ![Extrude](./Images/Hot_Keys/Hot-Key_E-Extrude.gif)|
-| Select Edges | Alt + LMB | [Part 04: Select Edges](DonutTutorial.md#select-edges)|
+| Select Edge Loop | Alt + LMB | [Part 04: Select Edges](DonutTutorial.md#select-edges)|
+| Add Edge Loop | Ctrl + R |
+| Slide Edge Loop | G + G |
+| Select All | 'A' in Edit Mode |
+| Inset | 'i' |
+![Delete Edge Loops](./Images/Donut_Tutorial_Part_10/10-A2_Delete-Edge-Loops.gif)
+
+
 
 **Sculpting**
  | Command | Hot Key     | note |
@@ -135,8 +151,11 @@ Edit mode is only available when an object is selected.
 | ~ (tilde) |  ![Pie Tilde ](Images/Pie_Tilde-View.jpg) |
 | <td style="text-align: center">Select **Mode** with **Object Selected**</td> | | 
 |  Ctrl + Tab |  ![Select Mode](Images/Hot_Keys/02-G_Pie-Menu_Select-Mode.jpg)   |    
-| <td style="text-align: center">Select Render Mode </td> |
-  
+| <td style="text-align: center">Cursor to Selected </td> |
+| Shift + S | ![Pivot Menu](./Images/Hot_Keys/10-A_Shift-S-Pivot.gif) |  
+| Move Pivot |![Pivot Menus](./Images/Hot_Keys/10-A2_Move-Pivot.gif)| | 
+| Center Pivot |![Center Menus](./Images/Hot_Keys/10-A3_Center-Pivot-to-Object.gif)| | 
+| Hide 3d Cursor |![Hide 3d Cursor](./Images/Hot_Keys/10-A4_Cursor-to-World-Origin.gif)| | 
 
 ---
 

@@ -2289,6 +2289,77 @@ Be sure to select an object, then RMB > Smooth Shade
 ::::
 10-A_Edge-Loops.mp4
 
+:::{card} Remove Edge Loop:
+- In Edit Mode - we can use 'A' to Select All.
+- Alt + LMB to Select Edge Loop.
+- 'X', Select 'Edge Loops'
+
+![Delete Edge Loops](./Images/Donut_Tutorial_Part_10/10-A2_Delete-Edge-Loops.gif)
+:::
+
+### Add Variants of Sprinkle
+
+:::{card} Steps:
+| Command | Action |note |
+| ------- |------ |-----|
+| Rename 'Cylinder' to 'Sprinkle' | In Outliner |  |
+| Duplicate | Shift + D | Object Mode |
+| Place Nearby | 'G' ||
+| Lengthen Sprinkle | Alt + LMB, Shift + Alt + LMB | End Edges |
+| Move | 'G' + 'Y' axis | Slide along axis |
+| Bend Sprinkle | 'Numpad + 7' for Top |  |
+|  | 'G' to move |  |
+:::
+
+---
+
+### Move Pivot
+
+::::{important} 
+Learning to work with an object's pivot point is important in most digital software.    
+Blender has an 'Origin Point' and a '3d Cursor'.  
+The "game" involves manipulating these two points in space.  
+- Use Edit Mode / Shift+S: 'Cursor to Selected'.   
+- Object Mode / 'Object' button > 'Set Origin'  > 'Set Origin to 3d Cursor'  
+Lessons from:
+[Kev Binge: Blender Quick Tip to Move Object Origin and Pivot](https://youtu.be/q_SiM8PIXtI)  
+- We can also use Object / Mesh > Snap instead of 'Cursor to Selected': [Snap Cursor](https://youtu.be/ns14pmFwZ2M?t=57)  
+- From 'N': 'View', [Nude 3d Cursor](https://youtu.be/ns14pmFwZ2M?t=125).
+::::
+
+| Command | Action |
+| ------- |------ |
+| Move Pivot | Pie Menu: Shift + S | 
+| | ![Pivot Menus](./Images/Hot_Keys/10-A_Shift-S-Pivot.gif)|
+| Example | Edit Mode / Hot key 'A' Selects all of the Cube |
+|  | ![Pivot Example](./Images/Hot_Keys/10-A2_Move-Pivot.gif) |
+| Center Pivot |![Center Menus](./Images/Hot_Keys/10-A3_Center-Pivot-to-Object.gif)| | 
+| Hide 3d Cursor |![Hide 3d Cursor](./Images/Hot_Keys/10-A4_Cursor-to-World-Origin.gif)| | 
+
+#### Center Pivot
+```{note}
+:class: warning
+**Center Pivot:** Obect Mode / Object button > Origin to Center of Mass (Surface / Volume)  
+
+```
+
+::::{important} 
+- Shift + S > Cursor to World Origin. This will "hide" the 3d Cursor at (0,0,0).
+- Shift + C. Set Cursor to Origin.
+::::
+
+---
+
+:::{card} Add Next Sprinkle
+
+| Command | Action |Value |
+| ------- |------ |-----|
+| Select First Sprinkle |  |  |
+| Duplicate | Shift + D |  |
+| Shorten | 'G' |  |
+
+:::
+
 
 Rest assured
 
