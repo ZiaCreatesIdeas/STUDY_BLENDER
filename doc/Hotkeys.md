@@ -105,6 +105,7 @@ Edit mode is only available when an object is selected.
 |**Edit**| Hot Key | notes |
 |---|---|---|
 | Delete | X |  |
+| Proportional | O | Toggle |
 | Proportional Grab | O + G + Click [Vertice, Edge, Face ] + MMB - Scroll Up |[Video (Tutorial 2)](DonutTutorial.md#proportional-editing) |
 |Scale Along Normals | Alt + S | [Video (Tutorial 2)](DonutTutorial.md#scale-along-normals) |  
 | Extrude | E | ![Extrude](./Images/Hot_Keys/Hot-Key_E-Extrude.gif)|
@@ -113,6 +114,22 @@ Edit mode is only available when an object is selected.
 | Slide Edge Loop | G + G |
 | Select All | 'A' in Edit Mode |
 | Inset | 'i' |
+| Bevel | Shift + Ctrl + B |[Bevel](https://youtu.be/eAazvm_ebNk?t=12) |
+| Join | J | [ Join ](https://youtu.be/eAazvm_ebNk?t=115)|
+
+
+
+
+##### Edge Loops
+
+| Command | Action |Value |
+| ------- |------ |-----|
+|  | Edit Mode ||
+| Add Edge Loop | Hover Over Object: Ctrl + R |
+| Add Many Edge Loops | Mouse Scroll Wheel + Scroll Up | |
+| Select Edge Loop | Alt + LMB | [Part 04: Select Edges](DonutTutorial.md#select-edges)|
+| Slide Edge Loop | G + G |
+| Delete Edge Loop| X or Del Key| Edge Loop | |
 ![Delete Edge Loops](./Images/Donut_Tutorial_Part_10/10-A2_Delete-Edge-Loops.gif)
 
 

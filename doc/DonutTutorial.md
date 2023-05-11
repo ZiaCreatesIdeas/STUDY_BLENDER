@@ -7,7 +7,18 @@ limits their data and may result in a video not available error.
 ![Dropbox Error](./Images/Dropbox-Error/LinkOverload.jpg)
 :::
 
+## Trouble Shooting
 
+When learning with Blender, we may get stuck in states yielding odd behaviour. 
+```{admonition} Trouble Shooting Checklist
+:class: warning
+- [ ] **Turn Snapping Off (Shift + Tab)**
+- [ ] **Apply Scale (Ctrl + A)**
+- [ ] **View Orientation Transformation Scale => Global**    
+This icon looks like two arrows located at the top middle of the screen. ![View Transformation Orientation Menu](./Images/Hot_Keys/View-Transformation-Orientation-Menu.jpg)
+
+```
+---
 
 ## Part 01: The Basics
 
@@ -244,6 +255,7 @@ Also known as "subd's, subds, subsurf, subsurfaces".
 
 | Command | Hot Key     | note |
 | ------- | ------------|-----|
+| Proportional | O | Toggle |
 | Proportional Grab | Select ( Vertice, Edge, Face ) + O + G + Scroll MMB Up | Activate 'O' Before 'G' |
 
 <style>
