@@ -20,6 +20,9 @@ This icon looks like two arrows located at the top middle of the screen. ![View 
 ```
 ---
 
+This tutorial uses [**Short Cut VUr**](https://www.youtube.com/watch?v=Ombz2lDjZIA) to display keystrokes. Most of the time. 
+We also use [Screen Cast Addon](https://www.youtube.com/watch?v=6d_Lv6xN5bQ) which is recommended for greater reliability in documentating Hot keys so Pie and Pop-Up Menus. [Github](https://github.com/nutti/Screencast-Keys)
+
 ## Part 01: The Basics
 
 [Navigation and Hotkeys](Hotkeys.md)
