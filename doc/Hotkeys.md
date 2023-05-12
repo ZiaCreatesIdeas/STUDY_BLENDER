@@ -63,7 +63,8 @@ Edit mode is only available when an object is selected.
 | Pan    | Shift + MMB + Drag | Alt + MMB + Drag |  |
 | Zoom   | MMB + Scroll       | MMB + Scroll |   |
 | Zoom Smooth | Ctrl + MMB + Drag | |            |
-| Focus Selected (Object) | Numpad period . | F |         |
+| Focus Selected (Object) | Numpad period . | F | 
+| Rotate View using Keys | Numpad: [4, 5 ] [8, 2 ]||
 | Look Thru Camera | Numpad - 0 |||
 | Wireframe | Shift + Z| ???? |
 | X Ray | Alt + Z | BLANK |
