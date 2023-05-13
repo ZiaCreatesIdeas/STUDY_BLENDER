@@ -1950,20 +1950,6 @@ Search will not find 'Mix Color' Node.
 <p></p>
 <p></p>
  
- 
-<p></p>
- 
-<style>
-  video {
-    width: 100%;
-  }
-</style>
- 
-<video controls>
-<source src='https://www.dropbox.com/s/zp05mdvwcm5gi71/09-I_Add-Euler_Vertical.mp4?raw=1'>
-</video>
-<p></p>
-<p></p>
 
 ---
 
@@ -2072,8 +2058,6 @@ Search will not find 'Mix Color' Node.
 
 :::
 
----
-
 #### Prepare for Weight Painting
 
 :::{card} Steps:
@@ -2081,7 +2065,7 @@ Search will not find 'Mix Color' Node.
 | Command | Action |Value |
 | ------- |------ |-----|
 | View Underneath of Icing | H - Hide Donut Base and Plane  |  |
-| Select Icing | Select Icing | **Important Step**|
+| Select Icing | Select Icing | *Important Step |
 | Switch to Weight Paint Mode | Ctrl + Tab | **Weight Paint** |
 | Make 'Tool Bar' Visible | View > Toolbar | |
 | Make 'Tool Settings' Visible | View > Tool Settings | |
@@ -2126,7 +2110,7 @@ Search will not find 'Mix Color' Node.
 
 ```{note} 
 :class: warning
-The value of weights range between 0 - 1.
+The value of weights ranges between 0 - 1.
 
 ```
 ![Weights Range](./Images/Donut_Tutorial_Part_09/09-K2_Weights-Range.gif)
@@ -2142,8 +2126,9 @@ The value of weights range between 0 - 1.
 
 :::
 
-09-K_Weight-Paint: DONE
+09-K_Weight-Paint: DONE.
 
+ 
 <p></p>
  
 <style>
@@ -2153,12 +2138,12 @@ The value of weights range between 0 - 1.
 </style>
  
 <video controls>
-<source src='https://www.dropbox.com/s/07rrirml93jhmlu/09-J_Prep-Weight-Paint_Vertical.mp4?raw=1'>
+<source src='https://www.dropbox.com/s/1jtvlg77l91axsu/09-K_Paint-Weights.mp4?raw=1'>
 </video>
 <p></p>
 <p></p>
 
- 
+
 <p></p>
  
 <style>
@@ -2168,7 +2153,7 @@ The value of weights range between 0 - 1.
 </style>
  
 <video controls>
-<source src='09-K_Paint-Weights_Vertical.'>
+<source src='https://www.dropbox.com/s/ihmyufzkfjpjp9j/09-K_Paint-Weights_Vertical.mp4?raw=1'>
 </video>
 <p></p>
 <p></p>
@@ -2180,7 +2165,7 @@ The value of weights range between 0 - 1.
 | Command | Action |Value |
 | ------- |------ |-----|
 | Expose Density Input to Modifiers | Noodle 'Density' Back to Object Info |  |
-| Add Math Node | Shift + A: Utility > Math_ |
+| Add Math Node | Shift + A: Utility > Math |
 | Switch to 'Multiply' | Change 'Add' > 'Multiply' |  |
 
 09-L_Add-Multiply: DONE.
@@ -2218,9 +2203,10 @@ The value of weights range between 0 - 1.
 ---
 
 <div class="admonition note" name="html-admonition" style="background: lightgreen; padding: 10px">
-<p class="title"> ****</p>
+<p class="title"> </p>
 
 </div>
+ 
  
 #### Apply Vertex Weight Map to Sprinkles
 
@@ -2275,18 +2261,21 @@ The value of weights range between 0 - 1.
 
 ```{admonition} Blender Bug
 :class: warning
-You may need to restart Blender if you see a black box instead of 'Sprinkles Density'. 
+You may need to restart Blender if you see a black box instead of 'Sprinkles Density'. Be sure to **SAVE** if you have skipped that step.
 
 ```
 ---
 
 <div class="admonition note" name="html-admonition" style="background: lightgreen; padding: 10px">
-<p class="title"> ****</p>
+<p class="title"> </p>
 
 </div>
  
 
 #### Avoid Clipping using Poisson
+
+:::{card} 
+Our Sprinkles intersect with one another. We can reduce this effect.  
 
  | Command | Action |Value |
  | ------- |------ |-----|
@@ -2297,8 +2286,10 @@ You may need to restart Blender if you see a black box instead of 'Sprinkles Den
  | In Modifier Stack | Increase Value | 10,000 |
  | Adjust Radius of Clipping | Distance Min  | 0.0056 m  |
  | Increase Max Limit | 'N': Group > Value | Max: 50,000 |
- | Rename Input Attributes | Density -> Weight Paint  |  |
- |  | Value -> Sprinkles Density |  |
+ | Rename Input Attributes | Density -> **Weight Paint**  |  |
+ |  | Value -> **Sprinkles Density** |  |
+
+:::
 
 09-O_Poisson.mp4: DONE
 
@@ -2335,12 +2326,13 @@ You may need to restart Blender if you see a black box instead of 'Sprinkles Den
 ---
 
 <div class="admonition note" name="html-admonition" style="background: lightgreen; padding: 10px">
-<p class="title"> ****</p>
+<p class="title"> </p>
 
 </div>
  
+---
 
-#### Clean Up Using Multiply Node
+#### Simplify Using Multiply Node
 
 :::{card} 
 Adjusting a slider with a value of 50,000 is very slow. So we add a multiplier of 10,000 and hide it in the Geometry nodes.
@@ -2358,13 +2350,45 @@ Adjusting a slider with a value of 50,000 is very slow. So we add a multiplier o
 
 09-P_Multiply-Density-Factor: DONE
 
+ 
+<p></p>
+ Widescreen
+<style>
+  video {
+    width: 100%;
+  }
+</style>
+ 
+<video controls>
+<source src='https://www.dropbox.com/s/gv6p8aw91o2zraa/09-O_Multiply-Density-Factor.mp4?raw=1'>
+</video>
+<p></p>
+<p></p>
+
+ 
+<p></p>
+ 
+<style>
+  video {
+    width: 100%;
+  }
+</style>
+ 
+<video controls>
+<source src='https://www.dropbox.com/s/z6dcnp4jgckw7z3/09-O_Multiply-Density-Factor_Vertical.mp4?raw=1'>
+</video>
+<p></p>
+<p></p>
+
+
+
 :::{card} 
 
-| Command | Action |Value |
-| ------- |------ |-----|
-| Select 'Input Attribute' Box | ![Input Attribute](./Images/Donut_Tutorial_Part_09/Icon_Input_Attributes.gif) | 'Sprinkles Density' |
-| Add Math Node | Utility > Math | 'Multiply'|
-| Adjust Value | Set Value | ~700 |
+%% | Command | Action |Value |
+%% | ------- |------ |-----|
+%%| Select 'Input Attribute' Box | ![Input Attribute](./Images/Donut_Tutorial_Part_09/Icon_Input_Attributes.gif) | 'Sprinkles Density' |
+%%| Add Math Node | Utility > Math | 'Multiply'|
+%%| Adjust Value | Set Value | ~700 |
 
 
 
@@ -2465,7 +2489,7 @@ Be sure to select an object, then RMB > Smooth Shade
 | Rename 'Cylinder' to 'Sprinkle' | In Outliner |  |
 | Duplicate | Shift + D | Object Mode |
 | Place Nearby | 'G' ||
-| Lengthen Sprinkle | Alt + LMB, Shift + Alt + LMB | End Edges |
+| Lengthen Sprinkle | Alt + LMB, Shift + Alt + LMB | Effect End Edges |
 | Move | 'G' + 'Y' axis | Slide along axis |
 | Bend Sprinkle | 'Numpad + 7' for Top |  |
 |  | 'G' to move |  |
@@ -2550,6 +2574,53 @@ Lessons from:
 
 :::
 
+---
+
+<div class="admonition note" name="html-admonition" style="background: lightgreen; padding: 10px">
+<p class="title"> </p>
+
+</div>
+ 
+#### Bend Sprinkles
+
+ :::{card} 
+ Next we deform our sprinkles.
+
+| Command | Action |Value |
+| ------- |------ |-----|
+|  |  |  |
+
+ :::
+
+  
+ <p></p>
+ Widescreen 
+ <style>
+   video {
+     width: 100%;
+   }
+ </style>
+  
+ <video controls>
+ <source src='https://www.dropbox.com/s/r89wh8r89aoocvk/10-C_Bend-Noodle.mp4?raw=1'>
+ </video>
+ <p></p>
+ <p></p>
+
+  
+ <p></p>
+  
+ <style>
+   video {
+     width: 100%;
+   }
+ </style>
+  
+ <video controls>
+ <source src='https://www.dropbox.com/s/ym700z645jtku9u/10-C_Bend_Noodle_Vertical.mp4?raw=1'>
+ </video>
+ <p></p>
+ <p></p>
 
 Rest assured
 
