@@ -26,7 +26,7 @@ MMB =  Middle Mouse Button.
 ```{admonition} Warning
 :class: warning
 
-Some commands only work in **Object** Mode or in **Edit** Mode.  
+Some commands only work in **Object** Mode or in **Edit** Mode.    
 Edit mode is only available when an object is selected.
 
 ``` 
@@ -81,7 +81,7 @@ Edit mode is only available when an object is selected.
 | Separate | P [ Selection ] || |
 | Select Linked |  L, Ctrl + L  | ![Select Linked ](Images/Hot_Keys/03_Hot-Key_Ctrl-L-Select-Linked.gif)||
 | Smart Copy | Shift + Drag | ![Smart Copy](./Images/Hot_Keys/Hot-Key_Drag-Select-Materials.gif) |
-| Select Middle (From Last Selection to Next Selection) | Ctrl + Select |||
+| Select Between | Ctrl + Select | ![Select Middle](./Images/Hot_Keys/Hot-Key_Select-Ctrl-Click-Select-Middle.gif)||
 | Edge Select Loop | Alt + Select  |||
 |||||
 
