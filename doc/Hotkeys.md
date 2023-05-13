@@ -53,6 +53,7 @@ Edit mode is only available when an object is selected.
 | Hide / Unhide | H, Alt H - unhides all | ![alt](./Images/Hot_Keys/Hot-Key_Hide_H_Alt-H.gif) ||
 | Subsurf, Subsurface, Sub D| Ctrl [1, 2, 3]| Levels 1-3 |
 | Duplicate | Shift + D |  |
+| Fix Normals | Shift + N ||
 ||||
 
 
@@ -80,7 +81,7 @@ Edit mode is only available when an object is selected.
 | Separate | P [ Selection ] || |
 | Select Linked |  L, Ctrl + L  | ![Select Linked ](Images/Hot_Keys/03_Hot-Key_Ctrl-L-Select-Linked.gif)||
 | Smart Copy | Shift + Drag | ![Smart Copy](./Images/Hot_Keys/Hot-Key_Drag-Select-Materials.gif) |
-| Edge Select Between Cursor and Selection | Ctrl + Select |||
+| Select Middle (From Last Selection to Next Selection) | Ctrl + Select |||
 | Edge Select Loop | Alt + Select  |||
 |||||
 
