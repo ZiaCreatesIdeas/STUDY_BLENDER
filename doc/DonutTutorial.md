@@ -1879,7 +1879,7 @@ Search will not find 'Mix Color' Node.
 
 ---
 
-:::{card} Attach a Single Sparkle to Instances.
+:::{card} Attach a Single Sprinkle to Instances.
 - From one, create many.
 
 | Command |   
@@ -1921,12 +1921,17 @@ Search will not find 'Mix Color' Node.
 <p></p>
 
 ---
+<div class="admonition note" name="html-admonition" style="background: lightgreen; padding: 10px">
+<p class="title"> ****</p>
+
+</div>
+ 
 
 :::{card} Rotate Cylinder 90 Degrees.
 
 | Command | Action |  |
 | ------- |------ |-----|
-| Rotate Cylinder, 90  | R + X + Numpad (45)  |  |
+| Rotate Cylinder, 90  | R + X + Numpad (90)  |  |
 | Apply Rotation | Ctrl + A | Select 'Rotation' |
 
 :::
@@ -2048,21 +2053,19 @@ Search will not find 'Mix Color' Node.
 
 :::
 
+---
+
 <div class="admonition note" name="html-admonition" style="background: lightgreen; padding: 10px">
-<p class="title"> </p>
+<p class="title"> ****</p>
 
 </div>
  
- 
-
-
----
 
 ### Weight Paint
 
 [Blender Guru: Donut - Weight Paint](https://www.youtube.com/watch?v=4WAxMI1QJMQ&list=PLjEaoINr3zgFX8ZsChQVQsuDSjEqdWMAD&index=9&t=1188s)
 
-:::{card} Control where Sparkles can Appear.
+:::{card} Control where Sparkles can Appear on the Surface of the Icing.
 
 - Limit sprinkles on some portions of the icing.
 - Remove sprinkles on the bottom of the icing.
@@ -2085,7 +2088,7 @@ Search will not find 'Mix Color' Node.
 
 :::
 
-09-J_Prep-Weight-Paint
+09-J_Prep-Weight-Paint : DONE.
 
  
 <p></p>
@@ -2137,11 +2140,9 @@ The value of weights range between 0 - 1.
 | | Green for less | Strength < 1.00|
 | Rename Vertex Groups | 'Sprinkles Density' | |
 
-09-K_Weight-Paint
-
 :::
 
-
+09-K_Weight-Paint: DONE
 
 <p></p>
  
@@ -2182,9 +2183,45 @@ The value of weights range between 0 - 1.
 | Add Math Node | Shift + A: Utility > Math_ |
 | Switch to 'Multiply' | Change 'Add' > 'Multiply' |  |
 
-09-L_Add-Multiply
+09-L_Add-Multiply: DONE.
 
+ 
+<p></p>
+ Widescreen
+<style>
+  video {
+    width: 100%;
+  }
+</style>
+ 
+<video controls>
+<source src='https://www.dropbox.com/s/frqu8y6dm0b8m00/09-L_Add-Multiply.mp4?raw=1'>
+</video>
+<p></p>
+<p></p>
 
+ 
+<p></p>
+ 
+<style>
+  video {
+    width: 100%;
+  }
+</style>
+ 
+<video controls>
+<source src='https://www.dropbox.com/s/hvekpm79un3ck92/09-L_Add-Multiply_Vertical.mp4?raw=1'>
+</video>
+<p></p>
+<p></p>
+
+---
+
+<div class="admonition note" name="html-admonition" style="background: lightgreen; padding: 10px">
+<p class="title"> ****</p>
+
+</div>
+ 
 #### Apply Vertex Weight Map to Sprinkles
 
 :::{card} Steps:
@@ -2199,18 +2236,55 @@ The value of weights range between 0 - 1.
 | View Max Limits | 'N': Group > Value | 10,000 |
 
 
-09-M_Apply-Weight-Map_Vertical
 [Blender Guru, Apply Vertex Weight Map](https://youtu.be/4WAxMI1QJMQ?list=PLjEaoINr3zgFX8ZsChQVQsuDSjEqdWMAD&t=1452)
 
 :::
+
+
+09-M_Apply-Weight-Map_Vertical: DONE
+
+ 
+<p></p>
+ Widescreen
+<style>
+  video {
+    width: 100%;
+  }
+</style>
+ 
+<video controls>
+<source src='https://www.dropbox.com/s/7e2shljjjxy1g3x/09-M_Apply-Weight-Map.mp4?raw=1'>
+</video>
+<p></p>
+<p></p>
+
+ 
+<p></p>
+ 
+<style>
+  video {
+    width: 100%;
+  }
+</style>
+ 
+<video controls>
+<source src='https://www.dropbox.com/s/93pkgwmkdvafg66/09-M_Apply-Weight-Map_Vertical.mp4?raw=1'>
+</video>
+<p></p>
+<p></p>
 
 ```{admonition} Blender Bug
 :class: warning
 You may need to restart Blender if you see a black box instead of 'Sprinkles Density'. 
 
 ```
-
 ---
+
+<div class="admonition note" name="html-admonition" style="background: lightgreen; padding: 10px">
+<p class="title"> ****</p>
+
+</div>
+ 
 
 #### Avoid Clipping using Poisson
 
@@ -2226,11 +2300,48 @@ You may need to restart Blender if you see a black box instead of 'Sprinkles Den
  | Rename Input Attributes | Density -> Weight Paint  |  |
  |  | Value -> Sprinkles Density |  |
 
-09-O_Poisson.mp4
+09-O_Poisson.mp4: DONE
+
+ 
+<p></p>
+ Widescreen
+<style>
+  video {
+    width: 100%;
+  }
+</style>
+ 
+<video controls>
+<source src='https://www.dropbox.com/s/5sw4lc4ehxxmtcr/09-N_Poisson.mp4?raw=1'>
+</video>
+<p></p>
+<p></p>
+
+ 
+<p></p>
+ 
+<style>
+  video {
+    width: 100%;
+  }
+</style>
+ 
+<video controls>
+<source src='https://www.dropbox.com/s/cmmsyt941har2lw/09-N_Posson_Vertical.mp4?raw=1'>
+</video>
+<p></p>
+<p></p>
 
 ---
 
+<div class="admonition note" name="html-admonition" style="background: lightgreen; padding: 10px">
+<p class="title"> ****</p>
+
+</div>
+ 
+
 #### Clean Up Using Multiply Node
+
 :::{card} 
 Adjusting a slider with a value of 50,000 is very slow. So we add a multiplier of 10,000 and hide it in the Geometry nodes.
 
@@ -2245,7 +2356,7 @@ Adjusting a slider with a value of 50,000 is very slow. So we add a multiplier o
 :::
 
 
-09-P_Multiply-Density-Factor
+09-P_Multiply-Density-Factor: DONE
 
 :::{card} 
 
@@ -2395,14 +2506,14 @@ Be sure to select an object, then RMB > Smooth Shade
 ### Move Pivot
 
 ::::{important} 
-Learning to work with an object's pivot point is important in most digital software.    
+Learning to work with an object's pivot point is important for most digital software.    
 Blender has an 'Origin Point' and a '3d Cursor'.  
 The "game" involves manipulating these two points in space.  
-- Edit Mode \ Shift+S: 'Cursor to Selected'.   
-- Object Mode \ 'Object' button > 'Set Origin'  > 'Set Origin to 3d Cursor'  
+- || Edit Mode || Shift+S: 'Cursor to Selected'.   
+- || Object Mode || 'Object' button > 'Set Origin'  > 'Set Origin to 3d Cursor'  
 Lessons from:
 [Kev Binge: Blender Quick Tip to Move Object Origin and Pivot](https://youtu.be/q_SiM8PIXtI)  
-- We can also use Object / Mesh > Snap instead of 'Cursor to Selected': [Snap Cursor](https://youtu.be/ns14pmFwZ2M?t=57)  
+- We can also use, || Object Mode || Mesh > Snap instead of 'Cursor to Selected': [Snap Cursor](https://youtu.be/ns14pmFwZ2M?t=57)  
 - From 'N': 'View', [Nude 3d Cursor](https://youtu.be/ns14pmFwZ2M?t=125).
 ::::
 
@@ -2410,7 +2521,7 @@ Lessons from:
 | ------- |------ |
 | Move Pivot | Pie Menu: Shift + S | 
 | | ![Pivot Menus](./Images/Hot_Keys/10-A_Shift-S-Pivot.gif)|
-| Example | Edit Mode \ Hot key 'A' Selects all of the Cube |
+| Example \|\| Edit Mode \|\| Hot key 'A' Selects all of the Cube |
 |  | ![Pivot Example](./Images/Hot_Keys/10-A2_Move-Pivot.gif) |
 | Center Pivot |![Center Menus](./Images/Hot_Keys/10-A3_Center-Pivot-to-Object.gif)| | 
 | Hide 3d Cursor |![Hide 3d Cursor](./Images/Hot_Keys/10-A4_Cursor-to-World-Origin.gif)| | 
