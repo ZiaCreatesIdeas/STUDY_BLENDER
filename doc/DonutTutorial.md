@@ -2486,13 +2486,20 @@ Be sure to select an object, then RMB > Smooth Shade
 :::{card} Steps:
 | Command | Action |note |
 | ------- |------ |-----|
-| Rename 'Cylinder' to 'Sprinkle' | In Outliner |  |
-| Duplicate | Shift + D | Object Mode |
-| Place Nearby | 'G' ||
-| Lengthen Sprinkle | Alt + LMB, Shift + Alt + LMB | Effect End Edges |
-| Move | 'G' + 'Y' axis | Slide along axis |
-| Bend Sprinkle | 'Numpad + 7' for Top |  |
-|  | 'G' to move |  |
+| Switch: Object Mode | Ctrl + Tab, Tab | |  |
+| Top View | Numpad 7  |  |
+| Full Screen | Ctrl + Space (Optional) |
+| Duplicate | Shift + D | |
+| Move along X axis | X (Grab tool not needed)||
+| Switch to Edit Mode | [ Ctrl + Tab, Tab ] | 
+| Select Bottom Face | Keyboard 3 |  |
+| 3d Cursor to Selected | Shift + S |  |
+| Object Mode | Ctrl + Tab |  |
+| Make 3 More Sparkles | Shift + D + X (3x) | 
+| Origin to 3d Cursor | Object Button > Set Origin: Set Origin to 3D Cursor |  |
+| Shorten Sprinkles | S + Y (Constrain on Y axis) | | 
+| Return 3d Cursor to World Origin | Shift + C ||
+
 :::
 
  
