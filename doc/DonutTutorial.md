@@ -2534,6 +2534,12 @@ Lessons from:
 We don't want all our sprinkles to look alike. So we will add variations of shape and colors.
 :::
 
+#### Duplicate Sprinkles
+
+:::{card} 
+Duplicate three sprinkles and create different sizes.
+:::
+
 :::{card} Steps:
 | Command | Action |note |
 | ------- |------ |-----|
@@ -2697,9 +2703,22 @@ We don't want all our sprinkles to look alike. So we will add variations of shap
 
   :::{card} 
   Steps
-  | Command | Action |Value |
-  | ------- |------ |-----|
-  |  |  |  |
+  | Command | Action 
+  | ------- |------ |
+  | Object Mode |  | 
+  | Practice Adding to Selection | Shift + Click | 
+  | Box Selection Includes Plane |  |
+  | Select from Front | Numpad 1 |  
+  | New Collection | M |  
+  | Name Collection | Sprinkles |  
+  | Get Collection Info Node | Select Sprinkles Collection in Outliner |  
+  |  | Drag Collection to Node Editor Graph |  
+  | Instance Points --> Collection Info | Instance on Points: Instance | 
+  |                                            | -> Collection Info: Geometry |
+  |         Instance Points                    | Check: Pick Instance          |
+  | Collection Info | Check: Reset Childeren |  
+  |                 | Check: Separate Childern |
+
   :::       
 
    
@@ -2743,41 +2762,37 @@ We don't want all our sprinkles to look alike. So we will add variations of shap
 We we show how to multi-select and link a material to multiple objects.
 :::
  
- :::{card} 
- | Command | Action |Value |
- | ------- |------ |-----|
- |  |  |  |
- :::  
+
 
   
- <p></p>
+<p></p>
   
- <style>
-   video {
-     width: 100%;
-   }
- </style>
-  
- <video controls>
- <source src='https://www.dropbox.com/s/i5dpn8i2xqxvpos/10-E_Linked-Material.mp4?dl=0'>
- </video>
- <p></p>
- <p></p>
+<style>
+video {
+  width: 100%;
+}
+</style>
 
-  
- <p></p>
-  
- <style>
-   video {
-     width: 100%;
-   }
- </style>
-  
- <video controls>
- <source src='https://www.dropbox.com/s/fh48vinkt52yt80/10-E_Linked-Material_Vertical.mp4?dl=0'>
- </video>
- <p></p>
- <p></p>
+<video controls>
+<source src='https://www.dropbox.com/s/i5dpn8i2xqxvpos/10-E_Linked-Material.mp4?dl=0'>
+</video>
+<p></p>
+<p></p>
+
+
+<p></p>
+
+<style>
+video {
+  width: 100%;
+}
+</style>
+
+<video controls>
+<source src='https://www.dropbox.com/s/fh48vinkt52yt80/10-E_Linked-Material_Vertical.mp4?dl=0'>
+</video>
+<p></p>
+<p></p>
 
 ---
 
