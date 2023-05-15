@@ -13,6 +13,7 @@ When learning with Blender, we may get stuck in states yielding odd behaviour.
 ```{admonition} Trouble Shooting Checklist
 :class: warning
 - [ ] **Turn Snapping Off (Shift + Tab)**
+- [ ] **Turn Proportional Editing Off (O)**
 - [ ] **Apply Scale (Ctrl + A)**
 - [ ] **View Orientation Transformation Scale => Global**    
 This icon looks like two arrows located at the top middle of the screen. ![View Transformation Orientation Menu](./Images/Hot_Keys/View-Transformation-Orientation-Menu.jpg)
@@ -2601,24 +2602,31 @@ We don't want all our sprinkles to look alike. So we will add variations of shap
 | Command | Action |Value |
 | ------- |------ |-----|
 | Top View | Numpad 7 |  |
+| Object Mode | | |
+| Select Last Sprinkle |||
 | Validate Location of Rotation | R |  |
-| Reset Origin to Center of Object | Object Button |  |
-|  | Set Origin |  |
-|  | Origin to Geometry |  |
+| Origin to Center of Object | Object Button |  |
+|  | > Set Origin |  |
+|  | > Origin to Geometry |  |
 |  |  |  |
 | Edit Mode | Ctrl + Tab |  |
-| Add Edge Loop | Ctrl + R over Object |  |
-| Add Loops | Scroll MMB Forward |  |
-| Switch to Faces | Keyboard 3| |
+| Add Edge Loop | Ctrl + R, over Object |  |
+|               | Do not confirm | |
+| Add 2 Loops | Scroll MMB Forward |  |
+|             | Click to Confirm   |  |
+| Switch to Faces | Keyboard - 3 | |
 | Select Loop | Alt + Select |  |
 | Top View | Numpad 7 |  |
-| Move along X | G + X  |  |
+| Bend along X | G + X  |  |
 |  |  |  |
-| Activate Porportional Editing | Button |  |
+| Porportional Editing Mode | O, Circle Dot |  |
 | Switch to Wireframe | Z > Wireframe |  |
 | Select Top Row |  |  |
 | Rotate | R |  |
 |  | Scroll MMB for Radius  |  |
+| Rotate Bottom Row | R |  |
+| Turn Proportional Mode Off | O ||
+| Switch to Solid | Z > Solid ||
 | Switch to Object Mode | Ctrl + Tab |  |
 
 ```{note} 
@@ -2627,10 +2635,9 @@ We don't want all our sprinkles to look alike. So we will add variations of shap
 - The default radius is in meters, our scene is small.
 ```
 
-
  :::
 
-  
+
  <p></p>
  Widescreen 
  <style>
@@ -2659,6 +2666,159 @@ We don't want all our sprinkles to look alike. So we will add variations of shap
  </video>
  <p></p>
  <p></p>
+
+---
+
+<div class="admonition note" name="html-admonition" style="background: lightgreen; padding: 10px">
+<p class="title"> </p>
+
+</div>
+ 
+ #### Add Second Sprinkle
+
+ :::{card} 
+ Add a second bent sprinkle, but a little less bent.
+ :::  
+
+ 10-C2_Bend-Second-Sprinkle.mp4
+
+ ---
+
+ <div class="admonition note" name="html-admonition" style="background: lightgreen; padding: 10px">
+ <p class="title"> </p>
+ 
+ </div>
+  
+  #### Create Instances from Collection of Sprinkles
+
+  :::{card} 
+  Instead of our Instances referencing one Sprinkle, we have them reference the collection of Sprinkles.
+  ::: 
+
+  :::{card} 
+  Steps
+  | Command | Action |Value |
+  | ------- |------ |-----|
+  |  |  |  |
+  :::       
+
+   
+  <p></p>
+   Widescreen     
+  <style>
+    video {
+      width: 100%;
+    }
+  </style>
+   
+  <video controls>
+  <source src='https://www.dropbox.com/s/8lay98ppecle98n/10-D_Add-Collection.mp4?dl=0'>
+  </video>
+  <p></p>
+  <p></p>
+
+ 
+<p></p>
+ 
+<style>
+  video {
+    width: 100%;
+  }
+</style>
+ 
+<video controls>
+<source src='https://www.dropbox.com/s/2qxqiqvuesh7gez/10-D_Add-Collection_Vertical.mp4?raw=1'>
+</video>
+<p></p>
+<p></p> 
+
+---
+
+<div class="admonition note" name="html-admonition" style="background: lightgreen; padding: 10px">
+<p class="title"> </p>
+
+</div>
+
+:::{card} 
+We we show how to multi-select and link a material to multiple objects.
+:::
+ 
+ :::{card} 
+ | Command | Action |Value |
+ | ------- |------ |-----|
+ |  |  |  |
+ :::  
+
+  
+ <p></p>
+  
+ <style>
+   video {
+     width: 100%;
+   }
+ </style>
+  
+ <video controls>
+ <source src='https://www.dropbox.com/s/i5dpn8i2xqxvpos/10-E_Linked-Material.mp4?dl=0'>
+ </video>
+ <p></p>
+ <p></p>
+
+  
+ <p></p>
+  
+ <style>
+   video {
+     width: 100%;
+   }
+ </style>
+  
+ <video controls>
+ <source src='https://www.dropbox.com/s/fh48vinkt52yt80/10-E_Linked-Material_Vertical.mp4?dl=0'>
+ </video>
+ <p></p>
+ <p></p>
+
+---
+
+<div class="admonition note" name="html-admonition" style="background: lightgreen; padding: 10px">
+<p class="title"> </p>
+
+</div>
+  
+:::{card} 
+Rather than having one sprinkle in the collection reference one color, we use a random function and a Color Ramp to assign a variety of color to any sprinkle in the collecton.
+:::
+
+ 
+<p></p>
+Widescreen 
+<style>
+  video {
+    width: 100%;
+  }
+</style>
+ 
+<video controls>
+<source src='https://www.dropbox.com/s/nm8wvbnrdh9dcbf/10-F_Color-Ramp-Constant.mp4?dl=0'>
+</video>
+<p></p>
+<p></p>
+
+ 
+<p></p>
+ 
+<style>
+  video {
+    width: 100%;
+  }
+</style>
+ 
+<video controls>
+<source src='https://www.dropbox.com/s/z1s1lt593d6iie3/10-F_Color_Ramp-Constant_Vertical.mp4?dl=0'>
+</video>
+<p></p>
+<p></p>
 
 Rest assured
 
