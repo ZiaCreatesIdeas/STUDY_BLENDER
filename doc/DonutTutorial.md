@@ -17,7 +17,8 @@ If demand is high enough, we will increase the bandwidth or find a more suitable
 
 ```{note} Why make a tutorial of a tutorial?
 :class: warning
-- Proof of Work. This is a good way to document one's progress through comlexity.
+- Proof of Work. This is a good way to document one's progress through complexity.
+- This is a form of a digital notebook.
 - This is a good exercise in reducing complexity into simplicity.
 - Recalling a small particular step, is a large sequence of steps, is difficult. 
 - This Donut Blender companion guide aims to act as a bridge, moving users from  
