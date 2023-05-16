@@ -1,12 +1,11 @@
 # Donut Tutorial
 
 ::::{important} 
-This is a companion guid to Blender Guru's foundational [Donut Tutorial](https://www.youtube.com/playlist?list=PLjEaoINr3zgFX8ZsChQVQsuDSjEqdWMAD)  
-
-
+This is a companion guide to Blender Guru's foundational [Donut Tutorial](https://www.youtube.com/playlist?list=PLjEaoINr3zgFX8ZsChQVQsuDSjEqdWMAD)  
 
 ::::
 
+**Disclaimers:**  
 Videos for this tutorial are currently hosted on Dropbox which  
 limits their data and may result in a video not available error.
 
@@ -27,6 +26,8 @@ If demand is high enough, we will increase the bandwidth or find a more suitable
 - This tutorial supports step by step following along, using two monitors.  
 - This tutorial supports one screen setups and laptops by having vertical videos in some sections.  
 ![Vertical Setup](./Images/Vertical_Screen_Setup/Vertical-Screen-Setup.jpg)
+- This companion guide covers Parts 01 - 10 at this time.
+- Sphinx Documentation's Search is only so-so, instead we suggest Cmd/Ctrl-F on the tutorial document.
 - This is an early early release, please forgive typoose, unclear text, and various mishaps.
 
 ```
@@ -43,7 +44,7 @@ Installing Screencast Keys may be helpful in some later sections as one can matc
 
 ## Trouble Shooting
 
-When learning with Blender, we may get stuck in states yielding odd behaviour.  
+While learning Blender, one may get stuck in states which yield odd behaviour.  
 Should this occur at any time in one's learning journey, please refer to the list below.
 
 ```{admonition} Trouble Shooting Checklist
@@ -67,13 +68,12 @@ This icon looks like two arrows located at the top middle of the screen. ![View 
 :::{card} 
 
 **Object Mode, Edit Mode**  
-Blender has two different modes to work in, **Object** and **Edit** Modes.
+Blender has two different modes to work in, **Object** and **Edit** Modes.  
 Each mode has restrictions on what commands can be delivered.   
 ie. 'X' to delete, works different in Object Mode vs. Edit Mode.   
 Edit mode is only available when an object is **selected**.  
 
 :::
-
 
 
 #### Change Resolution Scale of Interface.
@@ -85,7 +85,8 @@ Edit mode is only available when an object is **selected**.
 
 #### Change Material Colors
 
-Material color changes are not interactive in the early sections, and only show when rendered (F12) for now.
+Material color changes are not interactive in the early tutorial sections,  
+and only show when rendered (F12) for now.
 
 % https://www.dropbox.com/s/d0tgmotsvrxbr4y/01_B-ChangeMaterialColors.mp4?raw=1
 
@@ -131,9 +132,8 @@ Material color changes are not interactive in the early sections, and only show 
 
 ```{note}
 :class: warning
-- Having an even number segments can help when unwrapping for UV's  
-  or performing slices.  
-- Odd segmentation may be helpful when trying to define the middle of an object.
+- Having an even number segments can help when unwrapping for UV's or performing slices.  
+- Having an odd number of segments may be helpful when trying to define the middle of an object.
 ```  
 
 <style>
@@ -153,9 +153,15 @@ Material color changes are not interactive in the early sections, and only show 
 <source src='https://www.dropbox.com/s/8ky3l3e0t0lf6mp/02_B-Apply-Scale.mp4?raw=1'>
 </video>
 
-- Here we scale the donut down from 3m meters to ~ 9 cm.
-- Blender's default scale of 1 meter, will effect many our steps ahead. 
+```{note} 
+:class: warning
+- Here we scale the donut down from 3 meters to ~ 9 cm.
+- Blender's default scale is in 1 meter, our Donut is around 9 centimeters.
+- The difference in scale effects the default settings of tools like radius: Proportional editing.  
 - The scale should always be near to 1, 1, 1. When in doubt, Ctrl + A > Apply scale. 
+```
+Apply Scale:
+<p></p>
 
 ![Apply Scale](Images/Donut_Tutorial_Part_02/02-C_Menu-Apply-Scale.jpg)
 
@@ -203,7 +209,7 @@ We can change the shading of our object by **Selecting** the object and right cl
 | ------- | ---------- |----  |
 | 3. Select Donut| |
 | 4. Frame Selection | Press Numpad - Period ' . ' |
-| 5. Move Camera to Perspective View  | Ctrl + Alt + Numpad - 0 | _**Extremely Useful Hot Key**_ |
+| 5. Set Camera Position to Perspective View  | Ctrl + Alt + Numpad - 0 | _**Extremely Useful Hot Key**_ |
 
 
 <style>
@@ -289,7 +295,7 @@ The camera snaps to the donut's position.
 
 <div class="subd">
 
-### Subdivision
+### Subdivisions
 
 :::{card} 
 Also known as "subd's, subds, subsurf, subsurfaces". 
@@ -339,7 +345,7 @@ Also known as "subd's, subds, subsurf, subsurfaces".
 
 | Command | Hot Key     | note |
 | ------- | ------------|-----|
-| Move Along Normals | Alt + S |
+| Move Along Normals | Alt + S | Extremely Useful Hotkey|
 
 <style>
   video {
@@ -361,11 +367,13 @@ Create a Layer for Icing.
 
 ### Separate by Selection
 
+
 | Command |  Hot Key    | note |
 | ------- | -----|--|
 | Wireframe | Alt + Z | | Select backfacing vertices |
 | Duplicate | Shift + D| 'esc' to drop selection back in place |
 | Separate | P [Selection] | A Separate Layer Occurs |
+| | If the selection has been dropped, Ctrl + L (Select Linked) |
 
 <style>
   video {
@@ -381,7 +389,7 @@ Create a Layer for Icing.
 
 ### Modifier: Solidify
 
-Apply a the Solidify modifier from Object Mode.
+Apply a Solidify modifier from Object Mode.
 <style>
   video {
     width: 100%;
@@ -396,7 +404,12 @@ Smooth Offset with Shift + Drag
 
 ---
 
-The order of modifiers matters.
+```{note} 
+:class: warning
+The order of modifiers matters. The top modifier effects those below. Similar to order of Operations.
+
+```
+
 
 <style>
   video {
@@ -415,8 +428,8 @@ The order of modifiers matters.
 ```{admonition} Warning
 :class: warning
 
-Applying subdivision's is destructive and cannot be undone.  
-- Save Unmodified Blender Project.
+Applying subdivision's is destructive and cannot be undone. It is recommended: 
+- **Save As** a copy of one's un-modified Blender Project.
 - Duplicate Objects into Separate Layer before applying Subdivisions.
 
 ```
@@ -425,7 +438,7 @@ Applying subdivision's is destructive and cannot be undone.
 | Command | Hot Key     | note |
 | ------- | ------------|-----|
 | Select Object | | Object Mode |
-| Duplicate Object | Shift + D | The object (prim) will appear temporarily large. |
+| Duplicate Object | Shift + D | If snapping (Shift + Tab) is on the object (prim) will appear temporarily large. |
 | Drop Selection | RMB | 
 | Save Project | File > Save As Copy |  |
 
@@ -446,8 +459,8 @@ We apply our Subdivision with a level of 1.
 | Command | Hot Key     | note |
 | ------- | ------------|-----|
 | Move Subdivision Modifier to Top |  |
-| Apply Modifier | Ctrl + A while hovering over Modifier | Only Object Mode |
-|       | Select Drop Down Arrow | Only Object Mode |
+| Apply Modifier | Ctrl + A while hovering over Modifier | Object Mode |
+|       | Select Drop Down Arrow | Object Mode |
 <style>
   video {
     width: 100%;
@@ -462,7 +475,6 @@ We apply our Subdivision with a level of 1.
 <p></p>
 
 ---
-
 
 ## Part 04: Modeling
 
@@ -488,7 +500,7 @@ This acts like a radius falloff. Very important to activate.
 <p></p>
 
 **Deformation with Snapping Activated**  
-Deform the Icing to adhere to the faces of the donut.
+Deform the icing to adhere to the faces of the donut.
 <style>
   video {
     width: 100%;
@@ -521,7 +533,7 @@ We can also toggle the ( Display Modifier in Edit Mode ) button.
 :class: warning
 
 When selecting a vertex, it is possible to select points on the backside.  
-Shift + Z for X-Ray, or Z + Swipe Left to see that no other points are selected.
+**Shift + Z** for X-Ray, or **Hot Key Z > Wireframe** to see that no other points are selected.
 ```  
 
 [ Select Through Bug in Blender ](https://youtu.be/R1isb0x4zYw?list=PLjEaoINr3zgFX8ZsChQVQsuDSjEqdWMAD&t=557)
@@ -530,9 +542,12 @@ Shift + Z for X-Ray, or Z + Swipe Left to see that no other points are selected.
 
 ### Fixing Mesh Occlusion
 
+:::{card} 
 The mesh for the icing will be occluded by the donut's base.  
 So we pull the mesh forward by activating Snap, Proportional Editing and pressing 'G'   
-then drop the selection. Do not drag the mouse or move any points.
+then dropping the selection. Do not drag the mouse, or move any points.
+:::
+
 <p></p>
 
 | Command | Hot Key     | note |
@@ -598,8 +613,7 @@ Instead, we can easily manipulate the camera from the viewport.
 ![Camera to View](./Images/Donut_Tutorial_Part_04/04-C3_Camera_to_View_ShortVersion.gif)
 
 **Cons**:   
-- Typically we can leave the camera view by pressing the MMB to escape, now we need to press 'Num pad 0'  
-or uncheck 'Camera to View'.  
+- Typically we can leave the camera view by pressing the MMB to escape, now we need to press 'Num pad 0' or uncheck 'Camera to View'.  
 - MMB Scroll to Zoom in and out does not allow for using 'Shift' for smooth increments. 
 
 ---
@@ -623,7 +637,7 @@ We observe that we are accidently rendering the original cube placed our scene a
 
 ```{note} 
 :class: warning
-A layer can be invisible in the viewport but will still appear in the render.
+A layer can be **invisible** in the viewport but will still **appear** in the render.
 ```    
 ---
 
@@ -697,7 +711,7 @@ Here we add additional detail by applying the Subdivision surface.
  
 ```
 
- - Move Edges and Apply Second Sub Division Modifier.
+ - Move Edges and Apply Second Sub Division Modifier. 
 
 ![Apply Second Subdivision](./Images/Donut_Tutorial_Part_04/04-G2_Apply-Second-Subdivision.gif)
 
@@ -761,7 +775,7 @@ This is a second way to match the icing to the Donut.
 </video>
 <p></p>
 
-[Blender Tutorial Part 4: Shrinkwrap Modifier.](https://youtu.be/R1isb0x4zYw?t=920)
+[Blender Guru, Donut Tutorial, Part 4: Shrinkwrap Modifier.](https://youtu.be/R1isb0x4zYw?t=920)
 
 ---
 
@@ -780,7 +794,7 @@ Adding greater details to our icing.
 ```{admonition} Warning
 :class: warning
 
-Save scene before applying modifiers.
+**SAVE COPY** scene before applying modifiers.
 
 ```
 
@@ -802,8 +816,8 @@ Select the Layout Sculpting Mode Tab.
 | Sculpting | Pie Menu: Ctrl + Tab [ Sculpting ] |
 | Draw, Pull [ Push ] |  X, [ Ctrl + Drag ] ||
 | Grab | G | |
-| Change Radius | F | |
-| Strength of Radius | Shift + F | |
+| Change Radius | F | We will use this key combo in the future |
+| Strength of Radius | Shift + F | We will use this key combo in the future |
 | Smooth | Shift + S | Hold Shift to activate Smooth anytime |
 | Inflate | I | Ctrl to Deflate |
 | Show All Brushes | Pop Up: Shift + Space Bar | |
@@ -826,7 +840,7 @@ Select the Layout Sculpting Mode Tab.
 :::{card} Inflate > Stroke > Option 'Space'
 - With Airbrush activated, we do not need to move the mouse to inflate the mesh.
 - Observe that the 'Active Tool' option is identical to our 'N' Slide panel.
-- 'Space' is the default setting which applies inflation upon cursor movement.
+- 'Space' in brushes, is the default setting which applies inflation upon cursor movement.
 :::
 
 <style>
@@ -939,7 +953,7 @@ Reduce Lighting Power to 20.2W
 ### Render Engines (EeVee, Cycles)
 
 :::{card} Render Engines
-EeVee is the render engine that ships with Blender. Suitable for games. Cycles is Ray Tracer.
+EeVee is the render engine that ships with Blender. Suitable for games. Cycles is a robust Ray Tracer.
 :::
 
 ::::{card} Choose Render Engine
@@ -982,6 +996,12 @@ EeVee is the render engine that ships with Blender. Suitable for games. Cycles i
 Edit > Preferences > System > Optix.  
 Use CUDA if Optix is n/a.
 :::
+
+```{note} 
+:class: warning
+- There are render settings for the display and for final rendering.
+- Optix uses CUDA for speed, but in Part 15, Kevin mentions benefits to not using Optix.
+```
 
 <style>
   video {
@@ -1060,7 +1080,7 @@ Slots act as Snapshots so we can flip through our renders.
 ### Subsurface Scattering
 
 :::{card} Subsurface Scattering.
-Subsurface scattering allow objects to have a transluceny or an apparent internal glow to themselves.
+Subsurface scattering allow objects to have a translucency or an apparent internal glow to themselves.
 :::
 
 | Command | Value     | note |
@@ -1157,7 +1177,7 @@ More samples reduces noise but increases render times.
 
 :::{card} Textures.
 "_Real Donuts are not one solid color._"  
-"_Base color, roughness value and normal map (bump mapping) - 90% of the materials you make will just use those three things." -Blender Guru_
+"_Base color, roughness value and normal map (bump mapping) are 90% of the materials you make will just use those three things." -Blender Guru_
 :::
 
 <div class="admonition note" name="html-admonition" style="background: lightgreen; padding: 10px">
@@ -1240,8 +1260,12 @@ Noise is one of the most commonly used Material nodes.
 
 ---
 
-::::{Important} Add Node Wrangler 
-This allow us to isolate nodes and preview them.
+::::{Important} **Add Node Wrangler**
+- This allows us to isolate nodes and preview them.
+
+| Command | Hot Key     | note |
+| ------- | ------------|-----|
+| Preview Node | Ctrl + Shift + Select | Node Wrangler |
 
 <p></p>
  
@@ -1258,12 +1282,11 @@ This allow us to isolate nodes and preview them.
 
 ::::
 
+<div class="admonition note" name="html-admonition" style="background: lightgreen; padding: 10px">
+<p class="title"> </p>
 
-| Command | Hot Key     | note |
-| ------- | ------------|-----|
-| Preview Node | Ctrl + Shift + Select | Node Wrangler |
-
- --- 
+</div>
+ 
 
 | Command | Purpose   | note |
 | ------- | ------------|-----|
@@ -1301,7 +1324,7 @@ Close Up
 
 ::::{important} 
 
-With our noodles, we typically connect like color connectors to other like colors, except for gray and yellow, which can be mixed
+With our noodles, we typically connect like colors to other like colors, except for gray and yellow, which can be mixed.
 
 ::::
 
@@ -1399,7 +1422,8 @@ Steps:
 
 ```{note} 
 :class: warning
-The Donut will turn purple or black to indicate that no texture has been assigned yet.
+The Donut will turn **purple** or **black** to indicate that no texture has been assigned yet.
+
 ```
  
 :::{card} Use Node Search:
@@ -1555,7 +1579,7 @@ Optional: Rearrange screen for vertical friendly viewing.
 
 ---
 
-::::{important} Draw Icon
+::::{important} **Draw Icon**  
 Be sure to click on the Draw / Paint icon (top left) in order to bring up the paint swatches.
 ::::
 
@@ -1563,7 +1587,7 @@ Be sure to click on the Draw / Paint icon (top left) in order to bring up the pa
 :class: warning
 
 - Save the *image Texture File or it will be **Erased**.
-- On exit, Blender will offer a chance to save the file.
+- On exit, Blender will offer a chance to save the file, one last time.
 ```
 | Action | 
 | ------- |
@@ -1604,7 +1628,7 @@ Save *Image of Texture file.
 
 ```{note} 
 :class: warning
-- Overlay brightens and darkens the texture underneath it (increased contrast)
+- Overlay brightens and darkens the texture underneath it (basically increased contrast)
 - Multiply uses the dark in the layer below.
 - Add is the opposite of multiply.
 ```
@@ -1630,7 +1654,7 @@ Save *Image of Texture file.
 
 ```{warning} 
 :class: warning
-Search will not find 'Mix Color' Node.
+Search will not find 'Mix Color' Node. Might be a bug.
 ```
 
 | Action | Value |
@@ -1696,7 +1720,7 @@ Search will not find 'Mix Color' Node.
 <p></p>
 <p></p>
 
-:::{card} Vertical - Breakdown
+:::{card} Vertical
  
 <p></p>
  
@@ -1715,6 +1739,12 @@ Search will not find 'Mix Color' Node.
 
 ---
 
+<div class="admonition note" name="html-admonition" style="background: lightgreen; padding: 10px">
+<p class="title"> </p>
+
+</div>
+ 
+
 ## Part 09: Geometry Nodes
 
 [Blender Guru: Part 09](https://youtu.be/4WAxMI1QJMQ)
@@ -1727,7 +1757,7 @@ Search will not find 'Mix Color' Node.
 | Close Spreadsheet Window | RMB Over Panel > Join / Cross Hair from Left Corner |
 | Create First Geometry Node | Click '+ New' |
 | Toggle Visibility | Select and Deselect Geometry Node in Modifier Stack |
-| Make Visibility Independant of Selection in Stack | Select Pin |
+| Make Visibility Independent of Selection in Stack | Select Pin |
 
  <p></p>
  
@@ -1769,8 +1799,6 @@ Search will not find 'Mix Color' Node.
 | Split Screens with Cross Hairs | From a Corner, Drag a Window onto itself to split | 
 | Join Screens with Cross Hairs  | Drag a Corner onto Adjacent window to merge |
 
-:::
- 
 <p></p>
  
 <style>
@@ -1784,6 +1812,8 @@ Search will not find 'Mix Color' Node.
 </video>
 <p></p>
 <p></p>
+
+:::
 
 ---
 
@@ -1847,8 +1877,8 @@ Search will not find 'Mix Color' Node.
 <p></p>
 <p></p>
 
-:::{card} Vertical View:
- 
+:::{card}
+
 <p></p>
  
 <style>
@@ -1864,10 +1894,11 @@ Search will not find 'Mix Color' Node.
 <p></p>
 
 :::
-```{note} Observe:
+```{note}
 :class: warning
+**Observe:**
 - The icing layer has been turned into points. 
-- To preserve the layer and also have points we need a 'Join Geometry Node.'
+- To preserve the layer and also have points, we need a 'Join Geometry Node.'
 ```
 
 | Command | Action |Value |
@@ -1889,7 +1920,7 @@ Search will not find 'Mix Color' Node.
 <p></p>
 <p></p>
 
-:::{card} Vertical Breakdown of Set Position:
+:::{card} Breakdown of Set Position:
  
 <p></p>
  
@@ -1910,7 +1941,8 @@ Search will not find 'Mix Color' Node.
 
 ---
 
-- **Create a Single Sprinkle to Reference.**
+:::{card} 
+**Create a Single Sprinkle to Reference.**
 
 | Command | Action |Value |
 | ------- |------ |-----|
@@ -1920,9 +1952,10 @@ Search will not find 'Mix Color' Node.
 | Move to Side | G (Grab tool) | Numpad Keys 7, 1 for Top and Front |
 | Scale Z | S + Z ||
 | Scale Overall | S ||
+:::
 
 <p></p>
-
+Widescreen:
 <p></p>
  
 <style>
@@ -1957,7 +1990,7 @@ Search will not find 'Mix Color' Node.
 ---
 
 :::{card} Attach a Single Sprinkle to Instances.
-- From one, create many.
+ _"From one, come many."_
 
 | Command |   
 | ------- |  
@@ -1999,7 +2032,7 @@ Search will not find 'Mix Color' Node.
 
 ---
 <div class="admonition note" name="html-admonition" style="background: lightgreen; padding: 10px">
-<p class="title"> ****</p>
+<p class="title"> </p>
 
 </div>
  
@@ -2030,7 +2063,7 @@ Search will not find 'Mix Color' Node.
 
 ---
 
-:::{card} Add Euler Node.
+:::{card} Add Euler Node (pronounced "Oiler").
 
 | Command | Action |  |
 | ------- |------ |-----|
@@ -2131,7 +2164,7 @@ Search will not find 'Mix Color' Node.
 :::{card} Control where sprinkles can appear on the icing.
 
 - Limit sprinkles on some portions of the icing.
-- Remove sprinkles on the bottom of the icing.
+- Remove sprinkles from the bottom of the icing.
 
 :::
 
@@ -2293,13 +2326,14 @@ The value of weights ranges between 0 - 1.
 
 ```{admonition} Blender Bug
 :class: warning
-You may need to restart Blender if you see a black box instead of 'Sprinkles Density'. Be sure to **SAVE** if you have skipped that step.
+You may need to restart Blender if you see a black box instead of 'Sprinkles Density'. Be sure to **SAVE**.
 
 ```
-[Blender Guru, Apply Vertex Weight Map](https://youtu.be/4WAxMI1QJMQ?list=PLjEaoINr3zgFX8ZsChQVQsuDSjEqdWMAD&t=1452)
+
 
 :::
 
+[Blender Guru, Apply Vertex Weight Map](https://youtu.be/4WAxMI1QJMQ?list=PLjEaoINr3zgFX8ZsChQVQsuDSjEqdWMAD&t=1452)
  
 <p></p>
  Widescreen
@@ -2338,7 +2372,7 @@ You may need to restart Blender if you see a black box instead of 'Sprinkles Den
 </div>
  
 
-#### Avoid Clipping using Poisson
+#### Use Poisson to Reduce Clipping
 
 :::{card} 
 Our Sprinkles intersect with one another. We can reduce this effect.  
@@ -2471,9 +2505,22 @@ Paint Weight Value ranges from 0 - 1 but we want 'Sprinkle Density' to go up to 
 
 ---
 
+<div class="admonition note" name="html-admonition" style="background: lightgreen; padding: 10px">
+<p class="title"> </p>
+
+</div>
+ 
+
+
 ##  Part 10: Random Colored Sprinkles
 
 [Blender Guru: Part 10: Random Colored Sprinkles](https://youtu.be/bLw0HwphXO0)
+
+:::{card} 
+Edge loops offer an easy way to alter our models.  
+Here we use them to smooth the ends of our sprinkles.  
+In the real world, surfaces have bevels and not perfect 90 degree junctions.
+:::
 
 ### Edge Loops
 
@@ -2961,14 +3008,14 @@ Widescreen
 <p></p>
 <p></p>
 
-%% Rest assured
+%% Rest assured, almost complete.
 
 ---
 
-## Congratulations
+## Congratulations!
 
 :::{card} 
-Those who made it this far have negotiated some of the most complex sequences of this tutorial. If you are reading this, it is either because you were curious and you jumped ahead, or that you were determined to finish. Both traits are admirable. Congratulations.
+Those who made it this far have negotiated some of the most complex sequences of this tutorial. If you are reading this, it is either because you were curious and you jumped ahead, or you were determined to finish. Both traits are admirable. If it is the first, jump in. If it is the second, congratulations!
 
 :::
 

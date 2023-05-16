@@ -1,17 +1,15 @@
 
 
 (resources)=
-#### Example of a Header
 
-This is a list of helpful tutorials.
+[Blender Beginner Donut Tutorial](https://www.youtube.com/playlist?list=PLjEaoINr3zgFX8ZsChQVQsuDSjEqdWMAD)
 
-##### Examples of Links
+:::{card} 
+As rendered using the browser Brave.
+![Donut Playlist](./Images/Site_Images/Donut-Tutorial-Playlist.jpg)
+:::
 
-Open USD Glossary of Terms: 
-**[openusd.org, Terms and Concepts](https://openusd.org/release/glossary.html)**\
-SideFx (Houdini) Definitions: 
-**[SideFX, Houdini, USD Basics](https://www.sidefx.com/docs/houdini/solaris/usd.html)**
-
+[The Right way to Cut a Hole - Josh Gambrell](https://www.youtube.com/watch?v=Ci1jBOm_5NY)
 
 % This is a comment. Below we have an 'Horizontal Rule', a line that goes across the page.
 ---

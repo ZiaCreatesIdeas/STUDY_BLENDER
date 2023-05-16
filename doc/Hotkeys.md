@@ -130,13 +130,13 @@ Edit mode is only available when an object is selected.
 | Add Edge Loop | Hover Over Object: Ctrl + R |
 | Add Many Edge Loops | Mouse Scroll Wheel + Scroll Up | |
 | Select Edge Loop | Alt + LMB | [Part 04: Select Edges](DonutTutorial.md#select-edges)|
-| Slide Edge Loop | G + G |
+| Slide Edge Loop | G + G | **Important**|
 | Delete Edge Loop| X or Del Key| Edge Loop | |
 ![Delete Edge Loops](./Images/Donut_Tutorial_Part_10/10-A2_Delete-Edge-Loops.gif)
 
+---
 
-
-**Sculpting**
+#### Cut Noodles
  | Command | Hot Key     | note |
  | ------- | ------------|-----|
  | Cut Noodle | Ctrl + RMB | ![Noodle Slice](./Images/Hot_Keys/Hot-Key_Ctrl-RMB-Noodle-Slice.gif) |
@@ -170,7 +170,7 @@ Edit mode is only available when an object is selected.
 | ~ (tilde) |  ![Pie Tilde ](Images/Pie_Tilde-View.jpg) |
 | <td style="text-align: center">Select **Mode** with **Object Selected**</td> | | 
 |  Ctrl + Tab |  ![Select Mode](Images/Hot_Keys/02-G_Pie-Menu_Select-Mode.jpg)   |    
-| <td style="text-align: center">Cursor to Selected </td> |
+| <td style="text-align: center">Move Pivot: Cursor to Selected </td> |
 | Shift + S | ![Pivot Menu](./Images/Hot_Keys/10-A_Shift-S-Pivot.gif) |  
 | Move Pivot |![Pivot Menus](./Images/Hot_Keys/10-A2_Move-Pivot.gif)| | 
 | Center Pivot |![Center Menus](./Images/Hot_Keys/10-A3_Center-Pivot-to-Object.gif)| | 
@@ -240,7 +240,10 @@ Allows the number keys on the top to switch views.
 | -------  | -----|
 | Apply | Ctrl + A while hovering over modifier |
 
-### Texture Paint
+---
+
+### Mute Nodes
+This is a very handy shorcut for quickly testing node's contributions.
 
 | Command | Combination     | note |
 | ------- | ------------|-----|
