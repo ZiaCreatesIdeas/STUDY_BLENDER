@@ -1,5 +1,12 @@
 # Donut Tutorial
 
+::::{important} 
+This is a companion guid to Blender Guru's foundational [Donut Tutorial](https://www.youtube.com/playlist?list=PLjEaoINr3zgFX8ZsChQVQsuDSjEqdWMAD)  
+
+
+
+::::
+
 Videos for this tutorial are currently hosted on Dropbox which  
 limits their data and may result in a video not available error.
 
@@ -7,32 +14,67 @@ limits their data and may result in a video not available error.
 ![Dropbox Error](./Images/Dropbox-Error/LinkOverload.jpg)
 :::
 
+If demand is high enough, we will increase the bandwidth or find a more suitable provider.
+
+```{note} Why make a tutorial of a tutorial?
+:class: warning
+- Proof of Work. This is a good way to document one's progress through comlexity.
+- This is a good exercise in reducing complexity into simplicity.
+- Recalling a small particular step, is a large sequence of steps, is difficult. 
+- This Donut Blender companion guide aims to act as a bridge, moving users from  
+  'no recall' to 'rote recall'.
+- This guide is meant to be a 'see-it-do-it' guide, without having to pause and rewind videos.
+- This tutorial supports step by step following along, using two monitors.  
+- This tutorial supports one screen setups and laptops by having vertical videos in some sections.  
+![Vertical Setup](./Images/Vertical_Screen_Setup/Vertical-Screen-Setup.jpg)
+- This is an early early release, please forgive typoose, unclear text, and various mishaps.
+
+```
+
+:::{card} 
+This tutorial uses [**Short Cut VUr**](https://www.youtube.com/watch?v=Ombz2lDjZIA) to display keystrokes. Most of the time. 
+We also use the [Screen Cast Addon](https://www.youtube.com/watch?v=6d_Lv6xN5bQ) which is recommended for greater reliability in documentating Hot keys, Pie and Pop-Up Menus. [Screencast Github](https://github.com/nutti/Screencast-Keys)  
+Installing Screencast Keys may be helpful in some later sections as one can match the on screen keys with one's own keys. A bit like the bouncing ball in Karaoke.
+
+:::
+
+---
+
+
 ## Trouble Shooting
 
-When learning with Blender, we may get stuck in states yielding odd behaviour. 
+When learning with Blender, we may get stuck in states yielding odd behaviour.  
+Should this occur at any time in one's learning journey, please refer to the list below.
+
 ```{admonition} Trouble Shooting Checklist
 :class: warning
 - [ ] **Turn Snapping Off (Shift + Tab)**
 - [ ] **Turn Proportional Editing Off (O)**
 - [ ] **Apply Scale (Ctrl + A)**
-- [ ] **View Orientation Transformation Scale => Global**    
+- [ ] **Set Orientation Transformation Scale => Global**    
 This icon looks like two arrows located at the top middle of the screen. ![View Transformation Orientation Menu](./Images/Hot_Keys/View-Transformation-Orientation-Menu.jpg)
 
 ```
 ---
 
-This tutorial uses [**Short Cut VUr**](https://www.youtube.com/watch?v=Ombz2lDjZIA) to display keystrokes. Most of the time. 
-We also use [Screen Cast Addon](https://www.youtube.com/watch?v=6d_Lv6xN5bQ) which is recommended for greater reliability in documentating Hot keys so Pie and Pop-Up Menus. [Github](https://github.com/nutti/Screencast-Keys)
+
+
 
 ## Part 01: The Basics
 
 [Navigation and Hotkeys](Hotkeys.md)
 
+:::{card} 
+
 **Object Mode, Edit Mode**  
-Blender has two different modes to work in.  
+Blender has two different modes to work in, **Object** and **Edit** Modes.
 Each mode has restrictions on what commands can be delivered.   
-ie. 'X' to delete, works different in Object Mode vs. Edit Mode. 
-Edit mode is only available when an object is selected.  
+ie. 'X' to delete, works different in Object Mode vs. Edit Mode.   
+Edit mode is only available when an object is **selected**.  
+
+:::
+
+
 
 #### Change Resolution Scale of Interface.
 * Edit > Preferences > Interface > Resolution Scale.
@@ -43,7 +85,7 @@ Edit mode is only available when an object is selected.
 
 #### Change Material Colors
 
-Material color changes are not interactive and only show when rendered (F12).
+Material color changes are not interactive in the early sections, and only show when rendered (F12) for now.
 
 % https://www.dropbox.com/s/d0tgmotsvrxbr4y/01_B-ChangeMaterialColors.mp4?raw=1
 
@@ -89,8 +131,9 @@ Material color changes are not interactive and only show when rendered (F12).
 
 ```{note}
 :class: warning
-- Having an even number seams can help when unwrapping for UV's or performing slices.  
-- Odd may be helpful when trying to define the middle of an object.
+- Having an even number segments can help when unwrapping for UV's  
+  or performing slices.  
+- Odd segmentation may be helpful when trying to define the middle of an object.
 ```  
 
 <style>
@@ -110,20 +153,33 @@ Material color changes are not interactive and only show when rendered (F12).
 <source src='https://www.dropbox.com/s/8ky3l3e0t0lf6mp/02_B-Apply-Scale.mp4?raw=1'>
 </video>
 
-Here we scale the donut down from 3m to ~ 9 cm. 
-The scale should always be near to 1, 1, 1. 
+- Here we scale the donut down from 3m meters to ~ 9 cm.
+- Blender's default scale of 1 meter, will effect many our steps ahead. 
+- The scale should always be near to 1, 1, 1. When in doubt, Ctrl + A > Apply scale. 
 
 ![Apply Scale](Images/Donut_Tutorial_Part_02/02-C_Menu-Apply-Scale.jpg)
 
 [Blender Guru: Tutorial 02, Apply Scale](https://youtu.be/imdYIdv8F4w?t=454)
 
 We can change the shading of our object by **Selecting** the object and right clicking over the background.  
-"Smooth shade is an illusion. It does not add any geometry."
+
+:::{card} 
+"_**Smooth shade is an illusion. It does not add any geometry.**_" - Blender Guru
+:::
+
 
  | Mouse |  Smooth Shade      |
  | ------- | -----------   | 
  |**RMB over background** |![Flat Shade](Images/Donut_Tutorial_Part_02/02-D_RMB-Object-Context-Menu.jpg) |
 
+
+---
+
+<div class="admonition note" name="html-admonition" style="background: lightgreen; padding: 10px">
+<p class="title"> </p>
+
+</div>
+ 
 
 ### Camera Lessons
 
@@ -183,7 +239,7 @@ The camera snaps to the donut's position.
 | **Move Camera Frame** |    |
 | 1. Select Camera Frame |    | Notice in right hand view, camera turns orange |
 | 2. Activate Grab Tool | G |
-| 3. Enter Smooth Zoom Mode  | Depress MMB | In perspective view, we hold Ctrl + MMB to smooth Zoom |
+| 3. Enter Smooth Zoom Mode  | Depress MMB | Perspective view, we hold Ctrl + MMB to smooth Zoom |
 
 <style>
   video {
@@ -213,6 +269,8 @@ The camera snaps to the donut's position.
 <source src='https://www.dropbox.com/s/gzk0t3d25l4f7d1/02-Ec_Camera-G-Drag-to-Move.mp4?raw=1'>
 </video>
 
+<p></p>
+
 | Command | Hot Key     | note |
 | ------- | ------------|-----|
 | 7. Render Camera View | F12 | Check view by rendering |
@@ -232,10 +290,13 @@ The camera snaps to the donut's position.
 <div class="subd">
 
 ### Subdivision
+
+:::{card} 
 Also known as "subd's, subds, subsurf, subsurfaces". 
 - Subdivisions are a way to smooth our models while still maintaining control over their base wire frame / cage.  
 - Subdivisions are typically added in object mode, but we can select the option to view the results in Edit mode.  
 - We can toggle the visibility of the Subd's for the viewport and the render.
+:::
 
 <style>
   video {
@@ -354,12 +415,12 @@ The order of modifiers matters.
 ```{admonition} Warning
 :class: warning
 
-Applying subdivision's is destruction and cannot be undone.  
+Applying subdivision's is destructive and cannot be undone.  
 - Save Unmodified Blender Project.
 - Duplicate Objects into Separate Layer before applying Subdivisions.
 
 ```
-**Perpare by Duplicating Object and Saving File > As Copy**
+**Prepare by Duplicating Object and Saving File > As Copy**
 
 | Command | Hot Key     | note |
 | ------- | ------------|-----|
@@ -469,9 +530,9 @@ Shift + Z for X-Ray, or Z + Swipe Left to see that no other points are selected.
 
 ### Fixing Mesh Occlusion
 
-The mesh for the icing will be occluded by the base.  
+The mesh for the icing will be occluded by the donut's base.  
 So we pull the mesh forward by activating Snap, Proportional Editing and pressing 'G'   
-then drop the selection.
+then drop the selection. Do not drag the mouse or move any points.
 <p></p>
 
 | Command | Hot Key     | note |
@@ -527,6 +588,7 @@ Instead, we can easily manipulate the camera from the viewport.
 
 | Command | Hot Key     | note |
 | ------- | ------------|-----|
+| Set Camera to Current View | **Ctrl + Alt + Numpad 0** | Highly used Hotkey Combo |
 | Side Menu  | N |
 | Select | View |
 | Checkbox   | Activate 'Camera to View' |
@@ -535,9 +597,17 @@ Instead, we can easily manipulate the camera from the viewport.
 
 ![Camera to View](./Images/Donut_Tutorial_Part_04/04-C3_Camera_to_View_ShortVersion.gif)
 
-**Cons**: Typically we can leave the camera view by pressing the MMB to escape, now we need to press 'Num pad 0' or uncheck 'Camera to View'.  
-MMB Scroll to Zoom in and out does not allow for using 'Shift' for smooth increments. 
+**Cons**:   
+- Typically we can leave the camera view by pressing the MMB to escape, now we need to press 'Num pad 0'  
+or uncheck 'Camera to View'.  
+- MMB Scroll to Zoom in and out does not allow for using 'Shift' for smooth increments. 
 
+---
+<div class="admonition note" name="html-admonition" style="background: lightgreen; padding: 10px">
+<p class="title"> </p>
+
+</div>
+ 
 
 ### Render Visibility
 
@@ -561,7 +631,7 @@ A layer can be invisible in the viewport but will still appear in the render.
 
 :::{card}
 
-"_I want to get a T-Shirt that says, 'Reference, Reference, References'.. It is my biggest piece of advice for artists whenever they ask for feedback._" 
+"_**I want to get a T-Shirt that says, 'Reference, Reference, References'.. It is my biggest piece of advice for artists whenever they ask for feedback.**_" 
 \- Blender Guru
 :::
 
@@ -627,7 +697,7 @@ Here we add additional detail by applying the Subdivision surface.
  
 ```
 
- - Moves Edges and Apply Second Sub Division Modifier.
+ - Move Edges and Apply Second Sub Division Modifier.
 
 ![Apply Second Subdivision](./Images/Donut_Tutorial_Part_04/04-G2_Apply-Second-Subdivision.gif)
 
@@ -696,6 +766,12 @@ This is a second way to match the icing to the Donut.
 ---
 
 %% Part 05 -----------------------------------------------------------------------
+
+<div class="admonition note" name="html-admonition" style="background: lightgreen; padding: 10px">
+<p class="title"> </p>
+
+</div>
+ 
 
 ## Part 05: Sculpting
 
@@ -843,8 +919,8 @@ Reduce Lighting Power to 20.2W
 ### Change Viewport Display
 
 ::::{Tip}
-Reduce the size of the camera in the viewport.  
-Does not work for lights.
+- Reduce the size of the camera in the viewport.  
+- This does not work for lights.
 :::: 
 
 <style>
@@ -2043,7 +2119,7 @@ Search will not find 'Mix Color' Node.
 ---
 
 <div class="admonition note" name="html-admonition" style="background: lightgreen; padding: 10px">
-<p class="title"> ****</p>
+<p class="title"> </p>
 
 </div>
  
@@ -2052,7 +2128,7 @@ Search will not find 'Mix Color' Node.
 
 [Blender Guru: Donut - Weight Paint](https://www.youtube.com/watch?v=4WAxMI1QJMQ&list=PLjEaoINr3zgFX8ZsChQVQsuDSjEqdWMAD&index=9&t=1188s)
 
-:::{card} Control where Sparkles can Appear on the Surface of the Icing.
+:::{card} Control where sprinkles can appear on the icing.
 
 - Limit sprinkles on some portions of the icing.
 - Remove sprinkles on the bottom of the icing.
@@ -2066,15 +2142,12 @@ Search will not find 'Mix Color' Node.
 | Command | Action |Value |
 | ------- |------ |-----|
 | View Underneath of Icing | H - Hide Donut Base and Plane  |  |
-| Select Icing | Select Icing | *Important Step |
+| Select Icing |  | *Important Step |
 | Switch to Weight Paint Mode | Ctrl + Tab | **Weight Paint** |
 | Make 'Tool Bar' Visible | View > Toolbar | |
 | Make 'Tool Settings' Visible | View > Tool Settings | |
 
 :::
-
-09-J_Prep-Weight-Paint : DONE.
-
  
 <p></p>
  Widescreen
@@ -2126,9 +2199,6 @@ The value of weights ranges between 0 - 1.
 | Rename Vertex Groups | 'Sprinkles Density' | |
 
 :::
-
-09-K_Weight-Paint: DONE.
-
  
 <p></p>
  
@@ -2168,8 +2238,6 @@ The value of weights ranges between 0 - 1.
 | Expose Density Input to Modifiers | Noodle 'Density' Back to Object Info |  |
 | Add Math Node | Shift + A: Utility > Math |
 | Switch to 'Multiply' | Change 'Add' > 'Multiply' |  |
-
-09-L_Add-Multiply: DONE.
 
  
 <p></p>
@@ -2223,12 +2291,14 @@ The value of weights ranges between 0 - 1.
 | View Max Limits | 'N': Group > Value | 10,000 |
 
 
+```{admonition} Blender Bug
+:class: warning
+You may need to restart Blender if you see a black box instead of 'Sprinkles Density'. Be sure to **SAVE** if you have skipped that step.
+
+```
 [Blender Guru, Apply Vertex Weight Map](https://youtu.be/4WAxMI1QJMQ?list=PLjEaoINr3zgFX8ZsChQVQsuDSjEqdWMAD&t=1452)
 
 :::
-
-
-09-M_Apply-Weight-Map_Vertical: DONE
 
  
 <p></p>
@@ -2260,11 +2330,6 @@ The value of weights ranges between 0 - 1.
 <p></p>
 <p></p>
 
-```{admonition} Blender Bug
-:class: warning
-You may need to restart Blender if you see a black box instead of 'Sprinkles Density'. Be sure to **SAVE** if you have skipped that step.
-
-```
 ---
 
 <div class="admonition note" name="html-admonition" style="background: lightgreen; padding: 10px">
@@ -2291,8 +2356,6 @@ Our Sprinkles intersect with one another. We can reduce this effect.
  |  | Value -> **Sprinkles Density** |  |
 
 :::
-
-09-O_Poisson.mp4: DONE
 
  
 <p></p>
@@ -2338,18 +2401,15 @@ Our Sprinkles intersect with one another. We can reduce this effect.
 :::{card} 
 Adjusting a slider with a value of 50,000 is very slow. So we add a multiplier of 10,000 and hide it in the Geometry nodes.
 
-| Command | Action |Value |
-| ------- |------ |-----|
-| Add Math Node | Shift + A: Utilities > Math |  |
-| Switch to 'Multiply' | 'Add' > 'Multiply'  |  |
-| Adjust Modifier 'Value' | Set to 100 |||
+| Command | Action |
+| ------- |------ |
+| Add Math Node | Shift + A: Utilities > Math | 
+| Switch to 'Multiply' | 'Add' > 'Multiply'  |  
+| Adjust Modifier 'Value' | Set to 100 |
 | Set Multiplier 'Value' | Set to 10,000 |
 | Adjust 'Value' in Modifiers | Around 800 - 1000 |
 
 :::
-
-
-09-P_Multiply-Density-Factor: DONE
 
  
 <p></p>
@@ -2435,11 +2495,9 @@ Paint Weight Value ranges from 0 - 1 but we want 'Sprinkle Density' to go up to 
 
 :::
 
-::::{important} Toggle Smooth Shade
+::::{important} Toggle Smooth Shade:
 Be sure to select an object, then RMB > Smooth Shade
 ::::
-
-10-A_Edge-Loops.mp4
  
 <p></p>
  Widescreen
@@ -2494,16 +2552,17 @@ Lessons from:
 [Kev Binge: Blender Quick Tip to Move Object Origin and Pivot](https://youtu.be/q_SiM8PIXtI)  
 - We can also use, Object Mode > Mesh > Snap  
   instead of 'Cursor to Selected': [Snap Cursor](https://youtu.be/ns14pmFwZ2M?t=57)  
-- From 'N': 'View', [Move 3d Cursor](https://youtu.be/ns14pmFwZ2M?t=125).
+- Nudge 3d Cursor. From 'N': 'View' Tab > 3d Cursor Dropdown. [Move 3d Cursor](https://youtu.be/ns14pmFwZ2M?t=125).
 ::::
 
 | Command | Action |
 | ------- |------ |
 | Move Pivot | Pie Menu: Shift + S | 
 | | ![Pivot Menus](./Images/Hot_Keys/10-A_Shift-S-Pivot.gif)|
-| Example | Edit Mode > Hot key 'A' Selects all of the Cube |
+| Example | Note: Edit Mode > Hot key 'A' Selects all of the Cube |
 |  | ![Pivot Example](./Images/Hot_Keys/10-A2_Move-Pivot.gif) |
 | Center Pivot |![Center Menus](./Images/Hot_Keys/10-A3_Center-Pivot-to-Object.gif)| | 
+|  | Object or Edit Mode >  Shift + C  \|\| Shift + S : Cursor to World Origin |
 | Hide 3d Cursor |![Hide 3d Cursor](./Images/Hot_Keys/10-A4_Cursor-to-World-Origin.gif)| | 
 
 #### Center Pivot
@@ -2605,40 +2664,41 @@ Duplicate three sprinkles and create different sizes.
  :::{card} 
  Next we bend our sprinkles.
 
-| Command | Action |Value |
-| ------- |------ |-----|
-| Top View | Numpad 7 |  |
-| Object Mode | | |
-| Select Last Sprinkle |||
-| Validate Location of Rotation | R |  |
-| Origin to Center of Object | Object Button |  |
-|  | > Set Origin |  |
-|  | > Origin to Geometry |  |
-|  |  |  |
-| Edit Mode | Ctrl + Tab |  |
-| Add Edge Loop | Ctrl + R, over Object |  |
-|               | Do not confirm | |
-| Add 2 Loops | Scroll MMB Forward |  |
-|             | Click to Confirm   |  |
-| Switch to Faces | Keyboard - 3 | |
-| Select Loop | Alt + Select |  |
-| Top View | Numpad 7 |  |
-| Bend along X | G + X  |  |
-|  |  |  |
-| Porportional Editing Mode | O, Circle Dot |  |
-| Switch to Wireframe | Z > Wireframe |  |
-| Select Top Row |  |  |
-| Rotate | R |  |
-|  | Scroll MMB for Radius  |  |
-| Rotate Bottom Row | R |  |
-| Turn Proportional Mode Off | O ||
-| Switch to Solid | Z > Solid ||
-| Switch to Object Mode | Ctrl + Tab |  |
+| Command | Action |
+| ------- | ------ |
+| Top View | Numpad 7 |
+| Object Mode | |
+| Select Last Sprinkle | |
+| Validate Location of Rotation | R |
+| Origin to Center of Object | Object Button |
+|  | > Set Origin |
+|  | > Origin to Geometry |
+|  | |
+| Edit Mode | Ctrl + Tab |
+| Add Edge Loop | Ctrl + R, over Object |
+|  | Do not confirm |
+| Add 2 Loops | Scroll MMB Forward |
+|  | Click to Confirm |
+| Switch to Faces | Keyboard - 3 |
+| Select Loop | Alt + Select |
+| Top View | Numpad 7 |
+| Bend along X | G + X |
+|  | |
+| Porportional Editing Mode | O, Circle Dot |
+| Switch to Wireframe | Z > Wireframe |
+| Select Top Row |  |
+| Rotate | R |
+|  | Scroll MMB for Radius |
+| Rotate Bottom Row | R |
+| Turn Proportional Mode Off | O |
+| Switch to Solid | Z > Solid |
+| Switch to Object Mode | Ctrl + Tab |
+
 
 ```{note} 
 :class: warning
 - If the radius for proportional falloff does not appear, just keep scrolling forward.  
-- The default radius is in meters, our scene is small.
+- Because the default radius is in meters and our scene is small, we need to scale the radius down using the MMB.
 ```
 
  :::
@@ -2683,10 +2743,8 @@ Duplicate three sprinkles and create different sizes.
  #### Add Second Sprinkle
 
  :::{card} 
- Add a second bent sprinkle, same but different.
+ Add a second bent sprinkle, same methods as before but with slightly different results.
  :::  
-
- 10-C2_Bend-Second-Sprinkle.mp4
 
  
 <p></p>
@@ -2746,8 +2804,8 @@ Duplicate three sprinkles and create different sizes.
   | Instance Points --> Collection Info | Instance on Points: Instance | 
   |                                            | -> Collection Info: Geometry |
   |         Instance Points                    | Check: Pick Instance          |
-  | Collection Info | Check: Reset Childeren |  
-  |                 | Check: Separate Childern |
+  | Collection Info | Check: Reset Children |  
+  |                 | Check: Separate Children |
 
   :::       
 
@@ -2783,7 +2841,7 @@ Duplicate three sprinkles and create different sizes.
 
 ---
 
-<div class="admonition note" name="html-admonition" style="background: lightgreen; padding: 10px">
+<div class="admonition note" name="html-admonition" style="background: lightblue; padding: 10px">
 <p class="title"> </p>
 
 </div>
@@ -2845,7 +2903,9 @@ video {
 <p class="title"> </p>
 
 </div>
-  
+
+### Add Color Ramp, Set it to Constant
+
 :::{card} 
 Instead of assigning one color per sprinkle, if we use a random function and a Color Ramp to assign a variety of colors to any sprinkle in the collecton.
 :::
@@ -2902,6 +2962,8 @@ Widescreen
 <p></p>
 
 %% Rest assured
+
+---
 
 ## Congratulations
 
