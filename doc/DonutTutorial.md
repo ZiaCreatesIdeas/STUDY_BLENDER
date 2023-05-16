@@ -2683,10 +2683,40 @@ Duplicate three sprinkles and create different sizes.
  #### Add Second Sprinkle
 
  :::{card} 
- Add a second bent sprinkle, but a little less bent.
+ Add a second bent sprinkle, same but different.
  :::  
 
  10-C2_Bend-Second-Sprinkle.mp4
+
+ 
+<p></p>
+ 
+<style>
+  video {
+    width: 100%;
+  }
+</style>
+ 
+<video controls>
+<source src='https://www.dropbox.com/s/p0hvl3pqz6p4nrs/10-C2_Bend-Second-Sprinkle.mp4?raw=1'>
+</video>
+<p></p>
+<p></p>
+
+ 
+<p></p>
+ 
+<style>
+  video {
+    width: 100%;
+  }
+</style>
+ 
+<video controls>
+<source src='https://www.dropbox.com/s/au1arq4xd6i5nly/10-C2_Bend-Second-Sprinkle_Vertical.mp4?raw=1'>
+</video>
+<p></p>
+<p></p>
 
  ---
 
@@ -2695,7 +2725,7 @@ Duplicate three sprinkles and create different sizes.
  
  </div>
   
-  #### Create Instances from Collection of Sprinkles
+  #### Create Instances from the Collection of Sprinkles
 
   :::{card} 
   Instead of our Instances referencing one Sprinkle, we have them reference the collection of Sprinkles.
@@ -2731,7 +2761,7 @@ Duplicate three sprinkles and create different sizes.
   </style>
    
   <video controls>
-  <source src='https://www.dropbox.com/s/8lay98ppecle98n/10-D_Add-Collection.mp4?dl=0'>
+  <source src='https://www.dropbox.com/s/8lay98ppecle98n/10-D_Add-Collection.mp4?raw=1'>
   </video>
   <p></p>
   <p></p>
@@ -2759,10 +2789,25 @@ Duplicate three sprinkles and create different sizes.
 </div>
 
 :::{card} 
-We we show how to multi-select and link a material to multiple objects.
+We show how to multi-select and link a material to multiple objects.
 :::
  
+:::{card} 
+| Command | Action |
+| ------- |------ |
+| Remove Duplicate Sprinkle |  |  
+| Switch to Material Review Mode | Z > Material Review |  
+| Practice Naming a Material |  |  
+| Apply two Materials, Delete one |  |
+| Materials for all objects are based on last selection |  |
+| Link Materials | Ctrl + L |  |
+| Icon ![Box](./Images/Donut_Tutorial_Part_10/Icons/LinkedNumberBox.jpg) shows no. of Linked Objects to Material |  |
+| Unlink Objects | Assign New Material | 
+|                | Use 'x' |  
+|                | ![Box](./Images/Donut_Tutorial_Part_10/Icons/LinkedNumberBox.jpg) box |  
 
+
+:::
 
   
 <p></p>
@@ -2774,7 +2819,7 @@ video {
 </style>
 
 <video controls>
-<source src='https://www.dropbox.com/s/i5dpn8i2xqxvpos/10-E_Linked-Material.mp4?dl=0'>
+<source src='https://www.dropbox.com/s/i5dpn8i2xqxvpos/10-E_Linked-Material.mp4?raw=1'>
 </video>
 <p></p>
 <p></p>
@@ -2789,7 +2834,7 @@ video {
 </style>
 
 <video controls>
-<source src='https://www.dropbox.com/s/fh48vinkt52yt80/10-E_Linked-Material_Vertical.mp4?dl=0'>
+<source src='https://www.dropbox.com/s/fh48vinkt52yt80/10-E_Linked-Material_Vertical.mp4?raw=1'>
 </video>
 <p></p>
 <p></p>
@@ -2802,9 +2847,30 @@ video {
 </div>
   
 :::{card} 
-Rather than having one sprinkle in the collection reference one color, we use a random function and a Color Ramp to assign a variety of color to any sprinkle in the collecton.
+Instead of assigning one color per sprinkle, if we use a random function and a Color Ramp to assign a variety of colors to any sprinkle in the collecton.
 :::
 
+:::{card} 
+| Command | Action |
+| ------- |------ |
+| Hide Tools | T |
+| Delete Material | Materials Properties Tab > 'x' |
+| Add New Material | Recommend Brown |  
+| Select Four Objects | (Outliner) |
+| Select Last Object | (Outliner) |
+| Link Materials | Ctrl + L | 
+| Name Material | 'Sprinkles'  |  
+| Shading Tab | |
+| Input > Object Info | Shift + A: Input > Object Info |
+| Noodle | Random -> Base Color |
+| Add Color Ramp | Shift + A: Converter > Color Ramp |
+| Add Colors | Gradient Blue to Pink |
+| Switch | Linear > Constant |
+| Add five colors| |
+| Blender Guru Pro Tip: | Keep Saturation below 80%. |
+| Blender Guru Pro Tip: | Non Uniform Distribution of Colors. |
+
+:::
  
 <p></p>
 Widescreen 
@@ -2815,7 +2881,7 @@ Widescreen
 </style>
  
 <video controls>
-<source src='https://www.dropbox.com/s/nm8wvbnrdh9dcbf/10-F_Color-Ramp-Constant.mp4?dl=0'>
+<source src='https://www.dropbox.com/s/nm8wvbnrdh9dcbf/10-F_Color-Ramp-Constant.mp4?raw=1'>
 </video>
 <p></p>
 <p></p>
@@ -2830,11 +2896,18 @@ Widescreen
 </style>
  
 <video controls>
-<source src='https://www.dropbox.com/s/z1s1lt593d6iie3/10-F_Color_Ramp-Constant_Vertical.mp4?dl=0'>
+<source src='https://www.dropbox.com/s/z1s1lt593d6iie3/10-F_Color_Ramp-Constant_Vertical.mp4?raw=1'>
 </video>
 <p></p>
 <p></p>
 
-Rest assured
+%% Rest assured
+
+## Congratulations
+
+:::{card} 
+Those who made it this far have negotiated some of the most complex sequences of this tutorial. If you are reading this, it is either because you were curious and you jumped ahead, or that you were determined to finish. Both traits are admirable. Congratulations.
+
+:::
 
 
