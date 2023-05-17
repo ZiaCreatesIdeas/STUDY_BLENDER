@@ -1187,7 +1187,13 @@ More samples reduces noise but increases render times.
 - Denoise for Render Defaults to CPU, not GPU.
 - We leave the noise threshold at it default value.
 ```
+
 ---
+
+
+<div class="admonition note" name="html-admonition" style="background: lightgreen; padding: 10px">
+<p class="title"> </p>
+</div>
 
 ## Part 07: Texturing & Shading
 
@@ -1198,9 +1204,6 @@ More samples reduces noise but increases render times.
 [PureRef](https://www.pureref.com/) is the standard tool for collecting reference photos.
 ```
 
-<div class="admonition note" name="html-admonition" style="background: lightgreen; padding: 10px">
-<p class="title"> </p>
-</div>
 
 :::{card} Textures.
 "_Real Donuts are not one solid color._"  
