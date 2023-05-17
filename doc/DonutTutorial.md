@@ -194,13 +194,6 @@ We can change the shading of our object by **Selecting** the object and right cl
 
 </div>
  
----
-
-<div class="admonition note" name="html-admonition" style="background: lightgreen; padding: 10px">
-<p class="title"> </p>
-
-</div>
- 
 ### Camera Lessons
 
 | Command | Hot Key   |note|
