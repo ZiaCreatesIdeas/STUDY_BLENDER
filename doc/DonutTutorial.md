@@ -107,8 +107,15 @@ and only show when rendered (F12) for now.
 :class: warning
 
 ```  
+---
 
 % PART TWO--------------------------------------
+
+<div class="admonition note" name="html-admonition" style="background: lightgreen; padding: 10px">
+<p class="title"> </p>
+
+</div>
+ 
 
 ## Part 02: Object Editing
 
@@ -187,7 +194,13 @@ We can change the shading of our object by **Selecting** the object and right cl
 
 </div>
  
+---
 
+<div class="admonition note" name="html-admonition" style="background: lightgreen; padding: 10px">
+<p class="title"> </p>
+
+</div>
+ 
 ### Camera Lessons
 
 | Command | Hot Key   |note|
@@ -295,6 +308,14 @@ The camera snaps to the donut's position.
 ---
 
 <div class="subd">
+
+---
+
+<div class="admonition note" name="html-admonition" style="background: lightgreen; padding: 10px">
+<p class="title"> </p>
+
+</div>
+ 
 
 ### Subdivisions
 
@@ -787,6 +808,13 @@ This is a second way to match the icing to the Donut.
 
 </div>
  
+---
+
+<div class="admonition note" name="html-admonition" style="background: lightgreen; padding: 10px">
+<p class="title"> </p>
+
+</div>
+ 
 
 ## Part 05: Sculpting
 
@@ -879,6 +907,11 @@ Inflate using Tool > Inflate > Stroke > Space
 
 %% PART 06 -----------------------------------------------------------------
 
+<div class="admonition note" name="html-admonition" style="background: lightgreen; padding: 10px">
+<p class="title"> </p>
+
+</div>
+ 
 ## Part 06: Rendering
 
 | Command | Hot Key     | note |
@@ -1399,6 +1432,13 @@ Steps:
 
 ---
 
+%% Part 08
+
+<div class="admonition note" name="html-admonition" style="background: lightgreen; padding: 10px">
+<p class="title"> </p>
+
+</div>
+ 
 ## Part 08: Texture Painting
 
 | Action |  |
@@ -1739,6 +1779,15 @@ Search will not find 'Mix Color' Node. Might be a bug.
 :::
 
 ---
+
+<div class="admonition note" name="html-admonition" style="background: lightgreen; padding: 10px">
+<p class="title"> </p>
+
+</div>
+
+---
+
+%% Part 09
 
 <div class="admonition note" name="html-admonition" style="background: lightgreen; padding: 10px">
 <p class="title"> </p>
@@ -2506,12 +2555,13 @@ Paint Weight Value ranges from 0 - 1 but we want 'Sprinkle Density' to go up to 
 
 ---
 
+%% Part 10 --------------------------------------------------------------------------------
+
 <div class="admonition note" name="html-admonition" style="background: lightgreen; padding: 10px">
 <p class="title"> </p>
 
 </div>
  
-
 
 ##  Part 10: Random Colored Sprinkles
 
