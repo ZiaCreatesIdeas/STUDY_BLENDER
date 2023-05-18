@@ -9,9 +9,9 @@ This is a companion guide to Blender Guru's foundational [Donut Tutorial](https:
 Videos for this tutorial are currently hosted on Dropbox which  
 limits their data and may result in a video not available error.
 
-:::{card} 
-![Dropbox Error](./Images/Dropbox-Error/LinkOverload.jpg)
-:::
+%% :::{card} 
+%% ![Dropbox Error](./Images/Dropbox-Error/LinkOverload.jpg)
+%% :::
 
 If demand is high enough, we will increase the bandwidth or find a more suitable provider.
 
