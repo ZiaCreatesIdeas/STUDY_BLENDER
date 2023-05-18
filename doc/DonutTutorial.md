@@ -794,14 +794,8 @@ This is a second way to match the icing to the Donut.
 
 ---
 
+
 %% Part 05 -----------------------------------------------------------------------
-
-<div class="admonition note" name="html-admonition" style="background: lightgreen; padding: 10px">
-<p class="title"> </p>
-
-</div>
- 
----
 
 <div class="admonition note" name="html-admonition" style="background: lightgreen; padding: 10px">
 <p class="title"> </p>
