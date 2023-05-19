@@ -12,6 +12,7 @@ Study Blender
 
    Hotkeys.md
    DonutTutorial.md
+   Tips_Tricks.md
    Resources.md
    Credit.md
    
