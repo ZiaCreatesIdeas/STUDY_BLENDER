@@ -193,7 +193,11 @@ We can change the shading of our object by **Selecting** the object and right cl
 <p class="title"> </p>
 
 </div>
- 
+
+## Target Section {#target-section}
+
+
+(My_target)=
 ### Camera Lessons
 
 | Command | Hot Key   |note|
@@ -216,7 +220,7 @@ We can change the shading of our object by **Selecting** the object and right cl
 | ------- | ---------- |----  |
 | 3. Select Donut| |
 | 4. Frame Selection | Press Numpad - Period ' . ' |
-| 5. Set Camera Position to Perspective View  | Ctrl + Alt + Numpad - 0 | _**Extremely Useful Hot Key**_ |
+| 5. Set Camera Position to Perspective View  | Ctrl + Alt + Numpad + 0 | _**Extremely Useful Hot Key**_ |
 
 
 <style>
@@ -246,13 +250,21 @@ The camera snaps to the donut's position.
 
 ---
 
-**Complex Way to Frame a Shot**
+**Delicate Way to Frame a Shot**
+
+```{note} 
+:class: warning
+Useful for dollying (moving towards or away from object) in fine increments.
+```
+
 | Command | Hot Key   |note|
 | ------- |-----      |---|
 | **Move Camera Frame** |    |
-| 1. Select Camera Frame |    | Notice in right hand view, camera turns orange |
+| 1. Select Camera Frame |    | Frame & Camera turn orange |
+|                        |    | Camera must be visible     |
 | 2. Activate Grab Tool | G |
 | 3. Enter Smooth Zoom Mode  | Depress MMB | Perspective view, we hold Ctrl + MMB to smooth Zoom |
+| 4. Move Mouse Gently |||
 
 <style>
   video {
@@ -264,13 +276,13 @@ The camera snaps to the donut's position.
 <source src='https://www.dropbox.com/s/kach3hb5jypsj2i/02-Eb-ii_Camera-G-MMB-Drag-to-Zoom.mp4?raw=1'>
 </video>
 
----
+::::{important} 
+With a split screen, we can also move the camera in a secondary viewport.
+::::
 
-| Command | Hot Key     | note |
-| ------- | ---------- |----|
-| 4. Activate Grab Tool | G | With frame selected |
-|5. Move Camera | LMB |    |
-|6. Engage Smooth Zoom | G + MMB | We add a smooth zoom at the end |
+<p></p>
+
+---
 
 <style>
   video {

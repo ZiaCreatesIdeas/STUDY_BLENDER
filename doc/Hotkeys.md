@@ -55,6 +55,8 @@ Edit mode is only available when an object is selected.
 | Duplicate | Shift + D |  |
 | Fix Normals | Shift + N ||
 ||||
+| Parent | Ctrl + P ||
+| UnParent | Alt + P ||
 
 
 | Command |  Blender      | Note |        |
@@ -192,6 +194,13 @@ The Camera cannot be selected in **Edit Mode**
 
 Edit > Preferences > Input > Emulate Numpad  
 Allows the number keys on the top to switch views.  
+
+[Camera](#split-screen)
+
+[Link text](My_target)
+
+
+
 
 ---
 
