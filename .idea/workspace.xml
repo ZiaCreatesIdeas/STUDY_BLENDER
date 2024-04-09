@@ -2,8 +2,9 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="9aaf3d54-50ad-4257-b5f7-5feb550bfd38" name="Default Changelist" comment="">
-      <change beforePath="$PROJECT_DIR$/doc/conf.py" beforeDir="false" afterPath="$PROJECT_DIR$/doc/conf.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/doc/resources.md" beforeDir="false" afterPath="$PROJECT_DIR$/doc/resources.md" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/doc/Documenting-tips.md" beforeDir="false" afterPath="$PROJECT_DIR$/doc/Documenting-tips.md" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/doc/DonutTutorial.md" beforeDir="false" afterPath="$PROJECT_DIR$/doc/DonutTutorial.md" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -21,7 +22,7 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/doc/conf.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="310">
+            <state relative-caret-position="1430">
               <caret line="66" column="17" selection-start-line="66" selection-start-column="17" selection-end-line="66" selection-end-column="17" />
             </state>
           </provider>
@@ -36,12 +37,12 @@
           </provider>
         </entry>
       </file>
-      <file pinned="false" current-in-tab="true">
+      <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/doc/resources.md">
           <provider selected="true" editor-type-id="split-provider[text-editor;markdown-preview-editor]">
             <state split_layout="SPLIT">
               <first_editor relative-caret-position="330">
-                <caret line="15" column="90" selection-start-line="15" selection-start-column="90" selection-end-line="15" selection-end-column="90" />
+                <caret line="15" selection-start-line="15" selection-end-line="15" />
               </first_editor>
               <second_editor />
             </state>
@@ -49,8 +50,46 @@
         </entry>
       </file>
       <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/doc/credit.rst">
-          <provider selected="true" editor-type-id="restructured-text-editor" />
+        <entry file="file://$PROJECT_DIR$/doc/Credit.md">
+          <provider selected="true" editor-type-id="split-provider[text-editor;markdown-preview-editor]">
+            <state split_layout="SPLIT">
+              <first_editor />
+              <second_editor />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/doc/Documenting-tips.md">
+          <provider selected="true" editor-type-id="split-provider[text-editor;markdown-preview-editor]">
+            <state split_layout="SPLIT">
+              <first_editor relative-caret-position="198">
+                <caret line="9" column="94" selection-start-line="9" selection-start-column="94" selection-end-line="9" selection-end-column="94" />
+              </first_editor>
+              <second_editor />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/doc/DonutTutorial.md">
+          <provider selected="true" editor-type-id="split-provider[text-editor;markdown-preview-editor]">
+            <state split_layout="SPLIT">
+              <first_editor relative-caret-position="682">
+                <caret line="31" column="77" selection-start-line="31" selection-start-column="77" selection-end-line="31" selection-end-column="77" />
+              </first_editor>
+              <second_editor />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$APPLICATION_CONFIG_DIR$/pycharm.vmoptions">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="352">
+              <caret line="16" column="52" lean-forward="true" selection-start-line="16" selection-start-column="52" selection-end-line="16" selection-end-column="52" />
+            </state>
+          </provider>
         </entry>
       </file>
     </leaf>
@@ -85,12 +124,15 @@
         <option value="$PROJECT_DIR$/doc/index.rst" />
         <option value="$PROJECT_DIR$/doc/conf.py" />
         <option value="$PROJECT_DIR$/doc/resources.md" />
+        <option value="$PROJECT_DIR$/doc/Documenting-tips.md" />
+        <option value="$APPLICATION_CONFIG_DIR$/pycharm.vmoptions" />
+        <option value="$PROJECT_DIR$/doc/DonutTutorial.md" />
       </list>
     </option>
   </component>
   <component name="ProjectFrameBounds">
-    <option name="x" value="15" />
-    <option name="y" value="122" />
+    <option name="x" value="447" />
+    <option name="y" value="138" />
     <option name="width" value="1894" />
     <option name="height" value="1241" />
   </component>
@@ -103,12 +145,12 @@
         <subPane>
           <expand>
             <path>
-              <item name="SPHINX_GETTING_STARTED_TEMPLATE" type="b2602c69:ProjectViewProjectNode" />
-              <item name="SPHINX_GETTING_STARTED_TEMPLATE" type="462c0819:PsiDirectoryNode" />
+              <item name="STUDY_BLENDER" type="b2602c69:ProjectViewProjectNode" />
+              <item name="STUDY_BLENDER" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
-              <item name="SPHINX_GETTING_STARTED_TEMPLATE" type="b2602c69:ProjectViewProjectNode" />
-              <item name="SPHINX_GETTING_STARTED_TEMPLATE" type="462c0819:PsiDirectoryNode" />
+              <item name="STUDY_BLENDER" type="b2602c69:ProjectViewProjectNode" />
+              <item name="STUDY_BLENDER" type="462c0819:PsiDirectoryNode" />
               <item name="doc" type="462c0819:PsiDirectoryNode" />
             </path>
           </expand>
@@ -157,7 +199,7 @@
     <servers />
   </component>
   <component name="ToolWindowManager">
-    <frame x="15" y="122" width="1894" height="1241" extended-state="0" />
+    <frame x="447" y="138" width="1894" height="1241" extended-state="0" />
     <editor active="true" />
     <layout>
       <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.14095035" />
@@ -223,8 +265,16 @@
     <entry file="file://$PROJECT_DIR$/_build/learn_myst.html" />
     <entry file="file://$PROJECT_DIR$/doc/Images/workflow-yaml.png" />
     <entry file="file://$PROJECT_DIR$/doc/Images/copy_button/copy_button_02.png" />
+    <entry file="file://$PROJECT_DIR$/doc/credit.rst" />
     <entry file="file://$PROJECT_DIR$/doc/index.rst">
       <provider selected="true" editor-type-id="restructured-text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/doc/conf.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="1430">
+          <caret line="66" column="17" selection-start-line="66" selection-start-column="17" selection-end-line="66" selection-end-column="17" />
+        </state>
+      </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/.github/workflows/documentation.yaml">
       <provider selected="true" editor-type-id="text-editor">
@@ -233,21 +283,46 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/doc/credit.rst">
-      <provider selected="true" editor-type-id="restructured-text-editor" />
-    </entry>
-    <entry file="file://$PROJECT_DIR$/doc/conf.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="310">
-          <caret line="66" column="17" selection-start-line="66" selection-start-column="17" selection-end-line="66" selection-end-column="17" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/doc/resources.md">
       <provider selected="true" editor-type-id="split-provider[text-editor;markdown-preview-editor]">
         <state split_layout="SPLIT">
           <first_editor relative-caret-position="330">
-            <caret line="15" column="90" selection-start-line="15" selection-start-column="90" selection-end-line="15" selection-end-column="90" />
+            <caret line="15" selection-start-line="15" selection-end-line="15" />
+          </first_editor>
+          <second_editor />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/doc/Credit.md">
+      <provider selected="true" editor-type-id="split-provider[text-editor;markdown-preview-editor]">
+        <state split_layout="SPLIT">
+          <first_editor />
+          <second_editor />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/doc/Documenting-tips.md">
+      <provider selected="true" editor-type-id="split-provider[text-editor;markdown-preview-editor]">
+        <state split_layout="SPLIT">
+          <first_editor relative-caret-position="198">
+            <caret line="9" column="94" selection-start-line="9" selection-start-column="94" selection-end-line="9" selection-end-column="94" />
+          </first_editor>
+          <second_editor />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$APPLICATION_CONFIG_DIR$/pycharm.vmoptions">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="352">
+          <caret line="16" column="52" lean-forward="true" selection-start-line="16" selection-start-column="52" selection-end-line="16" selection-end-column="52" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/doc/DonutTutorial.md">
+      <provider selected="true" editor-type-id="split-provider[text-editor;markdown-preview-editor]">
+        <state split_layout="SPLIT">
+          <first_editor relative-caret-position="682">
+            <caret line="31" column="77" selection-start-line="31" selection-start-column="77" selection-end-line="31" selection-end-column="77" />
           </first_editor>
           <second_editor />
         </state>

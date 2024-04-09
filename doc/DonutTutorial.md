@@ -29,13 +29,13 @@ If demand is high enough, we will increase the bandwidth or find a more suitable
 ![Vertical Setup](./Images/Vertical_Screen_Setup/Vertical-Screen-Setup.jpg)
 - This companion guide covers Parts 01 - 10 at this time.
 - Sphinx Documentation's Search is only so-so, instead we suggest Cmd/Ctrl-F on the tutorial document.
-- This is an early early release, please forgive typoose, unclear text, and various mishaps.
+- This is an early release tutorial, please forgive typose, unclear text, etc.
 
 ```
 
 :::{card} 
-This tutorial uses [**Short Cut VUr**](https://www.youtube.com/watch?v=Ombz2lDjZIA) to display keystrokes. Most of the time. 
-We also use the [Screen Cast Addon](https://www.youtube.com/watch?v=6d_Lv6xN5bQ) which is recommended for greater reliability in documentating Hot keys, Pie and Pop-Up Menus. [Screencast Github](https://github.com/nutti/Screencast-Keys)  
+The early tutorials use [**Short Cut VUr**](https://www.youtube.com/watch?v=Ombz2lDjZIA) to display keystrokes. Most of the time. 
+Later we use the [Screen Cast Addon](https://www.youtube.com/watch?v=6d_Lv6xN5bQ) which is recommended for greater reliability in documentating Hot keys, Pie and Pop-Up Menus. [Screencast Github](https://github.com/nutti/Screencast-Keys)  
 Installing Screencast Keys may be helpful in some later sections as one can match the on screen keys with one's own keys. A bit like the bouncing ball in Karaoke.
 
 :::

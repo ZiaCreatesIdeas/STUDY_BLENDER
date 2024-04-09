@@ -1,11 +1,10 @@
-There is a trade of between memory retention duration and screen space.  
-If users have two screens, then great.  
-Dropbox does not have a hot key for pause, nor rewind. Both are important for lessons.  
-Punch is handy.  
-Blender does have a way to play movies within interface. 
-Share X has capture Screen guides.  
+There is a trade of between memory retention duration, and screen space.  
+If users have two screens, that is ideal.  
+Dropbox does not have a dedicated hot key for pause, nor rewind. Thus many of the lessons are slowed down.   
+Note, Blender does have a way to play movies within the Blender interface. 
+Share X on PC is ideal for capturing still and videos as it has repeatable Screen capture guides.  
 gif's repeat - useful for single steps. 
-Dropbox - should either repeat every action twice. Or allow pause.  
+Dropbox - ideally, should either repeat every action twice. Or allow pause.  
 Maybe video overview on top, then step by step break down below and slim.
 I wish there was a way to slow down the drop box videos.User side. 
-Ulitimately, it looks like yt has a better feature set.  
+Ulitimately, it looks like yt has a better feature set for embedded videos, but with terrible ads.  
