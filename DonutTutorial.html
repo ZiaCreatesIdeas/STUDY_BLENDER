@@ -1,0 +1,4045 @@
+<!DOCTYPE html>
+<html class="writer-html5" lang="en" data-content_root="./">
+<head>
+  <meta charset="utf-8" /><meta name="viewport" content="width=device-width, initial-scale=1" />
+
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Donut Tutorial &mdash; STUDY_BLENDER 0.1 documentation</title>
+      <link rel="stylesheet" type="text/css" href="_static/pygments.css?v=fa44fd50" />
+      <link rel="stylesheet" type="text/css" href="_static/css/theme.css?v=19f00094" />
+      <link rel="stylesheet" type="text/css" href="_static/copybutton.css?v=76b2166b" />
+      <link rel="stylesheet" type="text/css" href="_static/design-style.1e8bd061cd6da7fc9cf755528e8ffc24.min.css?v=0a3b3ea7" />
+
+  
+  <!--[if lt IE 9]>
+    <script src="_static/js/html5shiv.min.js"></script>
+  <![endif]-->
+  
+        <script src="_static/jquery.js?v=5d32c60e"></script>
+        <script src="_static/_sphinx_javascript_frameworks_compat.js?v=2cd50e6c"></script>
+        <script src="_static/documentation_options.js?v=2709fde1"></script>
+        <script src="_static/doctools.js?v=888ff710"></script>
+        <script src="_static/sphinx_highlight.js?v=dc90522c"></script>
+        <script src="_static/clipboard.min.js?v=a7894cd8"></script>
+        <script src="_static/copybutton.js?v=f281be69"></script>
+        <script src="_static/design-tabs.js?v=36754332"></script>
+    <script src="_static/js/theme.js"></script>
+    <link rel="index" title="Index" href="genindex.html" />
+    <link rel="search" title="Search" href="search.html" />
+    <link rel="next" title="Tips and Tricks" href="Tips_Tricks.html" />
+    <link rel="prev" title="Hotkeys" href="Hotkeys.html" /> 
+</head>
+
+<body class="wy-body-for-nav"> 
+  <div class="wy-grid-for-nav">
+    <nav data-toggle="wy-nav-shift" class="wy-nav-side">
+      <div class="wy-side-scroll">
+        <div class="wy-side-nav-search" >
+
+          
+          
+          <a href="index.html" class="icon icon-home">
+            STUDY_BLENDER
+          </a>
+              <div class="version">
+                0.1
+              </div>
+<div role="search">
+  <form id="rtd-search-form" class="wy-form" action="search.html" method="get">
+    <input type="text" name="q" placeholder="Search docs" aria-label="Search docs" />
+    <input type="hidden" name="check_keywords" value="yes" />
+    <input type="hidden" name="area" value="default" />
+  </form>
+</div>
+        </div><div class="wy-menu wy-menu-vertical" data-spy="affix" role="navigation" aria-label="Navigation menu">
+              <ul class="current">
+<li class="toctree-l1"><a class="reference internal" href="Hotkeys.html">Hotkeys</a></li>
+<li class="toctree-l1 current"><a class="current reference internal" href="#">Donut Tutorial</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="#trouble-shooting">Trouble Shooting</a></li>
+<li class="toctree-l2"><a class="reference internal" href="#part-01-the-basics">Part 01: The Basics</a><ul>
+<li class="toctree-l3"><a class="reference internal" href="#change-resolution-scale-of-interface">Change Resolution Scale of Interface.</a></li>
+<li class="toctree-l3"><a class="reference internal" href="#change-material-colors">Change Material Colors</a></li>
+</ul>
+</li>
+<li class="toctree-l2"><a class="reference internal" href="#part-02-object-editing">Part 02: Object Editing</a></li>
+<li class="toctree-l2"><a class="reference internal" href="#target-section-target-section">Target Section {#target-section}</a><ul>
+<li class="toctree-l3"><a class="reference internal" href="#camera-lessons">Camera Lessons</a></li>
+<li class="toctree-l3"><a class="reference internal" href="#subdivisions">Subdivisions</a></li>
+<li class="toctree-l3"><a class="reference internal" href="#proportional-editing">Proportional Editing</a></li>
+<li class="toctree-l3"><a class="reference internal" href="#scale-along-normals">Scale Along Normals</a></li>
+</ul>
+</li>
+<li class="toctree-l2"><a class="reference internal" href="#part-03-modifiers">Part 03: Modifiers</a><ul>
+<li class="toctree-l3"><a class="reference internal" href="#separate-by-selection">Separate by Selection</a></li>
+<li class="toctree-l3"><a class="reference internal" href="#modifier-solidify">Modifier: Solidify</a></li>
+<li class="toctree-l3"><a class="reference internal" href="#apply-subdivision">Apply Subdivision</a></li>
+</ul>
+</li>
+<li class="toctree-l2"><a class="reference internal" href="#part-04-modeling">Part 04: Modeling</a><ul>
+<li class="toctree-l3"><a class="reference internal" href="#snapping">Snapping</a></li>
+<li class="toctree-l3"><a class="reference internal" href="#fixing-mesh-occlusion">Fixing Mesh Occlusion</a></li>
+<li class="toctree-l3"><a class="reference internal" href="#camera-repositioning">Camera Repositioning</a></li>
+<li class="toctree-l3"><a class="reference internal" href="#render-visibility">Render Visibility</a></li>
+<li class="toctree-l3"><a class="reference internal" href="#references">References</a></li>
+<li class="toctree-l3"><a class="reference internal" href="#apply-subdivisions">Apply Subdivisions</a></li>
+<li class="toctree-l3"><a class="reference internal" href="#extrude-edges">Extrude Edges</a></li>
+<li class="toctree-l3"><a class="reference internal" href="#select-edges">Select Edges</a></li>
+<li class="toctree-l3"><a class="reference internal" href="#shrink-wrap-modifier">Shrink Wrap Modifier</a></li>
+</ul>
+</li>
+<li class="toctree-l2"><a class="reference internal" href="#part-05-sculpting">Part 05: Sculpting</a><ul>
+<li class="toctree-l3"><a class="reference internal" href="#draw">Draw</a></li>
+<li class="toctree-l3"><a class="reference internal" href="#inflate-stroke-airbrush">Inflate &gt; Stroke &gt; Airbrush</a></li>
+<li class="toctree-l3"><a class="reference internal" href="#inflate-stroke-space">Inflate &gt; Stroke &gt; Space</a></li>
+</ul>
+</li>
+<li class="toctree-l2"><a class="reference internal" href="#part-06-rendering">Part 06: Rendering</a><ul>
+<li class="toctree-l3"><a class="reference internal" href="#change-viewport-display">Change Viewport Display</a></li>
+<li class="toctree-l3"><a class="reference internal" href="#render-engines-eevee-cycles">Render Engines (EeVee, Cycles)</a></li>
+<li class="toctree-l3"><a class="reference internal" href="#add-hardware-acceleration-gpu">Add Hardware Acceleration (GPU)</a></li>
+<li class="toctree-l3"><a class="reference internal" href="#render-to-slots">Render to Slots</a></li>
+<li class="toctree-l3"><a class="reference internal" href="#materials">Materials</a></li>
+<li class="toctree-l3"><a class="reference internal" href="#subsurface-scattering">Subsurface Scattering</a></li>
+<li class="toctree-l3"><a class="reference internal" href="#material-preview-to-eevee">Material Preview to EeVee</a></li>
+<li class="toctree-l3"><a class="reference internal" href="#samples-and-noise">Samples and Noise</a></li>
+</ul>
+</li>
+<li class="toctree-l2"><a class="reference internal" href="#part-07-texturing-shading">Part 07: Texturing &amp; Shading</a><ul>
+<li class="toctree-l3"><a class="reference internal" href="#node-editor">Node Editor</a></li>
+<li class="toctree-l3"><a class="reference internal" href="#bump-map">Bump Map</a></li>
+</ul>
+</li>
+<li class="toctree-l2"><a class="reference internal" href="#part-08-texture-painting">Part 08: Texture Painting</a></li>
+<li class="toctree-l2"><a class="reference internal" href="#part-09-geometry-nodes">Part 09: Geometry Nodes</a><ul>
+<li class="toctree-l3"><a class="reference internal" href="#weight-paint">Weight Paint</a><ul>
+<li class="toctree-l4"><a class="reference internal" href="#prepare-for-weight-painting">Prepare for Weight Painting</a></li>
+<li class="toctree-l4"><a class="reference internal" href="#paint-weights">Paint Weights</a></li>
+<li class="toctree-l4"><a class="reference internal" href="#add-multiply-node">Add Multiply Node</a></li>
+<li class="toctree-l4"><a class="reference internal" href="#apply-vertex-weight-map-to-sprinkles">Apply Vertex Weight Map to Sprinkles</a></li>
+<li class="toctree-l4"><a class="reference internal" href="#use-poisson-to-reduce-clipping">Use Poisson to Reduce Clipping</a></li>
+<li class="toctree-l4"><a class="reference internal" href="#simplify-using-multiply-node">Simplify Using Multiply Node</a></li>
+</ul>
+</li>
+</ul>
+</li>
+<li class="toctree-l2"><a class="reference internal" href="#part-10-random-colored-sprinkles">Part 10: Random Colored Sprinkles</a><ul>
+<li class="toctree-l3"><a class="reference internal" href="#edge-loops">Edge Loops</a></li>
+<li class="toctree-l3"><a class="reference internal" href="#move-pivot">Move Pivot</a><ul>
+<li class="toctree-l4"><a class="reference internal" href="#center-pivot">Center Pivot</a></li>
+</ul>
+</li>
+<li class="toctree-l3"><a class="reference internal" href="#add-variants-of-sprinkle">Add Variants of Sprinkle</a><ul>
+<li class="toctree-l4"><a class="reference internal" href="#duplicate-sprinkles">Duplicate Sprinkles</a></li>
+<li class="toctree-l4"><a class="reference internal" href="#bend-sprinkles">Bend Sprinkles</a></li>
+<li class="toctree-l4"><a class="reference internal" href="#add-second-sprinkle">Add Second Sprinkle</a></li>
+<li class="toctree-l4"><a class="reference internal" href="#create-instances-from-the-collection-of-sprinkles">Create Instances from the Collection of Sprinkles</a></li>
+</ul>
+</li>
+<li class="toctree-l3"><a class="reference internal" href="#add-color-ramp-set-it-to-constant">Add Color Ramp, Set it to Constant</a></li>
+</ul>
+</li>
+<li class="toctree-l2"><a class="reference internal" href="#congratulations">Congratulations!</a></li>
+</ul>
+</li>
+<li class="toctree-l1"><a class="reference internal" href="Tips_Tricks.html">Tips and Tricks</a></li>
+<li class="toctree-l1"><a class="reference internal" href="Credit.html">Credit and Inspiration</a></li>
+</ul>
+
+        </div>
+      </div>
+    </nav>
+
+    <section data-toggle="wy-nav-shift" class="wy-nav-content-wrap"><nav class="wy-nav-top" aria-label="Mobile navigation menu" >
+          <i data-toggle="wy-nav-top" class="fa fa-bars"></i>
+          <a href="index.html">STUDY_BLENDER</a>
+      </nav>
+
+      <div class="wy-nav-content">
+        <div class="rst-content">
+          <div role="navigation" aria-label="Page navigation">
+  <ul class="wy-breadcrumbs">
+      <li><a href="index.html" class="icon icon-home" aria-label="Home"></a></li>
+      <li class="breadcrumb-item active">Donut Tutorial</li>
+      <li class="wy-breadcrumbs-aside">
+            <a href="_sources/DonutTutorial.md.txt" rel="nofollow"> View page source</a>
+      </li>
+  </ul>
+  <hr/>
+</div>
+          <div role="main" class="document" itemscope="itemscope" itemtype="http://schema.org/Article">
+           <div itemprop="articleBody">
+             
+  <section id="donut-tutorial">
+<h1>Donut Tutorial<a class="headerlink" href="#donut-tutorial" title="Link to this heading"></a></h1>
+<div class="admonition important">
+<p class="admonition-title">Important</p>
+<p>This is a companion guide to Blender Guru’s foundational <a class="reference external" href="https://www.youtube.com/playlist?list=PLjEaoINr3zgFX8ZsChQVQsuDSjEqdWMAD">Donut Tutorial</a></p>
+</div>
+<p><strong>Disclaimers:</strong><br />
+Videos for this tutorial are currently hosted on Dropbox which<br />
+limits their data and may result in a video not available error.</p>
+<p>If demand is high enough, we will increase the bandwidth or find a more suitable provider.</p>
+<div class="warning admonition note">
+<p class="admonition-title">Note</p>
+<p>Why make a tutorial of a tutorial?</p>
+<ul class="simple">
+<li><p>Proof of Work. This is a good way to document one’s progress through complexity.</p></li>
+<li><p>This is a form of a digital notebook.</p></li>
+<li><p>This is a good exercise in reducing complexity into simplicity.</p></li>
+<li><p>Recalling a small particular step, is a large sequence of steps, is difficult.</p></li>
+<li><p>This Donut Blender companion guide aims to act as a bridge, moving users from<br />
+‘no recall’ to ‘rote recall’.</p></li>
+<li><p>This guide is meant to be a ‘see-it-do-it’ guide, without having to pause and rewind videos.</p></li>
+<li><p>This tutorial supports step by step following along, using two monitors.</p></li>
+<li><p>This tutorial supports one screen setups and laptops by having vertical videos in some sections.<br />
+<img alt="Vertical Setup" src="_images/Vertical-Screen-Setup.jpg" /></p></li>
+<li><p>This companion guide covers Parts 01 - 10 at this time.</p></li>
+<li><p>Sphinx Documentation’s Search is only so-so, instead we suggest Cmd/Ctrl-F on the tutorial document.</p></li>
+<li><p>This is an early release tutorial, please forgive typose, unclear text, etc.</p></li>
+</ul>
+</div>
+<div class="sd-card sd-sphinx-override sd-mb-3 sd-shadow-sm docutils">
+<div class="sd-card-body docutils">
+<p class="sd-card-text">The early tutorials use <a class="reference external" href="https://www.youtube.com/watch?v=Ombz2lDjZIA"><strong>Short Cut VUr</strong></a> to display keystrokes. Most of the time.
+Later we use the <a class="reference external" href="https://www.youtube.com/watch?v=6d_Lv6xN5bQ">Screen Cast Addon</a> which is recommended for greater reliability in documentating Hot keys, Pie and Pop-Up Menus. <a class="reference external" href="https://github.com/nutti/Screencast-Keys">Screencast Github</a><br />
+Installing Screencast Keys may be helpful in some later sections as one can match the on screen keys with one’s own keys. A bit like the bouncing ball in Karaoke.</p>
+</div>
+</div>
+<hr class="docutils" />
+<section id="trouble-shooting">
+<h2>Trouble Shooting<a class="headerlink" href="#trouble-shooting" title="Link to this heading"></a></h2>
+<p>While learning Blender, one may get stuck in states which yield odd behaviour.<br />
+Should this occur at any time in one’s learning journey, please refer to the list below.</p>
+<div class="warning admonition">
+<p class="admonition-title">Trouble Shooting Checklist</p>
+<ul class="contains-task-list simple">
+<li class="task-list-item"><p><input class="task-list-item-checkbox" disabled="disabled" type="checkbox"> <strong>Turn Snapping Off (Shift + Tab)</strong></p></li>
+<li class="task-list-item"><p><input class="task-list-item-checkbox" disabled="disabled" type="checkbox"> <strong>Turn Proportional Editing Off (O)</strong></p></li>
+<li class="task-list-item"><p><input class="task-list-item-checkbox" disabled="disabled" type="checkbox"> <strong>Apply Scale (Ctrl + A)</strong></p></li>
+<li class="task-list-item"><p><input class="task-list-item-checkbox" disabled="disabled" type="checkbox"> <strong>Set Orientation Transformation Scale =&gt; Global</strong><br />
+This icon looks like two arrows located at the top middle of the screen. <img alt="View Transformation Orientation Menu" src="_images/View-Transformation-Orientation-Menu.jpg" /></p></li>
+</ul>
+</div>
+</section>
+<hr class="docutils" />
+<section id="part-01-the-basics">
+<h2>Part 01: The Basics<a class="headerlink" href="#part-01-the-basics" title="Link to this heading"></a></h2>
+<p><a class="reference internal" href="Hotkeys.html"><span class="std std-doc">Navigation and Hotkeys</span></a></p>
+<div class="sd-card sd-sphinx-override sd-mb-3 sd-shadow-sm docutils">
+<div class="sd-card-body docutils">
+<p class="sd-card-text"><strong>Object Mode, Edit Mode</strong><br />
+Blender has two different modes to work in, <strong>Object</strong> and <strong>Edit</strong> Modes.<br />
+Each mode has restrictions on what commands can be delivered.<br />
+ie. ‘X’ to delete, works different in Object Mode vs. Edit Mode.<br />
+Edit mode is only available when an object is <strong>selected</strong>.</p>
+</div>
+</div>
+<section id="change-resolution-scale-of-interface">
+<h3>Change Resolution Scale of Interface.<a class="headerlink" href="#change-resolution-scale-of-interface" title="Link to this heading"></a></h3>
+<ul class="simple">
+<li><p>Edit &gt; Preferences &gt; Interface &gt; Resolution Scale.</p></li>
+</ul>
+<p><img alt="Scale Resolution" src="_images/Edit-Preferences-Interface-ScaleResolution.jpg" /></p>
+<hr class="docutils" />
+</section>
+<section id="change-material-colors">
+<h3>Change Material Colors<a class="headerlink" href="#change-material-colors" title="Link to this heading"></a></h3>
+<p>Material color changes are not interactive in the early tutorial sections,<br />
+and only show when rendered (F12) for now.</p>
+<style>
+  video {
+    width: 100%;
+  }
+</style>
+<video controls>
+  <source src="https://www.dropbox.com/s/d0tgmotsvrxbr4y/01_B-ChangeMaterialColors.mp4?raw=1" type="video/mp4">
+</video>
+<hr class="docutils" />
+<div class="warning admonition note">
+<p class="admonition-title">Note</p>
+<p><strong>Collections</strong> are the equivalent to Folders.</p>
+</div>
+<hr class="docutils" />
+<div class="admonition note" name="html-admonition" style="background: lightgreen; padding: 10px">
+<p class="title"> </p>
+</div>
+</section>
+</section>
+<section id="part-02-object-editing">
+<h2>Part 02: Object Editing<a class="headerlink" href="#part-02-object-editing" title="Link to this heading"></a></h2>
+<p><strong>Object Editing</strong></p>
+<table class="docutils align-default">
+<thead>
+<tr class="row-odd"><th class="head"><p>Command</p></th>
+<th class="head"><p>Hotkey</p></th>
+</tr>
+</thead>
+<tbody>
+<tr class="row-even"><td><p>Add</p></td>
+<td><p>Shift + A</p></td>
+</tr>
+<tr class="row-odd"><td><p>Recall ‘Operator Presets’</p></td>
+<td><p>F9</p></td>
+</tr>
+</tbody>
+</table>
+<style>
+   video {
+    width: 100%;
+  }
+</style>
+<video controls>
+<source src='https://www.dropbox.com/s/uqgtstm8ht4axa5/02_A-CreateTorus.mp4?raw=1'>
+</video>
+<p><img alt="Operator Presets" src="_images/02-B_Menu-Operator-Presets.jpg" /></p>
+<div class="warning admonition note">
+<p class="admonition-title">Note</p>
+<ul class="simple">
+<li><p>Having an even number segments can help when unwrapping for UV’s or performing slices.</p></li>
+<li><p>Having an odd number of segments may be helpful when trying to define the middle of an object.</p></li>
+</ul>
+</div>
+<style>
+  video {
+    width: 100%;
+  }
+</style>
+<p>Here we learn to ‘Apply Scale’.</p>
+<table class="docutils align-default">
+<thead>
+<tr class="row-odd"><th class="head"><p>Command</p></th>
+<th class="head"><p>Hot Key</p></th>
+</tr>
+</thead>
+<tbody>
+<tr class="row-even"><td><p>Apply Scale</p></td>
+<td><p>Ctrl + A</p></td>
+</tr>
+<tr class="row-odd"><td><p>Open Item Panel</p></td>
+<td><p>N</p></td>
+</tr>
+</tbody>
+</table>
+<video controls>
+<source src='https://www.dropbox.com/s/8ky3l3e0t0lf6mp/02_B-Apply-Scale.mp4?raw=1'>
+</video>
+<div class="warning admonition note">
+<p class="admonition-title">Note</p>
+<ul class="simple">
+<li><p>Here we scale the donut down from 3 meters to ~ 9 cm.</p></li>
+<li><p>Blender’s default scale is in 1 meter, our Donut is around 9 centimeters.</p></li>
+<li><p>The difference in scale effects the default settings of tools like radius: Proportional editing.</p></li>
+<li><p>The scale should always be near to 1, 1, 1. When in doubt, Ctrl + A &gt; Apply scale.</p></li>
+</ul>
+</div>
+<p>Apply Scale:</p>
+<p></p>
+<p><img alt="Apply Scale" src="_images/02-C_Menu-Apply-Scale.jpg" /></p>
+<p><a class="reference external" href="https://youtu.be/imdYIdv8F4w?t=454">Blender Guru: Tutorial 02, Apply Scale</a></p>
+<p>We can change the shading of our object by <strong>Selecting</strong> the object and right clicking over the background.</p>
+<div class="sd-card sd-sphinx-override sd-mb-3 sd-shadow-sm docutils">
+<div class="sd-card-body docutils">
+<p class="sd-card-text">“<em><strong>Smooth shade is an illusion. It does not add any geometry.</strong></em>” - Blender Guru</p>
+</div>
+</div>
+<table class="docutils align-default">
+<thead>
+<tr class="row-odd"><th class="head"><p>Mouse</p></th>
+<th class="head"><p>Smooth Shade</p></th>
+</tr>
+</thead>
+<tbody>
+<tr class="row-even"><td><p><strong>RMB over background</strong></p></td>
+<td><p><img alt="Flat Shade" src="_images/02-D_RMB-Object-Context-Menu.jpg" /></p></td>
+</tr>
+</tbody>
+</table>
+<hr class="docutils" />
+<div class="admonition note" name="html-admonition" style="background: lightgreen; padding: 10px">
+<p class="title"> </p>
+</div>
+</section>
+<section id="target-section-target-section">
+<h2>Target Section {#target-section}<a class="headerlink" href="#target-section-target-section" title="Link to this heading"></a></h2>
+<section id="camera-lessons">
+<span id="my-target"></span><h3>Camera Lessons<a class="headerlink" href="#camera-lessons" title="Link to this heading"></a></h3>
+<table class="docutils align-default">
+<thead>
+<tr class="row-odd"><th class="head"><p>Command</p></th>
+<th class="head"><p>Hot Key</p></th>
+<th class="head"><p>note</p></th>
+</tr>
+</thead>
+<tbody>
+<tr class="row-even"><td><p>1. Look Thru Camera</p></td>
+<td><p>Numpad - 0</p></td>
+<td><p>toggles between camera and perspective view</p></td>
+</tr>
+</tbody>
+</table>
+<style>
+  video {
+    width: 100%;
+  }
+</style>
+<video controls>
+<source src='https://www.dropbox.com/s/537qup8eaq9e2t7/02-E_Camera-Look-Through.mp4?raw=1'>
+</video>
+<hr class="docutils" />
+<table class="docutils align-default">
+<thead>
+<tr class="row-odd"><th class="head"><p>Command</p></th>
+<th class="head"><p>Hot Key</p></th>
+<th class="head"><p>note</p></th>
+</tr>
+</thead>
+<tbody>
+<tr class="row-even"><td><p>3. Select Donut</p></td>
+<td><p></p></td>
+<td><p></p></td>
+</tr>
+<tr class="row-odd"><td><p>4. Frame Selection</p></td>
+<td><p>Press Numpad - Period ‘ . ‘</p></td>
+<td><p></p></td>
+</tr>
+<tr class="row-even"><td><p>5. Set Camera Position to Perspective View</p></td>
+<td><p>Ctrl + Alt + Numpad + 0</p></td>
+<td><p><em><strong>Extremely Useful Hot Key</strong></em></p></td>
+</tr>
+</tbody>
+</table>
+<style>
+  video {
+    width: 100%;
+  }
+</style>
+<video controls>
+<source src='https://www.dropbox.com/s/cs84e7iomn36d1c/02-Eb_Camera-Ctrl-Alt-Num-0.mp4?raw=1'>
+</video>
+<p>The camera snaps to the donut’s position.</p>
+<hr class="docutils" />
+<p><strong>Simple Way to Frame a Shot</strong></p>
+<table class="docutils align-default">
+<thead>
+<tr class="row-odd"><th class="head"><p>Command</p></th>
+<th class="head"><p>Hot Key</p></th>
+<th class="head"><p>note</p></th>
+</tr>
+</thead>
+<tbody>
+<tr class="row-even"><td><p>Side Menu</p></td>
+<td><p>N</p></td>
+<td><p></p></td>
+</tr>
+<tr class="row-odd"><td><p>View</p></td>
+<td><p>Select</p></td>
+<td><p></p></td>
+</tr>
+<tr class="row-even"><td><p>Activate ‘Camera to View’</p></td>
+<td><p>Blue Checkbox</p></td>
+<td><p></p></td>
+</tr>
+<tr class="row-odd"><td><p>Set Desired Camera Frame</p></td>
+<td><p>Pan, Rotate, Zoom</p></td>
+<td><p></p></td>
+</tr>
+<tr class="row-even"><td><p>Deselect ‘Camera to View’</p></td>
+<td><p></p></td>
+<td><p>Or we can leave on and press Numpad ‘0’ to exit</p></td>
+</tr>
+</tbody>
+</table>
+<p><img alt="Camera to View" src="_images/04-C3_Camera_to_View_ShortVersion.gif" /></p>
+<hr class="docutils" />
+<p><strong>Delicate Way to Frame a Shot</strong></p>
+<div class="warning admonition note">
+<p class="admonition-title">Note</p>
+<p>Useful for dollying (moving towards or away from object) in fine increments.</p>
+</div>
+<table class="docutils align-default">
+<thead>
+<tr class="row-odd"><th class="head"><p>Command</p></th>
+<th class="head"><p>Hot Key</p></th>
+<th class="head"><p>note</p></th>
+</tr>
+</thead>
+<tbody>
+<tr class="row-even"><td><p><strong>Move Camera Frame</strong></p></td>
+<td><p></p></td>
+<td><p></p></td>
+</tr>
+<tr class="row-odd"><td><p>1. Select Camera Frame</p></td>
+<td><p></p></td>
+<td><p>Frame &amp; Camera turn orange</p></td>
+</tr>
+<tr class="row-even"><td><p></p></td>
+<td><p></p></td>
+<td><p>Camera must be visible</p></td>
+</tr>
+<tr class="row-odd"><td><p>2. Activate Grab Tool</p></td>
+<td><p>G</p></td>
+<td><p></p></td>
+</tr>
+<tr class="row-even"><td><p>3. Enter Smooth Zoom Mode</p></td>
+<td><p>Depress MMB</p></td>
+<td><p>Perspective view, we hold Ctrl + MMB to smooth Zoom</p></td>
+</tr>
+<tr class="row-odd"><td><p>4. Move Mouse Gently</p></td>
+<td><p></p></td>
+<td><p></p></td>
+</tr>
+</tbody>
+</table>
+<style>
+  video {
+    width: 100%;
+  }
+</style>
+<video controls>
+<source src='https://www.dropbox.com/s/kach3hb5jypsj2i/02-Eb-ii_Camera-G-MMB-Drag-to-Zoom.mp4?raw=1'>
+</video>
+<div class="admonition important">
+<p class="admonition-title">Important</p>
+<p>With a split screen, we can also move the camera in a secondary viewport.</p>
+</div>
+<p></p>
+<hr class="docutils" />
+<style>
+  video {
+    width: 100%;
+  }
+</style>
+<video controls>
+<source src='https://www.dropbox.com/s/gzk0t3d25l4f7d1/02-Ec_Camera-G-Drag-to-Move.mp4?raw=1'>
+</video>
+<p></p>
+<table class="docutils align-default">
+<thead>
+<tr class="row-odd"><th class="head"><p>Command</p></th>
+<th class="head"><p>Hot Key</p></th>
+<th class="head"><p>note</p></th>
+</tr>
+</thead>
+<tbody>
+<tr class="row-even"><td><p>7. Render Camera View</p></td>
+<td><p>F12</p></td>
+<td><p>Check view by rendering</p></td>
+</tr>
+</tbody>
+</table>
+<style>
+  video {
+    width: 100%;
+  }
+</style>
+<video controls>
+<source src='https://www.dropbox.com/s/9t42wevpkevzqt7/02-Ed_Render-Camera-View.mp4?raw=1'>
+</video>
+<hr class="docutils" />
+<div class="subd">
+<hr class="docutils" />
+<div class="admonition note" name="html-admonition" style="background: lightgreen; padding: 10px">
+<p class="title"> </p>
+</div>
+</section>
+<section id="subdivisions">
+<h3>Subdivisions<a class="headerlink" href="#subdivisions" title="Link to this heading"></a></h3>
+<div class="sd-card sd-sphinx-override sd-mb-3 sd-shadow-sm docutils">
+<div class="sd-card-body docutils">
+<p class="sd-card-text">Also known as “subd’s, subds, subsurf, subsurfaces”.</p>
+<ul class="simple">
+<li><p class="sd-card-text">Subdivisions are a way to smooth our models while still maintaining control over their base wire frame / cage.</p></li>
+<li><p class="sd-card-text">Subdivisions are typically added in object mode, but we can select the option to view the results in Edit mode.</p></li>
+<li><p class="sd-card-text">We can toggle the visibility of the Subd’s for the viewport and the render.</p></li>
+</ul>
+</div>
+</div>
+<style>
+  video {
+    width: 100%;
+  }
+</style>
+<video controls>
+<source src='https://www.dropbox.com/s/57d6ugx6nsab8pj/02-F_Subdivision-Catmull.mp4?raw=1'>
+</video>
+<hr class="docutils" />
+<table class="docutils align-default">
+<thead>
+<tr class="row-odd"><th class="head"><p>Hot Key</p></th>
+<th class="head"><p>Pie Menu</p></th>
+</tr>
+</thead>
+<tbody>
+<tr class="row-even"><td><p><td style="text-align: center">Select <strong>Mode</strong> </td></p></td>
+<td><p></p></td>
+</tr>
+<tr class="row-odd"><td><p>Ctrl + Tab</p></td>
+<td><p><img alt="Select Mode" src="_images/02-G_Pie-Menu_Select-Mode.jpg" /></p></td>
+</tr>
+</tbody>
+</table>
+</section>
+<hr class="docutils" />
+<section id="proportional-editing">
+<h3>Proportional Editing<a class="headerlink" href="#proportional-editing" title="Link to this heading"></a></h3>
+<table class="docutils align-default">
+<thead>
+<tr class="row-odd"><th class="head"><p>Command</p></th>
+<th class="head"><p>Hot Key</p></th>
+<th class="head"><p>note</p></th>
+</tr>
+</thead>
+<tbody>
+<tr class="row-even"><td><p>Proportional</p></td>
+<td><p>O</p></td>
+<td><p>Toggle</p></td>
+</tr>
+<tr class="row-odd"><td><p>Proportional Grab</p></td>
+<td><p>Select ( Vertice, Edge, Face ) + O + G + Scroll MMB Up</p></td>
+<td><p>Activate ‘O’ Before ‘G’</p></td>
+</tr>
+</tbody>
+</table>
+<style>
+  video {
+    width: 100%;
+  }
+</style>
+<video controls>
+<source src='https://www.dropbox.com/s/o9hojjowi7o20hx/Hot_Key_O-Proportional-Edit.mp4?raw=1'>
+</video> 
+</section>
+<hr class="docutils" />
+<section id="scale-along-normals">
+<h3>Scale Along Normals<a class="headerlink" href="#scale-along-normals" title="Link to this heading"></a></h3>
+<table class="docutils align-default">
+<thead>
+<tr class="row-odd"><th class="head"><p>Command</p></th>
+<th class="head"><p>Hot Key</p></th>
+<th class="head"><p>note</p></th>
+</tr>
+</thead>
+<tbody>
+<tr class="row-even"><td><p>Move Along Normals</p></td>
+<td><p>Alt + S</p></td>
+<td><p>Extremely Useful Hotkey</p></td>
+</tr>
+</tbody>
+</table>
+<style>
+  video {
+    width: 100%;
+  }
+</style>
+<video controls>
+<source src='https://www.dropbox.com/s/7s8pohvu2id511u/Hot-Key_Alt-S-Scale-Along-Normals.mp4?raw=1'>
+</video>
+<hr class="docutils" />
+</section>
+</section>
+<section id="part-03-modifiers">
+<h2>Part 03: Modifiers<a class="headerlink" href="#part-03-modifiers" title="Link to this heading"></a></h2>
+<p>Create a Layer for Icing.</p>
+<section id="separate-by-selection">
+<h3>Separate by Selection<a class="headerlink" href="#separate-by-selection" title="Link to this heading"></a></h3>
+<table class="docutils align-default">
+<thead>
+<tr class="row-odd"><th class="head"><p>Command</p></th>
+<th class="head"><p>Hot Key</p></th>
+<th class="head"><p>note</p></th>
+</tr>
+</thead>
+<tbody>
+<tr class="row-even"><td><p>Wireframe</p></td>
+<td><p>Alt + Z</p></td>
+<td><p></p></td>
+</tr>
+<tr class="row-odd"><td><p>Duplicate</p></td>
+<td><p>Shift + D</p></td>
+<td><p>‘esc’ to drop selection back in place</p></td>
+</tr>
+<tr class="row-even"><td><p>Separate</p></td>
+<td><p>P [Selection]</p></td>
+<td><p>A Separate Layer Occurs</p></td>
+</tr>
+<tr class="row-odd"><td><p></p></td>
+<td><p>If the selection has been dropped, Ctrl + L (Select Linked)</p></td>
+<td><p></p></td>
+</tr>
+</tbody>
+</table>
+<style>
+  video {
+    width: 100%;
+  }
+</style>
+<video controls>
+<source src='https://www.dropbox.com/s/62n03gmfmbmhio2/03-A_Duplicate-Separate-P.mp4?raw=1'>
+</video>
+</section>
+<hr class="docutils" />
+<section id="modifier-solidify">
+<h3>Modifier: Solidify<a class="headerlink" href="#modifier-solidify" title="Link to this heading"></a></h3>
+<p>Apply a Solidify modifier from Object Mode.</p>
+<style>
+  video {
+    width: 100%;
+  }
+</style>
+<video controls>
+<source src='https://www.dropbox.com/s/8xm1k24nw41gxhf/03-B_Modfier-Soldify.mp4?raw=1'>
+</video>
+<p>Smooth Offset with Shift + Drag</p>
+<hr class="docutils" />
+<div class="warning admonition note">
+<p class="admonition-title">Note</p>
+<p>The order of modifiers matters. The top modifier effects those below. Similar to order of Operations.</p>
+</div>
+<style>
+  video {
+    width: 100%;
+  }
+</style>
+<video controls>
+<source src='https://www.dropbox.com/s/5jugt3ondosrxto/03-C_Modifier-Order-Matters.mp4?raw=1'>
+</video>
+</section>
+<hr class="docutils" />
+<section id="apply-subdivision">
+<h3>Apply Subdivision<a class="headerlink" href="#apply-subdivision" title="Link to this heading"></a></h3>
+<div class="warning admonition">
+<p class="admonition-title">Warning</p>
+<p>Applying subdivision’s is destructive and cannot be undone. It is recommended:</p>
+<ul class="simple">
+<li><p><strong>Save As</strong> a copy of one’s un-modified Blender Project.</p></li>
+<li><p>Duplicate Objects into Separate Layer before applying Subdivisions.</p></li>
+</ul>
+</div>
+<p><strong>Prepare by Duplicating Object and Saving File &gt; As Copy</strong></p>
+<table class="docutils align-default">
+<thead>
+<tr class="row-odd"><th class="head"><p>Command</p></th>
+<th class="head"><p>Hot Key</p></th>
+<th class="head"><p>note</p></th>
+</tr>
+</thead>
+<tbody>
+<tr class="row-even"><td><p>Select Object</p></td>
+<td><p></p></td>
+<td><p>Object Mode</p></td>
+</tr>
+<tr class="row-odd"><td><p>Duplicate Object</p></td>
+<td><p>Shift + D</p></td>
+<td><p>If snapping (Shift + Tab) is on the object (prim) will appear temporarily large.</p></td>
+</tr>
+<tr class="row-even"><td><p>Drop Selection</p></td>
+<td><p>RMB</p></td>
+<td><p></p></td>
+</tr>
+<tr class="row-odd"><td><p>Save Project</p></td>
+<td><p>File &gt; Save As Copy</p></td>
+<td><p></p></td>
+</tr>
+</tbody>
+</table>
+<style>
+  video {
+    width: 100%;
+  }
+</style>
+<video controls>
+<source src='https://www.dropbox.com/s/jjh84minlo5h1uy/04-F2_Save-Project-Duplicate-Prim.mp4?raw=1'>
+</video>
+<p></p>
+<p>We apply our Subdivision with a level of 1.</p>
+<table class="docutils align-default">
+<thead>
+<tr class="row-odd"><th class="head"><p>Command</p></th>
+<th class="head"><p>Hot Key</p></th>
+<th class="head"><p>note</p></th>
+</tr>
+</thead>
+<tbody>
+<tr class="row-even"><td><p>Move Subdivision Modifier to Top</p></td>
+<td><p></p></td>
+<td><p></p></td>
+</tr>
+<tr class="row-odd"><td><p>Apply Modifier</p></td>
+<td><p>Ctrl + A while hovering over Modifier</p></td>
+<td><p>Object Mode</p></td>
+</tr>
+<tr class="row-even"><td><p></p></td>
+<td><p>Select Drop Down Arrow</p></td>
+<td><p>Object Mode</p></td>
+</tr>
+</tbody>
+</table>
+<style>
+  video {
+    width: 100%;
+  }
+</style>
+<video controls>
+<source src='https://www.dropbox.com/s/rxyur403uv45u6j/03-D_Apply-Subdivision.mp4?raw=1'>
+</video>
+<ul class="simple">
+<li><p>What is applied is what was in the viewport, not the render level.</p></li>
+</ul>
+<p></p>
+</section>
+</section>
+<hr class="docutils" />
+<section id="part-04-modeling">
+<h2>Part 04: Modeling<a class="headerlink" href="#part-04-modeling" title="Link to this heading"></a></h2>
+<section id="snapping">
+<h3>Snapping<a class="headerlink" href="#snapping" title="Link to this heading"></a></h3>
+<p>Snapping allows us to move a vertex along the face of the surface below.</p>
+<table class="docutils align-default">
+<thead>
+<tr class="row-odd"><th class="head"><p><strong>Snapping</strong></p></th>
+<th class="head"><p>Hot Keys</p></th>
+<th class="head"><p></p></th>
+</tr>
+</thead>
+<tbody>
+<tr class="row-even"><td><p>Incremental (temporary)</p></td>
+<td><p>Ctrl</p></td>
+<td><p></p></td>
+</tr>
+<tr class="row-odd"><td><p>Toggle Snapping</p></td>
+<td><p>Shift + Tab</p></td>
+<td><p></p></td>
+</tr>
+<tr class="row-even"><td><p></p></td>
+<td><p></p></td>
+<td><p>Button to the Right of ‘Snap’</p></td>
+</tr>
+<tr class="row-odd"><td><p></p></td>
+<td><p></p></td>
+<td><p><img alt="Snapping Menu" src="_images/04-B_Snap-Menu.jpg" /></p></td>
+</tr>
+</tbody>
+</table>
+<ul class="simple">
+<li><p>( Project Individual Elements ) allows nearby vertices to also conform to the surface below.<br />
+This acts like a radius falloff. Very important to activate.</p></li>
+</ul>
+<table class="docutils align-default">
+<thead>
+<tr class="row-odd"><th class="head"><p><strong>Snapping</strong></p></th>
+<th class="head"><p>Hot Keys</p></th>
+<th class="head"><p></p></th>
+</tr>
+</thead>
+<tbody>
+<tr class="row-even"><td><p>Over Background</p></td>
+<td><p>RMB</p></td>
+<td><p><img alt="RMB Snapping Menue" src="_images/04-B2_Snap_Menu_RMB.jpg" /></p></td>
+</tr>
+</tbody>
+</table>
+<p></p>
+<p><strong>Deformation with Snapping Activated</strong><br />
+Deform the icing to adhere to the faces of the donut.</p>
+<style>
+  video {
+    width: 100%;
+  }
+</style>
+<video controls>
+<source src='https://www.dropbox.com/s/kmc9unpb7nh8r50/04-A_Snap-Projected.mp4?raw=1'>
+</video>
+<p></p>
+<p>When wire frames do not appear as expected, when can go to Edit mode, toggle keys [ 1, 2, 3 ]<br />
+We can also toggle the ( Display Modifier in Edit Mode ) button.</p>
+<style>
+  video {
+    width: 100%;
+  }
+</style>
+<video controls>
+<source src='https://www.dropbox.com/s/5bxq8bdhhvza3rl/04-E2_Wireframe-Toggle.mp4?raw=1'>
+</video>
+<p></p>
+<hr class="docutils" />
+<div class="warning admonition">
+<p class="admonition-title">Select through MESH error</p>
+<p>When selecting a vertex, it is possible to select points on the backside.<br />
+<strong>Shift + Z</strong> for X-Ray, or <strong>Hot Key Z &gt; Wireframe</strong> to see that no other points are selected.</p>
+</div>
+<p><a class="reference external" href="https://youtu.be/R1isb0x4zYw?list=PLjEaoINr3zgFX8ZsChQVQsuDSjEqdWMAD&amp;amp;t=557"> Select Through Bug in Blender </a></p>
+</section>
+<hr class="docutils" />
+<section id="fixing-mesh-occlusion">
+<h3>Fixing Mesh Occlusion<a class="headerlink" href="#fixing-mesh-occlusion" title="Link to this heading"></a></h3>
+<div class="sd-card sd-sphinx-override sd-mb-3 sd-shadow-sm docutils">
+<div class="sd-card-body docutils">
+<p class="sd-card-text">The mesh for the icing will be occluded by the donut’s base.<br />
+So we pull the mesh forward by activating Snap, Proportional Editing and pressing ‘G’<br />
+then dropping the selection. Do not drag the mouse, or move any points.</p>
+</div>
+</div>
+<p></p>
+<table class="docutils align-default">
+<thead>
+<tr class="row-odd"><th class="head"><p>Command</p></th>
+<th class="head"><p>Hot Key</p></th>
+<th class="head"><p>note</p></th>
+</tr>
+</thead>
+<tbody>
+<tr class="row-even"><td><p>Activate Snapping</p></td>
+<td><p>Ctrl + TAB</p></td>
+<td><p></p></td>
+</tr>
+<tr class="row-odd"><td><p>Activate Proportional Falloff</p></td>
+<td><p>O</p></td>
+<td><p></p></td>
+</tr>
+<tr class="row-even"><td><p>Move</p></td>
+<td><p>G</p></td>
+<td><p></p></td>
+</tr>
+<tr class="row-odd"><td><p>Drop Selection</p></td>
+<td><p>[Esc, LMB ]</p></td>
+<td><p>Drop Selection without moving vertexes.</p></td>
+</tr>
+<tr class="row-even"><td><p>Repeat Where Needed</p></td>
+<td><p></p></td>
+<td><p></p></td>
+</tr>
+</tbody>
+</table>
+<p></p>
+<style>
+  video {
+    width: 100%;
+  }
+</style>
+<video controls>
+<source src='https://www.dropbox.com/s/u7jtarq084wuysd/04-E3_Bring-Mesh-Through.mp4?raw=1'>
+</video>
+<p></p>
+<p><a class="reference external" href="https://youtu.be/R1isb0x4zYw?list=PLjEaoINr3zgFX8ZsChQVQsuDSjEqdWMAD&amp;amp;t=512">Donut Tutorial: Pull Mesh Forward </a></p>
+</section>
+<hr class="docutils" />
+<section id="camera-repositioning">
+<h3>Camera Repositioning<a class="headerlink" href="#camera-repositioning" title="Link to this heading"></a></h3>
+<p>Here we re-position the camera for a render.</p>
+<style>
+  video {
+    width: 100%;
+  }
+</style>
+<video controls>
+<source src='https://www.dropbox.com/s/oqb2ef4v49aio4j/04-C_Camera-Movement-Practice.mp4?raw=1'>
+</video>
+<style>
+  video {
+    width: 100%;
+  }
+</style>
+<p>The method above involves using ‘G’ to manipulate the camera.</p>
+<p></p>
+Instead, we can easily manipulate the camera from the viewport.
+<p></p> 
+<p><strong>Simple Way to Frame a Shot</strong></p>
+<table class="docutils align-default">
+<thead>
+<tr class="row-odd"><th class="head"><p>Command</p></th>
+<th class="head"><p>Hot Key</p></th>
+<th class="head"><p>note</p></th>
+</tr>
+</thead>
+<tbody>
+<tr class="row-even"><td><p>Set Camera to Current View</p></td>
+<td><p><strong>Ctrl + Alt + Numpad 0</strong></p></td>
+<td><p>Highly used Hotkey Combo</p></td>
+</tr>
+<tr class="row-odd"><td><p>Side Menu</p></td>
+<td><p>N</p></td>
+<td><p></p></td>
+</tr>
+<tr class="row-even"><td><p>Select</p></td>
+<td><p>View</p></td>
+<td><p></p></td>
+</tr>
+<tr class="row-odd"><td><p>Checkbox</p></td>
+<td><p>Activate ‘Camera to View’</p></td>
+<td><p></p></td>
+</tr>
+<tr class="row-even"><td><p>Choose the Camera Frame</p></td>
+<td><p>Pan, Rotate, Zoom</p></td>
+<td><p>Normal navigation</p></td>
+</tr>
+<tr class="row-odd"><td><p>Deselect ‘Camera to View’</p></td>
+<td><p></p></td>
+<td><p>Or leave on and press Numpad ‘0’ to exit</p></td>
+</tr>
+</tbody>
+</table>
+<p><img alt="Camera to View" src="_images/04-C3_Camera_to_View_ShortVersion.gif" /></p>
+<p><strong>Cons</strong>:</p>
+<ul class="simple">
+<li><p>Typically we can leave the camera view by pressing the MMB to escape, now we need to press ‘Num pad 0’ or uncheck ‘Camera to View’.</p></li>
+<li><p>MMB Scroll to Zoom in and out does not allow for using ‘Shift’ for smooth increments.</p></li>
+</ul>
+<hr class="docutils" />
+<div class="admonition note" name="html-admonition" style="background: lightgreen; padding: 10px">
+<p class="title"> </p>
+</div>
+</section>
+<section id="render-visibility">
+<h3>Render Visibility<a class="headerlink" href="#render-visibility" title="Link to this heading"></a></h3>
+<div class="admonition note" name="html-admonition" style="background: lightyellow; padding: 10px">
+<p class="title"> </p>
+We observe that we are accidently rendering the original cube placed our scene and not our current view. 
+</div>
+<video controls>
+<source src='https://www.dropbox.com/s/0p6gxxu5n28abil/04-D_Render-Not-Visibility-Dependent.mp4?raw=1'>
+</video>
+<p></p>
+<div class="warning admonition note">
+<p class="admonition-title">Note</p>
+<p>A layer can be <strong>invisible</strong> in the viewport but will still <strong>appear</strong> in the render.</p>
+</div>
+</section>
+<hr class="docutils" />
+<section id="references">
+<h3>References<a class="headerlink" href="#references" title="Link to this heading"></a></h3>
+<div class="sd-card sd-sphinx-override sd-mb-3 sd-shadow-sm docutils">
+<div class="sd-card-body docutils">
+<p class="sd-card-text">“<em><strong>I want to get a T-Shirt that says, ‘Reference, Reference, References’.. It is my biggest piece of advice for artists whenever they ask for feedback.</strong></em>”
+- Blender Guru</p>
+</div>
+</div>
+<style>
+  video {
+    width: 100%;
+  }
+</style>
+<p>It is critical to switch to <strong>Object</strong> mode to enable the Add &gt; Image &gt; Reference option.</p>
+<table class="docutils align-default">
+<thead>
+<tr class="row-odd"><th class="head"><p>Actions</p></th>
+<th class="head"><p>Hot Key</p></th>
+</tr>
+</thead>
+<tbody>
+<tr class="row-even"><td><p>Switch to Object</p></td>
+<td><p>[ Tab, Pie: Ctrl + Tab ]</p></td>
+</tr>
+<tr class="row-odd"><td><p>Add Image to Current Viewport</p></td>
+<td><p>Shift + A</p></td>
+</tr>
+<tr class="row-even"><td><p><img alt="Add Image" src="_images/04-E2_Object-Mode.jpg" /></p></td>
+<td><p><img alt="Add Image" src="_images/04-D2_Add-Image.jpg" /></p></td>
+</tr>
+</tbody>
+</table>
+<video controls>
+<source src='https://www.dropbox.com/s/tk4186vkm96qg85/04-E_Switch-to-Object-Mode-for-References.mp4?raw=1'>
+</video>
+<p>  </p>
+<p>Here we show three different ways of adding references.</p>
+<style>
+  video {
+    width: 100%;
+  }
+</style>
+<video controls>
+<source src='https://www.dropbox.com/s/hi75ve7i1l9g6dm/04-F_Add-References-3-Ways.mp4?raw=1'>
+</video>
+<p></p>
+<ul class="simple">
+<li><p>| <strong>Add &gt; Image &gt; Background</strong> | is best used when in Front, Top, or Right viewports.</p></li>
+<li><p>The background image is only visible from the chosen viewport.</p></li>
+<li><p>| <strong>Add &gt; Image &gt; Reference</strong> | projects an image onto a plane (card) from the current view.</p></li>
+<li><p>Add [ Reference, Background ] are identical if performed from the perspective or camera views.</p></li>
+</ul>
+</section>
+<hr class="docutils" />
+<section id="apply-subdivisions">
+<h3>Apply Subdivisions<a class="headerlink" href="#apply-subdivisions" title="Link to this heading"></a></h3>
+<p>Here we add additional detail by applying the Subdivision surface.</p>
+<div class="warning admonition">
+<p class="admonition-title">Apply Subdivison Surface</p>
+<style>
+  video {
+    width: 100%;
+  }
+</style>
+<video controls>
+<source src='https://www.dropbox.com/s/f4gpunxxhwhtdcc/04-G_Apply-Subdivision.mp4?raw=1'>
+</video>
+<center> Place Subdivision Modifier at top of Stack and Apply 
+</div>
+<ul class="simple">
+<li><p>Move Edges and Apply Second Sub Division Modifier.</p></li>
+</ul>
+<p><img alt="Apply Second Subdivision" src="_images/04-G2_Apply-Second-Subdivision.gif" /></p>
+</section>
+<hr class="docutils" />
+<section id="extrude-edges">
+<h3>Extrude Edges<a class="headerlink" href="#extrude-edges" title="Link to this heading"></a></h3>
+<p>Make drips by extruding.</p>
+<table class="docutils align-default">
+<thead>
+<tr class="row-odd"><th class="head"><p>Command</p></th>
+<th class="head"><p>Hot Key</p></th>
+<th class="head"><p>note</p></th>
+</tr>
+</thead>
+<tbody>
+<tr class="row-even"><td><p>Extrude</p></td>
+<td><p>E</p></td>
+<td><p>Edit Mode</p></td>
+</tr>
+</tbody>
+</table>
+<style>
+  video {
+    width: 100%;
+  }
+</style>
+<video controls>
+<source src='https://www.dropbox.com/s/3e3xf8llqrwfj6z/04-H_Extrude.mp4?raw=1'>
+</video>
+<p></p>
+</section>
+<section id="select-edges">
+<h3>Select Edges<a class="headerlink" href="#select-edges" title="Link to this heading"></a></h3>
+<p>Shrink the middle of the donut.</p>
+<table class="docutils align-default">
+<thead>
+<tr class="row-odd"><th class="head"><p>Command</p></th>
+<th class="head"><p>Hot Key</p></th>
+<th class="head"><p>note</p></th>
+</tr>
+</thead>
+<tbody>
+<tr class="row-even"><td><p>Select Edges</p></td>
+<td><p>Alt + LMB</p></td>
+<td><p>Edit Mode [ Vertices, Edges, Faces ]</p></td>
+</tr>
+<tr class="row-odd"><td><p>Contract Edge</p></td>
+<td><p>Alt + S</p></td>
+<td><p>Scale Along Normals</p></td>
+</tr>
+</tbody>
+</table>
+<style>
+  video {
+    width: 100%;
+  }
+</style>
+<video controls>
+<source src='https://www.dropbox.com/s/1jw0zka24uhvjvm/04-I_Select-Edges.mp4?raw=1'>
+</video>
+<p></p>
+</section>
+<section id="shrink-wrap-modifier">
+<h3>Shrink Wrap Modifier<a class="headerlink" href="#shrink-wrap-modifier" title="Link to this heading"></a></h3>
+<p>This is a second way to match the icing to the Donut.</p>
+<table class="docutils align-default">
+<thead>
+<tr class="row-odd"><th class="head"><p>Command</p></th>
+<th class="head"><p>Hot Key</p></th>
+<th class="head"><p>note</p></th>
+</tr>
+</thead>
+<tbody>
+<tr class="row-even"><td><p>Shrink Wrap</p></td>
+<td><p>Modifier</p></td>
+<td><p>Use Eye Dropper to Pick Target</p></td>
+</tr>
+<tr class="row-odd"><td><p>Move Modifier to top of Stack</p></td>
+<td><p></p></td>
+<td><p></p></td>
+</tr>
+</tbody>
+</table>
+<style>
+  video {
+    width: 100%;
+  }
+</style>
+<video controls>
+<source src='https://www.dropbox.com/s/g331i8pdh7j2h2b/04-J_Shrink-Wrap.mp4?raw=1'>
+</video>
+<p></p>
+<p><a class="reference external" href="https://youtu.be/R1isb0x4zYw?t=920">Blender Guru, Donut Tutorial, Part 4: Shrinkwrap Modifier.</a></p>
+<hr class="docutils" />
+<div class="admonition note" name="html-admonition" style="background: lightgreen; padding: 10px">
+<p class="title"> </p>
+</div>
+</section>
+</section>
+<section id="part-05-sculpting">
+<h2>Part 05: Sculpting<a class="headerlink" href="#part-05-sculpting" title="Link to this heading"></a></h2>
+<p>Adding greater details to our icing.</p>
+<div class="warning admonition">
+<p class="admonition-title">Warning</p>
+<p><strong>SAVE COPY</strong> scene before applying modifiers.</p>
+</div>
+<ul class="simple">
+<li><p>Apply Modifiers from top down before we begin sculpting.</p></li>
+</ul>
+<p></p>
+<p><img alt="Apply Modifiers Top Down" src="_images/05-A_Apply-Modifiers.gif" /></p>
+<hr class="docutils" />
+<section id="draw">
+<h3>Draw<a class="headerlink" href="#draw" title="Link to this heading"></a></h3>
+<p>Select the Layout Sculpting Mode Tab.</p>
+<p><img alt="Layout Sculpt" src="_images/05-B_Layout-Sculpt.jpg" /></p>
+<table class="docutils align-default">
+<thead>
+<tr class="row-odd"><th class="head"><p>Command</p></th>
+<th class="head"><p>Hot Key</p></th>
+<th class="head"><p>note</p></th>
+</tr>
+</thead>
+<tbody>
+<tr class="row-even"><td><p>Sculpting</p></td>
+<td><p>Pie Menu: Ctrl + Tab [ Sculpting ]</p></td>
+<td><p></p></td>
+</tr>
+<tr class="row-odd"><td><p>Draw, Pull [ Push ]</p></td>
+<td><p>X, [ Ctrl + Drag ]</p></td>
+<td><p></p></td>
+</tr>
+<tr class="row-even"><td><p>Grab</p></td>
+<td><p>G</p></td>
+<td><p></p></td>
+</tr>
+<tr class="row-odd"><td><p>Change Radius</p></td>
+<td><p>F</p></td>
+<td><p>We will use this key combo in the future</p></td>
+</tr>
+<tr class="row-even"><td><p>Strength of Radius</p></td>
+<td><p>Shift + F</p></td>
+<td><p>We will use this key combo in the future</p></td>
+</tr>
+<tr class="row-odd"><td><p>Smooth</p></td>
+<td><p>Shift + S</p></td>
+<td><p>Hold Shift to activate Smooth anytime</p></td>
+</tr>
+<tr class="row-even"><td><p>Inflate</p></td>
+<td><p>I</p></td>
+<td><p>Ctrl to Deflate</p></td>
+</tr>
+<tr class="row-odd"><td><p>Show All Brushes</p></td>
+<td><p>Pop Up: Shift + Space Bar</p></td>
+<td><p></p></td>
+</tr>
+</tbody>
+</table>
+<style>
+  video {
+    width: 100%;
+  }
+</style>
+<video controls>
+<source src='https://www.dropbox.com/s/ist7xjekdq7o8u1/05-C_Draw.mp4?raw=1'>
+</video>
+<p></p>
+</section>
+<hr class="docutils" />
+<section id="inflate-stroke-airbrush">
+<h3>Inflate &gt; Stroke &gt; Airbrush<a class="headerlink" href="#inflate-stroke-airbrush" title="Link to this heading"></a></h3>
+<div class="sd-card sd-sphinx-override sd-mb-3 sd-shadow-sm docutils">
+<div class="sd-card-body docutils">
+<div class="sd-card-title sd-font-weight-bold docutils">
+Inflate &gt; Stroke &gt; Option ‘Space’</div>
+<ul class="simple">
+<li><p class="sd-card-text">With Airbrush activated, we do not need to move the mouse to inflate the mesh.</p></li>
+<li><p class="sd-card-text">Observe that the ‘Active Tool’ option is identical to our ‘N’ Slide panel.</p></li>
+<li><p class="sd-card-text">‘Space’ in brushes, is the default setting which applies inflation upon cursor movement.</p></li>
+</ul>
+</div>
+</div>
+<style>
+  video {
+    width: 100%;
+  }
+</style>
+<video controls>
+<source src='https://www.dropbox.com/s/ewjs12nxw0wl5lr/05-D_Inflate-Air-Brush.mp4?raw=1'>
+</video>
+<p></p>
+<p></p>
+</section>
+<section id="inflate-stroke-space">
+<h3>Inflate &gt; Stroke &gt; Space<a class="headerlink" href="#inflate-stroke-space" title="Link to this heading"></a></h3>
+<div class="sd-card sd-sphinx-override sd-mb-3 sd-shadow-sm docutils">
+<div class="sd-card-body docutils">
+<p class="sd-card-text">Inflate using Tool &gt; Inflate &gt; Stroke &gt; Space</p>
+</div>
+</div>
+<style>
+  video {
+    width: 100%;
+  }
+</style>
+<video controls>
+<source src='https://www.dropbox.com/s/s6j2py75exflas8/05-E_Inflate-Space.mp4?raw=1'>
+</video>
+<p></p>
+<hr class="docutils" />
+<div class="admonition note" name="html-admonition" style="background: lightgreen; padding: 10px">
+<p class="title"> </p>
+</div>
+</section>
+</section>
+<section id="part-06-rendering">
+<h2>Part 06: Rendering<a class="headerlink" href="#part-06-rendering" title="Link to this heading"></a></h2>
+<table class="docutils align-default">
+<thead>
+<tr class="row-odd"><th class="head"><p>Command</p></th>
+<th class="head"><p>Hot Key</p></th>
+<th class="head"><p>note</p></th>
+</tr>
+</thead>
+<tbody>
+<tr class="row-even"><td><p>Snap Light to Center</p></td>
+<td><p>Alt + G</p></td>
+<td><p>With light selected.</p></td>
+</tr>
+</tbody>
+</table>
+<p><img alt="Snap to Origin" src="_images/06-A_Snap-Light-Origin.gif" /></p>
+<ul class="simple">
+<li><p>“Clear Location”</p></li>
+</ul>
+<div class="sd-card sd-sphinx-override sd-mb-3 sd-shadow-sm docutils">
+<div class="sd-card-body docutils">
+<p class="sd-card-text">Move light up to 3/4 Position.</p>
+</div>
+</div>
+<style>
+  video {
+    width: 100%;
+  }
+</style>
+<video controls>
+<source src='https://www.dropbox.com/s/x9j5l8n7kthrn12/06-A2_Position-Light.mp4?raw=1'>
+</video>
+<p></p>
+<div class="sd-card sd-sphinx-override sd-mb-3 sd-shadow-sm docutils">
+<div class="sd-card-body docutils">
+<p class="sd-card-text">Reduce Lighting Power to 20.2W</p>
+</div>
+</div>
+<style>
+  video {
+    width: 100%;
+  }
+</style>
+<video controls>
+<source src='https://www.dropbox.com/s/bos43k2pwchy70q/06-B_Reduce-Lighting.mp4?raw=1'>
+</video>
+<p></p>
+<table class="docutils align-default">
+<thead>
+<tr class="row-odd"><th class="head"><p>Command</p></th>
+<th class="head"><p>Hot Key</p></th>
+<th class="head"><p>note</p></th>
+</tr>
+</thead>
+<tbody>
+<tr class="row-even"><td><p>Switch Rendered Mode</p></td>
+<td><p>Z</p></td>
+<td><p><img alt="Render Mode" src="_images/Pie-Menu_Z-Render-Mode.gif" /></p></td>
+</tr>
+</tbody>
+</table>
+<table class="docutils align-default">
+<thead>
+<tr class="row-odd"><th class="head"><p>Rendered</p></th>
+<th class="head"><p>Materials</p></th>
+<th class="head"><p>Solid</p></th>
+<th class="head"><p>Wireframe</p></th>
+</tr>
+</thead>
+</table>
+<p><img alt="Render Modes" src="_images/06-C2_Render-Modes.gif" /></p>
+<hr class="docutils" />
+<section id="change-viewport-display">
+<h3>Change Viewport Display<a class="headerlink" href="#change-viewport-display" title="Link to this heading"></a></h3>
+<div class="admonition tip">
+<p class="admonition-title">Tip</p>
+<ul class="simple">
+<li><p>Reduce the size of the camera in the viewport.</p></li>
+<li><p>This does not work for lights.</p></li>
+</ul>
+</div>
+<style>
+  video {
+    width: 100%;
+  }
+</style>
+<video controls>
+<source src='https://www.dropbox.com/s/vb9gheq274raihz/06-C_Change-Camera-Display.mp4?raw=1'>
+</video>
+<p></p>
+</section>
+<hr class="docutils" />
+<section id="render-engines-eevee-cycles">
+<h3>Render Engines (EeVee, Cycles)<a class="headerlink" href="#render-engines-eevee-cycles" title="Link to this heading"></a></h3>
+<div class="sd-card sd-sphinx-override sd-mb-3 sd-shadow-sm docutils">
+<div class="sd-card-body docutils">
+<div class="sd-card-title sd-font-weight-bold docutils">
+Render Engines</div>
+<p class="sd-card-text">EeVee is the render engine that ships with Blender. Suitable for games. Cycles is a robust Ray Tracer.</p>
+</div>
+</div>
+<div class="sd-card sd-sphinx-override sd-mb-3 sd-shadow-sm docutils">
+<div class="sd-card-body docutils">
+<div class="sd-card-title sd-font-weight-bold docutils">
+Choose Render Engine</div>
+<p class="sd-card-text"><img alt="Render Engine" src="_images/06-D_Render-Engine.gif" /></p>
+</div>
+</div>
+<div class="sd-card sd-sphinx-override sd-mb-3 sd-shadow-sm docutils">
+<div class="sd-card-body docutils">
+<div class="sd-card-title sd-font-weight-bold docutils">
+Increase Shadows</div>
+<p class="sd-card-text"><img alt="EeVee Shadows" src="_images/06-G_EeVee-Shadows.gif" /></p>
+</div>
+</div>
+<div class="sd-card sd-sphinx-override sd-mb-3 sd-shadow-sm docutils">
+<div class="sd-card-body docutils">
+<div class="sd-card-title sd-font-weight-bold docutils">
+Select Light, Reduce Shadow Bias</div>
+<p class="sd-card-text"><img alt="EeVee Shadows Reduce Bias" src="_images/06-G2_EeVee-Shadow-Reduce-Bias.gif" /></p>
+</div>
+</div>
+<div class="sd-card sd-sphinx-override sd-mb-3 sd-shadow-sm docutils">
+<div class="sd-card-body docutils">
+<div class="sd-card-title sd-font-weight-bold docutils">
+(Optional) Add Contact Shadows, depending on the scene</div>
+<p class="sd-card-text"><img alt="EeVee Contact Shadows" src="_images/06-G3_EeVee-Shadows-Contact.gif" /></p>
+</div>
+</div>
+<div class="sd-card sd-sphinx-override sd-mb-3 sd-shadow-sm docutils">
+<div class="sd-card-body docutils">
+<div class="sd-card-title sd-font-weight-bold docutils">
+Add Ambient Occlusion</div>
+<p class="sd-card-text"><img alt="EeVee Ambient Occlusion" src="_images/06-G4_EeVee-Ambient-Occlusion.gif" /></p>
+</div>
+</div>
+<div class="sd-card sd-sphinx-override sd-mb-3 sd-shadow-sm docutils">
+<div class="sd-card-body docutils">
+<div class="sd-card-title sd-font-weight-bold docutils">
+Activate Screen Space Reflections</div>
+<p class="sd-card-text"><img alt="EeVee Ambient Occlusion" src="_images/06-G5_EeVee-Screen-Space-Reflections.gif" /></p>
+</div>
+</div>
+<ul class="simple">
+<li><p>One can also add ‘Bloom’ for a bit of glare.</p></li>
+</ul>
+<p></p>
+<p><a class="reference external" href="https://youtu.be/_WRUW_fs1g8?t=616">Blender Guru: Part 06, Rendering - Eevee</a></p>
+</section>
+<hr class="docutils" />
+<section id="add-hardware-acceleration-gpu">
+<h3>Add Hardware Acceleration (GPU)<a class="headerlink" href="#add-hardware-acceleration-gpu" title="Link to this heading"></a></h3>
+<div class="sd-card sd-sphinx-override sd-mb-3 sd-shadow-sm docutils">
+<div class="sd-card-body docutils">
+<div class="sd-card-title sd-font-weight-bold docutils">
+Add GPU’s</div>
+<p class="sd-card-text">{root file menu }<br />
+Edit &gt; Preferences &gt; System &gt; Optix.<br />
+Use CUDA if Optix is n/a.</p>
+</div>
+</div>
+<div class="warning admonition note">
+<p class="admonition-title">Note</p>
+<ul class="simple">
+<li><p>There are render settings for the display and for final rendering.</p></li>
+<li><p>Optix uses CUDA for speed, but in Part 15, Kevin mentions benefits to not using Optix.</p></li>
+</ul>
+</div>
+<style>
+  video {
+    width: 100%;
+  }
+</style>
+<video controls>
+<source src='https://www.dropbox.com/s/28bmtnwvc4pv7zf/06-E_Add-GPU.mp4?raw=1'>
+</video>
+<p></p>
+</section>
+<hr class="docutils" />
+<section id="render-to-slots">
+<h3>Render to Slots<a class="headerlink" href="#render-to-slots" title="Link to this heading"></a></h3>
+<p>Slots act as Snapshots so we can flip through our renders.</p>
+<table class="docutils align-default">
+<thead>
+<tr class="row-odd"><th class="head"><p>Command</p></th>
+<th class="head"><p>Hot Key</p></th>
+<th class="head"><p>note</p></th>
+</tr>
+</thead>
+<tbody>
+<tr class="row-even"><td><p>View Slots</p></td>
+<td><p>[ 1, 2, 3, 4, 5.. ]</p></td>
+<td><p></p></td>
+</tr>
+</tbody>
+</table>
+<style>
+  video {
+    width: 100%;
+  }
+</style>
+<video controls>
+<source src='https://www.dropbox.com/s/q5tzl3nifxljt5t/06-F_Render-Slots.mp4?raw=1'>
+</video>
+<p></p>
+</section>
+<hr class="docutils" />
+<section id="materials">
+<h3>Materials<a class="headerlink" href="#materials" title="Link to this heading"></a></h3>
+<table class="docutils align-default">
+<thead>
+<tr class="row-odd"><th class="head"><p>Command</p></th>
+<th class="head"><p>Hot Key</p></th>
+<th class="head"><p>note</p></th>
+</tr>
+</thead>
+<tbody>
+<tr class="row-even"><td><p>Select Object</p></td>
+<td><p>LMB</p></td>
+<td><p>Object Mode</p></td>
+</tr>
+<tr class="row-odd"><td><p>Choose Material</p></td>
+<td><p>Select Icon</p></td>
+<td><p></p></td>
+</tr>
+<tr class="row-even"><td><p>Choose New</p></td>
+<td><p>Select</p></td>
+<td><p>Principled BSDF</p></td>
+</tr>
+</tbody>
+</table>
+<style>
+  video {
+    width: 100%;
+  }
+</style>
+<video controls>
+<source src='https://www.dropbox.com/s/o391tmlv75unb3m/06-H_Materials.mp4?raw=1'>
+</video>
+<p></p>
+<div class="sd-card sd-sphinx-override sd-mb-3 sd-shadow-sm docutils">
+<div class="sd-card-body docutils">
+<div class="sd-card-title sd-font-weight-bold docutils">
+Add Colors</div>
+<ul class="simple">
+<li><p class="sd-card-text">Add Colors to the Icing.</p></li>
+<li><p class="sd-card-text">Adjust the Roughness to 0.150</p></li>
+<li><p class="sd-card-text">Add Color to Donut.</p></li>
+<li><p class="sd-card-text">Add Color to Plane.</p></li>
+</ul>
+</div>
+</div>
+<style>
+  video {
+    width: 100%;
+  }
+</style>
+<video controls>
+<source src='https://www.dropbox.com/s/x5ztwgy335q5r6d/06-H4_Base-Color.mp4?raw=1'>
+</video>
+<p></p>
+</section>
+<hr class="docutils" />
+<section id="subsurface-scattering">
+<h3>Subsurface Scattering<a class="headerlink" href="#subsurface-scattering" title="Link to this heading"></a></h3>
+<div class="sd-card sd-sphinx-override sd-mb-3 sd-shadow-sm docutils">
+<div class="sd-card-body docutils">
+<div class="sd-card-title sd-font-weight-bold docutils">
+Subsurface Scattering.</div>
+<p class="sd-card-text">Subsurface scattering allow objects to have a translucency or an apparent internal glow to themselves.</p>
+</div>
+</div>
+<table class="docutils align-default">
+<thead>
+<tr class="row-odd"><th class="head"><p>Command</p></th>
+<th class="head"><p>Value</p></th>
+<th class="head"><p>note</p></th>
+</tr>
+</thead>
+<tbody>
+<tr class="row-even"><td><p>Subsurface</p></td>
+<td><p>0.100</p></td>
+<td><p></p></td>
+</tr>
+<tr class="row-odd"><td><p>Subsurface Radius</p></td>
+<td><p>0.002</p></td>
+<td><p>Select all three by dragging down</p></td>
+</tr>
+<tr class="row-even"><td><p>Subsurface Color</p></td>
+<td><p>Base Color + 0.8 Saturation</p></td>
+<td><p>Drag Base Color to slot</p></td>
+</tr>
+</tbody>
+</table>
+<style>
+  video {
+    width: 100%;
+  }
+</style>
+<video controls>
+<source src='https://www.dropbox.com/s/w542hlhlk91ml1x/06-H5_Subsurface.mp4?raw=1'>
+</video>
+<p></p>
+<table class="docutils align-default">
+<thead>
+<tr class="row-odd"><th class="head"><p>Command</p></th>
+<th class="head"><p>Hot Key</p></th>
+<th class="head"><p>note: Drag Color Swatch to Target</p></th>
+</tr>
+</thead>
+<tbody>
+<tr class="row-even"><td><p><strong>Smart Copy</strong></p></td>
+<td><p>Shift Select</p></td>
+<td><p><img alt="Smart Copy" src="_images/Hot-Key_Drag-Select-Materials.gif" /></p></td>
+</tr>
+</tbody>
+</table>
+</section>
+<hr class="docutils" />
+<section id="material-preview-to-eevee">
+<h3>Material Preview to EeVee<a class="headerlink" href="#material-preview-to-eevee" title="Link to this heading"></a></h3>
+<div class="sd-card sd-sphinx-override sd-mb-3 sd-shadow-sm docutils">
+<div class="sd-card-body docutils">
+<div class="sd-card-title sd-font-weight-bold docutils">
+Make Material Setting Equivalent to EeVee.</div>
+<p class="sd-card-text">By Selecting Scene Lights and Scene World we can access EeVee through ‘Z’ Pie Menu.</p>
+</div>
+</div>
+<p></p>
+<style>
+  video {
+    width: 100%;
+  }
+</style>
+<video controls>
+<source src='https://www.dropbox.com/s/v24kilj1s3949nv/06-H6_EeVee-As-Hotkey.mp4?raw=1'>
+</video>
+<p></p>
+</section>
+<hr class="docutils" />
+<section id="samples-and-noise">
+<h3>Samples and Noise<a class="headerlink" href="#samples-and-noise" title="Link to this heading"></a></h3>
+<div class="admonition important">
+<p class="admonition-title">Important</p>
+<p>More samples reduces noise but increases render times.</p>
+</div>
+<table class="docutils align-default">
+<thead>
+<tr class="row-odd"><th class="head"><p>Label</p></th>
+<th class="head"><p>Value</p></th>
+<th class="head"><p>note</p></th>
+</tr>
+</thead>
+<tbody>
+<tr class="row-even"><td><p>Samples</p></td>
+<td><p>Set [ 100, 200 ]</p></td>
+<td><p>These are recommended samples for this size scene.</p></td>
+</tr>
+</tbody>
+</table>
+<div class="sd-card sd-sphinx-override sd-mb-3 sd-shadow-sm docutils">
+<div class="sd-card-body docutils">
+<div class="sd-card-title sd-font-weight-bold docutils">
+Exploring Samples.</div>
+<ul class="simple">
+<li><p class="sd-card-text">Sampling is available under render engine ‘Cycles’ but not ‘EeVee’.</p></li>
+<li><p class="sd-card-text">Viewport and Render have separate Samples and Noise attributes.</p></li>
+</ul>
+</div>
+</div>
+<p></p>
+<style>
+  video {
+    width: 100%;
+  }
+</style>
+<video controls>
+<source src='https://www.dropbox.com/s/fq78e5fpb832uqx/06-I_Samples-Noise.mp4?raw=1'>
+</video>
+<p></p>
+<div class="warning admonition note">
+<p class="admonition-title">Note</p>
+<ul class="simple">
+<li><p>Denoise for Render Defaults to CPU, not GPU.</p></li>
+<li><p>We leave the noise threshold at it default value.</p></li>
+</ul>
+</div>
+<hr class="docutils" />
+<div class="admonition note" name="html-admonition" style="background: lightgreen; padding: 10px">
+<p class="title"> </p>
+</div>
+</section>
+</section>
+<section id="part-07-texturing-shading">
+<h2>Part 07: Texturing &amp; Shading<a class="headerlink" href="#part-07-texturing-shading" title="Link to this heading"></a></h2>
+<p><a class="reference external" href="https://youtu.be/CmrAv8TSAao">Blender Guru - Texture</a></p>
+<div class="warning admonition note">
+<p class="admonition-title">Note</p>
+<p>Recommendation:
+<a class="reference external" href="https://www.pureref.com/">PureRef</a> is the standard tool for collecting reference photos.</p>
+</div>
+<div class="sd-card sd-sphinx-override sd-mb-3 sd-shadow-sm docutils">
+<div class="sd-card-body docutils">
+<div class="sd-card-title sd-font-weight-bold docutils">
+Textures.</div>
+<p class="sd-card-text">“<em>Real Donuts are not one solid color.</em>”<br />
+“<em>Base color, roughness value and normal map (bump mapping) are 90% of the materials you make will just use those three things.” -Blender Guru</em></p>
+</div>
+</div>
+<div class="admonition note" name="html-admonition" style="background: lightgreen; padding: 10px">
+<p class="title"> </p>
+</div>
+<section id="node-editor">
+<h3>Node Editor<a class="headerlink" href="#node-editor" title="Link to this heading"></a></h3>
+<table class="docutils align-default">
+<thead>
+<tr class="row-odd"><th class="head"><p>Command</p></th>
+<th class="head"><p>Hot Key</p></th>
+<th class="head"><p>note</p></th>
+</tr>
+</thead>
+<tbody>
+<tr class="row-even"><td><p>Add Node</p></td>
+<td><p>Shift + A</p></td>
+<td><p>Equivalent to ‘Add Mesh’</p></td>
+</tr>
+<tr class="row-odd"><td><p>Cut Noodle</p></td>
+<td><p>Ctrl + RMB</p></td>
+<td><p><img alt="Noodle Slice" src="_images/Hot-Key_Ctrl-RMB-Noodle-Slice.gif" /></p></td>
+</tr>
+<tr class="row-even"><td><p>Lift Node</p></td>
+<td><p>Ctrl + X</p></td>
+<td><p><img alt="Pop Node" src="_images/Hot-Key_Node-Pop-Ctrl-X.gif" /></p></td>
+</tr>
+</tbody>
+</table>
+<hr class="docutils" />
+<div class="warning admonition note">
+<p class="admonition-title">Note</p>
+<p>Noise is one of the most commonly used Material nodes.</p>
+</div>
+<table class="docutils align-default">
+<thead>
+<tr class="row-odd"><th class="head"><p>Actions</p></th>
+<th class="head"><p>Adjustments</p></th>
+<th class="head"><p>note</p></th>
+</tr>
+</thead>
+<tbody>
+<tr class="row-even"><td><p>Add Noise Node</p></td>
+<td><p>Connect ‘Fac’ to Base Color</p></td>
+<td><p></p></td>
+</tr>
+<tr class="row-odd"><td><p>Adjust Parameters</p></td>
+<td><p>Set Scale ~ 15.0</p></td>
+<td><p>Detail ~ 3.5</p></td>
+</tr>
+</tbody>
+</table>
+<p></p>
+<style>
+  video {
+    width: 100%;
+  }
+</style>
+<video controls>
+<source src='https://www.dropbox.com/s/vmgffzrnc3da1pe/07-A_Node-Editor.mp4?raw=1'>
+</video>
+<p></p>
+<p><img alt="Add Noise " src="_images/07-C2_Add-Noise.gif" /></p>
+<p><img alt="Adjust Noise " src="_images/07-D_Adjust-Noise-Texture.gif" /></p>
+<hr class="docutils" />
+<table class="docutils align-default">
+<thead>
+<tr class="row-odd"><th class="head"><p>Command</p></th>
+<th class="head"><p>Hot Key</p></th>
+<th class="head"><p>note</p></th>
+</tr>
+</thead>
+<tbody>
+<tr class="row-even"><td><p>Add Color Ramp</p></td>
+<td><p>Adjust Scale of Ramp</p></td>
+<td><p></p></td>
+</tr>
+</tbody>
+</table>
+<p></p>
+<style>
+  video {
+    width: 100%;
+  }
+</style>
+<video controls>
+<source src='https://www.dropbox.com/s/hploisedsrq0mtx/07-D2_Add_Color-Ramp.mp4?raw=1'>
+</video>
+<p></p>
+<p></p>
+<style>
+  video {
+    width: 100%;
+  }
+</style>
+<video controls>
+<source src='https://www.dropbox.com/s/q6bt27psyt2dn8v/07-D3_Add_Color_Ramp_Vertical.mp4?raw=1'>
+</video>
+<p></p>
+<hr class="docutils" />
+<div class="admonition important">
+<p class="admonition-title">Important</p>
+<p><strong>Add Node Wrangler</strong></p>
+<ul class="simple">
+<li><p>This allows us to isolate nodes and preview them.</p></li>
+</ul>
+<table class="docutils align-default">
+<thead>
+<tr class="row-odd"><th class="head"><p>Command</p></th>
+<th class="head"><p>Hot Key</p></th>
+<th class="head"><p>note</p></th>
+</tr>
+</thead>
+<tbody>
+<tr class="row-even"><td><p>Preview Node</p></td>
+<td><p>Ctrl + Shift + Select</p></td>
+<td><p>Node Wrangler</p></td>
+</tr>
+</tbody>
+</table>
+<p></p>
+<style>
+  video {
+    width: 100%;
+  }
+</style>
+<video controls>
+<source src='https://www.dropbox.com/s/uffgn5n1yednulv/07-B_Add-On-Node-Wrangler.mp4?raw=1'>
+</video>
+<p></p>
+</div>
+<div class="admonition note" name="html-admonition" style="background: lightgreen; padding: 10px">
+<p class="title"> </p>
+</div>
+<table class="docutils align-default">
+<thead>
+<tr class="row-odd"><th class="head"><p>Command</p></th>
+<th class="head"><p>Purpose</p></th>
+<th class="head"><p>note</p></th>
+</tr>
+</thead>
+<tbody>
+<tr class="row-even"><td><p>Add Texture Coordinate Node</p></td>
+<td><p>Avoids Distortion in Center</p></td>
+<td><p>Use Object Connector</p></td>
+</tr>
+</tbody>
+</table>
+<p></p>
+<p>Overview (with checker node added )</p>
+<style>
+  video {
+    width: 100%;
+  }
+</style>
+<video controls>
+<source src='https://www.dropbox.com/s/ca09zdytb8pgxe9/07-C_Texture-Coordinate.mp4?raw=1'>
+</video>
+<p></p>
+<p>Close Up</p>
+<p></p>
+<style>
+  video {
+    width: 100%;
+  }
+</style>
+<video controls>
+<source src='https://www.dropbox.com/s/83flxa5hqf80hu9/07-E_Texture-Coordinate_Vertical.mp4?raw=1'>
+</video>
+<p></p>
+<div class="admonition important">
+<p class="admonition-title">Important</p>
+<p>With our noodles, we typically connect like colors to other like colors, except for gray and yellow, which can be mixed.</p>
+</div>
+<table class="docutils align-default">
+<thead>
+<tr class="row-odd"><th class="head"><p>Command</p></th>
+</tr>
+</thead>
+<tbody>
+<tr class="row-even"><td><p>Adjust: Scale, Detail</p></td>
+</tr>
+</tbody>
+</table>
+<p><img alt="Noise texture" src="_images/07-D_Adjust-Noise-Texture.gif" /></p>
+<div class="admonition note" name="html-admonition" style="background: lightgreen; padding: 10px">
+<p class="title"> </p>
+</div>
+</section>
+<hr class="docutils" />
+<section id="bump-map">
+<h3>Bump Map<a class="headerlink" href="#bump-map" title="Link to this heading"></a></h3>
+<table class="docutils align-default">
+<thead>
+<tr class="row-odd"><th class="head"><p>Command</p></th>
+</tr>
+</thead>
+<tbody>
+<tr class="row-even"><td><p>Add Vector &gt; Normal Map</p></td>
+</tr>
+</tbody>
+</table>
+<p></p>
+<style>
+  video {
+    width: 100%;
+  }
+</style>
+<video controls>
+<source src='https://www.dropbox.com/s/5ttm3f5xh6a8g3l/07-F_Add-Normal.mp4?raw=1'>
+</video>
+<p> </p
+<p></p>
+<hr class="docutils" />
+<p>Steps:</p>
+<table class="docutils align-default">
+<thead>
+<tr class="row-odd"><th class="head"><p>Command</p></th>
+<th class="head"><p></p></th>
+</tr>
+</thead>
+<tbody>
+<tr class="row-even"><td><p>Shift + A</p></td>
+<td><p>Add Vector &gt; Normal Map</p></td>
+</tr>
+</tbody>
+</table>
+<p></p>
+<style>
+  video {
+    width: 100%;
+  }
+</style>
+<video controls>
+<source src='https://www.dropbox.com/s/wuu2devi5wroe9l/07-F_Add-Normal_Vertical.mp4?raw=1'>
+</video>
+<p></p>
+<table class="docutils align-default">
+<thead>
+<tr class="row-odd"><th class="head"><p>Action</p></th>
+<th class="head"><p>Value</p></th>
+</tr>
+</thead>
+<tbody>
+<tr class="row-even"><td><p>Adjust Distance</p></td>
+<td><p>1.00 -&gt; 0.002</p></td>
+</tr>
+</tbody>
+</table>
+<p><img alt="Adjust Distance" src="_images/07-F2_Adjust-Distance.gif" /></p>
+<div class="admonition important">
+<p class="admonition-title">Important</p>
+<p>Bump Strength Should Always be 1.0</p>
+<ul class="simple">
+<li><p>Distance is given in Blender units, or 1 meter.</p></li>
+<li><p>Be sure to connect Fac -&gt; Height.</p></li>
+</ul>
+</div>
+<hr class="docutils" />
+<div class="admonition note" name="html-admonition" style="background: lightgreen; padding: 10px">
+<p class="title"> </p>
+</div>
+</section>
+</section>
+<section id="part-08-texture-painting">
+<h2>Part 08: Texture Painting<a class="headerlink" href="#part-08-texture-painting" title="Link to this heading"></a></h2>
+<table class="docutils align-default">
+<thead>
+<tr class="row-odd"><th class="head"><p>Action</p></th>
+<th class="head"><p></p></th>
+</tr>
+</thead>
+<tbody>
+<tr class="row-even"><td><p>Shift + A</p></td>
+<td><p>Texture &gt; Image Texture</p></td>
+</tr>
+</tbody>
+</table>
+<p></p>
+<style>
+  video {
+    width: 100%;
+  }
+</style>
+<video controls>
+<source src='https://www.dropbox.com/s/20e6niiksc3r8ag/08-A_Add-Image-Texture.mp4?raw=1'>
+</video>
+<p></p>
+<p></p>
+<div class="warning admonition note">
+<p class="admonition-title">Note</p>
+<p>The Donut will turn <strong>purple</strong> or <strong>black</strong> to indicate that no texture has been assigned yet.</p>
+</div>
+<div class="sd-card sd-sphinx-override sd-mb-3 sd-shadow-sm docutils">
+<div class="sd-card-body docutils">
+<div class="sd-card-title sd-font-weight-bold docutils">
+Use Node Search:</div>
+<p class="sd-card-text">We can add Image Texture quickly by using the Search function.</p>
+<p></p>
+<style>
+  video {
+    width: 100%;
+  }
+</style>
+<video controls>
+<source src='https://www.dropbox.com/s/jcb7vxisex6b401/08-A2_Add-Node-Search.mp4?raw=1'>
+</video>
+<p></p>
+<p></p>
+</div>
+</div>
+<table class="docutils align-default">
+<thead>
+<tr class="row-odd"><th class="head"><p>Action</p></th>
+</tr>
+</thead>
+<tbody>
+<tr class="row-even"><td><p>Add Texture</p></td>
+</tr>
+</tbody>
+</table>
+<p></p>
+<style>
+  video {
+    width: 100%;
+  }
+</style>
+<video controls>
+<source src='https://www.dropbox.com/s/qajh89dkigfybnk/08-B_Add_Texture.mp4?raw=0'>
+</video>
+<p></p>
+<p></p>
+<div class="sd-card sd-sphinx-override sd-mb-3 sd-shadow-sm docutils">
+<div class="sd-card-body docutils">
+<div class="sd-card-title sd-font-weight-bold docutils">
+Add Texture to Paint On:</div>
+<p></p>
+<style>
+  video {
+    width: 100%;
+  }
+</style>
+<video controls>
+<source src='https://www.dropbox.com/s/9y9azpumbw9ibpu/08-B_Add_Texture_Vertical.mp4?raw=0'>
+</video>
+<p></p>
+<p></p>
+</div>
+</div>
+<table class="docutils align-default">
+<thead>
+<tr class="row-odd"><th class="head"><p>Action</p></th>
+<th class="head"><p></p></th>
+</tr>
+</thead>
+<tbody>
+<tr class="row-even"><td><p>Switch Tabs &gt; Texture Paint</p></td>
+<td><p></p></td>
+</tr>
+<tr class="row-odd"><td><p><img alt="Texture Paint" src="_images/08-B_Switch-Texture-Paint.gif" /></p></td>
+<td><p></p></td>
+</tr>
+</tbody>
+</table>
+<table class="docutils align-default">
+<thead>
+<tr class="row-odd"><th class="head"><p>Action</p></th>
+<th class="head"><p>Value</p></th>
+</tr>
+</thead>
+<tbody>
+<tr class="row-even"><td><p>Change Object &gt; Edit Mode</p></td>
+<td><p>Allows Selections to be Made</p></td>
+</tr>
+<tr class="row-odd"><td><p>Select Paint Mode</p></td>
+<td><p>Selections are displayed in Image Editor Window</p></td>
+</tr>
+</tbody>
+</table>
+<p></p>
+<style>
+  video {
+    width: 100%;
+  }
+</style>
+<video controls>
+<source src='https://www.dropbox.com/s/y70u0w5sh6n99g1/08-C_Texture-Selections.mp4?raw=1'>
+</video>
+<p></p>
+<p></p>
+<p>Optional: Rearrange screen for vertical friendly viewing.</p>
+<p></p>
+<style>
+  video {
+    width: 100%;
+  }
+</style>
+<video controls>
+<source src='https://www.dropbox.com/s/iqctqdh9rgq9q0x/08-B2_Screen-Swap.mp4?raw=1'>
+</video>
+<p></p>
+<p></p>
+<div class="sd-card sd-sphinx-override sd-mb-3 sd-shadow-sm docutils">
+<div class="sd-card-body docutils">
+<div class="sd-card-title sd-font-weight-bold docutils">
+2D Mapping of 3D Surface:</div>
+<p></p>
+<style>
+  video {
+    width: 100%;
+  }
+</style>
+<video controls>
+<source src='https://www.dropbox.com/s/d5trge08abnbme0/08-C_Texture-Selections_Vertical.mp4?raw=1'>
+</video>
+<p></p>
+<p></p>
+</div>
+</div>
+<table class="docutils align-default">
+<thead>
+<tr class="row-odd"><th class="head"><p>Action</p></th>
+</tr>
+</thead>
+<tbody>
+<tr class="row-even"><td><p>Paint on Texture Image in 2d and 3d views.</p></td>
+</tr>
+</tbody>
+</table>
+<p></p>
+<style>
+  video {
+    width: 100%;
+  }
+</style>
+<video controls>
+<source src='https://www.dropbox.com/s/c276ipoxiatja6z/08-D_Paint-On-Texture.mp4?raw=1'>
+</video>
+<p></p>
+<p></p>
+<div class="sd-card sd-sphinx-override sd-mb-3 sd-shadow-sm docutils">
+<div class="sd-card-body docutils">
+<div class="sd-card-title sd-font-weight-bold docutils">
+Paint on Texture</div>
+<p class="sd-card-text">Breakdown:</p>
+<p></p>
+<style>
+  video {
+    width: 100%;
+  }
+</style>
+<video controls>
+<source src='https://www.dropbox.com/s/ade7mgr1by1xcsq/08-D_Paint-On-Texture_Vertical.mp4?raw=1'>
+</video>
+<p></p>
+<p></p>
+</div>
+</div>
+<hr class="docutils" />
+<div class="admonition important">
+<p class="admonition-title">Important</p>
+<p><strong>Draw Icon</strong>
+Be sure to click on the Draw / Paint icon (top left) in order to bring up the paint swatches.</p>
+</div>
+<div class="warning admonition">
+<p class="admonition-title">Warning</p>
+<ul class="simple">
+<li><p>Save the *image Texture File or it will be <strong>Erased</strong>.</p></li>
+<li><p>On exit, Blender will offer a chance to save the file, one last time.</p></li>
+</ul>
+</div>
+<table class="docutils align-default">
+<thead>
+<tr class="row-odd"><th class="head"><p>Action</p></th>
+</tr>
+</thead>
+<tbody>
+<tr class="row-even"><td><p>Save Texture (*image) file:</p></td>
+</tr>
+</tbody>
+</table>
+ <p></p>
+ <style>
+   video {
+     width: 100%;
+   }
+ </style>
+ <video controls>
+ <source src='https://www.dropbox.com/s/q7w7kwuzb0mqxlc/08-D2_Save-Texure.mp4?raw=1'>
+ </video>
+ <p></p>
+ <p></p>
+<div class="sd-card sd-sphinx-override sd-mb-3 sd-shadow-sm docutils">
+<div class="sd-card-body docutils">
+<p class="sd-card-text">Save *Image of Texture file.</p>
+<p></p>
+<style>
+  video {
+    width: 100%;
+  }
+</style>
+<video controls>
+<source src='https://www.dropbox.com/s/ds0tsc50aahy177/08-D2_Save-Texure_Vertical.mp4?raw=1'>
+</video>
+<p></p>
+<p></p>
+</div>
+</div>
+<div class="warning admonition note">
+<p class="admonition-title">Note</p>
+<ul class="simple">
+<li><p>Overlay brightens and darkens the texture underneath it (basically increased contrast)</p></li>
+<li><p>Multiply uses the dark in the layer below.</p></li>
+<li><p>Add is the opposite of multiply.</p></li>
+</ul>
+</div>
+<table class="docutils align-default">
+<thead>
+<tr class="row-odd"><th class="head"><p>Action</p></th>
+<th class="head"><p>note</p></th>
+</tr>
+</thead>
+<tbody>
+<tr class="row-even"><td><p>Delete Color Ramp</p></td>
+<td><p>We will no longer need this node.</p></td>
+</tr>
+</tbody>
+</table>
+<p></p>
+<style>
+  video {
+    width: 100%;
+  }
+</style>
+<video controls>
+<source src='https://www.dropbox.com/s/wiaoas2lvad30wu/08-D3_Delete-Color-Ramp.mp4?raw=1'>
+</video>
+<p></p>
+<p></p>
+<div class="warning admonition">
+<p class="admonition-title">Warning</p>
+<p>Search will not find ‘Mix Color’ Node. Might be a bug.</p>
+</div>
+<table class="docutils align-default">
+<thead>
+<tr class="row-odd"><th class="head"><p>Action</p></th>
+<th class="head"><p>Value</p></th>
+</tr>
+</thead>
+<tbody>
+<tr class="row-even"><td><p>Add Mix Color Node</p></td>
+<td><p>User Defined Blue and Red</p></td>
+</tr>
+</tbody>
+</table>
+<p></p>
+<style>
+  video {
+    width: 100%;
+  }
+</style>
+<video controls>
+<source src='https://www.dropbox.com/s/vgvjg4uzsdp35fg/08-E_Add-Mix-Node.mp4?raw=1'>
+</video>
+<p></p>
+<p></p>
+<div class="sd-card sd-sphinx-override sd-mb-3 sd-shadow-sm docutils">
+<div class="sd-card-body docutils">
+<p class="sd-card-text">Vertical Mode:</p>
+<p></p>
+<style>
+  video {
+    width: 100%;
+  }
+</style>
+<video controls>
+<source src='https://www.dropbox.com/s/jnqp9p7uxdn99hs/08-E_Add-Mix-Node_Vertical.mp4?raw=1'>
+</video>
+<p></p>
+<p></p>
+</div>
+</div>
+<div class="sd-card sd-sphinx-override sd-mb-3 sd-shadow-sm docutils">
+<div class="sd-card-body docutils">
+<div class="sd-card-title sd-font-weight-bold docutils">
+Connect and Adjust <strong>Mix Color</strong> Node</div>
+<table class="docutils align-default">
+<thead>
+<tr class="row-odd"><th class="head"><p class="sd-card-text">Action</p></th>
+<th class="head"><p class="sd-card-text">Value</p></th>
+</tr>
+</thead>
+<tbody>
+<tr class="row-even"><td><p class="sd-card-text">Connect A</p></td>
+<td><p class="sd-card-text">From Donut Base Color</p></td>
+</tr>
+<tr class="row-odd"><td><p class="sd-card-text">Connect B</p></td>
+<td><p class="sd-card-text">From Fac (Factor) of Noise</p></td>
+</tr>
+<tr class="row-even"><td><p class="sd-card-text">Switch <strong>Mix</strong></p></td>
+<td><p class="sd-card-text"><strong>Overlay</strong></p></td>
+</tr>
+<tr class="row-odd"><td><p class="sd-card-text">Adjust Noise Texture</p></td>
+<td><p class="sd-card-text">Scale: ~7.0 or to one’s liking</p></td>
+</tr>
+<tr class="row-even"><td><p class="sd-card-text">Adjust Mix Color</p></td>
+<td><p class="sd-card-text">Fac: ~ 0.67 or to one’s liking</p></td>
+</tr>
+</tbody>
+</table>
+</div>
+</div>
+<p></p>
+<style>
+  video {
+    width: 100%;
+  }
+</style>
+<video controls>
+<source src='https://www.dropbox.com/s/x5h43wvj5n7a6rs/08-F_Connect-Mix-Node.mp4?raw=1'>
+</video>
+<p></p>
+<p></p>
+<div class="sd-card sd-sphinx-override sd-mb-3 sd-shadow-sm docutils">
+<div class="sd-card-body docutils">
+<div class="sd-card-title sd-font-weight-bold docutils">
+Vertical</div>
+<p></p>
+<style>
+  video {
+    width: 100%;
+  }
+</style>
+<video controls>
+<source src='https://www.dropbox.com/s/1s8v2v8p8hy4u6w/08-F_Connect-Mix-Node_Vertical.mp4?raw=1'>
+</video>
+<p></p>
+<p></p>
+</div>
+</div>
+<hr class="docutils" />
+<div class="admonition note" name="html-admonition" style="background: lightgreen; padding: 10px">
+<p class="title"> </p>
+</div>
+<hr class="docutils" />
+<div class="admonition note" name="html-admonition" style="background: lightgreen; padding: 10px">
+<p class="title"> </p>
+</div>
+</section>
+<section id="part-09-geometry-nodes">
+<h2>Part 09: Geometry Nodes<a class="headerlink" href="#part-09-geometry-nodes" title="Link to this heading"></a></h2>
+<p><a class="reference external" href="https://youtu.be/4WAxMI1QJMQ">Blender Guru: Part 09</a></p>
+<table class="docutils align-default">
+<thead>
+<tr class="row-odd"><th class="head"><p>Command</p></th>
+<th class="head"><p>Action</p></th>
+</tr>
+</thead>
+<tbody>
+<tr class="row-even"><td><p>Review our Changes from Part 08</p></td>
+<td><p>M (mute node)</p></td>
+</tr>
+<tr class="row-odd"><td><p>Turn on Plane, Lights, Icing</p></td>
+<td><p>Click on Eyeball in Outliner, Select Icing</p></td>
+</tr>
+<tr class="row-even"><td><p>Create a New Tab Geometry Node Tab</p></td>
+<td><p>+ Menu &gt; Geometry Node</p></td>
+</tr>
+<tr class="row-odd"><td><p>Close Spreadsheet Window</p></td>
+<td><p>RMB Over Panel &gt; Join / Cross Hair from Left Corner</p></td>
+</tr>
+<tr class="row-even"><td><p>Create First Geometry Node</p></td>
+<td><p>Click ‘+ New’</p></td>
+</tr>
+<tr class="row-odd"><td><p>Toggle Visibility</p></td>
+<td><p>Select and Deselect Geometry Node in Modifier Stack</p></td>
+</tr>
+<tr class="row-even"><td><p>Make Visibility Independent of Selection in Stack</p></td>
+<td><p>Select Pin</p></td>
+</tr>
+</tbody>
+</table>
+ <p></p>
+<style>
+  video {
+    width: 100%;
+  }
+</style>
+<video controls>
+<source src='https://www.dropbox.com/s/zf286s3uvamhx15/09-A_Add-Geometry-Node.mp4?raw=1'>
+</video>
+<p></p>
+<p></p>
+<div class="sd-card sd-sphinx-override sd-mb-3 sd-shadow-sm docutils">
+<div class="sd-card-body docutils">
+<div class="sd-card-title sd-font-weight-bold docutils">
+Vertical View</div>
+<p></p>
+<style>
+  video {
+    width: 100%;
+  }
+</style>
+<video controls>
+<source src='https://www.dropbox.com/s/skwun3dsf61jemd/09-A_Add-Geometry-Node_Vertical.mp4?raw=1'>
+</video>
+<p></p>
+<p></p>
+</div>
+</div>
+<hr class="docutils" />
+<div class="sd-card sd-sphinx-override sd-mb-3 sd-shadow-sm docutils">
+<div class="sd-card-body docutils">
+<div class="sd-card-title sd-font-weight-bold docutils">
+Practice Splitting Screens</div>
+<table class="docutils align-default">
+<thead>
+<tr class="row-odd"><th class="head"><p class="sd-card-text">Command</p></th>
+<th class="head"><p class="sd-card-text">Combination</p></th>
+<th class="head"><p class="sd-card-text">note</p></th>
+</tr>
+</thead>
+<tbody>
+<tr class="row-even"><td><p class="sd-card-text">Split Screens with Cross Hairs</p></td>
+<td><p class="sd-card-text">From a Corner, Drag a Window onto itself to split</p></td>
+<td><p class="sd-card-text"></p></td>
+</tr>
+<tr class="row-odd"><td><p class="sd-card-text">Join Screens with Cross Hairs</p></td>
+<td><p class="sd-card-text">Drag a Corner onto Adjacent window to merge</p></td>
+<td><p class="sd-card-text"></p></td>
+</tr>
+</tbody>
+</table>
+<p></p>
+<style>
+  video {
+    width: 100%;
+  }
+</style>
+<video controls>
+<source src='https://www.dropbox.com/s/6ixwfo6h1n10l6k/Window-Splitting.mp4?raw=1'>
+</video>
+<p></p>
+<p></p>
+</div>
+</div>
+<hr class="docutils" />
+<div class="sd-card sd-sphinx-override sd-mb-3 sd-shadow-sm docutils">
+<div class="sd-card-body docutils">
+<div class="sd-card-title sd-font-weight-bold docutils">
+Create First Geometry Node and Adjust Height of Icing.</div>
+<table class="docutils align-default">
+<thead>
+<tr class="row-odd"><th class="head"><p class="sd-card-text">Command</p></th>
+<th class="head"><p class="sd-card-text">Action</p></th>
+<th class="head"><p class="sd-card-text">Value</p></th>
+</tr>
+</thead>
+<tbody>
+<tr class="row-even"><td><p class="sd-card-text">Set Position Node</p></td>
+<td><p class="sd-card-text">Shift + A, Search &gt; ‘Set Position’</p></td>
+<td><p class="sd-card-text"></p></td>
+</tr>
+<tr class="row-odd"><td><p class="sd-card-text">Manipulate Z Position</p></td>
+<td><p class="sd-card-text">Shift + Drag on Z</p></td>
+<td><p class="sd-card-text"></p></td>
+</tr>
+</tbody>
+</table>
+</div>
+</div>
+<p></p>
+<style>
+  video {
+    width: 100%;
+  }
+</style>
+<video controls>
+<source src='https://www.dropbox.com/s/exxob67q6t28021/09-B_Add-Set-Position.mp4?raw=1'>
+</video>
+<p></p>
+<p></p>
+<div class="sd-card sd-sphinx-override sd-mb-3 sd-shadow-sm docutils">
+<div class="sd-card-body docutils">
+<div class="sd-card-title sd-font-weight-bold docutils">
+Vertical View:</div>
+<p></p>
+<style>
+  video {
+    width: 100%;
+  }
+</style>
+<video controls>
+<source src='https://www.dropbox.com/s/60yawi1s4y4p3e3/09-B_Add-Set-Position_Vertical.mp4?raw=1'>
+</video>
+<p></p>
+<p></p>
+</div>
+</div>
+<table class="docutils align-default">
+<thead>
+<tr class="row-odd"><th class="head"><p>Command</p></th>
+<th class="head"><p>Action</p></th>
+<th class="head"><p>Value</p></th>
+</tr>
+</thead>
+<tbody>
+<tr class="row-even"><td><p>Add Point to Faces</p></td>
+<td><p>Shift + A &gt; Point &gt; Point on Faces</p></td>
+<td><p>Set to 500</p></td>
+</tr>
+<tr class="row-odd"><td><p></p></td>
+<td><p></p></td>
+<td><p>Set to Zero</p></td>
+</tr>
+</tbody>
+</table>
+<p></p>
+<style>
+  video {
+    width: 100%;
+  }
+</style>
+<video controls>
+<source src='https://www.dropbox.com/s/rzkwiaegq3uqp6n/09-C_Add-Point-On-Faces.mp4?raw=1'>
+</video>
+<p></p>
+<p></p>
+<div class="sd-card sd-sphinx-override sd-mb-3 sd-shadow-sm docutils">
+<div class="sd-card-body docutils">
+<p></p>
+<style>
+  video {
+    width: 100%;
+  }
+</style>
+<video controls>
+<source src='https://www.dropbox.com/s/bgvtmqgm7latu67/09-C_Add-Point-On-Faces_Vertical.mp4?raw=1'>
+</video>
+<p></p>
+<p></p>
+</div>
+</div>
+<div class="warning admonition note">
+<p class="admonition-title">Note</p>
+<p><strong>Observe:</strong></p>
+<ul class="simple">
+<li><p>The icing layer has been turned into points.</p></li>
+<li><p>To preserve the layer and also have points, we need a ‘Join Geometry Node.’</p></li>
+</ul>
+</div>
+<table class="docutils align-default">
+<thead>
+<tr class="row-odd"><th class="head"><p>Command</p></th>
+<th class="head"><p>Action</p></th>
+<th class="head"><p>Value</p></th>
+</tr>
+</thead>
+<tbody>
+<tr class="row-even"><td><p>Preserve Icing Layer</p></td>
+<td><p>Add (Shift + A) &gt; Geometry &gt;</p></td>
+<td><p>Join Geometry</p></td>
+</tr>
+</tbody>
+</table>
+<p></p>
+<style>
+  video {
+    width: 100%;
+  }
+</style>
+<video controls>
+<source src='https://www.dropbox.com/s/dzrht1b6f7s4wrn/09-D_Join-Geometry.mp4?raw=1'>
+</video>
+<p></p>
+<p></p>
+<div class="sd-card sd-sphinx-override sd-mb-3 sd-shadow-sm docutils">
+<div class="sd-card-body docutils">
+<div class="sd-card-title sd-font-weight-bold docutils">
+Breakdown of Set Position:</div>
+<p></p>
+<style>
+  video {
+    width: 100%;
+  }
+</style>
+<video controls>
+<source src='https://www.dropbox.com/s/6zbbq5olkg7k4l9/09-D_Join-Geometry_Vertical.mp4?raw=1'>
+</video>
+<p></p>
+<p></p>
+</div>
+</div>
+<hr class="docutils" />
+<div class="sd-card sd-sphinx-override sd-mb-3 sd-shadow-sm docutils">
+<div class="sd-card-body docutils">
+<p class="sd-card-text"><strong>Create a Single Sprinkle to Reference.</strong></p>
+<table class="docutils align-default">
+<thead>
+<tr class="row-odd"><th class="head"><p class="sd-card-text">Command</p></th>
+<th class="head"><p class="sd-card-text">Action</p></th>
+<th class="head"><p class="sd-card-text">Value</p></th>
+</tr>
+</thead>
+<tbody>
+<tr class="row-even"><td><p class="sd-card-text">Add Cylinder</p></td>
+<td><p class="sd-card-text">Add &gt; Mesh &gt; Cylinder</p></td>
+<td><p class="sd-card-text"></p></td>
+</tr>
+<tr class="row-odd"><td><p class="sd-card-text">Reduce Vertices</p></td>
+<td><p class="sd-card-text">Vertices</p></td>
+<td><p class="sd-card-text">32 to 8</p></td>
+</tr>
+<tr class="row-even"><td><p class="sd-card-text">Scale Down</p></td>
+<td><p class="sd-card-text">Properties or F9</p></td>
+<td><p class="sd-card-text">Radius: 0.001 m | Depth: 0.001</p></td>
+</tr>
+<tr class="row-odd"><td><p class="sd-card-text">Move to Side</p></td>
+<td><p class="sd-card-text">G (Grab tool)</p></td>
+<td><p class="sd-card-text">Numpad Keys 7, 1 for Top and Front</p></td>
+</tr>
+<tr class="row-even"><td><p class="sd-card-text">Scale Z</p></td>
+<td><p class="sd-card-text">S + Z</p></td>
+<td><p class="sd-card-text"></p></td>
+</tr>
+<tr class="row-odd"><td><p class="sd-card-text">Scale Overall</p></td>
+<td><p class="sd-card-text">S</p></td>
+<td><p class="sd-card-text"></p></td>
+</tr>
+</tbody>
+</table>
+</div>
+</div>
+<p></p>
+Widescreen:
+<p></p>
+<style>
+  video {
+    width: 100%;
+  }
+</style>
+<video controls>
+<source src='https://www.dropbox.com/s/ukqkssmbtj0y0w8/09-F_Add-Sprinkle.mp4?raw=1'>
+</video>
+<p></p>
+<p></p>
+<div class="sd-card sd-sphinx-override sd-mb-3 sd-shadow-sm docutils">
+<div class="sd-card-body docutils">
+<p></p>
+<style>
+  video {
+    width: 100%;
+  }
+</style>
+<video controls>
+<source src='https://www.dropbox.com/s/0eagletskat3qyi/09-F_Add-Sprinkle_Vertical.mp4?raw=1'>
+</video>
+<p></p>
+<p></p>
+</div>
+</div>
+<hr class="docutils" />
+<div class="sd-card sd-sphinx-override sd-mb-3 sd-shadow-sm docutils">
+<div class="sd-card-body docutils">
+<div class="sd-card-title sd-font-weight-bold docutils">
+Attach a Single Sprinkle to Instances.</div>
+<p class="sd-card-text"><em>“From one, come many.”</em></p>
+<table class="docutils align-default">
+<thead>
+<tr class="row-odd"><th class="head"><p class="sd-card-text">Command</p></th>
+</tr>
+</thead>
+<tbody>
+<tr class="row-even"><td><p class="sd-card-text">Shift + A &gt; Instances &gt;  Instances on Points</p></td>
+</tr>
+<tr class="row-odd"><td><p class="sd-card-text">Drag Cylinder from Outliner to Graph</p></td>
+</tr>
+<tr class="row-even"><td><p class="sd-card-text">Connect Object Info: Geometry -&gt; Instance</p></td>
+</tr>
+<tr class="row-odd"><td><p class="sd-card-text">Apply Scale of Cylinder,  Ctrl + A Scale</p></td>
+</tr>
+<tr class="row-even"><td><p class="sd-card-text">Increase Density</p></td>
+</tr>
+</tbody>
+</table>
+</div>
+</div>
+<p></p>
+ Wide Screen:
+<style>
+  video {
+    width: 100%;
+  }
+</style>
+<video controls>
+<source src='https://www.dropbox.com/s/py8ds3pjrq0pr9o/09-G_Instance-Points.mp4?raw=1'>
+</video>
+<p></p>
+<p></p>
+<p></p>
+<style>
+  video {
+    width: 100%;
+  }
+</style>
+<video controls>
+<source src='https://www.dropbox.com/s/i44t6oqquocpiq2/09-G_Instance-Points_Vertical.mp4?raw=1'>
+</video>
+<p></p>
+<p></p>
+<hr class="docutils" />
+<div class="admonition note" name="html-admonition" style="background: lightgreen; padding: 10px">
+<p class="title"> </p>
+</div>
+<div class="sd-card sd-sphinx-override sd-mb-3 sd-shadow-sm docutils">
+<div class="sd-card-body docutils">
+<div class="sd-card-title sd-font-weight-bold docutils">
+Rotate Cylinder 90 Degrees.</div>
+<table class="docutils align-default">
+<thead>
+<tr class="row-odd"><th class="head"><p class="sd-card-text">Command</p></th>
+<th class="head"><p class="sd-card-text">Action</p></th>
+<th class="head"><p class="sd-card-text"></p></th>
+</tr>
+</thead>
+<tbody>
+<tr class="row-even"><td><p class="sd-card-text">Rotate Cylinder, 90</p></td>
+<td><p class="sd-card-text">R + X + Numpad (90)</p></td>
+<td><p class="sd-card-text"></p></td>
+</tr>
+<tr class="row-odd"><td><p class="sd-card-text">Apply Rotation</p></td>
+<td><p class="sd-card-text">Ctrl + A</p></td>
+<td><p class="sd-card-text">Select ‘Rotation’</p></td>
+</tr>
+</tbody>
+</table>
+</div>
+</div>
+<p></p>
+ Widescreen
+<style>
+  video {
+    width: 100%;
+  }
+</style>
+<video controls>
+<source src='https://www.dropbox.com/s/krt2vtevqrhvl5r/09-H_Rotate-Apply.mp4?raw=1'>
+</video>
+<p></p>
+<p></p>
+<hr class="docutils" />
+<div class="sd-card sd-sphinx-override sd-mb-3 sd-shadow-sm docutils">
+<div class="sd-card-body docutils">
+<div class="sd-card-title sd-font-weight-bold docutils">
+Add Euler Node (pronounced “Oiler”).</div>
+<table class="docutils align-default">
+<thead>
+<tr class="row-odd"><th class="head"><p class="sd-card-text">Command</p></th>
+<th class="head"><p class="sd-card-text">Action</p></th>
+<th class="head"><p class="sd-card-text"></p></th>
+</tr>
+</thead>
+<tbody>
+<tr class="row-even"><td><p class="sd-card-text">Connect Rotation -&gt; Rotation</p></td>
+<td><p class="sd-card-text">Drag Noodles</p></td>
+<td><p class="sd-card-text"></p></td>
+</tr>
+<tr class="row-odd"><td><p class="sd-card-text">Add Rotation Node</p></td>
+<td><p class="sd-card-text">Add &gt; Utility &gt; Rotate Euler</p></td>
+<td><p class="sd-card-text">Set to Local</p></td>
+</tr>
+</tbody>
+</table>
+</div>
+</div>
+<p></p>
+ Widescreen
+<style>
+  video {
+    width: 100%;
+  }
+</style>
+<video controls>
+<source src='https://www.dropbox.com/s/whfitl6weom1oeb/09-I_Add-Euler.mp4?raw=1'>
+</video>
+<p></p>
+<p></p>
+<p></p>
+<style>
+  video {
+    width: 100%;
+  }
+</style>
+<video controls>
+<source src='https://www.dropbox.com/s/zp05mdvwcm5gi71/09-I_Add-Euler_Vertical.mp4?raw=1'>
+</video>
+<p></p>
+<p></p>
+<div class="sd-card sd-sphinx-override sd-mb-3 sd-shadow-sm docutils">
+<div class="sd-card-body docutils">
+<div class="sd-card-title sd-font-weight-bold docutils">
+Random Value Node</div>
+<table class="docutils align-default">
+<thead>
+<tr class="row-odd"><th class="head"><p class="sd-card-text">Command</p></th>
+<th class="head"><p class="sd-card-text">Action</p></th>
+<th class="head"><p class="sd-card-text"></p></th>
+</tr>
+</thead>
+<tbody>
+<tr class="row-even"><td><p class="sd-card-text">Add Random Values to Rotation</p></td>
+<td><p class="sd-card-text">Search ‘Random Values’</p></td>
+<td><p class="sd-card-text">Vector: Z &gt; 6.4 radians</p></td>
+</tr>
+<tr class="row-odd"><td><p class="sd-card-text">Not X, Not Y</p></td>
+<td><p class="sd-card-text">Set X, Y</p></td>
+<td><p class="sd-card-text">0.0</p></td>
+</tr>
+</tbody>
+</table>
+</div>
+</div>
+<p></p>
+<style>
+  video {
+    width: 100%;
+  }
+</style>
+<video controls>
+<source src='https://www.dropbox.com/s/d756kf0spg5bjrp/09-I2__Add-Random.mp4?raw=1'>
+</video>
+<p></p>
+<p></p>
+<p></p>
+<style>
+  video {
+    width: 100%;
+  }
+</style>
+<video controls>
+<source src='https://www.dropbox.com/s/pscd3k4b7fxhzex/09-I2__Add-Random_Vertical.mp4?raw=1'>
+</video>
+<p></p>
+<p></p>
+<div class="sd-card sd-sphinx-override sd-mb-3 sd-shadow-sm docutils">
+<div class="sd-card-body docutils">
+<div class="sd-card-title sd-font-weight-bold docutils">
+Notes:</div>
+<ul class="simple">
+<li><p class="sd-card-text">Random Value are given in radians (pi = 3.14 = 180 degrees)</p></li>
+<li><p class="sd-card-text">Tau is equal to 2 pi. Both pi and tau can be entered as values.</p></li>
+<li><p class="sd-card-text">To effect only values in the the Z, we use Random &gt; Vectors.</p></li>
+</ul>
+</div>
+</div>
+<hr class="docutils" />
+<div class="admonition note" name="html-admonition" style="background: lightgreen; padding: 10px">
+<p class="title"> </p>
+</div>
+<section id="weight-paint">
+<h3>Weight Paint<a class="headerlink" href="#weight-paint" title="Link to this heading"></a></h3>
+<p><a class="reference external" href="https://www.youtube.com/watch?v=4WAxMI1QJMQ&amp;amp;list=PLjEaoINr3zgFX8ZsChQVQsuDSjEqdWMAD&amp;amp;index=9&amp;amp;t=1188s">Blender Guru: Donut - Weight Paint</a></p>
+<div class="sd-card sd-sphinx-override sd-mb-3 sd-shadow-sm docutils">
+<div class="sd-card-body docutils">
+<div class="sd-card-title sd-font-weight-bold docutils">
+Control where sprinkles can appear on the icing.</div>
+<ul class="simple">
+<li><p class="sd-card-text">Limit sprinkles on some portions of the icing.</p></li>
+<li><p class="sd-card-text">Remove sprinkles from the bottom of the icing.</p></li>
+</ul>
+</div>
+</div>
+<section id="prepare-for-weight-painting">
+<h4>Prepare for Weight Painting<a class="headerlink" href="#prepare-for-weight-painting" title="Link to this heading"></a></h4>
+<div class="sd-card sd-sphinx-override sd-mb-3 sd-shadow-sm docutils">
+<div class="sd-card-body docutils">
+<div class="sd-card-title sd-font-weight-bold docutils">
+Steps:</div>
+<table class="docutils align-default">
+<thead>
+<tr class="row-odd"><th class="head"><p class="sd-card-text">Command</p></th>
+<th class="head"><p class="sd-card-text">Action</p></th>
+<th class="head"><p class="sd-card-text">Value</p></th>
+</tr>
+</thead>
+<tbody>
+<tr class="row-even"><td><p class="sd-card-text">View Underneath of Icing</p></td>
+<td><p class="sd-card-text">H - Hide Donut Base and Plane</p></td>
+<td><p class="sd-card-text"></p></td>
+</tr>
+<tr class="row-odd"><td><p class="sd-card-text">Select Icing</p></td>
+<td><p class="sd-card-text"></p></td>
+<td><p class="sd-card-text">*Important Step</p></td>
+</tr>
+<tr class="row-even"><td><p class="sd-card-text">Switch to Weight Paint Mode</p></td>
+<td><p class="sd-card-text">Ctrl + Tab</p></td>
+<td><p class="sd-card-text"><strong>Weight Paint</strong></p></td>
+</tr>
+<tr class="row-odd"><td><p class="sd-card-text">Make ‘Tool Bar’ Visible</p></td>
+<td><p class="sd-card-text">View &gt; Toolbar</p></td>
+<td><p class="sd-card-text"></p></td>
+</tr>
+<tr class="row-even"><td><p class="sd-card-text">Make ‘Tool Settings’ Visible</p></td>
+<td><p class="sd-card-text">View &gt; Tool Settings</p></td>
+<td><p class="sd-card-text"></p></td>
+</tr>
+</tbody>
+</table>
+</div>
+</div>
+<p></p>
+ Widescreen
+<style>
+  video {
+    width: 100%;
+  }
+</style>
+<video controls>
+<source src='https://www.dropbox.com/s/8zyplyd9qo73333/09-J_Prep-Weight-Paint.mp4?raw=1'>
+</video>
+<p></p>
+<p></p>
+<p></p>
+<style>
+  video {
+    width: 100%;
+  }
+</style>
+<video controls>
+<source src='https://www.dropbox.com/s/07rrirml93jhmlu/09-J_Prep-Weight-Paint_Vertical.mp4?raw=1'>
+</video>
+<p></p>
+<p></p>
+</section>
+<hr class="docutils" />
+<section id="paint-weights">
+<h4>Paint Weights<a class="headerlink" href="#paint-weights" title="Link to this heading"></a></h4>
+<div class="warning admonition note">
+<p class="admonition-title">Note</p>
+<p>The value of weights ranges between 0 - 1.</p>
+</div>
+<p><img alt="Weights Range" src="_images/09-K2_Weights-Range.gif" /></p>
+<div class="sd-card sd-sphinx-override sd-mb-3 sd-shadow-sm docutils">
+<div class="sd-card-body docutils">
+<div class="sd-card-title sd-font-weight-bold docutils">
+Steps</div>
+<table class="docutils align-default">
+<thead>
+<tr class="row-odd"><th class="head"><p class="sd-card-text">Command</p></th>
+<th class="head"><p class="sd-card-text">Action</p></th>
+<th class="head"><p class="sd-card-text">Value</p></th>
+</tr>
+</thead>
+<tbody>
+<tr class="row-even"><td><p class="sd-card-text">Select ‘Object Data Properties’ Icon</p></td>
+<td><p class="sd-card-text">Object Data Properties: <img alt="ODP" src="_images/Object_Data_Properties_Icon.jpg" /></p></td>
+<td><p class="sd-card-text"></p></td>
+</tr>
+<tr class="row-odd"><td><p class="sd-card-text">Paint on Surface</p></td>
+<td><p class="sd-card-text">Red where we want sprinkles.</p></td>
+<td><p class="sd-card-text">1.00</p></td>
+</tr>
+<tr class="row-even"><td><p class="sd-card-text"></p></td>
+<td><p class="sd-card-text">Green for less</p></td>
+<td><p class="sd-card-text">Strength &lt; 1.00</p></td>
+</tr>
+<tr class="row-odd"><td><p class="sd-card-text">Rename Vertex Groups</p></td>
+<td><p class="sd-card-text">‘Sprinkles Density’</p></td>
+<td><p class="sd-card-text"></p></td>
+</tr>
+</tbody>
+</table>
+</div>
+</div>
+<p></p>
+<style>
+  video {
+    width: 100%;
+  }
+</style>
+<video controls>
+<source src='https://www.dropbox.com/s/1jtvlg77l91axsu/09-K_Paint-Weights.mp4?raw=1'>
+</video>
+<p></p>
+<p></p>
+<p></p>
+<style>
+  video {
+    width: 100%;
+  }
+</style>
+<video controls>
+<source src='https://www.dropbox.com/s/ihmyufzkfjpjp9j/09-K_Paint-Weights_Vertical.mp4?raw=1'>
+</video>
+<p></p>
+<p></p>
+</section>
+<hr class="docutils" />
+<section id="add-multiply-node">
+<h4>Add Multiply Node<a class="headerlink" href="#add-multiply-node" title="Link to this heading"></a></h4>
+<table class="docutils align-default">
+<thead>
+<tr class="row-odd"><th class="head"><p>Command</p></th>
+<th class="head"><p>Action</p></th>
+<th class="head"><p>Value</p></th>
+</tr>
+</thead>
+<tbody>
+<tr class="row-even"><td><p>Expose Density Input to Modifiers</p></td>
+<td><p>Noodle ‘Density’ Back to Object Info</p></td>
+<td><p></p></td>
+</tr>
+<tr class="row-odd"><td><p>Add Math Node</p></td>
+<td><p>Shift + A: Utility &gt; Math</p></td>
+<td><p></p></td>
+</tr>
+<tr class="row-even"><td><p>Switch to ‘Multiply’</p></td>
+<td><p>Change ‘Add’ &gt; ‘Multiply’</p></td>
+<td><p></p></td>
+</tr>
+</tbody>
+</table>
+<p></p>
+ Widescreen
+<style>
+  video {
+    width: 100%;
+  }
+</style>
+<video controls>
+<source src='https://www.dropbox.com/s/frqu8y6dm0b8m00/09-L_Add-Multiply.mp4?raw=1'>
+</video>
+<p></p>
+<p></p>
+<p></p>
+<style>
+  video {
+    width: 100%;
+  }
+</style>
+<video controls>
+<source src='https://www.dropbox.com/s/hvekpm79un3ck92/09-L_Add-Multiply_Vertical.mp4?raw=1'>
+</video>
+<p></p>
+<p></p>
+<hr class="docutils" />
+<div class="admonition note" name="html-admonition" style="background: lightgreen; padding: 10px">
+<p class="title"> </p>
+</div>
+</section>
+<section id="apply-vertex-weight-map-to-sprinkles">
+<h4>Apply Vertex Weight Map to Sprinkles<a class="headerlink" href="#apply-vertex-weight-map-to-sprinkles" title="Link to this heading"></a></h4>
+<div class="sd-card sd-sphinx-override sd-mb-3 sd-shadow-sm docutils">
+<div class="sd-card-body docutils">
+<div class="sd-card-title sd-font-weight-bold docutils">
+Steps:</div>
+<table class="docutils align-default">
+<thead>
+<tr class="row-odd"><th class="head"><p class="sd-card-text">Command</p></th>
+<th class="head"><p class="sd-card-text">Action</p></th>
+<th class="head"><p class="sd-card-text">Value</p></th>
+</tr>
+</thead>
+<tbody>
+<tr class="row-even"><td><p class="sd-card-text">Expose Density Value</p></td>
+<td><p class="sd-card-text">Noodle ‘Value’ Back to ‘Group Input’</p></td>
+<td><p class="sd-card-text"></p></td>
+</tr>
+<tr class="row-odd"><td><p class="sd-card-text">View Density in Modifier Stack</p></td>
+<td><p class="sd-card-text">Change Values</p></td>
+<td><p class="sd-card-text"></p></td>
+</tr>
+<tr class="row-even"><td><p class="sd-card-text">File &gt; Save</p></td>
+<td><p class="sd-card-text"></p></td>
+<td><p class="sd-card-text"></p></td>
+</tr>
+<tr class="row-odd"><td><p class="sd-card-text">Toggle Input Attribute</p></td>
+<td><p class="sd-card-text"><img alt="Input Icon" src="_images/Icon_Input_Attributes.gif" /></p></td>
+<td><p class="sd-card-text">Num / Text Input</p></td>
+</tr>
+<tr class="row-even"><td><p class="sd-card-text">Select ‘Sprinkles Density’</p></td>
+<td><p class="sd-card-text"><img alt="Input Attributes" src="_images/09-M_Sprinkles-Density.gif" /></p></td>
+<td><p class="sd-card-text">Reboot if N/A</p></td>
+</tr>
+<tr class="row-odd"><td><p class="sd-card-text">View Max Limits</p></td>
+<td><p class="sd-card-text">‘N’: Group &gt; Value</p></td>
+<td><p class="sd-card-text">10,000</p></td>
+</tr>
+</tbody>
+</table>
+<div class="warning admonition">
+<p class="admonition-title">Blender Bug</p>
+<p class="sd-card-text">You may need to restart Blender if you see a black box instead of ‘Sprinkles Density’. Be sure to <strong>SAVE</strong>.</p>
+</div>
+</div>
+</div>
+<p><a class="reference external" href="https://youtu.be/4WAxMI1QJMQ?list=PLjEaoINr3zgFX8ZsChQVQsuDSjEqdWMAD&amp;amp;t=1452">Blender Guru, Apply Vertex Weight Map</a></p>
+<p></p>
+ Widescreen
+<style>
+  video {
+    width: 100%;
+  }
+</style>
+<video controls>
+<source src='https://www.dropbox.com/s/7e2shljjjxy1g3x/09-M_Apply-Weight-Map.mp4?raw=1'>
+</video>
+<p></p>
+<p></p>
+<p></p>
+<style>
+  video {
+    width: 100%;
+  }
+</style>
+<video controls>
+<source src='https://www.dropbox.com/s/93pkgwmkdvafg66/09-M_Apply-Weight-Map_Vertical.mp4?raw=1'>
+</video>
+<p></p>
+<p></p>
+<hr class="docutils" />
+<div class="admonition note" name="html-admonition" style="background: lightgreen; padding: 10px">
+<p class="title"> </p>
+</div>
+</section>
+<section id="use-poisson-to-reduce-clipping">
+<h4>Use Poisson to Reduce Clipping<a class="headerlink" href="#use-poisson-to-reduce-clipping" title="Link to this heading"></a></h4>
+<div class="sd-card sd-sphinx-override sd-mb-3 sd-shadow-sm docutils">
+<div class="sd-card-body docutils">
+<p class="sd-card-text">Our Sprinkles intersect with one another. We can reduce this effect.</p>
+<table class="docutils align-default">
+<thead>
+<tr class="row-odd"><th class="head"><p class="sd-card-text">Command</p></th>
+<th class="head"><p class="sd-card-text">Action</p></th>
+<th class="head"><p class="sd-card-text">Value</p></th>
+</tr>
+</thead>
+<tbody>
+<tr class="row-even"><td><p class="sd-card-text">Select Distribute Points on Faces Node</p></td>
+<td><p class="sd-card-text"></p></td>
+<td><p class="sd-card-text"></p></td>
+</tr>
+<tr class="row-odd"><td><p class="sd-card-text">Select ‘Poisson’</p></td>
+<td><p class="sd-card-text">Random &gt; Poisson Disk</p></td>
+<td><p class="sd-card-text"></p></td>
+</tr>
+<tr class="row-even"><td><p class="sd-card-text">Noodle Connect</p></td>
+<td><p class="sd-card-text">Density Factor -&gt; Group Input</p></td>
+<td><p class="sd-card-text"></p></td>
+</tr>
+<tr class="row-odd"><td><p class="sd-card-text">Noodle Connect</p></td>
+<td><p class="sd-card-text">Density Max -&gt; Value</p></td>
+<td><p class="sd-card-text"></p></td>
+</tr>
+<tr class="row-even"><td><p class="sd-card-text">In Modifier Stack</p></td>
+<td><p class="sd-card-text">Increase Value</p></td>
+<td><p class="sd-card-text">10,000</p></td>
+</tr>
+<tr class="row-odd"><td><p class="sd-card-text">Adjust Radius of Clipping</p></td>
+<td><p class="sd-card-text">Distance Min</p></td>
+<td><p class="sd-card-text">0.0056 m</p></td>
+</tr>
+<tr class="row-even"><td><p class="sd-card-text">Increase Max Limit</p></td>
+<td><p class="sd-card-text">‘N’: Group &gt; Value</p></td>
+<td><p class="sd-card-text">Max: 50,000</p></td>
+</tr>
+<tr class="row-odd"><td><p class="sd-card-text">Rename Input Attributes</p></td>
+<td><p class="sd-card-text">Density -&gt; <strong>Weight Paint</strong></p></td>
+<td><p class="sd-card-text"></p></td>
+</tr>
+<tr class="row-even"><td><p class="sd-card-text"></p></td>
+<td><p class="sd-card-text">Value -&gt; <strong>Sprinkles Density</strong></p></td>
+<td><p class="sd-card-text"></p></td>
+</tr>
+</tbody>
+</table>
+</div>
+</div>
+<p></p>
+ Widescreen
+<style>
+  video {
+    width: 100%;
+  }
+</style>
+<video controls>
+<source src='https://www.dropbox.com/s/5sw4lc4ehxxmtcr/09-N_Poisson.mp4?raw=1'>
+</video>
+<p></p>
+<p></p>
+<p></p>
+<style>
+  video {
+    width: 100%;
+  }
+</style>
+<video controls>
+<source src='https://www.dropbox.com/s/cmmsyt941har2lw/09-N_Posson_Vertical.mp4?raw=1'>
+</video>
+<p></p>
+<p></p>
+<hr class="docutils" />
+<div class="admonition note" name="html-admonition" style="background: lightgreen; padding: 10px">
+<p class="title"> </p>
+</div>
+</section>
+<hr class="docutils" />
+<section id="simplify-using-multiply-node">
+<h4>Simplify Using Multiply Node<a class="headerlink" href="#simplify-using-multiply-node" title="Link to this heading"></a></h4>
+<div class="sd-card sd-sphinx-override sd-mb-3 sd-shadow-sm docutils">
+<div class="sd-card-body docutils">
+<p class="sd-card-text">Adjusting a slider with a value of 50,000 is very slow. So we add a multiplier of 10,000 and hide it in the Geometry nodes.</p>
+<table class="docutils align-default">
+<thead>
+<tr class="row-odd"><th class="head"><p class="sd-card-text">Command</p></th>
+<th class="head"><p class="sd-card-text">Action</p></th>
+</tr>
+</thead>
+<tbody>
+<tr class="row-even"><td><p class="sd-card-text">Add Math Node</p></td>
+<td><p class="sd-card-text">Shift + A: Utilities &gt; Math</p></td>
+</tr>
+<tr class="row-odd"><td><p class="sd-card-text">Switch to ‘Multiply’</p></td>
+<td><p class="sd-card-text">‘Add’ &gt; ‘Multiply’</p></td>
+</tr>
+<tr class="row-even"><td><p class="sd-card-text">Adjust Modifier ‘Value’</p></td>
+<td><p class="sd-card-text">Set to 100</p></td>
+</tr>
+<tr class="row-odd"><td><p class="sd-card-text">Set Multiplier ‘Value’</p></td>
+<td><p class="sd-card-text">Set to 10,000</p></td>
+</tr>
+<tr class="row-even"><td><p class="sd-card-text">Adjust ‘Value’ in Modifiers</p></td>
+<td><p class="sd-card-text">Around 800 - 1000</p></td>
+</tr>
+</tbody>
+</table>
+</div>
+</div>
+<p></p>
+ Widescreen
+<style>
+  video {
+    width: 100%;
+  }
+</style>
+<video controls>
+<source src='https://www.dropbox.com/s/gv6p8aw91o2zraa/09-O_Multiply-Density-Factor.mp4?raw=1'>
+</video>
+<p></p>
+<p></p>
+<p></p>
+<style>
+  video {
+    width: 100%;
+  }
+</style>
+<video controls>
+<source src='https://www.dropbox.com/s/z6dcnp4jgckw7z3/09-O_Multiply-Density-Factor_Vertical.mp4?raw=1'>
+</video>
+<p></p>
+<p></p>
+<div class="sd-card sd-sphinx-override sd-mb-3 sd-shadow-sm docutils">
+<div class="sd-card-body docutils">
+<div class="warning admonition note">
+<p class="admonition-title">Note</p>
+<p class="sd-card-text">Paint Weight Value ranges from 0 - 1 but we want ‘Sprinkle Density’ to go up to 50,000.</p>
+</div>
+</div>
+</div>
+<hr class="docutils" />
+<div class="admonition note" name="html-admonition" style="background: lightgreen; padding: 10px">
+<p class="title"> </p>
+</div>
+</section>
+</section>
+</section>
+<section id="part-10-random-colored-sprinkles">
+<h2>Part 10: Random Colored Sprinkles<a class="headerlink" href="#part-10-random-colored-sprinkles" title="Link to this heading"></a></h2>
+<p><a class="reference external" href="https://youtu.be/bLw0HwphXO0">Blender Guru: Part 10: Random Colored Sprinkles</a></p>
+<div class="sd-card sd-sphinx-override sd-mb-3 sd-shadow-sm docutils">
+<div class="sd-card-body docutils">
+<p class="sd-card-text">Edge loops offer an easy way to alter our models.<br />
+Here we use them to smooth the ends of our sprinkles.<br />
+In the real world, surfaces have bevels and not perfect 90 degree junctions.</p>
+</div>
+</div>
+<section id="edge-loops">
+<h3>Edge Loops<a class="headerlink" href="#edge-loops" title="Link to this heading"></a></h3>
+<div class="sd-card sd-sphinx-override sd-mb-3 sd-shadow-sm docutils">
+<div class="sd-card-body docutils">
+<table class="docutils align-default">
+<thead>
+<tr class="row-odd"><th class="head"><p class="sd-card-text">Command</p></th>
+<th class="head"><p class="sd-card-text">Action</p></th>
+<th class="head"><p class="sd-card-text">Value</p></th>
+</tr>
+</thead>
+<tbody>
+<tr class="row-even"><td><p class="sd-card-text">Object Mode</p></td>
+<td><p class="sd-card-text">Ctrl + Tab</p></td>
+<td><p class="sd-card-text">‘Object Mode’</p></td>
+</tr>
+<tr class="row-odd"><td><p class="sd-card-text">Select Primary Sprinkle</p></td>
+<td><p class="sd-card-text"></p></td>
+<td><p class="sd-card-text"></p></td>
+</tr>
+<tr class="row-even"><td><p class="sd-card-text">Add Subsurf Modifier</p></td>
+<td><p class="sd-card-text">Ctrl + 1</p></td>
+<td><p class="sd-card-text">Level 1 Sub D</p></td>
+</tr>
+<tr class="row-odd"><td><p class="sd-card-text"></p></td>
+<td><p class="sd-card-text">Render [ 1 ]</p></td>
+<td><p class="sd-card-text">Level 1</p></td>
+</tr>
+<tr class="row-even"><td><p class="sd-card-text">Edit Mode</p></td>
+<td><p class="sd-card-text">Ctrl + Tab</p></td>
+<td><p class="sd-card-text">‘Edit Mode’</p></td>
+</tr>
+<tr class="row-odd"><td><p class="sd-card-text">Select Edge Mode</p></td>
+<td><p class="sd-card-text">Keyboard ‘2’</p></td>
+<td><p class="sd-card-text">Recommended but not required</p></td>
+</tr>
+<tr class="row-even"><td><p class="sd-card-text">Add Edge Loop</p></td>
+<td><p class="sd-card-text">Hover, (Ctrl + R)</p></td>
+<td><p class="sd-card-text">Use Scroll Wheel to add Loops</p></td>
+</tr>
+<tr class="row-odd"><td><p class="sd-card-text">Add Two Loops</p></td>
+<td><p class="sd-card-text">Scroll Mouse Forward Once + Click</p></td>
+<td><p class="sd-card-text"></p></td>
+</tr>
+<tr class="row-even"><td><p class="sd-card-text">Slide 2 Loops to Edge</p></td>
+<td><p class="sd-card-text">‘S’ + ‘Y’</p></td>
+<td><p class="sd-card-text">Creates a Bevelled Edge</p></td>
+</tr>
+<tr class="row-odd"><td><p class="sd-card-text">View Results</p></td>
+<td><p class="sd-card-text">Oject Mode</p></td>
+<td><p class="sd-card-text"></p></td>
+</tr>
+<tr class="row-even"><td><p class="sd-card-text"></p></td>
+<td><p class="sd-card-text">RMB &gt; Shade Smooth</p></td>
+<td><p class="sd-card-text">Over Selection</p></td>
+</tr>
+</tbody>
+</table>
+</div>
+</div>
+<div class="admonition important">
+<p class="admonition-title">Important</p>
+<p>Toggle Smooth Shade:
+Be sure to select an object, then RMB &gt; Smooth Shade</p>
+</div>
+<p></p>
+ Widescreen
+<style>
+  video {
+    width: 100%;
+  }
+</style>
+<video controls>
+<source src='https://www.dropbox.com/s/0zgt5zv93ruq6vu/10-A_Edge-Loops.mp4?raw=1'>
+</video>
+<p></p>
+<p></p>
+<p></p>
+<style>
+  video {
+    width: 100%;
+  }
+</style>
+<video controls>
+<source src='https://www.dropbox.com/s/cuvx0x5d3dwvmul/10-A_Edge-Loops_Vertical.mp4?raw=1'>
+</video>
+<p></p>
+<p></p>
+<hr class="docutils" />
+<div class="sd-card sd-sphinx-override sd-mb-3 sd-shadow-sm docutils">
+<div class="sd-card-body docutils">
+<div class="sd-card-title sd-font-weight-bold docutils">
+Hint: How to Remove an Edge Loop:</div>
+<ul class="simple">
+<li><p class="sd-card-text">In Edit Mode - we can use ‘A’ to Select All.</p></li>
+<li><p class="sd-card-text">Alt + LMB to Select Edge Loop.</p></li>
+<li><p class="sd-card-text">‘X’, Select ‘Edge Loops’</p></li>
+</ul>
+<p class="sd-card-text"><img alt="Delete Edge Loops" src="_images/10-A2_Delete-Edge-Loops.gif" /></p>
+</div>
+</div>
+</section>
+<hr class="docutils" />
+<section id="move-pivot">
+<h3>Move Pivot<a class="headerlink" href="#move-pivot" title="Link to this heading"></a></h3>
+<div class="admonition important">
+<p class="admonition-title">Important</p>
+<p>Learning to work with an object’s pivot point is important for most digital software.<br />
+Blender has an ‘Origin Point’ and a ‘3d Cursor’.<br />
+The “game” involves manipulating these two points in space.</p>
+<ul class="simple">
+<li><p>Edit Mode &gt; Shift + S: Cursor to Selected.</p></li>
+<li><p>Object Mode &gt; Object button &gt; ‘Set Origin’  &gt; ‘Set Origin to 3d Cursor’<br />
+Lessons from:
+<a class="reference external" href="https://youtu.be/q_SiM8PIXtI">Kev Binge: Blender Quick Tip to Move Object Origin and Pivot</a></p></li>
+<li><p>We can also use, Object Mode &gt; Mesh &gt; Snap<br />
+instead of ‘Cursor to Selected’: <a class="reference external" href="https://youtu.be/ns14pmFwZ2M?t=57">Snap Cursor</a></p></li>
+<li><p>Nudge 3d Cursor. From ‘N’: ‘View’ Tab &gt; 3d Cursor Dropdown. <a class="reference external" href="https://youtu.be/ns14pmFwZ2M?t=125">Move 3d Cursor</a>.</p></li>
+</ul>
+</div>
+<table class="docutils align-default">
+<thead>
+<tr class="row-odd"><th class="head"><p>Command</p></th>
+<th class="head"><p>Action</p></th>
+</tr>
+</thead>
+<tbody>
+<tr class="row-even"><td><p>Move Pivot</p></td>
+<td><p>Pie Menu: Shift + S</p></td>
+</tr>
+<tr class="row-odd"><td><p></p></td>
+<td><p><img alt="Pivot Menus" src="_images/10-A_Shift-S-Pivot.gif" /></p></td>
+</tr>
+<tr class="row-even"><td><p>Example</p></td>
+<td><p>Note: Edit Mode &gt; Hot key ‘A’ Selects all of the Cube</p></td>
+</tr>
+<tr class="row-odd"><td><p></p></td>
+<td><p><img alt="Pivot Example" src="_images/10-A2_Move-Pivot.gif" /></p></td>
+</tr>
+<tr class="row-even"><td><p>Center Pivot</p></td>
+<td><p><img alt="Center Menus" src="_images/10-A3_Center-Pivot-to-Object.gif" /></p></td>
+</tr>
+<tr class="row-odd"><td><p></p></td>
+<td><p>Object or Edit Mode &gt;  Shift + C  || Shift + S : Cursor to World Origin</p></td>
+</tr>
+<tr class="row-even"><td><p>Hide 3d Cursor</p></td>
+<td><p><img alt="Hide 3d Cursor" src="_images/10-A4_Cursor-to-World-Origin.gif" /></p></td>
+</tr>
+</tbody>
+</table>
+<section id="center-pivot">
+<h4>Center Pivot<a class="headerlink" href="#center-pivot" title="Link to this heading"></a></h4>
+<div class="warning admonition note">
+<p class="admonition-title">Note</p>
+<p><strong>Center Pivot:</strong> Object Mode &gt; Object button &gt; Origin to Center of [Geometry, Mass, Volume]</p>
+</div>
+<div class="admonition important">
+<p class="admonition-title">Important</p>
+<ul class="simple">
+<li><p>Shift + S &gt; Cursor to World Origin.<br />
+This will “hide” the 3d Cursor at (0,0,0).</p></li>
+<li><p>Shift + C. Set 3D Cursor to Origin.<br />
+This will also return the cursor to the World Origin.</p></li>
+</ul>
+</div>
+<hr class="docutils" />
+<div class="admonition note" name="html-admonition" style="background: lightgreen; padding: 10px">
+<p class="title"> </p>
+</div>
+</section>
+</section>
+<section id="add-variants-of-sprinkle">
+<h3>Add Variants of Sprinkle<a class="headerlink" href="#add-variants-of-sprinkle" title="Link to this heading"></a></h3>
+<div class="sd-card sd-sphinx-override sd-mb-3 sd-shadow-sm docutils">
+<div class="sd-card-body docutils">
+<p class="sd-card-text">We don’t want all our sprinkles to look alike. So we will add variations of shape and colors.</p>
+</div>
+</div>
+<section id="duplicate-sprinkles">
+<h4>Duplicate Sprinkles<a class="headerlink" href="#duplicate-sprinkles" title="Link to this heading"></a></h4>
+<div class="sd-card sd-sphinx-override sd-mb-3 sd-shadow-sm docutils">
+<div class="sd-card-body docutils">
+<p class="sd-card-text">Duplicate three sprinkles and create different sizes.</p>
+</div>
+</div>
+<div class="sd-card sd-sphinx-override sd-mb-3 sd-shadow-sm docutils">
+<div class="sd-card-body docutils">
+<div class="sd-card-title sd-font-weight-bold docutils">
+Steps:</div>
+<table class="docutils align-default">
+<thead>
+<tr class="row-odd"><th class="head"><p class="sd-card-text">Command</p></th>
+<th class="head"><p class="sd-card-text">Action</p></th>
+<th class="head"><p class="sd-card-text">note</p></th>
+</tr>
+</thead>
+<tbody>
+<tr class="row-even"><td><p class="sd-card-text">Switch: Object Mode</p></td>
+<td><p class="sd-card-text">Ctrl + Tab, Tab</p></td>
+<td><p class="sd-card-text"></p></td>
+</tr>
+<tr class="row-odd"><td><p class="sd-card-text">Top View</p></td>
+<td><p class="sd-card-text">Numpad 7</p></td>
+<td><p class="sd-card-text"></p></td>
+</tr>
+<tr class="row-even"><td><p class="sd-card-text">Full Screen</p></td>
+<td><p class="sd-card-text">Ctrl + Space (Optional)</p></td>
+<td><p class="sd-card-text"></p></td>
+</tr>
+<tr class="row-odd"><td><p class="sd-card-text">Duplicate</p></td>
+<td><p class="sd-card-text">Shift + D then X</p></td>
+<td><p class="sd-card-text"></p></td>
+</tr>
+<tr class="row-even"><td><p class="sd-card-text">Move along X axis</p></td>
+<td><p class="sd-card-text">(Grab tool not needed)</p></td>
+<td><p class="sd-card-text"></p></td>
+</tr>
+<tr class="row-odd"><td><p class="sd-card-text">Switch to Edit Mode</p></td>
+<td><p class="sd-card-text">[ Ctrl + Tab, Tab ]</p></td>
+<td><p class="sd-card-text"></p></td>
+</tr>
+<tr class="row-even"><td><p class="sd-card-text">Select Bottom Face</p></td>
+<td><p class="sd-card-text">Keyboard 3 + Select</p></td>
+<td><p class="sd-card-text"></p></td>
+</tr>
+<tr class="row-odd"><td><p class="sd-card-text">3d Cursor to Selected</p></td>
+<td><p class="sd-card-text">Shift + S</p></td>
+<td><p class="sd-card-text"></p></td>
+</tr>
+<tr class="row-even"><td><p class="sd-card-text">Object Mode</p></td>
+<td><p class="sd-card-text">Ctrl + Tab</p></td>
+<td><p class="sd-card-text"></p></td>
+</tr>
+<tr class="row-odd"><td><p class="sd-card-text">Origin to 3d Cursor</p></td>
+<td><p class="sd-card-text">Object Button</p></td>
+<td><p class="sd-card-text"></p></td>
+</tr>
+<tr class="row-even"><td><p class="sd-card-text"></p></td>
+<td><p class="sd-card-text">&gt; Set Origin</p></td>
+<td><p class="sd-card-text"></p></td>
+</tr>
+<tr class="row-odd"><td><p class="sd-card-text"></p></td>
+<td><p class="sd-card-text">&gt; Set Origin to 3D Cursor</p></td>
+<td><p class="sd-card-text"></p></td>
+</tr>
+<tr class="row-even"><td><p class="sd-card-text">Make More Sprinkles</p></td>
+<td><p class="sd-card-text">Shift + D then X</p></td>
+<td><p class="sd-card-text"></p></td>
+</tr>
+<tr class="row-odd"><td><p class="sd-card-text">Shorten Sprinkles</p></td>
+<td><p class="sd-card-text">S + Y (Constrain on Y axis)</p></td>
+<td><p class="sd-card-text"></p></td>
+</tr>
+<tr class="row-even"><td><p class="sd-card-text">Scale</p></td>
+<td><p class="sd-card-text">S</p></td>
+<td><p class="sd-card-text">Make Them Our Own</p></td>
+</tr>
+<tr class="row-odd"><td><p class="sd-card-text">Return 3d Cursor to World Origin</p></td>
+<td><p class="sd-card-text">Shift + C</p></td>
+<td><p class="sd-card-text"></p></td>
+</tr>
+</tbody>
+</table>
+</div>
+</div>
+<p></p>
+ Widescreen
+<style>
+  video {
+    width: 100%;
+  }
+</style>
+<video controls>
+<source src='https://www.dropbox.com/s/tttdvq4u8ewbzt5/10-B_Duplicate-Snap-Origin.mp4?raw=1'>
+</video>
+<p></p>
+<p></p>
+<p></p>
+<style>
+  video {
+    width: 100%;
+  }
+</style>
+<video controls>
+<source src='https://www.dropbox.com/s/wuiu5rls7zf34v5/10-B_Duplicate-Snap-Origin_Vertical.mp4?raw=1'>
+</video>
+<p></p>
+<p></p>
+<hr class="docutils" />
+<div class="admonition note" name="html-admonition" style="background: lightgreen; padding: 10px">
+<p class="title"> </p>
+</div>
+</section>
+<section id="bend-sprinkles">
+<h4>Bend Sprinkles<a class="headerlink" href="#bend-sprinkles" title="Link to this heading"></a></h4>
+<div class="sd-card sd-sphinx-override sd-mb-3 sd-shadow-sm docutils">
+<div class="sd-card-body docutils">
+<p class="sd-card-text">Next we bend our sprinkles.</p>
+<table class="docutils align-default">
+<thead>
+<tr class="row-odd"><th class="head"><p class="sd-card-text">Command</p></th>
+<th class="head"><p class="sd-card-text">Action</p></th>
+</tr>
+</thead>
+<tbody>
+<tr class="row-even"><td><p class="sd-card-text">Top View</p></td>
+<td><p class="sd-card-text">Numpad 7</p></td>
+</tr>
+<tr class="row-odd"><td><p class="sd-card-text">Object Mode</p></td>
+<td><p class="sd-card-text"></p></td>
+</tr>
+<tr class="row-even"><td><p class="sd-card-text">Select Last Sprinkle</p></td>
+<td><p class="sd-card-text"></p></td>
+</tr>
+<tr class="row-odd"><td><p class="sd-card-text">Validate Location of Rotation</p></td>
+<td><p class="sd-card-text">R</p></td>
+</tr>
+<tr class="row-even"><td><p class="sd-card-text">Origin to Center of Object</p></td>
+<td><p class="sd-card-text">Object Button</p></td>
+</tr>
+<tr class="row-odd"><td><p class="sd-card-text"></p></td>
+<td><p class="sd-card-text">&gt; Set Origin</p></td>
+</tr>
+<tr class="row-even"><td><p class="sd-card-text"></p></td>
+<td><p class="sd-card-text">&gt; Origin to Geometry</p></td>
+</tr>
+<tr class="row-odd"><td><p class="sd-card-text"></p></td>
+<td><p class="sd-card-text"></p></td>
+</tr>
+<tr class="row-even"><td><p class="sd-card-text">Edit Mode</p></td>
+<td><p class="sd-card-text">Ctrl + Tab</p></td>
+</tr>
+<tr class="row-odd"><td><p class="sd-card-text">Add Edge Loop</p></td>
+<td><p class="sd-card-text">Ctrl + R, over Object</p></td>
+</tr>
+<tr class="row-even"><td><p class="sd-card-text"></p></td>
+<td><p class="sd-card-text">Do not confirm</p></td>
+</tr>
+<tr class="row-odd"><td><p class="sd-card-text">Add 2 Loops</p></td>
+<td><p class="sd-card-text">Scroll MMB Forward</p></td>
+</tr>
+<tr class="row-even"><td><p class="sd-card-text"></p></td>
+<td><p class="sd-card-text">Click to Confirm</p></td>
+</tr>
+<tr class="row-odd"><td><p class="sd-card-text">Switch to Faces</p></td>
+<td><p class="sd-card-text">Keyboard - 3</p></td>
+</tr>
+<tr class="row-even"><td><p class="sd-card-text">Select Loop</p></td>
+<td><p class="sd-card-text">Alt + Select</p></td>
+</tr>
+<tr class="row-odd"><td><p class="sd-card-text">Top View</p></td>
+<td><p class="sd-card-text">Numpad 7</p></td>
+</tr>
+<tr class="row-even"><td><p class="sd-card-text">Bend along X</p></td>
+<td><p class="sd-card-text">G + X</p></td>
+</tr>
+<tr class="row-odd"><td><p class="sd-card-text"></p></td>
+<td><p class="sd-card-text"></p></td>
+</tr>
+<tr class="row-even"><td><p class="sd-card-text">Porportional Editing Mode</p></td>
+<td><p class="sd-card-text">O, Circle Dot</p></td>
+</tr>
+<tr class="row-odd"><td><p class="sd-card-text">Switch to Wireframe</p></td>
+<td><p class="sd-card-text">Z &gt; Wireframe</p></td>
+</tr>
+<tr class="row-even"><td><p class="sd-card-text">Select Top Row</p></td>
+<td><p class="sd-card-text"></p></td>
+</tr>
+<tr class="row-odd"><td><p class="sd-card-text">Rotate</p></td>
+<td><p class="sd-card-text">R</p></td>
+</tr>
+<tr class="row-even"><td><p class="sd-card-text"></p></td>
+<td><p class="sd-card-text">Scroll MMB for Radius</p></td>
+</tr>
+<tr class="row-odd"><td><p class="sd-card-text">Rotate Bottom Row</p></td>
+<td><p class="sd-card-text">R</p></td>
+</tr>
+<tr class="row-even"><td><p class="sd-card-text">Turn Proportional Mode Off</p></td>
+<td><p class="sd-card-text">O</p></td>
+</tr>
+<tr class="row-odd"><td><p class="sd-card-text">Switch to Solid</p></td>
+<td><p class="sd-card-text">Z &gt; Solid</p></td>
+</tr>
+<tr class="row-even"><td><p class="sd-card-text">Switch to Object Mode</p></td>
+<td><p class="sd-card-text">Ctrl + Tab</p></td>
+</tr>
+</tbody>
+</table>
+<div class="warning admonition note">
+<p class="admonition-title">Note</p>
+<ul class="simple">
+<li><p class="sd-card-text">If the radius for proportional falloff does not appear, just keep scrolling forward.</p></li>
+<li><p class="sd-card-text">Because the default radius is in meters and our scene is small, we need to scale the radius down using the MMB.</p></li>
+</ul>
+</div>
+</div>
+</div>
+ <p></p>
+ Widescreen 
+ <style>
+   video {
+     width: 100%;
+   }
+ </style>
+ <video controls>
+ <source src='https://www.dropbox.com/s/r89wh8r89aoocvk/10-C_Bend-Noodle.mp4?raw=1'>
+ </video>
+ <p></p>
+ <p></p>
+ <p></p>
+ <style>
+   video {
+     width: 100%;
+   }
+ </style>
+ <video controls>
+ <source src='https://www.dropbox.com/s/ym700z645jtku9u/10-C_Bend_Noodle_Vertical.mp4?raw=1'>
+ </video>
+ <p></p>
+ <p></p>
+<hr class="docutils" />
+<div class="admonition note" name="html-admonition" style="background: lightgreen; padding: 10px">
+<p class="title"> </p>
+</div>
+</section>
+<section id="add-second-sprinkle">
+<h4>Add Second Sprinkle<a class="headerlink" href="#add-second-sprinkle" title="Link to this heading"></a></h4>
+<div class="sd-card sd-sphinx-override sd-mb-3 sd-shadow-sm docutils">
+<div class="sd-card-body docutils">
+<p class="sd-card-text">Add a second bent sprinkle, same methods as before but with slightly different results.</p>
+</div>
+</div>
+<p></p>
+<style>
+  video {
+    width: 100%;
+  }
+</style>
+<video controls>
+<source src='https://www.dropbox.com/s/p0hvl3pqz6p4nrs/10-C2_Bend-Second-Sprinkle.mp4?raw=1'>
+</video>
+<p></p>
+<p></p>
+<p></p>
+<style>
+  video {
+    width: 100%;
+  }
+</style>
+<video controls>
+<source src='https://www.dropbox.com/s/au1arq4xd6i5nly/10-C2_Bend-Second-Sprinkle_Vertical.mp4?raw=1'>
+</video>
+<p></p>
+<p></p>
+<hr class="docutils" />
+ <div class="admonition note" name="html-admonition" style="background: lightgreen; padding: 10px">
+ <p class="title"> </p>
+ </div>
+</section>
+<section id="create-instances-from-the-collection-of-sprinkles">
+<h4>Create Instances from the Collection of Sprinkles<a class="headerlink" href="#create-instances-from-the-collection-of-sprinkles" title="Link to this heading"></a></h4>
+<div class="sd-card sd-sphinx-override sd-mb-3 sd-shadow-sm docutils">
+<div class="sd-card-body docutils">
+<p class="sd-card-text">Instead of our Instances referencing one Sprinkle, we have them reference the collection of Sprinkles.</p>
+</div>
+</div>
+<div class="sd-card sd-sphinx-override sd-mb-3 sd-shadow-sm docutils">
+<div class="sd-card-body docutils">
+<p class="sd-card-text">Steps</p>
+<table class="docutils align-default">
+<thead>
+<tr class="row-odd"><th class="head"><p class="sd-card-text">Command</p></th>
+<th class="head"><p class="sd-card-text">Action</p></th>
+</tr>
+</thead>
+<tbody>
+<tr class="row-even"><td><p class="sd-card-text">Object Mode</p></td>
+<td><p class="sd-card-text"></p></td>
+</tr>
+<tr class="row-odd"><td><p class="sd-card-text">Practice Adding to Selection</p></td>
+<td><p class="sd-card-text">Shift + Click</p></td>
+</tr>
+<tr class="row-even"><td><p class="sd-card-text">Box Selection Includes Plane</p></td>
+<td><p class="sd-card-text"></p></td>
+</tr>
+<tr class="row-odd"><td><p class="sd-card-text">Select from Front</p></td>
+<td><p class="sd-card-text">Numpad 1</p></td>
+</tr>
+<tr class="row-even"><td><p class="sd-card-text">New Collection</p></td>
+<td><p class="sd-card-text">M</p></td>
+</tr>
+<tr class="row-odd"><td><p class="sd-card-text">Name Collection</p></td>
+<td><p class="sd-card-text">Sprinkles</p></td>
+</tr>
+<tr class="row-even"><td><p class="sd-card-text">Get Collection Info Node</p></td>
+<td><p class="sd-card-text">Select Sprinkles Collection in Outliner</p></td>
+</tr>
+<tr class="row-odd"><td><p class="sd-card-text"></p></td>
+<td><p class="sd-card-text">Drag Collection to Node Editor Graph</p></td>
+</tr>
+<tr class="row-even"><td><p class="sd-card-text">Instance Points –&gt; Collection Info</p></td>
+<td><p class="sd-card-text">Instance on Points: Instance</p></td>
+</tr>
+<tr class="row-odd"><td><p class="sd-card-text"></p></td>
+<td><p class="sd-card-text">-&gt; Collection Info: Geometry</p></td>
+</tr>
+<tr class="row-even"><td><p class="sd-card-text">Instance Points</p></td>
+<td><p class="sd-card-text">Check: Pick Instance</p></td>
+</tr>
+<tr class="row-odd"><td><p class="sd-card-text">Collection Info</p></td>
+<td><p class="sd-card-text">Check: Reset Children</p></td>
+</tr>
+<tr class="row-even"><td><p class="sd-card-text"></p></td>
+<td><p class="sd-card-text">Check: Separate Children</p></td>
+</tr>
+</tbody>
+</table>
+</div>
+</div>
+  <p></p>
+   Widescreen     
+  <style>
+    video {
+      width: 100%;
+    }
+  </style>
+  <video controls>
+  <source src='https://www.dropbox.com/s/8lay98ppecle98n/10-D_Add-Collection.mp4?raw=1'>
+  </video>
+  <p></p>
+  <p></p>
+<p></p>
+<style>
+  video {
+    width: 100%;
+  }
+</style>
+<video controls>
+<source src='https://www.dropbox.com/s/2qxqiqvuesh7gez/10-D_Add-Collection_Vertical.mp4?raw=1'>
+</video>
+<p></p>
+<p></p> 
+<hr class="docutils" />
+<div class="admonition note" name="html-admonition" style="background: lightblue; padding: 10px">
+<p class="title"> </p>
+</div>
+<div class="sd-card sd-sphinx-override sd-mb-3 sd-shadow-sm docutils">
+<div class="sd-card-body docutils">
+<p class="sd-card-text">We show how to multi-select and link a material to multiple objects.</p>
+</div>
+</div>
+<div class="sd-card sd-sphinx-override sd-mb-3 sd-shadow-sm docutils">
+<div class="sd-card-body docutils">
+<table class="docutils align-default">
+<thead>
+<tr class="row-odd"><th class="head"><p class="sd-card-text">Command</p></th>
+<th class="head"><p class="sd-card-text">Action</p></th>
+</tr>
+</thead>
+<tbody>
+<tr class="row-even"><td><p class="sd-card-text">Remove Duplicate Sprinkle</p></td>
+<td><p class="sd-card-text"></p></td>
+</tr>
+<tr class="row-odd"><td><p class="sd-card-text">Switch to Material Review Mode</p></td>
+<td><p class="sd-card-text">Z &gt; Material Review</p></td>
+</tr>
+<tr class="row-even"><td><p class="sd-card-text">Practice Naming a Material</p></td>
+<td><p class="sd-card-text"></p></td>
+</tr>
+<tr class="row-odd"><td><p class="sd-card-text">Apply two Materials, Delete one</p></td>
+<td><p class="sd-card-text"></p></td>
+</tr>
+<tr class="row-even"><td><p class="sd-card-text">Materials for all objects are based on last selection</p></td>
+<td><p class="sd-card-text"></p></td>
+</tr>
+<tr class="row-odd"><td><p class="sd-card-text">Link Materials</p></td>
+<td><p class="sd-card-text">Ctrl + L</p></td>
+</tr>
+<tr class="row-even"><td><p class="sd-card-text">Icon <img alt="Box" src="_images/LinkedNumberBox.jpg" /> shows no. of Linked Objects to Material</p></td>
+<td><p class="sd-card-text"></p></td>
+</tr>
+<tr class="row-odd"><td><p class="sd-card-text">Unlink Objects</p></td>
+<td><p class="sd-card-text">Assign New Material</p></td>
+</tr>
+<tr class="row-even"><td><p class="sd-card-text"></p></td>
+<td><p class="sd-card-text">Use ‘x’</p></td>
+</tr>
+<tr class="row-odd"><td><p class="sd-card-text"></p></td>
+<td><p class="sd-card-text"><img alt="Box" src="_images/LinkedNumberBox.jpg" /> box</p></td>
+</tr>
+</tbody>
+</table>
+</div>
+</div>
+<p></p>
+<style>
+video {
+  width: 100%;
+}
+</style>
+<video controls>
+<source src='https://www.dropbox.com/s/i5dpn8i2xqxvpos/10-E_Linked-Material.mp4?raw=1'>
+</video>
+<p></p>
+<p></p>
+<p></p>
+<style>
+video {
+  width: 100%;
+}
+</style>
+<video controls>
+<source src='https://www.dropbox.com/s/fh48vinkt52yt80/10-E_Linked-Material_Vertical.mp4?raw=1'>
+</video>
+<p></p>
+<p></p>
+<hr class="docutils" />
+<div class="admonition note" name="html-admonition" style="background: lightgreen; padding: 10px">
+<p class="title"> </p>
+</div>
+</section>
+</section>
+<section id="add-color-ramp-set-it-to-constant">
+<h3>Add Color Ramp, Set it to Constant<a class="headerlink" href="#add-color-ramp-set-it-to-constant" title="Link to this heading"></a></h3>
+<div class="sd-card sd-sphinx-override sd-mb-3 sd-shadow-sm docutils">
+<div class="sd-card-body docutils">
+<p class="sd-card-text">Instead of assigning one color per sprinkle, if we use a random function and a Color Ramp to assign a variety of colors to any sprinkle in the collecton.</p>
+</div>
+</div>
+<div class="sd-card sd-sphinx-override sd-mb-3 sd-shadow-sm docutils">
+<div class="sd-card-body docutils">
+<table class="docutils align-default">
+<thead>
+<tr class="row-odd"><th class="head"><p class="sd-card-text">Command</p></th>
+<th class="head"><p class="sd-card-text">Action</p></th>
+</tr>
+</thead>
+<tbody>
+<tr class="row-even"><td><p class="sd-card-text">Hide Tools</p></td>
+<td><p class="sd-card-text">T</p></td>
+</tr>
+<tr class="row-odd"><td><p class="sd-card-text">Delete Material</p></td>
+<td><p class="sd-card-text">Materials Properties Tab &gt; ‘x’</p></td>
+</tr>
+<tr class="row-even"><td><p class="sd-card-text">Add New Material</p></td>
+<td><p class="sd-card-text">Recommend Brown</p></td>
+</tr>
+<tr class="row-odd"><td><p class="sd-card-text">Select Four Objects</p></td>
+<td><p class="sd-card-text">(Outliner)</p></td>
+</tr>
+<tr class="row-even"><td><p class="sd-card-text">Select Last Object</p></td>
+<td><p class="sd-card-text">(Outliner)</p></td>
+</tr>
+<tr class="row-odd"><td><p class="sd-card-text">Link Materials</p></td>
+<td><p class="sd-card-text">Ctrl + L</p></td>
+</tr>
+<tr class="row-even"><td><p class="sd-card-text">Name Material</p></td>
+<td><p class="sd-card-text">‘Sprinkles’</p></td>
+</tr>
+<tr class="row-odd"><td><p class="sd-card-text">Shading Tab</p></td>
+<td><p class="sd-card-text"></p></td>
+</tr>
+<tr class="row-even"><td><p class="sd-card-text">Input &gt; Object Info</p></td>
+<td><p class="sd-card-text">Shift + A: Input &gt; Object Info</p></td>
+</tr>
+<tr class="row-odd"><td><p class="sd-card-text">Noodle</p></td>
+<td><p class="sd-card-text">Random -&gt; Base Color</p></td>
+</tr>
+<tr class="row-even"><td><p class="sd-card-text">Add Color Ramp</p></td>
+<td><p class="sd-card-text">Shift + A: Converter &gt; Color Ramp</p></td>
+</tr>
+<tr class="row-odd"><td><p class="sd-card-text">Add Colors</p></td>
+<td><p class="sd-card-text">Gradient Blue to Pink</p></td>
+</tr>
+<tr class="row-even"><td><p class="sd-card-text">Switch</p></td>
+<td><p class="sd-card-text">Linear &gt; Constant</p></td>
+</tr>
+<tr class="row-odd"><td><p class="sd-card-text">Add five colors</p></td>
+<td><p class="sd-card-text"></p></td>
+</tr>
+<tr class="row-even"><td><p class="sd-card-text">Blender Guru Pro Tip:</p></td>
+<td><p class="sd-card-text">Keep Saturation below 80%.</p></td>
+</tr>
+<tr class="row-odd"><td><p class="sd-card-text">Blender Guru Pro Tip:</p></td>
+<td><p class="sd-card-text">Non Uniform Distribution of Colors.</p></td>
+</tr>
+</tbody>
+</table>
+</div>
+</div>
+<p></p>
+Widescreen 
+<style>
+  video {
+    width: 100%;
+  }
+</style>
+<video controls>
+<source src='https://www.dropbox.com/s/nm8wvbnrdh9dcbf/10-F_Color-Ramp-Constant.mp4?raw=1'>
+</video>
+<p></p>
+<p></p>
+<p></p>
+<style>
+  video {
+    width: 100%;
+  }
+</style>
+<video controls>
+<source src='https://www.dropbox.com/s/z1s1lt593d6iie3/10-F_Color_Ramp-Constant_Vertical.mp4?raw=1'>
+</video>
+<p></p>
+<p></p>
+</section>
+</section>
+<hr class="docutils" />
+<section id="congratulations">
+<h2>Congratulations!<a class="headerlink" href="#congratulations" title="Link to this heading"></a></h2>
+<div class="sd-card sd-sphinx-override sd-mb-3 sd-shadow-sm docutils">
+<div class="sd-card-body docutils">
+<p class="sd-card-text">Those who made it this far have negotiated some of the most complex sequences of this tutorial. If you are reading this, it is either because you were curious and you jumped ahead, or you were determined to finish. Both traits are admirable. If it is the first, jump in. If it is the second, congratulations!</p>
+</div>
+</div>
+</section>
+</section>
+
+
+           </div>
+          </div>
+          <footer><div class="rst-footer-buttons" role="navigation" aria-label="Footer">
+        <a href="Hotkeys.html" class="btn btn-neutral float-left" title="Hotkeys" accesskey="p" rel="prev"><span class="fa fa-arrow-circle-left" aria-hidden="true"></span> Previous</a>
+        <a href="Tips_Tricks.html" class="btn btn-neutral float-right" title="Tips and Tricks" accesskey="n" rel="next">Next <span class="fa fa-arrow-circle-right" aria-hidden="true"></span></a>
+    </div>
+
+  <hr/>
+
+  <div role="contentinfo">
+    <p>&#169; Copyright 2023.</p>
+  </div>
+
+  Built with <a href="https://www.sphinx-doc.org/">Sphinx</a> using a
+    <a href="https://github.com/readthedocs/sphinx_rtd_theme">theme</a>
+    provided by <a href="https://readthedocs.org">Read the Docs</a>.
+   
+
+</footer>
+        </div>
+      </div>
+    </section>
+  </div>
+  <script>
+      jQuery(function () {
+          SphinxRtdTheme.Navigation.enable(true);
+      });
+  </script> 
+
+</body>
+</html>
