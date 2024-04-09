@@ -51,8 +51,8 @@
         <entry file="file://$PROJECT_DIR$/doc/Credit.md">
           <provider selected="true" editor-type-id="split-provider[text-editor;markdown-preview-editor]">
             <state split_layout="SPLIT">
-              <first_editor relative-caret-position="374">
-                <caret line="17" column="21" selection-start-line="17" selection-start-column="21" selection-end-line="17" selection-end-column="21" />
+              <first_editor relative-caret-position="352">
+                <caret line="16" column="84" selection-start-line="16" selection-start-column="84" selection-end-line="16" selection-end-column="84" />
               </first_editor>
               <second_editor />
             </state>
@@ -142,7 +142,6 @@
       <foldersAlwaysOnTop value="true" />
     </navigator>
     <panes>
-      <pane id="Scope" />
       <pane id="ProjectPane">
         <subPane>
           <expand>
@@ -159,6 +158,7 @@
           <select />
         </subPane>
       </pane>
+      <pane id="Scope" />
     </panes>
   </component>
   <component name="PropertiesComponent">
@@ -234,21 +234,13 @@
     <entry file="file://$PROJECT_DIR$/doc/Images/copy_button/copy_button_03.png" />
     <entry file="file://$PROJECT_DIR$/doc/Images/copy_button/copy_button_04.png" />
     <entry file="file://$PROJECT_DIR$/doc/Images/copy_button/copy_button_05.png" />
-    <entry file="file://$PROJECT_DIR$/_build/_static/css/theme.css">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="2244">
-          <caret line="3" column="95071" selection-start-line="3" selection-start-column="95071" selection-end-line="3" selection-end-column="95071" />
-        </state>
-      </provider>
-    </entry>
+    <entry file="file://$PROJECT_DIR$/_build/_static/css/theme.css" />
     <entry file="file://$PROJECT_DIR$/doc/usage.rst" />
     <entry file="file://$PROJECT_DIR$/doc/purpose.rst" />
     <entry file="file://$PROJECT_DIR$/doc/dependencies.rst" />
     <entry file="file://$PROJECT_DIR$/doc/target.rst" />
     <entry file="file://$PROJECT_DIR$/doc/steps-needed.rst" />
-    <entry file="file://$PROJECT_DIR$/_build/index.html">
-      <provider selected="true" editor-type-id="text-editor" />
-    </entry>
+    <entry file="file://$PROJECT_DIR$/_build/index.html" />
     <entry file="file://$PROJECT_DIR$/environment.yml">
       <provider selected="true" editor-type-id="text-editor" />
     </entry>
@@ -304,13 +296,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$APPLICATION_CONFIG_DIR$/pycharm.vmoptions">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="352">
-          <caret line="16" column="52" selection-start-line="16" selection-start-column="52" selection-end-line="16" selection-end-column="52" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/doc/DonutTutorial.md">
       <provider selected="true" editor-type-id="split-provider[text-editor;markdown-preview-editor]">
         <state split_layout="SPLIT">
@@ -321,11 +306,18 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$APPLICATION_CONFIG_DIR$/pycharm.vmoptions">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="352">
+          <caret line="16" column="52" selection-start-line="16" selection-start-column="52" selection-end-line="16" selection-end-column="52" />
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/doc/Credit.md">
       <provider selected="true" editor-type-id="split-provider[text-editor;markdown-preview-editor]">
         <state split_layout="SPLIT">
-          <first_editor relative-caret-position="374">
-            <caret line="17" column="21" selection-start-line="17" selection-start-column="21" selection-end-line="17" selection-end-column="21" />
+          <first_editor relative-caret-position="352">
+            <caret line="16" column="84" selection-start-line="16" selection-start-column="84" selection-end-line="16" selection-end-column="84" />
           </first_editor>
           <second_editor />
         </state>
